@@ -13,14 +13,14 @@ layout: compress
             </div>
         </div>
         <div class="artwork__image">
-            <img src="/images/{{ page.image | replace: '.jpg', '--medium.jpg' }}" alt="{{ page.title }}" />
+            <img src="/images/{{ page.image | replace: '.jpg', '--medium.jpg' }}" alt="{{ page.title }}" class="" />
         </div>
         <div class="artwork__content">
             <h3 class="artwork__title">{{ page.title }}</h3>
             <h4>{{ page.artist }}</h4>
             <h5>{{ page.art_date | replace: '-', '&ndash;' }}</h5>
             <h5>{{ page.art_type }}</h5>
-            <h5>{{ page.art_size | replace: 'x', '&times;' }}</h5>
+            <h5>{{ page.art_height }} &times; {{ page.art_width }}</h5>
             <h5>{{ page.art_location }}</h5>
             {{ content }}
             <h5><a href="{{ page.cite_url }}" target="_blank">{{ page.cite_author }}. <em>{{ page.title }} ({{ page.artist }})</em>.</a></h5>
