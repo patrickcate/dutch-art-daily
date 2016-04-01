@@ -1,0 +1,183 @@
+.l-header
+{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    color: $gold;
+    background-color: $background-color;
+    box-shadow: $drop-shadow;
+}
+
+.l-header__inner
+{
+    width: 100%;
+    max-width: $breakpoint-medium;
+    margin: $grid-padding auto;
+    padding: 0 $grid-padding;
+
+    @include breakpoint($breakpoint-medium)
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+.site-name
+{
+    @include font-feature-settings(kern);
+    user-select: none;
+    // transition: font-size $speed-fast $default-easing, line-height $speed-fast $default-easing;
+    text-transform: lowercase;
+    // font-size: 3vw;
+    font-size: $font-size--large;
+    font-variant: small-caps;
+    line-height: 0.6;
+    text-align: center;
+
+    @include breakpoint($breakpoint-tiny)
+    {
+        font-size: $font-size--hero;
+        margin-left: auto;
+    }
+}
+
+.social
+{
+    display: none;
+
+    @include breakpoint($breakpoint-medium)
+    {
+        display: flex;
+    }
+
+    .social__link
+    {
+        display: block;
+        margin-left: $quarter-grid-padding;
+
+        // &:last-of-type
+        // {
+        //     margin-right: 0;
+        // }
+    }
+
+    .icon
+    {
+        display: block;
+        height: $logo-height--small;
+        fill: $white;
+    }
+
+    .icon--facebook
+    {
+        width: icon-width(facebook, $logo-height--small);
+    }
+
+    .icon--twitter
+    {
+        width: icon-width(twitter, $logo-height--small);
+    }
+
+    .icon--google-plus
+    {
+        width: icon-width(google-plus, $logo-height--small);
+    }
+
+    .icon--github
+    {
+        width: icon-width(github, $logo-height--small);
+    }
+}
+
+//
+// .l-nav
+// {
+//     @include clearfix;
+//     position: relative;
+// }
+//
+// .l-nav__inner
+// {
+//     @include container;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// %nav-wrapper
+// {
+//     display: table-cell;
+//     vertical-align: middle;
+// }
+//
+// .nav-wrapper-prev
+// {
+//     @extend %nav-wrapper;
+//     text-align: left;
+// }
+//
+// .nav-wrapper-next
+// {
+//     @extend %nav-wrapper;
+//     text-align: right;
+// }
+//
+// %nav-buttons
+// {
+//     // @extend %p;
+//
+//     display: inline-block;
+//     padding: $quarter-grid-padding $half-grid-padding;
+//     cursor: pointer;
+//     color: rgba($white, 0.85);
+//     border: 1px solid rgba($black, 0.25);
+//     border-radius: $default-border-radius;
+//     background-color: rgba($black, 0.10);
+//     box-shadow: inset 0 0 2px 0 rgba($white, 0.25);
+//     text-shadow: 0 -1px 0 rgba($black, 0.5);
+//
+//     &:hover
+//     {
+//         background-color: rgba($black, 0.25);
+//     }
+//
+//     &.is-disabled
+//     {
+//         cursor: default;
+//         pointer-events: none;
+//         opacity: 0.85;
+//         color: rgba($white, 0.25);
+//     }
+// }
+//
+// .nav-prev
+// {
+//     @extend %nav-buttons;
+// }
+//
+// .nav-next
+// {
+//     @extend %nav-buttons;
+// }
+
+.nav__button
+{
+    svg
+    {
+        width: 26px;
+        height: $grid-padding * 2;
+        cursor: pointer;
+        transition: fill $speed-fast $default-easing;
+        fill: $white;
+    }
+
+    &:hover
+    {
+        svg
+        {
+            fill: $gold;
+        }
+    }
+}

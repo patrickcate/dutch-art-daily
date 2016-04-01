@@ -1,0 +1,19 @@
+// .l-nav, .l-post__inner
+// {
+// 	@include container;
+// }
+
+
+.l-main
+{
+    @include clearfix;
+    background-color: $black;
+}
+
+.l-main__inner
+{
+    // @include break(medium)
+    // {
+        @include span(last 24 of 24);
+    // }
+}

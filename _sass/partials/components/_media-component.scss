@@ -1,0 +1,10 @@
+// Media Component
+
+@include date-background(medium);
+
+$date-break: $breakpoint-medium, $breakpoint-retina;
+
+@include breakpoint($date-break)
+{
+    @include date-background(large);
+}

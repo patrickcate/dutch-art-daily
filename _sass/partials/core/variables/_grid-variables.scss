@@ -1,0 +1,39 @@
+// Base Grid Measurements
+
+// $breakpoint-list: 'tiny', 'small', 'medium', 'large', 'huge';
+
+//$breakpoint-mini: convert-length(459px, em);
+$breakpoint-tiny: convert-length(480px, rem);
+$breakpoint-small: convert-length(700px, rem);
+$breakpoint-medium: convert-length(940px, rem);
+$breakpoint-large: convert-length(1050px, rem);
+$breakpoint-huge: convert-length(1200px, rem);
+$breakpoint-retina: min-resolution 1.5dppx;
+
+$grid-padding: convert-length($base-line-height, rem);
+$half-grid-padding: $grid-padding / 2;
+$quarter-grid-padding: $grid-padding / 4;
+
+// Susy grid settings
+$total-columns: 24;
+$column-width: $base-line-height;
+$gutter-width: $column-width;
+
+$susy: (
+    // the basics
+    columns: $total-columns,
+    gutters: $gutter-width / $column-width,
+    column-width: $breakpoint-medium / $total-columns,
+    global-box-sizing: border-box,
+    gutter-position: after,
+
+    // advanced
+    container-position: auto,
+    container: $breakpoint-medium,
+    math: fluid,
+    flow: ltr,
+    last-flow: to,
+);
+
+$default-border-radius: convert-length(6px, rem);
+$photo-border: convert-length(6px, rem);

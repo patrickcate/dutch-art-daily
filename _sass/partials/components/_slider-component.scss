@@ -1,0 +1,38 @@
+// Slider Component
+
+.slider
+{
+	// margin: 0 auto;
+	// position: relative;
+	// overflow: hidden;
+	// z-index: 1; // Fix of Webkit flickering
+}
+
+.slider__nav-button
+{
+	display: none;
+	background: none;
+	position: fixed;
+
+	@include breakpoint($breakpoint-medium)
+	{
+		display: block;
+	}
+}
+
+.slide
+{
+	background-position: center;
+	background-size: cover;
+}
+
+.slide__inner
+{
+	padding-top: $grid-padding;
+	padding-bottom: $grid-padding;
+}
+
+.slider__pagination
+{
+	display: none;
+}

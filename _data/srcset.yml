@@ -1,0 +1,4 @@
+  - main_image_mq: '(min-width: 800px) 240px, (min-width: 480px) calc(33vw - 20px), 50vw'
+  - large_main_image_mq: '(min-width: 800px) 310px, (min-width: 480px) calc(42vw - 20px), 50vw'
+  - thumbnail_grid_mq: '(min-width: 800px) 210px, (min-width: 480px) calc((100vw - 20px) / 4), calc((100vw - 20px) / 2)'
+  - art_mq: '()'

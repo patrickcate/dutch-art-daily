@@ -1,0 +1,16 @@
+// Visibility Component
+
+.is-hidden
+{
+    display: none!important;
+}
+
+.is-visible
+{
+    visibility: visible!important;
+}
+
+.not-visible
+{
+    visibility: hidden!important;
+}

@@ -1,0 +1,56 @@
+name: Dutch Art Daily
+description: Your daily source of Dutch Golden Age art.
+markdown: kramdown
+highlighter: pygments
+relative_permalinks: false
+doctor:          true
+show_drafts: true
+
+timezone:       America/New_York
+source:         .
+destination:    ./_site
+plugins:        ./_plugins
+layouts:        ./_layouts
+include:        ['.htaccess']
+permalink:      posts/:month/:month-:day-:title.html
+
+collections:
+  slides:
+    output: true
+    permalink: slides/:path.html
+
+gems: [
+    mini_magick,
+    rubygems,
+]
+
+# Compress layout settings
+compress_html:
+  clippings: all
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+
+exclude: [
+    'node_modules',
+    'grunt',
+    'source',
+    'assets',
+    '*.sublime-project',
+    '*.sublime-workspace',
+    'Gruntfile.js',
+    'gulpfile.js',
+    'config.rb',
+    # '*.json',
+    '*.log',
+    '*.DS_Store',
+    'Gemfile',
+    'Gemfile.lock',
+    '.sass-cache',
+    'package.json'
+]

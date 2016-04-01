@@ -1,0 +1,93 @@
+// Base Typography
+
+a
+{
+    transition: color $speed-slow $default-easing;
+    text-decoration: none;
+    color: $gold;
+    background: transparent;
+
+    &:link
+    {
+        color: $gold;
+    }
+
+    &:visited
+    {
+        color: $dark-gold;
+    }
+
+    &:hover, &:focus
+    {
+        color: $gold;
+    }
+
+    &:active
+    {
+        color: $dark-gold;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6, p
+{
+    @include font-feature-settings(kern);
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, .text-size--hero
+{
+    font-size: $font-size--hero;
+}
+
+h2, .text-size--huge
+{
+    font-size: $font-size--huge;
+}
+
+
+h3, .text-size--large
+{
+    font-size: $font-size--large;
+}
+
+
+h4, .text-size--medium
+{
+    font-size: $font-size--medium;
+}
+
+
+h5, .text-size--small
+{
+    font-size: $font-size--small;
+}
+
+
+h6, .text-size--tiny
+{
+    font-size: $font-size--tiny;
+}
+
+p
+{
+    margin-bottom: $base-line-height;
+    font-size: $font-size--small;
+}
+
+sup
+{
+    // font-size: $font-size--small;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.small-caps
+{
+    font-variant: small-caps;
+}

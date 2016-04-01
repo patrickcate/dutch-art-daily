@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+<div class="artwork">
+    <article class="artwork__inner">
+        <div class="artwork__nav">
+            <div class="nav__button nav__button--prev artwork__nav-button artwork__nav-button--prev">
+                <svg class="icon icon--arrow-left"><use xlink:href="#icon--arrow-left"></use></svg>
+            </div>
+            <div class="artwork__date-container"><h3 class="artwork__date">{{ page.date | date: '%B %-d' }}<sup class="">{{ page.date | date_to_string | ordinal }}</sup></h3></div>
+            <div class="nav__button nav__button--next artwork__nav-button artwork__nav-button--next">
+                <svg class="icon icon--arrow-right"><use xlink:href="#icon--arrow-right"></use></svg>
+            </div>
+        </div>
+        <div class="artwork__image">
+            <img src="/images/{{ page.image | replace: '.jpg', '--medium.jpg' }}" alt="{{ page.title }}" />
+        </div>
+        <div class="artwork__content">
+            <h3 class="artwork__title">{{ page.title }}</h3>
+            <h4>{{ page.artist }}</h4>
+            <h5>{{ page.art_date | replace: '-', '&ndash;' }}</h5>
+            <h5>{{ page.art_type }}</h5>
+            <h5>{{ page.art_size | replace: 'x', '&times;' }}</h5>
+            <h5>{{ page.art_location }}</h5>
+            {{ content }}
+            <h5><a href="{{ page.cite_url }}" target="_blank">{{ page.cite_author }}. <em>{{ page.title }} ({{ page.artist }})</em>.</a></h5>
+        </div>
+    </article>
+</div>

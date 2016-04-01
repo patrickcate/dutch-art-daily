@@ -1,0 +1,50 @@
+// Typography Support Settings
+
+$browser-default-font-size: 100%;
+$base-font-size: 16px;
+
+$ms-base: convert-length($base-font-size, rem);
+$ms-ratio: $major-third;
+$base-line-height: $base-font-size * $ms-ratio;
+
+$base-font-family: 'Janson', 'Janson Text LT Std', 'Janson Text', JansonText, 'Janson MT', 'Times New Roman', Times, serif;
+$condensed-font: 'HelveticaNeue-CondensedBold', 'Helvetica Neue Condensed Bold', 'Arial Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-font: $base-font-family;
+$serif-font: $base-font-family;
+$mono-font: Courier, 'Courier New', monospace;
+$icon-font: 'PC8tIconFont';
+
+// $hero-font-size: 68px;
+// $h1-font-size: 48px;
+// $h2-font-size: 34px;
+// $h3-font-size: 24px;
+// $h4-font-size: $base-font-size;
+// $h5-font-size: 14px;
+// $h6-font-size: 12px;
+// $small-font-size: $h6-font-size;
+// $p-font-size: $base-font-size;
+
+$font-size--tiny: ms(-1);
+$font-size--small: ms(0);
+$font-size--medium: ms(1);
+$font-size--large: ms(2);
+$font-size--huge: ms(3);
+$font-size--hero: ms(5);
+
+// $normal: 400;
+// $bold: 700;
+
+$hero-line-height: 70px;
+$h1-line-height: 52px;
+$h2-line-height: 39px;
+$h3-line-height: 30px;
+$h4-line-height: $base-line-height;
+$h5-line-height: 20px;
+$h6-line-height: 17px;
+$small-line-height: $h6-line-height;
+$p-line-height: $base-line-height;
+
+
+
+// The amount lists and blockquotes are indented.
+// $indent-amount: convert-length($grid-padding * 2, em);

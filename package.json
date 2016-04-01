@@ -1,0 +1,31 @@
+{
+  "name": "golden-age-dutch-art",
+  "version": "1.0.0",
+  "description": "Gulp plugins for Golden Age Dutch Art site.",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-changed": "~0.3.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-clean": "~0.2.4",
+    "gulp-concat": "~2.2.0",
+    "gulp-gm": "0.0.3",
+    "gulp-htmlmin": "~0.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-shell": "~0.2.4",
+    "gulp-spawn": "~0.3.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-util": "~2.2.14"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

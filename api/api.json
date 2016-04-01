@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+{
+  "posts": [{
+    {% for post in site.posts %}
+      {{ post.date | date: '%m-%d' | jsonify }}:
+      {
+        "id": {{ post.id | jsonify }},
+        "title": {{ post.title | jsonify }},
+        "artist": {{ post.artist | jsonify }},
+        "art_date": {{ post.art_date | jsonify }},
+        "art_type": {{ post.art_type | jsonify }},
+        "art_size": {{ post.art_size | jsonify }},
+        "art_location": {{ post.art_location | jsonify }},
+        "image": {{ post.image | jsonify }},
+        "date": {{ post.date | jsonify }},
+        "url": {{ post.url | jsonify }},
+        "cite_author": {{ post.cite_author | jsonify }},
+        "cite_url": {{ post.cite_url | jsonify }}
+      }{% if forloop.rindex0 > 0 %},{% endif %}
+    {% endfor %}
+  }]
+}
