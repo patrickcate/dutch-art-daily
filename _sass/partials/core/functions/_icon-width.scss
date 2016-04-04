@@ -5,7 +5,8 @@
     @if map-has-key($icons, $icon-name)
     {
         $icon: map-get($icons, $icon-name);
-        @return ceil(map-get($icon, ratio) * $icon-height);
+
+        @return map-get($icon, ratio) * $icon-height;
     }
     @else
     {
