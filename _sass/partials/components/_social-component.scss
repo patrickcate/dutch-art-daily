@@ -1,0 +1,42 @@
+.social
+{
+    display: none;
+
+    @include breakpoint($breakpoint-medium)
+    {
+        // display: flex;
+    }
+
+    .social__link
+    {
+        display: block;
+        margin-left: $quarter-grid-padding;
+    }
+
+    .icon
+    {
+        display: block;
+        height: $icon-height--small;
+        fill: $white;
+    }
+
+    .icon--facebook
+    {
+        width: icon-width(facebook, $icon-height--small);
+    }
+
+    .icon--twitter
+    {
+        width: icon-width(twitter, $icon-height--small);
+    }
+
+    .icon--google-plus
+    {
+        width: icon-width(google-plus, $icon-height--small);
+    }
+
+    .icon--github
+    {
+        width: icon-width(github, $icon-height--small);
+    }
+}
