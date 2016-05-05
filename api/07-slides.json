@@ -1,5 +1,5 @@
 ---
-
+layout: compress
 ---
 {% assign month_slides = '' | split: '|' %}
 {% assign total_slides = site.data.dates.total_slides %}

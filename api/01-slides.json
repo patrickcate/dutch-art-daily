@@ -1,5 +1,5 @@
 ---
-
+layout: compress
 ---
 {% assign month_slides = '' | split: '|' %}
 {% assign total_slides = site.data.dates.total_slides %}
@@ -7,7 +7,7 @@
 {% assign end_date = '2016-12-31 12:00:00 -05:00' | date: '%s' %}
 {% assign start_date = end_date | date: '%s' | minus: total_days | downcase %}
 {
-  "total": {{ site.data.dates.dates.total_slides }},
+  "total": {{ total_slides }},
   "posts": {
   {% for slide in site.slides %}
     {% assign slide_date = slide.date | date: '%s' %}
