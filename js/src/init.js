@@ -19,7 +19,9 @@ function loadJSON(url, callback) {
       "Microsoft.XmlHttp"
     ];
 
-    for (var i = 0, len = versions.length; i < len; i++) {
+    var len = versions.length;
+
+    for (var i = 0; i < len; i++) {
       try {
         xhr = new ActiveXObject(versions[i]);
         break;
@@ -84,7 +86,8 @@ function subtractDays(date, days) {
 }
 
 // Get today's date.
-var today = new Date('2014-03-04 12:00:00 -05:00');
+// var today = new Date('2016-01-04 12:00:00 -05:00');
+var today = new Date();
 var currentMonth = formatMonth(today);
 var currentDay = formatDay(today);
 
@@ -108,32 +111,53 @@ domReady(function() {
     for (var i = 0; i < totalSlides; i++) {
       var postMonth = formatMonth(subtractDays(today, i));
       var postDate = postMonth + '-' + formatDay(subtractDays(today, i));
-      var id = 'l-post--' + postDate;
-      slideContent = '<div id="' + id + '" class="l-post ' + id + ' swiper-slide" data-hash="' + postDate + '">' + sliderData[postDate] + '</div>' + slideContent;
+      var id = 'slide--' + postDate;
+
+      slideContent = '<div class="slide ' + id + ' swiper-slide">' + sliderData[postDate] + '</div>' + slideContent;
     }
 
-    document.getElementById('js-art-slider__inner').innerHTML = slideContent;
+    document.getElementById('js-slider__inner').innerHTML = slideContent;
 
-    var mySwiper = new Swiper('#js-art-slider', {
+    var mySwiper = new Swiper('#js-slider', {
       initialSlide: totalSlides - 1,
-      slideClass: 'l-post',
-      wrapperClass: 'art-slider__inner',
+      slideClass: 'slide',
+      // slideActiveClass: 'art-slider--is-active',
+      // slideVisibleClass: 'art-slider__is-visible',
+      // slideDuplicateClass: 'art-slider-is-duplicate',
+      // slideNextClass: 'art-slider--is-next',
+      // slidePrevClass: 'art-slider--is-prev',
+      // wrapperClass: 'art-slider__inner',
       autoHeight: true,
+      roundLengths: true,
       centeredSlides: true,
-      grabCursor: true,
-      nextButton: '.nav-next',
-      prevButton: '.nav-prev',
+      // grabCursor: true,
+      nextButton: '.nav-button--next',
+      prevButton: '.nav-button--prev',
+      buttonDisabledClass: 'nav-button--is-disabled',
       keyboardControl: true,
       uniqueNavElements: false,
       // hashnav: true,
-      preloadImages: true,
-      updateOnImagesReady: true,
+      preloadImages: false,
+      updateOnImagesReady: false,
+      pagination: '.slider__pager',
+      paginationHide: false,
+      paginationClickable: true,
+      paginationElement: 'button',
+      bulletClass: 'slider__pager-item',
+      bulletActiveClass: 'slider__pager-item--is-active',
+      lazyLoading: true,
+      lazyLoadingInPrevNext: true,
+      lazyLoadingInPrevNextAmount: 1,
+      lazyLoadingOnTransitionStart: true,
+      a11y: true,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      onInit: function(swiper) {
+        window.picturefill();
+      },
+      onLazyImageReady: function(swiper, slide, image){
+        swiper.update();
+     }
     });
-
-    window.picturefill();
   });
-
-
-
-}
-);
+});
