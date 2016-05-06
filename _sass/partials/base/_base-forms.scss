@@ -196,3 +196,11 @@
  {
      font-weight: bold;
  }
+
+ // Remove the blue focus ring
+ input:focus, select:focus, textarea:focus, button:focus, *:focus
+ {
+     outline: none;
+     outline-style: none;
+     -moz-outline-style: none;
+ }

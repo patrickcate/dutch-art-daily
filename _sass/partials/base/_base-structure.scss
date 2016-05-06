@@ -1,27 +1,30 @@
 // Base Structure
 
-*, *:before, *:after
+*, *::before, *::after
 {
     box-sizing: border-box;
 }
 
 html
 {
-    // font-size: $browser-default-font-size;
+    width: 100%;
     height: 100%;
+    background-color: $blue;
     font-size: $ms-base;
     line-height: $ms-ratio;
-    // background-color: $black;
 }
 
 body
 {
+    // font-size: $base-font-size;
+    // line-height: $base-line-height;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
     height: 100%;
     margin: 0;
     background-color: $blue;
     font-family: $base-font-family;
-    // font-size: $base-font-size;
-    // line-height: $base-line-height;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

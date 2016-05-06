@@ -2,7 +2,6 @@
 
 .l-footer
 {
-    @include clearfix;
     text-align: center;
     color: $biege;
     background-color: $blue;
@@ -10,7 +9,8 @@
 
 .l-footer__inner
 {
-    @include container;
-    margin: $grid-padding auto;
-    padding: 0 $grid-padding;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $grid-padding;
 }

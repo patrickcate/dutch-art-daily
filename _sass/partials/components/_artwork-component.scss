@@ -1,140 +1,132 @@
-// Post Component
+// ========== @file Artwork Component ========== //
 
 .artwork
 {
-	display: table;
-	max-width: $breakpoint-medium;
-	margin: 0 auto;
+    display: table;
+    max-width: $max-width;
+    margin: 0 auto;
 }
 
 .artwork__inner
 {
-	padding: ($grid-padding * 3) $grid-padding 0 $grid-padding ;
+    padding: ($grid-padding * 2)
+    $grid-padding
+    0
+    $grid-padding;
 
-	@include breakpoint($breakpoint-medium)
-	{
-		padding: ($grid-padding * 3) $grid-padding * 2.5 0 $grid-padding * 2.5;
-	}
+    @include breakpoint($breakpoint-small)
+    {
+        padding: (($grid-padding * 2) + ($half-grid-padding + $quarter-grid-padding))
+        $grid-padding
+        0
+        $grid-padding;
+    }
+
+    @include breakpoint($breakpoint-medium)
+    {
+        padding: (($grid-padding * 3) + $half-grid-padding)
+        $grid-padding * 3.5
+        0
+        $grid-padding * 3.5;
+    }
 }
 
-.artwork__image
+.artwork__header
 {
-	margin: 0 auto $grid-padding auto;
-}
+    width: 100%;
+    vertical-align: middle;
+    background-image: url('img/brush-stroke.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-.artwork__content
-{
-	display: flex;
-	flex-direction: column;
-	margin-bottom: $grid-padding;
-	padding: $grid-padding;
-	color: $biege;
-	background-color: $background-color;
-	box-shadow: $drop-shadow;
-}
-
-.artwork__nav
-{
-	// display: flex;
-	// justify-content: space-between;
-	// align-items: stretch;
-	display: table;
-	width: 100%;
-	max-width: $breakpoint-medium;
-
-	margin-top: $grid-padding;
-	margin-bottom: $grid-padding;
-	vertical-align: middle;
-
-	// filter: drop-shadow(0 2px 8px rgba($black, 0.5));
-
-	.artwork__date-container
-	{
-		// text-align: center;
-		display: table-cell;
-		background-image: url('img/brush-stroke.svg');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		vertical-align: middle;
-	}
-
-	.nav__button
-	{
-		// display: none;
-		display: table-cell;
-		vertical-align: middle;
-
-		&.swiper-button-disabled
-		{
-			pointer-events: none;
-			opacity: 0.5;
-		}
-
-		&.nav__button--prev
-		{
-			text-align: left;
-		}
-
-		&.nav__button--next
-		{
-			text-align: right;
-		}
-
-		@include breakpoint($breakpoint-medium)
-		{
-			display: none;
-		}
-	}
+    @include breakpoint($breakpoint-small--major)
+    {
+        margin-bottom: $half-grid-padding;
+    }
 }
 
 .artwork__date
 {
-	margin: 0;
-	padding: $grid-padding 0;
-	text-align: center;
-	vertical-align: middle;
-	color: $white;
-
-	// sup
-	// {
-	// 	top: -0.6rem;
-	// 	font-size: $font-size--tiny;
-	// }
+    margin: 0;
+    padding: ($grid-padding + $quarter-grid-padding) 0 $grid-padding 0;
+    text-align: center;
+    vertical-align: middle;
+    color: $white;
+    font-size: $text-size--medium;
 }
 
+.artwork__ordinal
+{
+    top: -0.5rem;
+    font-size: $text-size--tiny;
+    font-variant: small-caps;
+}
+
+.artwork__image
+{
+    margin: 0 auto $half-grid-padding auto;
+    text-align: center;
+
+    img
+    {
+        width: auto;
+        max-height: calc(100vh - 250px);
+        border-width: $border-width--small * 1px;
+        border-style: solid;
+        border-image: url('img/frame--small.png') $border-width--small $border-width--small round;
+        box-shadow: $drop-shadow;
+
+        @include breakpoint($breakpoint-small--major)
+        {
+            border-width: $border-width * 1px;
+            border-image: url('img/frame.png') $border-width $border-width round;
+        }
+
+        $landscape-breakpoint: (max-height $breakpoint-small--major) (orientation landscape);
+
+        @include breakpoint($landscape-breakpoint)
+        {
+            max-height: 150vh;
+        }
+
+        .not-borderimage &
+        {
+            border: 20px ridge shade($gold, 25%);
+        }
+    }
+}
+
+.artwork__content
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $grid-padding * 2;
+    padding: $grid-padding;
+    color: $biege;
+    background-color: $background-color;
+    box-shadow: $drop-shadow;
+    // filter: drop-shadow(0 2px 8px rgba($black, 0.5));
+}
 
 .artwork__title
 {
-	color: $gold;
-	font-style: italic;
+    color: $gold;
+    font-size: $text-size--medium;
+    font-style: italic;
+
+    @include breakpoint($breakpoint-tiny)
+    {
+        font-size: $text-size--large;
+    }
 }
 
-
-
-// .post-img
-// {
-//     margin: 0 auto;
-
-img
+.artwork__artist
 {
-	width: auto;
-	// max-height: 50vh;
-	max-height: calc(100vh - 220px);
-	border-width: 46px;
-	border-image: url('img/frame.png') 46 46 round;
-	box-shadow: $drop-shadow;
-	// margin: 0 auto;
+    font-size: $text-size--small;
 
-	@include breakpoint($breakpoint-retina)
-	{
-		// border-width: 23px;
-		// @include border-image(url('img/frame.png') 23 23 round);
-	}
-
-	.not-borderimage
-	{
-		border: 20px ridge shade($gold, 25%);
-	}
-	// }
+    @include breakpoint($breakpoint-tiny)
+    {
+        font-size: $text-size--medium;
+    }
 }
