@@ -1,9 +1,9 @@
 name: Dutch Art Daily
 description: Your daily source of Dutch Golden Age art.
 markdown: kramdown
-highlighter: pygments
+#highlighter: pygments
 relative_permalinks: false
-doctor:          true
+doctor: true
 show_drafts: true
 
 timezone:       America/New_York
@@ -16,7 +16,7 @@ permalink:      posts/:month/:month-:day-:title.html
 
 collections:
   slides:
-    output: true
+    output: false
     permalink: slides/:path.html
 
 gems: [
