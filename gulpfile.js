@@ -13,6 +13,7 @@ var svgstore        = require('gulp-svgstore');
 var htmlmin         = require('gulp-htmlmin');
 var spawn           = require("gulp-spawn");
 var cheerio         = require('gulp-cheerio');
+var imageExport = require('image-size-export');
 
 var processors = [
   autoprefixer({browsers: [
@@ -63,6 +64,26 @@ gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
     }
   });
 });
+
+
+/**
+ * Create JSON file of image information.
+ */
+gulp.task('image-info', function () {
+   imageExport.record({
+    path: 'images/**/*.jpg',
+    output: "_data/images.json",
+    template: '_assets/image-info.hbs',
+    breakpointDelimiter: '-'
+  });
+  imageExport.record({
+   path: 'css/img/bg/**/*.jpg',
+   output: "_data/backgrounds.json",
+   template: '_assets/image-info.hbs',
+   breakpointDelimiter: '-'
+ });
+});
+
 
 // Generate SVG sprite.
 gulp.task('svg-sprite', function ()
@@ -156,23 +177,23 @@ gulp.task('sass', function()
 
 gulp.task('js', function()
 {
-    gulp.src(['./js/*.js', '!./js/*.min.js'])
-    .pipe(rename({
-        suffix: '.min'
-    }))
-    .pipe(uglify({
-        mangle: false
-    }))
-    .pipe(gulp.dest('./js/'));
+    // gulp.src(['./js/*.js', '!./js/*.min.js'])
+    // .pipe(rename({
+    //     suffix: '.min'
+    // }))
+
+    // .pipe(gulp.dest('./js/'));
     gulp.src([
              './js/src/modernizr.min.js',
-            //  './js/src/jquery-2.2.2.min.js',
-            //  './js/moment.min.js',
              './js/src/picturefill.min.js',
+             './js/src/pf.mutation.min.js',
              './js/src/swiper.min.js',
-            //  './js/owl.carousel.min.js'
+             './js/src/init.js',
              ])
     .pipe(concat('scripts.js'))
+    .pipe(uglify({
+        mangle: true
+    }))
     .pipe(gulp.dest('./js/'))
     .pipe(gulp.dest('./_site/js/'))
     .pipe(browserSync.reload({stream:true}))
@@ -186,8 +207,8 @@ gulp.task('js', function()
 gulp.task('watch', function()
 {
    gulp.watch('./_sass/**/*.scss', ['sass']);
-   gulp.watch(['./js/*.js', '!./js/*.min.js', '!./js/scripts.js'], ['js']);
-   gulp.watch(['index.html', '_posts/**/*.*', '_data/*.*', '_layouts/*.*', '_includes/*.*', 'api/**/*.*', 'js/*.*'], ['jekyll-rebuild']);
+   gulp.watch(['./js/**/*.js', '!./js/*.min.js', '!./js/scripts.js'], ['js']);
+   gulp.watch(['index.html', '_slides/**/*.*', '_posts/**/*.*', '_data/*.*', '_layouts/*.*', '_includes/*.*', 'api/**/*.*', 'js/**/*.*'], ['jekyll-rebuild']);
    gulp.watch('./_assets/icons/*.svg', ['svg-sprite']);
 });
 
