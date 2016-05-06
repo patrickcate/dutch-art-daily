@@ -39,47 +39,47 @@ h1, h2, h3, h4, h5, h6, p
 
 h1, .text-size--hero
 {
-    font-size: $font-size--hero;
+    font-size: $text-size--hero;
 }
 
 h2, .text-size--huge
 {
-    font-size: $font-size--huge;
+    font-size: $text-size--huge;
 }
 
 
 h3, .text-size--large
 {
-    font-size: $font-size--large;
+    font-size: $text-size--large;
 }
 
 
 h4, .text-size--medium
 {
-    font-size: $font-size--medium;
+    font-size: $text-size--medium;
 }
 
 
 h5, .text-size--small
 {
-    font-size: $font-size--small;
+    font-size: $text-size--small;
 }
 
 
 h6, .text-size--tiny
 {
-    font-size: $font-size--tiny;
+    font-size: $text-size--tiny;
 }
 
 p
 {
-    margin-bottom: $base-line-height;
-    font-size: $font-size--small;
+    // margin-bottom: $base-line-height;
+    font-size: $text-size--small;
 }
 
 sup
 {
-    // font-size: $font-size--small;
+    // font-size: $text-size--small;
 }
 
 .uppercase

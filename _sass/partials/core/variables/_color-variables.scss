@@ -6,7 +6,7 @@ $gold: #ffbf00;
 $dark-gold: shade($gold, 20%);
 
 $light-biege: tint(#d2c5a6, 25%);
-$biege: #d2c5a6;
+// $biege: #d2c5a6;
 $biege: shade(tint($gold, 80%), 15%);
 $blue: #1a3f68;
 // $blue: #092546;
@@ -28,26 +28,9 @@ $facebook-color: #4B71B8;
 $googleplus-color: #d55429;
 $comment-count-color: #ffa000;
 
-// Gradient Start/Stop Colors
-// $menu-gradient-start: #259acc;
-// $menu-gradient-stop: #0050a9;
-
-// $blue-gradient-start: #259acc;
-// $blue-gradient-stop: #004EA2;
-//
-// $red-gradient-start: #ed0000;
-// $red-gradient-stop: #a30000;
-//
-// $green-gradient-start: #12B14B;
-// $green-gradient-stop: #0C8D44;
-//
-// $grey-gradient-start: #ed0000;
-// $grey-gradient-stop: #a30000;
-//
-// $yellow-highlight-start: #f4ee00;
-// $yellow-highlight-stop: #f1d300;
-
 $drop-shadow: 0 2px 8px 0 rgba($black, 0.5);
 $inset-light-text: 0 -1px 0 rgba($black, .85);
 $inset-dark-text: 0 1px 0 $white;
 $drop-text-shadow: 0 1px 0 rgba($black, .75);
+
+$semi-transparent: 0.35;

@@ -1,12 +1,8 @@
 // Icon Variables
-
-$icon-height--small: $grid-padding;
+$icon-height--small: $grid-padding * 1.5;
 $icon-height--medium: $grid-padding * 2;
 $icon-height--large: $grid-padding * 3;
-
-$logo-height--small: $grid-padding * 1.5;
-$logo-height--medium: $grid-padding * 2;
-$logo-height--large: $grid-padding * 3;
+$icon-height--huge: $grid-padding * 4;
 
 // Icon Ratios
 $icon--arrow-left-ratio: 0.6431875;
