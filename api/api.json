@@ -3,22 +3,22 @@ layout: compress
 ---
 {
   "posts": [{
-    {% for post in site.posts %}
-      {{ post.date | date: '%m-%d' | jsonify }}:
+    {% for slide in site.slides %}
+      {{ slide.date | date: '%m-%d' | jsonify }}:
       {
-        "id": {{ post.id | jsonify }},
-        "title": {{ post.title | jsonify }},
-        "artist": {{ post.artist | jsonify }},
-        "art_date": {{ post.art_date | jsonify }},
-        "art_type": {{ post.art_type | jsonify }},
-        "art_height": {{ post.art_height | jsonify }},
-        "art_width": {{ post.art_width | jsonify }},
-        "art_location": {{ post.art_location | jsonify }},
-        "image": {{ post.image | jsonify }},
-        "date": {{ post.date | jsonify }},
-        "url": {{ post.url | jsonify }},
-        "cite_author": {{ post.cite_author | jsonify }},
-        "cite_url": {{ post.cite_url | jsonify }}
+        "id": {{ slide.id | jsonify }},
+        "title": {{ slide.title | jsonify }},
+        "artist": {{ slide.artist | jsonify }},
+        "art_date": {{ slide.art_date | jsonify }},
+        "art_type": {{ slide.art_type | jsonify }},
+        "art_height": {{ slide.art_height | jsonify }},
+        "art_width": {{ slide.art_width | jsonify }},
+        "art_location": {{ slide.art_location | jsonify }},
+        "image": {{ slide.image | jsonify }},
+        "date": {{ slide.date | jsonify }},
+        "url": {{ slide.url | jsonify }},
+        "cite_author": {{ slide.cite_author | jsonify }},
+        "cite_url": {{ slide.cite_url | jsonify }}
       }{% if forloop.rindex0 > 0 %},{% endif %}
     {% endfor %}
   }]
