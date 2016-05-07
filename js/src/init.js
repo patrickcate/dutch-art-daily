@@ -104,7 +104,7 @@ var domReady = function(callback) {
 // The dom is ready, do your magic.
 domReady(function() {
 
-  var path = '/api/' + currentMonth + '-slides.json';
+  var path = 'https://rawcdn.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
 
   loadJSON(path, function(sliderData, totalSlides) {
 
