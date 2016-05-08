@@ -104,7 +104,11 @@ var domReady = function(callback) {
 // The dom is ready, do your magic.
 domReady(function() {
 
-  var path = 'https://raw.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
+  // var path = 'https://raw.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
+
+  var path = 'https://rawcdn.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
+
+  // var path = 'api/' + currentMonth + '-slides.json';
 
   loadJSON(path, function(sliderData, totalSlides) {
 
@@ -152,10 +156,13 @@ domReady(function() {
       a11y: true,
       watchSlidesProgress: true,
       watchSlidesVisibility: true,
+      observer: true,
+      observeParents: true,
       onInit: function(swiper) {
         window.picturefill();
       },
-      onLazyImageReady: function(swiper, slide, image){
+      onLazyImageReady: function(swiper, slide, image) {
+        window.picturefill();
         swiper.update();
      }
     });
