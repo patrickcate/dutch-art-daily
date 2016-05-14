@@ -52,7 +52,7 @@
     padding: ($grid-padding + $quarter-grid-padding) 0 $grid-padding 0;
     text-align: center;
     vertical-align: middle;
-    color: $white;
+    color: $biege;
     font-size: $text-size--medium;
 }
 
@@ -60,7 +60,7 @@
 {
     top: -0.5rem;
     font-size: $text-size--tiny;
-    font-variant: small-caps;
+    // font-variant: small-caps;
 }
 
 .artwork__image
@@ -72,16 +72,13 @@
     {
         width: auto;
         max-height: calc(100vh - 250px);
-        border-width: $border-width--small * 1px;
-        border-style: solid;
+        text-align: center;
+        vertical-align: middle;
+        color: $biege;
+        border: ($border-width--small * 1px) solid $biege;
+        // border-style: solid;
         border-image: url('img/frame--small.png') $border-width--small $border-width--small round;
         box-shadow: $drop-shadow;
-
-        @include breakpoint($breakpoint-small--major)
-        {
-            border-width: $border-width * 1px;
-            border-image: url('img/frame.png') $border-width $border-width round;
-        }
 
         $landscape-breakpoint: (max-height $breakpoint-small--major) (orientation landscape);
 
@@ -90,11 +87,18 @@
             max-height: 150vh;
         }
 
+        @include breakpoint($breakpoint-small--major)
+        {
+            border-width: $border-width * 1px;
+            border-image: url('img/frame.png') $border-width $border-width round;
+        }
+
         .not-borderimage &
         {
             border: 20px ridge shade($gold, 25%);
         }
     }
+
 }
 
 .artwork__content
@@ -107,6 +111,14 @@
     background-color: $background-color;
     box-shadow: $drop-shadow;
     // filter: drop-shadow(0 2px 8px rgba($black, 0.5));
+
+    a
+    {
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
 }
 
 .artwork__title

@@ -5,8 +5,8 @@
 // Import Fonts
 @include font-face('Janson', 'fonts/janson-roman', normal, normal);
 @include font-face('Janson', 'fonts/janson-italic', normal, italic);
-// @include font-face('Janson', 'fonts/janson-bold', bold, normal);
-// @include font-face('Janson', 'fonts/janson-bold-italic', bold, italic);
+@include font-face('Janson', 'fonts/janson-bold', bold, normal);
+@include font-face('Janson', 'fonts/janson-bold-italic', bold, italic);
 
 // Base Imports
 @import 'partials/base/normalize';
@@ -20,7 +20,7 @@
 // Import Components
 @import 'partials/components/visiblity-component';
 @import 'partials/components/artwork-component';
-@import 'partials/components/media-component';
+// @import 'partials/components/media-component';
 @import 'partials/components/slider-component';
 @import 'partials/components/social-component';
 @import 'partials/components/nav-component';

@@ -33,9 +33,12 @@
         transition: fill $speed-fast $default-easing;
         fill: $white;
 
-        &:hover, &:active
+        .no-touchevents &
         {
-            fill: $gold;
+            &:hover, &:active
+            {
+                fill: $gold;
+            }
         }
     }
 

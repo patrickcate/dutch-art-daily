@@ -1,6 +1,6 @@
 // Shortcut mixin to generate font-face css
 
-@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false)
 {
     @font-face
     {
@@ -10,22 +10,22 @@
 
         @if $asset-pipeline == true
         {
-            src: font-url('#{$file-path}.eot');
-            src: font-url('#{$file-path}.eot?#iefix')     format('embedded-opentype'),
-            font-url('#{$file-path}.woff')                format('woff'),
-            font-url('#{$file-path}.woff2')               format('woff2'),
-            font-url('#{$file-path}.ttf')                 format('truetype'),
-            font-url('#{$file-path}.svg##{$font-family}') format('svg');
+            // src: font-url('#{$file-path}.eot');
+            // src: font-url('#{$file-path}.eot?#iefix')     format('embedded-opentype'),
+            src: font-url('#{$file-path}.woff2')     format('woff2'),
+            font-url('#{$file-path}.woff')           format('woff'),
+            font-url('#{$file-path}.ttf')            format('truetype');
+            // font-url('#{$file-path}.svg##{$font-family}') format('svg');
         }
 
         @else
         {
-            src: url('#{$file-path}.eot');
-            src: url('#{$file-path}.eot?#iefix')          format('embedded-opentype'),
-            url('#{$file-path}.woff')                     format('woff'),
-            url('#{$file-path}.woff2')                    format('woff2'),
-            url('#{$file-path}.ttf')                      format('truetype'),
-            url('#{$file-path}.svg##{$font-family}')      format('svg');
+            // src: url('#{$file-path}.eot');
+            // src: url('#{$file-path}.eot?#iefix')          format('embedded-opentype'),
+            src: url('#{$file-path}.woff2')         format('woff2'),
+            url('#{$file-path}.woff')               format('woff'),
+            url('#{$file-path}.ttf')                format('truetype');
+            // url('#{$file-path}.svg##{$font-family}')      format('svg');
         }
     }
 }

@@ -13,4 +13,12 @@
     max-width: $max-width;
     margin: 0 auto;
     padding: $grid-padding;
+
+    a
+    {
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
 }
