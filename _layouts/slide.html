@@ -18,7 +18,7 @@ layout: compress
             {% if page.art_type %}{{ page.art_type }}<br />{% endif %}
             {% if page.art_height %}{{ page.art_height }} cm &times; {{ page.art_width }} cm<br />{% endif %}
             {% if page.art_location %}{{ page.art_location }}<br />{% endif %}
-            {% if page.cite_url %}<a href="{{ page.cite_url }}" target="_blank">{{ page.cite_author }}: <em>{{ page.title }} ({{ page.artist }})</em>.</a>{% endif %}</p>
+            {% if page.cite_url %}{{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em>.</a>{% endif %}</p>
         </div>
     </article>
 </div>
