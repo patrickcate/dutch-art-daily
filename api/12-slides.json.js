@@ -4,10 +4,10 @@ layout: compress
 {% assign month_slides = '' | split: '|' %}
 {% assign total_slides = site.data.dates.total_slides %}
 {% assign total_days = site.data.dates.unix_day | times: total_slides %}
-{% assign start_date = '2016-05-20 12:00:00 -05:00' | date: '%s' %}
-{% assign end_date = '2016-06-30 12:00:00 -05:00' | date: '%s' %}
+{% assign start_date = '2016-11-20 12:00:00 -05:00' | date: '%s' %}
+{% assign end_date = '2016-12-31 12:00:00 -05:00' | date: '%s' %}
 {% assign start_date = start_date | minus: total_days | downcase %}
-{
+dutchartdailyslides({
   "total": {{ site.data.dates.total_slides }},
   "posts": {
   {% for slide in site.slides %}
@@ -21,4 +21,4 @@ layout: compress
     {% if forloop.rindex0 > 0 %},{% endif %}
   {% endfor %}
   }
-}
+});

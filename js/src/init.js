@@ -1,59 +1,5 @@
 'use strict';
 
-var slideContent = '';
-var sliderData = [];
-
-function loadJSON(url, callback) {
-
-  var xhr;
-
-  if (typeof XMLHttpRequest !== 'undefined') {
-    xhr = new XMLHttpRequest();
-  }
-  else {
-    var versions = [
-      "MSXML2.XmlHttp.5.0",
-      "MSXML2.XmlHttp.4.0",
-      "MSXML2.XmlHttp.3.0",
-      "MSXML2.XmlHttp.2.0",
-      "Microsoft.XmlHttp"
-    ];
-
-    var len = versions.length;
-
-    for (var i = 0; i < len; i++) {
-      try {
-        xhr = new ActiveXObject(versions[i]);
-        break;
-      }
-      catch(e){}
-    } // end for
-  }
-
-  function ensureReadiness() {
-    if (xhr.readyState < 4) {
-      return;
-    }
-
-    if (xhr.status !== 200) {
-      return;
-    }
-
-    // all is well
-    if (xhr.readyState === 4) {
-      var datePadding = JSON.parse(xhr.responseText).total;
-      xhr = JSON.parse(xhr.responseText).posts;
-      callback(xhr, datePadding);
-    }
-  }
-
-  xhr.onreadystatechange = ensureReadiness;
-
-  xhr.open('GET', url, true);
-  xhr.send('');
-}
-
-
 // Left pad a number with a '0'
 function padNumber(int) {
   if (int < 10) {
@@ -92,79 +38,96 @@ var currentMonth = formatMonth(today);
 var currentDay = formatDay(today);
 
 
-var domReady = function(callback) {
-  if (document.readyState === "interactive" || document.readyState === "complete") {
-    callback();
-  }
-  else {
-    document.addEventListener("DOMContentLoaded", callback);
-  }
-};
+// var domReady = function(callback) {
+//   if (document.readyState === "interactive" || document.readyState === "complete") {
+//     callback();
+//   }
+//   else {
+//     document.addEventListener("DOMContentLoaded", callback);
+//   }
+// };
+
+
+// JSONP callback function
+function dutchartdailyslides(data) {
+	var slideContent = '';
+	var totalSlides = data.total;
+	var sliderData = data.posts;
+
+	for (var i = 0; i < totalSlides; i++) {
+		var postMonth = formatMonth(subtractDays(today, i));
+		var postDate = postMonth + '-' + formatDay(subtractDays(today, i));
+		var id = 'slide--' + postDate;
+
+		slideContent = '<div class="slide ' + id + ' swiper-slide">' + sliderData[postDate] + '</div>' + slideContent;
+	}
+
+	document.getElementById('js-slider__inner').innerHTML = slideContent;
+
+	var mySwiper = new Swiper('#js-slider', {
+		initialSlide: totalSlides - 1,
+		slideClass: 'slide',
+		// slideActiveClass: 'art-slider--is-active',
+		// slideVisibleClass: 'art-slider__is-visible',
+		// slideDuplicateClass: 'art-slider-is-duplicate',
+		// slideNextClass: 'art-slider--is-next',
+		// slidePrevClass: 'art-slider--is-prev',
+		// wrapperClass: 'art-slider__inner',
+		autoHeight: true,
+		roundLengths: true,
+		centeredSlides: true,
+		// grabCursor: true,
+		nextButton: '.nav-button--next',
+		prevButton: '.nav-button--prev',
+		buttonDisabledClass: 'nav-button--is-disabled',
+		keyboardControl: true,
+		uniqueNavElements: false,
+		// hashnav: true,
+		preloadImages: false,
+		updateOnImagesReady: false,
+		pagination: '.slider__pager',
+		paginationHide: false,
+		paginationClickable: true,
+		paginationElement: 'button',
+		bulletClass: 'slider__pager-item',
+		bulletActiveClass: 'slider__pager-item--is-active',
+		lazyLoading: true,
+		lazyLoadingInPrevNext: true,
+		lazyLoadingInPrevNextAmount: 1,
+		lazyLoadingOnTransitionStart: true,
+		a11y: true,
+		watchSlidesProgress: true,
+		watchSlidesVisibility: true,
+		observer: true,
+		observeParents: true,
+		onInit: function(swiper) {
+			window.picturefill();
+			svg4everybody();
+		},
+		// onLazyImageLoad: function(swiper, slide, image) {
+		// 	console.log('lazy-image-load');
+		// },
+		onLazyImageReady: function(swiper, slide, image) {
+			// window.picturefill();
+			swiper.update();
+		}
+	});
+}
 
 // The dom is ready, do your magic.
-domReady(function() {
+domready(function() {
 
-  // var path = 'https://raw.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
+	// var filename = currentMonth + '-slides';
+	// var path = 'https://raw.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
+	// var path = 'https://rawcdn.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
 
-  var path = 'https://rawcdn.githack.com/patrickcate/dutch-art-daily/gh-pages/api/' + currentMonth + '-slides.json';
+	var path = 'api/' + currentMonth + '-slides.json.js';
 
-  // var path = 'api/' + currentMonth + '-slides.json';
-
-  loadJSON(path, function(sliderData, totalSlides) {
-
-    for (var i = 0; i < totalSlides; i++) {
-      var postMonth = formatMonth(subtractDays(today, i));
-      var postDate = postMonth + '-' + formatDay(subtractDays(today, i));
-      var id = 'slide--' + postDate;
-
-      slideContent = '<div class="slide ' + id + ' swiper-slide">' + sliderData[postDate] + '</div>' + slideContent;
-    }
-
-    document.getElementById('js-slider__inner').innerHTML = slideContent;
-
-    var mySwiper = new Swiper('#js-slider', {
-      initialSlide: totalSlides - 1,
-      slideClass: 'slide',
-      // slideActiveClass: 'art-slider--is-active',
-      // slideVisibleClass: 'art-slider__is-visible',
-      // slideDuplicateClass: 'art-slider-is-duplicate',
-      // slideNextClass: 'art-slider--is-next',
-      // slidePrevClass: 'art-slider--is-prev',
-      // wrapperClass: 'art-slider__inner',
-      autoHeight: true,
-      roundLengths: true,
-      centeredSlides: true,
-      // grabCursor: true,
-      nextButton: '.nav-button--next',
-      prevButton: '.nav-button--prev',
-      buttonDisabledClass: 'nav-button--is-disabled',
-      keyboardControl: true,
-      uniqueNavElements: false,
-      // hashnav: true,
-      preloadImages: false,
-      updateOnImagesReady: false,
-      pagination: '.slider__pager',
-      paginationHide: false,
-      paginationClickable: true,
-      paginationElement: 'button',
-      bulletClass: 'slider__pager-item',
-      bulletActiveClass: 'slider__pager-item--is-active',
-      lazyLoading: true,
-      lazyLoadingInPrevNext: true,
-      lazyLoadingInPrevNextAmount: 1,
-      lazyLoadingOnTransitionStart: true,
-      a11y: true,
-      watchSlidesProgress: true,
-      watchSlidesVisibility: true,
-      observer: true,
-      observeParents: true,
-      onInit: function(swiper) {
-        window.picturefill();
-      },
-      onLazyImageReady: function(swiper, slide, image) {
-        window.picturefill();
-        swiper.update();
-     }
-    });
-  });
+	JSONP({
+		url: path,
+		callbackName: 'dutchartdailyslides',
+		// error: function(data) { console.log(data); },
+		// success: function(data) { console.log(data); },
+		// complete: function(data) { console.log(data); },
+	});
 });
