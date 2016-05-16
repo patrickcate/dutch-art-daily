@@ -65,13 +65,13 @@
 
 .artwork__image
 {
-    margin: 0 auto $half-grid-padding auto;
+    margin: 0 auto $grid-padding auto;
     text-align: center;
 
     img
     {
         width: auto;
-        max-height: calc(100vh - 250px);
+        max-height: calc(100vh - 225px);
         text-align: center;
         vertical-align: middle;
         color: $biege;
@@ -80,9 +80,9 @@
         border-image: url('img/frame--small.png') $border-width--small $border-width--small round;
         box-shadow: $drop-shadow;
 
-        $landscape-breakpoint: (max-height $breakpoint-small--major) (orientation landscape);
+        $_landscape-breakpoint: (max-height $breakpoint-small--major) (orientation landscape);
 
-        @include breakpoint($landscape-breakpoint)
+        @include breakpoint($_landscape-breakpoint)
         {
             max-height: 150vh;
         }

@@ -76,6 +76,7 @@ function dutchartdailyslides(data) {
     autoHeight: true,
     roundLengths: true,
     centeredSlides: true,
+    // spaceBetween: 0,
     // grabCursor: true,
     nextButton: '.nav-button--next',
     prevButton: '.nav-button--prev',
@@ -105,11 +106,15 @@ function dutchartdailyslides(data) {
       svg4everybody();
     },
     // onLazyImageLoad: function(swiper, slide, image) {
-    // 	console.log('lazy-image-load');
+    //   // console.log(image.complete);
     // },
     onLazyImageReady: function(swiper, slide, image) {
-      window.picturefill();
-      swiper.update();
+      // Double check to make sure the image is actually loaded.
+      if (image.complete === true) {
+        // console.log(image.complete);
+        window.picturefill();
+        swiper.update(true);
+      }
     }
   });
 }
