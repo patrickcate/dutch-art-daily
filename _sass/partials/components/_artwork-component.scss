@@ -93,7 +93,7 @@
             border-image: url('img/frame.png') $border-width $border-width round;
         }
 
-        .not-borderimage &
+        .no-borderimage &
         {
             border: 20px ridge shade($gold, 25%);
         }

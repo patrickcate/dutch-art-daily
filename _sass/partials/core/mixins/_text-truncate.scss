@@ -2,8 +2,8 @@
 
 @mixin text-truncate
 {
+    @include inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    @include inline-block;
 }

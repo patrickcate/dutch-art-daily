@@ -59,7 +59,7 @@ function dutchartdailyslides(data) {
     var postDate = postMonth + '-' + formatDay(subtractDays(today, i));
     var id = 'slide--' + postDate;
 
-    slideContent = '<div class="slide ' + id + ' swiper-slide">' + sliderData[postDate] + '</div>' + slideContent;
+    slideContent = '<div class="slide ' + id + ' swiper-slide" data-hash="' + postDate + '">' + sliderData[postDate] + '</div>' + slideContent;
   }
 
   document.getElementById('js-slider__inner').innerHTML = slideContent;
@@ -76,14 +76,15 @@ function dutchartdailyslides(data) {
     autoHeight: true,
     roundLengths: true,
     centeredSlides: true,
-    // spaceBetween: 0,
+    slidesPerView: 1,
+    spaceBetween: 0,
     // grabCursor: true,
     nextButton: '.nav-button--next',
     prevButton: '.nav-button--prev',
     buttonDisabledClass: 'nav-button--is-disabled',
     keyboardControl: true,
     uniqueNavElements: false,
-    // hashnav: true,
+    hashnav: true,
     preloadImages: false,
     updateOnImagesReady: false,
     pagination: '.slider__pager',
