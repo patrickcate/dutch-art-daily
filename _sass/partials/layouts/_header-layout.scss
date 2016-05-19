@@ -25,7 +25,7 @@
     @include breakpoint($breakpoint-medium)
     {
         justify-content: center;
-        margin: $grid-padding auto;
+        margin: $half-grid-padding auto;
     }
 }
 

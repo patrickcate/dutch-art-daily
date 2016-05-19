@@ -15,11 +15,11 @@ layout: compress
         <div class="artwork__content">
             <h3 class="artwork__title">{{ page.title }}</h3>
             <h4 class="artwork__artist">{{ page.artist }}</h4>
-            <p>{% if page.art_date %}{{ page.art_date | replace: '-', '&ndash;' }}<br />{% endif %}
-            {% if page.art_type %}{{ page.art_type }}<br />{% endif %}
-            {% if page.art_height %}{{ page.art_height }} cm &times; {{ page.art_width }} cm<br />{% endif %}
-            {% if page.art_location %}{{ page.art_location }}<br />{% endif %}
-            {% if page.cite_url %}{{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em></a>{% endif %}</p>
+            <p>{% if page.art_date %}<svg class="icon icon--date"><use xlink:href="css/img/svg-icon-sprite.svg#icon--date"></use></svg> {{ page.art_date | replace: '-', '&ndash;' }}<br />{% endif %}
+            {% if page.art_type %}<svg class="icon icon--medium"><use xlink:href="css/img/svg-icon-sprite.svg#icon--medium"></use></svg> {{ page.art_type }}<br />{% endif %}
+            {% if page.art_height %}<svg class="icon icon--size"><use xlink:href="css/img/svg-icon-sprite.svg#icon--size"></use></svg> {{ page.art_height }} cm &times; {{ page.art_width }} cm<br />{% endif %}
+            {% if page.art_location %}<svg class="icon icon--location"><use xlink:href="css/img/svg-icon-sprite.svg#icon--location"></use></svg> {{ page.art_location }}<br />{% endif %}
+            {% if page.cite_url %}<svg class="icon icon--link"><use xlink:href="css/img/svg-icon-sprite.svg#icon--link"></use></svg> {{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em></a>{% endif %}</p>
         </div>
     </article>
 </div>

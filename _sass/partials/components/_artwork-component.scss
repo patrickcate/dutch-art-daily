@@ -112,6 +112,13 @@
     box-shadow: $drop-shadow;
     // filter: drop-shadow(0 2px 8px rgba($black, 0.5));
 
+    .icon
+    {
+        margin-right: $quarter-grid-padding;
+        vertical-align: text-top;
+        min-width: 14px;
+    }
+
     a
     {
         &:hover

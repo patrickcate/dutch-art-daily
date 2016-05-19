@@ -73,13 +73,13 @@ gulp.task('image-info', function () {
    imageExport.record({
     path: 'images/**/*.jpg',
     output: "_data/images.json",
-    template: '_assets/image-info.hbs',
+    template: '_assets/templates/image-info.hbs',
     breakpointDelimiter: '-'
   });
   imageExport.record({
    path: 'css/img/bg/**/*.jpg',
    output: "_data/backgrounds.json",
-   template: '_assets/image-info.hbs',
+   template: '_assets/templates/image-info.hbs',
    breakpointDelimiter: '-'
  });
 });
@@ -90,16 +90,24 @@ gulp.task('svg-sprite', function ()
 {
   gulp.src('./_assets/icons/*.svg')
   .pipe(svgmin())
-  .pipe(svgstore({inlineSvg: false}))
   .pipe(cheerio({
     run: function ($) {
-      $('svg').attr('style', 'display:none');
       $('[fill="none"]').removeAttr('fill');
     },
     parserOptions: { xmlMode: true }
   }))
+  .pipe(svgstore({inlineSvg: false}))
+  .pipe(cheerio({
+    run: function ($) {
+      $('svg').attr('style', 'display:none');
+      $('svg symbol').each(function(i, elem) {
+        $(this).addClass($(this).attr('id'));
+      });
+    },
+    parserOptions: { xmlMode: true }
+  }))
   .pipe(rename('svg-icon-sprite.svg'))
-  .pipe(gulp.dest('./_includes/'));
+  .pipe(gulp.dest('./css/img/'));
 });
 
 
@@ -183,16 +191,16 @@ gulp.task('js', function()
     // }))
 
     // .pipe(gulp.dest('./js/'));
-		gulp.src([
-			'./js/src/ready.min.js',
-			'./js/src/svg4everybody.min.js',
-			'./js/src/modernizr.min.js',
-			'./js/src/picturefill.min.js',
-			'./js/src/pf.mutation.min.js',
-			'./js/src/jsonp.min.js',
-			'./js/src/swiper.min.js',
-			'./js/src/init.js',
-		])
+    gulp.src([
+      './js/src/ready.min.js',
+      './js/src/svg4everybody.min.js',
+      './js/src/modernizr.min.js',
+      './js/src/picturefill.min.js',
+      './js/src/pf.mutation.min.js',
+      './js/src/jsonp.min.js',
+      './js/src/swiper.min.js',
+      './js/src/init.js',
+    ])
     .pipe(concat('scripts.js'))
     .pipe(uglify({
         mangle: true
