@@ -2,23 +2,26 @@
 
 .l-footer
 {
-    // text-align: center;
-    color: $biege;
-    background-color: $blue;
+	position: relative;
+	z-index: 100;
+	// text-align: center;
+	color: $biege;
+	background-color: $blue;
+	box-shadow: $reverse-drop-shadow;
 }
 
 .l-footer__inner
 {
-    width: 100%;
-    max-width: $max-width;
-    margin: 0 auto;
-    padding: $grid-padding;
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: $grid-padding;
 
-    a
-    {
-        &:hover
-        {
-            text-decoration: underline;
-        }
-    }
+	a
+	{
+		&:hover
+		{
+			text-decoration: underline;
+		}
+	}
 }

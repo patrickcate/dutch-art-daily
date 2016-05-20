@@ -1,5 +1,6 @@
 name: Dutch Art Daily
-description: Your daily source of Dutch Golden Age art.
+description: A new Dutch Golden Age artwork delivered every day!
+url: http://www.dutchartdaily.com
 markdown: kramdown
 #highlighter: pygments
 relative_permalinks: false
@@ -20,7 +21,6 @@ collections:
     permalink: slides/:path.html
 
 gems: [
-    mini_magick,
     rubygems,
 ]
 

@@ -2,22 +2,22 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="no-js lt-ie10 ie9"> <![endif]-->
-<!--[if (gt IE 9) | !(IE)]>]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if IE 8]> <html lang="en" dir="ltr" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" dir="ltr" class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if (gt IE 9) | !(IE)]>]><!--> <html lang="en" dir="ltr" class="no-js"> <!--<![endif]-->
 {% include root.html %}
 <body>
+		{% include svg-icon-sprite.svg %}
     {% include header.html %}
-    {% include nav.html %}
-    <main class="l-main">
+    <main class="l-main" role="main">
         <div id="js-slider" class="l-main__inner slider swiper-container">
             <div id="js-slider__inner" class="slider__inner swiper-wrapper"></div>
             <nav class="slider__pager swiper-pagination"></nav>
             <div class="nav-button nav-button--prev nav-button--slider swiper-button-prev">
-                <svg class="icon icon--arrow-left"><use xlink:href="css/img/svg-icon-sprite.svg#icon--arrow-left"></use></svg>
+                <svg class="icon icon--arrow-left"><use xlink:href="#icon--arrow-left"></use></svg>
             </div>
             <div class="nav-button nav-button--next nav-button--slider swiper-button-next">
-                <svg class="icon icon--arrow-right"><use xlink:href="css/img/svg-icon-sprite.svg#icon--arrow-right"></use></svg>
+                <svg class="icon icon--arrow-right"><use xlink:href="#icon--arrow-right"></use></svg>
             </div>
         </div>
     </main>

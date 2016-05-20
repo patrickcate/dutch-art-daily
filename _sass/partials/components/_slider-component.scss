@@ -8,17 +8,18 @@
     // z-index: 1; // Fix of Webkit flickering
 }
 
-.slide
+.slider__inner
 {
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
+	height: 100vh;
+    // padding-top: $grid-padding;
+    // padding-bottom: $grid-padding;
 }
 
-.slide__inner
+.slide
 {
-    padding-top: $grid-padding;
-    padding-bottom: $grid-padding;
+    // min-height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .slider__pager

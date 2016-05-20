@@ -131,21 +131,21 @@
         }
     }
 
-    // @include breakpoint($breakpoint-huge)
-    // {
-    //     .icon
-    //     {
-    //         height: $icon-height--huge;
-    //     }
-    //
-    //     .icon--arrow-left
-    //     {
-    //         width: icon-width(arrow-left, $icon-height--huge);
-    //     }
-    //
-    //     .icon--arrow-right
-    //     {
-    //         width: icon-width(arrow-right, $icon-height--huge);
-    //     }
-    // }
+    @include breakpoint($breakpoint-huge + $grid-padding)
+    {
+        .icon
+        {
+            height: $icon-height--huge;
+        }
+
+        .icon--arrow-left
+        {
+            width: icon-width(arrow-left, $icon-height--huge);
+        }
+
+        .icon--arrow-right
+        {
+            width: icon-width(arrow-right, $icon-height--huge);
+        }
+    }
 }

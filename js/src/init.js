@@ -76,7 +76,7 @@ function dutchartdailyslides(data) {
     autoHeight: true,
     roundLengths: true,
     centeredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 0,
     // grabCursor: true,
     nextButton: '.nav-button--next',
@@ -104,7 +104,7 @@ function dutchartdailyslides(data) {
     observeParents: true,
     onInit: function(swiper) {
       window.picturefill();
-      svg4everybody();
+      // svg4everybody();
     },
     // onLazyImageLoad: function(swiper, slide, image) {
     //   // console.log(image.complete);
