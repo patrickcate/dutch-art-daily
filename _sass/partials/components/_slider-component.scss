@@ -10,29 +10,16 @@
 
 .slider__inner
 {
-    height: 100vh;
+    // height: 100vh;
     // padding-top: $grid-padding;
     // padding-bottom: $grid-padding;
 }
 
 .slide
 {
-    overflow: hidden;
-
-    &::before
-    {
-        $_filter-offset: -10px;
-
-        position: absolute;
-        top: $_filter-offset;
-        right: $_filter-offset * 2;
-        bottom: $_filter-offset * 2;
-        left: $_filter-offset;
-        content: '';
-        background-position: center;
-        background-size: cover;
-        filter: url('#background-blur');
-    }
+    // min-height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .slider__pager

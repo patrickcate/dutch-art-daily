@@ -2,8 +2,6 @@
 
 @mixin date-background($size)
 {
-    $size: 'medium';
-
     @for $m from 1 through 12
     {
         $month: $m;
@@ -26,11 +24,7 @@
             {
                 &.swiper-slide-prev, &.swiper-slide-active, &.swiper-slide-next
                 {
-                    &::before
-                    {
-                        background-image: url('img/bg/#{$month}-#{$day}-bg--#{$size}.jpg');
-                        // background-image: url('/images/#{$month}-#{$day}--#{$size}.jpg');
-                    }
+                    background-image: url('img/bg/#{$month}-#{$day}-bg--#{$size}.jpg');
                 }
             }
         }

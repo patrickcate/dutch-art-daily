@@ -2,9 +2,9 @@
 
 @include date-background(medium);
 
-// $date-break: $breakpoint-medium, $breakpoint-retina;
+$date-break: $breakpoint-medium, $breakpoint-retina;
 
-// @include breakpoint($date-break)
-// {
-//     @include date-background(large);
-// }
+@include breakpoint($date-break)
+{
+    @include date-background(large);
+}
