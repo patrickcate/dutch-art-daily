@@ -9,8 +9,8 @@ layout: compress
     <div class="artwork__inner">
         <div class="artwork__header"><h3 class="artwork__date">{{ page.date | date: '%B %-d' }}<sup class="artwork__ordinal">{{ page.date | date_to_string | ordinal }}</sup></h3></div>
         <div class="artwork__image">
-            <img property="image" data-src="/images/{{ page.image | replace: '.jpg', '--medium.jpg' }}" alt="{{ page.title }}" class="img swiper-lazy" data-srcset="{{ srcset }}" sizes="{{ srcset_sizes }}"  />
-            <div class="artwork__preloader swiper-lazy-preloader"></div>
+            <img property="image" data-src="/images/{{ page.image | replace: '.jpg', '--tiny.jpg' }}" alt="{{ page.title }}" class="img swiper-lazy" data-srcset="{{ srcset }}" sizes="{{ srcset_sizes }}"  />
+            <div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
         <div class="artwork__content">
             <h3 property="name" class="artwork__title">{{ page.title }}</h3>

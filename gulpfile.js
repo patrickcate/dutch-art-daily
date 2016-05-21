@@ -71,7 +71,7 @@ gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
  */
 gulp.task('favicons', ['jekyll-build'], function() {
   gulp.src('./_assets/favicons/*.*')
-	.pipe(gulp.dest('./_site/'));
+  .pipe(gulp.dest('./_site/'));
 });
 
 
@@ -108,6 +108,7 @@ gulp.task('svg-sprite', function ()
   .pipe(svgstore({inlineSvg: true}))
   .pipe(cheerio({
     run: function ($) {
+      $('svg').attr('version', '1.1');
       $('svg').attr('style', 'display:none');
       $('svg symbol').each(function(i, elem) {
         $(this).addClass($(this).attr('id'));

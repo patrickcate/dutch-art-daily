@@ -7,7 +7,12 @@ layout: compress
 <!--[if (gt IE 9) | !(IE)]>]><!--> <html lang="en" dir="ltr" class="no-js"> <!--<![endif]-->
 {% include root.html %}
 <body>
-		{% include svg-icon-sprite.svg %}
+    {% include svg-icon-sprite.svg %}
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none;">
+        <filter id="background-blur">
+            <feGaussianBlur stdDeviation="10.00"/>
+        </filter>
+    </svg>
     {% include header.html %}
     <main class="l-main" role="main">
         <div id="js-slider" class="l-main__inner slider swiper-container">
