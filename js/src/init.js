@@ -111,11 +111,13 @@ function dutchartdailyslides(data) {
     // },
     onLazyImageReady: function(swiper, slide, image) {
       // Double check to make sure the image is actually loaded.
-      if (image.complete === true) {
+      // if (image.complete === true) {
         // console.log(image.complete);
         window.picturefill();
         swiper.update(true);
-      }
+        setInterval(swiper.update(true), 1000);
+
+      // }
     }
   });
 }
