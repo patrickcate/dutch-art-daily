@@ -14,6 +14,7 @@ $breakpoint-large--major: convert-length(800px, rem);
 $breakpoint-huge: convert-length(940px, rem);
 $breakpoint-retina: min-resolution 1.5dppx;
 
+$max-content-width: $breakpoint-large--major;
 $max-width: $breakpoint-huge;
 
 $grid-padding: convert-length($base-line-height, rem);

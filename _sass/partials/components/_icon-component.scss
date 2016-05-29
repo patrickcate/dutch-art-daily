@@ -35,13 +35,14 @@
 
 .icon--wordmark
 {
-    width: icon-width(wordmark, 50px);
+    width: icon-width(wordmark, 30px);
+    height: 30px;
 }
 
 .icon--logo
 {
     width: icon-width(logo, 50px);
     height: 50px;
-    fill: $white!important;
+    // fill: $white;
     // height: icon-height(logo, );
 }

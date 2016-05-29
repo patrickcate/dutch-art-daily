@@ -47,6 +47,15 @@ var currentDay = formatDay(today);
 //   }
 // };
 
+// Build template markup.
+function buildSlideTemplate(slideData) {
+
+  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork" vocab="http://schema.org/" typeof="Painting"><div class="artwork__inner"><div class="artwork__header"><h3 class="artwork__date">' + slideData.date + '<sup class="artwork__ordinal">' + slideData.date_ordinal + '</sup></h3></div><div class="artwork__image"><img property="image" data-src="/images/' + slideData.img_src + '" alt="' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><h3 property="name" class="artwork__title">' + slideData.title + '</h3><h4 property="creator" typeof="Person" class="artwork__artist"><span property="name">' + slideData.artist + '</span></h4><p><svg class="icon icon--date" role="presentation"><use xlink:href="#icon--date"></use></svg> ' + slideData.art_date + '<br /><svg class="icon icon--medium" role="presentation"><use xlink:href="#icon--medium"></use></svg> ' + slideData.art_type + '<br /><svg class="icon icon--size" role="presentation"><use xlink:href="#icon--size"></use></svg> ' + slideData.art_height + ' cm &times; ' + slideData.art_width + ' cm<br /><svg class="icon icon--location" role="presentation"><use xlink:href="#icon--location"></use></svg> ' + slideData.art_location + '<br /><svg class="icon icon--link" role="presentation"><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
+
+  // console.log(slideData);
+
+  // return slideContent;
+}
 
 // JSONP callback function
 function dutchartdailyslides(data) {
@@ -110,14 +119,15 @@ function dutchartdailyslides(data) {
     //   // console.log(image.complete);
     // },
     onLazyImageReady: function(swiper, slide, image) {
-      // Double check to make sure the image is actually loaded.
-      // if (image.complete === true) {
-        // console.log(image.complete);
         window.picturefill();
         swiper.update(true);
-        setInterval(swiper.update(true), 1000);
 
-      // }
+        // Fix iOS Safari update bug.
+        setInterval(swiper.update(true), 1000);
+    },
+    onSlideChangeStart: function(swiper) {
+      // var currentSlideDate = swiper.slides[swiper.activeIndex].querySelector('.artwork__date').innerHTML;
+      // document.getElementById('js-header-date').innerHTML = currentSlideDate;
     }
   });
 }

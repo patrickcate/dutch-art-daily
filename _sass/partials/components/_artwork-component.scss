@@ -17,7 +17,7 @@
 
     @include breakpoint($breakpoint-small)
     {
-        padding: (($grid-padding * 2) + ($half-grid-padding + $quarter-grid-padding))
+        padding: ($grid-padding * 3)
         $grid-padding
         0
         $grid-padding;
@@ -25,7 +25,7 @@
 
     @include breakpoint($breakpoint-medium)
     {
-        padding: (($grid-padding * 3) + $half-grid-padding)
+        padding: ($grid-padding * 3)
         $grid-padding * 3.5
         0
         $grid-padding * 3.5;
@@ -59,8 +59,9 @@
 
 .artwork__ordinal
 {
-    top: -0.5rem;
-    font-size: $text-size--tiny;
+    top: -0.5em;
+    font-size: convert-length($text-size--tiny, em);
+    // font-size: 60%;
     // font-variant: small-caps;
 }
 
@@ -116,9 +117,9 @@
 
     .icon
     {
+        min-width: 14px;
         margin-right: $quarter-grid-padding;
         vertical-align: text-top;
-        min-width: 14px;
         fill: currentColor;
     }
 
