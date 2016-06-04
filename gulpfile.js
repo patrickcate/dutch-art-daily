@@ -146,7 +146,7 @@ gulp.task('js', function()
     gulp.src([
       './js/src/modernizr.min.js',
       './js/src/picturefill.min.js',
-			'./js/src/pf.mutation.min.js',
+      './js/src/pf.mutation.min.js',
     ])
     .pipe(concat('scripts.js'))
     .pipe(uglify({
@@ -154,9 +154,9 @@ gulp.task('js', function()
     }))
     .pipe(gulp.dest('./js/'))
     .pipe(gulp.dest('./_site/js/'));
-		gulp.src([
-			'./js/src/swiper.min.js',
-			'./js/src/jsonp.min.js',
+    gulp.src([
+      './js/src/swiper.min.js',
+      './js/src/jsonp.min.js',
       './js/src/ready.min.js',
       './js/src/init.js',
     ])
@@ -178,7 +178,7 @@ gulp.task('watch', function()
 {
    gulp.watch('./_sass/**/*.scss', ['sass']);
    gulp.watch(['./js/**/*.js', '!./js/*.min.js', '!./js/scripts.js', '!./js/slider.js'], ['js']);
-   gulp.watch(['index.html', '_slides/**/*.*', '_posts/**/*.*', '_data/*.*', '_layouts/*.*', '_includes/*.*', 'api/**/*.*', 'js/**/*.*'], ['jekyll-rebuild', 'favicons']);
+   gulp.watch(['index.html', '_posts/**/*.*', '_data/**/*.*', '_layouts/**/*.*', '_includes/**/*.*', 'api/**/*.*', 'js/**/*.*'], ['jekyll-rebuild', 'favicons']);
    gulp.watch('./_assets/icons/*.svg', ['svg-sprite']);
 });
 

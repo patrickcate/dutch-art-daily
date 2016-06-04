@@ -4,28 +4,20 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
     <title>{% if page.name != 'index.html' %}{{ page.title }} | {% endif %}{{ site.name }}</title>
     <meta http-equiv="cleartype" content="on">
+
     <meta name="description" content="{{ site.description }}">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
-    <meta name="application-name" content="{{ site.name }}">
+
     <meta property="og:site_name" content="{{ site.name }}">
     {% if page.name != 'index.html' %}<meta property="og:title" content="{{ page.title }}">{% endif %}
     <meta property="og:url" content="{{ site.url }}{% if page.name != 'index.html' %}{{ page.url }}{% endif %}">
-    <meta name="msapplication-TileColor" content="#1a3f68">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#1a3f68">
+
     <link rel="stylesheet" media="screen" href="/css/styles.css">
-    <script async src="/js/scripts.js"></script>
-    {% if page.name == 'index.html' %}<script async src="/js/slider.js"></script>{% endif %}
     <link rel="canonical" href="{{ site.url }}{% if page.name != 'index.html' %}{{ page.url }}{% endif %}">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="manifest" href="/manifest.json">
     <link rel="author" href="/humans.txt">
+
+    {% if page.name == 'index.html' %}<script async src="/js/slider.js"></script>{% endif %}
+    <script async src="/js/scripts.js"></script>
+
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -34,4 +26,5 @@
       "url": "{{ site.url }}"
     }
     </script>
+    {% include favicons.html %}
 </head>
