@@ -16,16 +16,11 @@ sitemap:
       {% else %}
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       {% endif %}
-      <!-- {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>monthly</changefreq>
-      {% endif %} -->
-      <!-- {% if post.sitemap.priority %}
+      {% if post.sitemap.priority %}
         <priority>{{ post.sitemap.priority }}</priority>
       {% else %}
         <priority>0.5</priority>
-      {% endif %} -->
+      {% endif %}
     </url>
     {% endunless %}
   {% endfor %}
