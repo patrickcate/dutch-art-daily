@@ -11,6 +11,7 @@ sitemap:
 {% assign start_date = '2016-02-20 12:00:00 -05:00' | date: '%s' %}
 {% assign end_date = '2016-03-31 12:00:00 -05:00' | date: '%s' %}
 {% assign start_date = start_date | minus: total_days | downcase %}
+
 dutchartdailyslides({
   "total": {{ site.data.dates.total_slides }},
   "posts": {

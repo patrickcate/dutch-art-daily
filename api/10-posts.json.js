@@ -32,7 +32,7 @@ dutchartdailyslides({
     "artist": {{ slide.artist | jsonify }},
     "date": {{ slide.date | date: '%B %-d' | jsonify }},
     "date_ordinal": {{ slide.date | date_to_string | ordinal | jsonify }},
-    "image": {{ slide.image | replace: '.jpg', '--tiny.jpg' | jsonify }},
+    "image": {{ slide.image | jsonify }},
     "srcset": {{ srcset | jsonify }},
     "srcset_sizes": {{ srcset_sizes | jsonify }},
     "art_date": {{ slide.art_date | replace: '-', '&ndash;' | jsonify }},

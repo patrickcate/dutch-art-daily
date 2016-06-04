@@ -10,16 +10,7 @@ layout: compress
     {% include svg-icon-sprite.svg %}
     {% include header.html %}
     <main class="l-main" role="main">
-        <div id="js-slider" class="l-main__inner slider swiper-container">
-            <div id="js-slider__inner" class="slider__inner swiper-wrapper"></div>
-            <div class="slider__pager swiper-pagination"></div>
-            <div class="nav-button nav-button--prev nav-button--slider swiper-button-prev">
-                <svg class="icon icon--arrow-left"><use xlink:href="#icon--arrow-left"></use></svg>
-            </div>
-            <div class="nav-button nav-button--next nav-button--slider swiper-button-next">
-                <svg class="icon icon--arrow-right"><use xlink:href="#icon--arrow-right"></use></svg>
-            </div>
-        </div>
+      {{ content }}
     </main>
     {% include footer.html %}
 </body>

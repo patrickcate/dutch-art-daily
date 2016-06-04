@@ -1,10 +1,12 @@
 ---
 layout: compress
+sitemap:
+  exclude: 'yes'
 ---
 {
-  "posts": {
-    {% for slide in site.slides %}
-      "{{ slide.date | date: '%m-%d'}}": {{ slide.output | jsonify }}
+  "pages": {
+    {% for page in site.pages %}
+      "{{ page.date | date: '%m-%d'}}": {{ page.content | jsonify }}
       {% if forloop.rindex0 > 0 %},{% endif %}
     {% endfor %}
   }
