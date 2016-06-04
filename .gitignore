@@ -62,5 +62,4 @@ bower_components
 
 ## Ignore Project Assets ##
 source/**/*
-_posts/**/*
 _assets/**/*

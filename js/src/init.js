@@ -31,34 +31,80 @@ function subtractDays(date, days) {
   );
 }
 
+// Check if the JSON data is empty.
+function emptyData(data) {
+  if (data === null || data.length === 0) {
+    return true;
+  }
+  return false;
+}
+
 // Get today's date.
-// var today = new Date('2016-01-04 12:00:00 -05:00');
+// var today = new Date('2016-04-13 12:00:00 -05:00');
 var today = new Date();
 var currentMonth = formatMonth(today);
 var currentDay = formatDay(today);
 
 
-// var domReady = function(callback) {
-//   if (document.readyState === "interactive" || document.readyState === "complete") {
-//     callback();
-//   }
-//   else {
-//     document.addEventListener("DOMContentLoaded", callback);
-//   }
-// };
+// Build metadata markup.
+function buildSlideMetadata(slideData) {
+  var art_date = !emptyData(slideData.art_date) ? slideData.art_date : '';
+  var art_medium = !emptyData(slideData.art_medium) ? slideData.art_medium : '';
+  var art_surface = !emptyData(slideData.art_surface) ? slideData.art_surface : '';
+  var art_height = !emptyData(slideData.art_height) ? slideData.art_height + ' cm' : '';
+  var art_width = !emptyData(slideData.art_width) ? slideData.art_width + ' cm' : '';
+
+  return {
+    "@context": "http://schema.org",
+    "@type": "VisualArtwork",
+    "sameAs": "http://www.dutchartdaily.com" + slideData.url,
+    "name": slideData.title,
+    "image": "http://www.dutchartdaily.com/images/" + slideData.id + '--huge.jpg',
+    "artform": 'Painting',
+    "dateCreated": art_date,
+    "creator": [{
+      "@type": "Person",
+      "name": slideData.artist
+    }],
+    "height": [{
+      "@type": "Distance",
+      "name": art_height
+    }],
+    "width": [{
+      "@type": "Distance",
+      "name": art_width
+    }],
+    "artMedium": art_medium,
+    "artworkSurface": art_surface
+  };
+
+}
 
 // Build template markup.
 function buildSlideTemplate(slideData) {
+  var isToday = '';
+  var art_date = !emptyData(slideData.art_date) ? '<svg class="icon icon--date" role="presentation"><use xlink:href="#icon--date"></use></svg> ' + slideData.art_date + '<br />' : '';
+  var art_medium = !emptyData(slideData.art_medium) ? '<svg class="icon icon--medium" role="presentation"><use xlink:href="#icon--medium"></use></svg> ' + slideData.art_medium : '';
+  var art_surface = !emptyData(slideData.art_surface) ? ' on ' + slideData.art_surface + '<br />' : '';
+  var art_size = !emptyData(slideData.art_height) ? '<svg class="icon icon--size" role="presentation"><use xlink:href="#icon--size"></use></svg> ' + slideData.art_height + ' cm &times; ' + slideData.art_width + ' cm<br />' : '';
+  var art_location = !emptyData(slideData.art_location) ? '<svg class="icon icon--location" role="presentation"><use xlink:href="#icon--location"></use></svg> ' + slideData.art_location + '<br />' : '';
 
-  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork" vocab="http://schema.org/" typeof="Painting"><div class="artwork__inner"><div class="artwork__header"><h3 class="artwork__date">' + slideData.date + '<sup class="artwork__ordinal">' + slideData.date_ordinal + '</sup></h3></div><div class="artwork__image"><img property="image" data-src="/images/' + slideData.img_src + '" alt="' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><h3 property="name" class="artwork__title">' + slideData.title + '</h3><h4 property="creator" typeof="Person" class="artwork__artist"><span property="name">' + slideData.artist + '</span></h4><p><svg class="icon icon--date" role="presentation"><use xlink:href="#icon--date"></use></svg> ' + slideData.art_date + '<br /><svg class="icon icon--medium" role="presentation"><use xlink:href="#icon--medium"></use></svg> ' + slideData.art_type + '<br /><svg class="icon icon--size" role="presentation"><use xlink:href="#icon--size"></use></svg> ' + slideData.art_height + ' cm &times; ' + slideData.art_width + ' cm<br /><svg class="icon icon--location" role="presentation"><use xlink:href="#icon--location"></use></svg> ' + slideData.art_location + '<br /><svg class="icon icon--link" role="presentation"><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
+  var today = new Date();
 
-  // console.log(slideData);
+  if (slideData.id === formatMonth(today) + '-' + formatDay(today)) {
+    isToday = 'Today, ';
+  }
+  else if (slideData.id === formatMonth(subtractDays(today, 1)) + '-' + formatDay(subtractDays(today, 1))) {
+    isToday = 'Yesterday, ';
+  }
 
-  // return slideContent;
+  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork"><div class="artwork__inner"><div class="artwork__header"><h3 class="artwork__date">' + isToday + slideData.date + '<sup class="artwork__ordinal">' + slideData.date_ordinal + '</sup></h3></div><div class="artwork__image"><img data-src="/images/' + slideData.image + '" alt="' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><h3 class="artwork__title">' + slideData.title + '</h3><h4 class="artwork__artist">' + slideData.artist + '</h4><p>' + art_date + art_medium + art_surface + art_size + art_location + '<svg class="icon icon--link" role="presentation"><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
+
 }
 
 // JSONP callback function
 function dutchartdailyslides(data) {
+  var slideMetadata = [];
   var slideContent = '';
   var totalSlides = data.total;
   var sliderData = data.posts;
@@ -68,10 +114,21 @@ function dutchartdailyslides(data) {
     var postDate = postMonth + '-' + formatDay(subtractDays(today, i));
     var id = 'slide--' + postDate;
 
-    slideContent = '<div class="slide ' + id + ' swiper-slide" data-hash="' + postDate + '">' + sliderData[postDate] + '</div>' + slideContent;
+    // Add metadata to array.
+    slideMetadata.push(buildSlideMetadata(sliderData[postDate]));
+
+    // Concat slide markup.
+    slideContent = buildSlideTemplate(sliderData[postDate]) + slideContent;
   }
 
+  // Add slide markup to page.
   document.getElementById('js-slider__inner').innerHTML = slideContent;
+
+  // Create script tag for metadata and add to head.
+  var scriptTag = document.createElement('script');
+  scriptTag.type = 'application/ld+json';
+  scriptTag.innerHTML = JSON.stringify(slideMetadata);
+  document.head.appendChild(scriptTag);
 
   var mySwiper = new Swiper('#js-slider', {
     initialSlide: totalSlides - 1,
@@ -93,7 +150,7 @@ function dutchartdailyslides(data) {
     buttonDisabledClass: 'nav-button--is-disabled',
     keyboardControl: true,
     uniqueNavElements: false,
-    hashnav: true,
+    // hashnav: true,
     preloadImages: false,
     updateOnImagesReady: false,
     pagination: '.slider__pager',
@@ -112,14 +169,13 @@ function dutchartdailyslides(data) {
     observer: true,
     observeParents: true,
     onInit: function(swiper) {
-      window.picturefill();
-      // svg4everybody();
+      // window.picturefill();
     },
     // onLazyImageLoad: function(swiper, slide, image) {
     //   // console.log(image.complete);
     // },
     onLazyImageReady: function(swiper, slide, image) {
-        window.picturefill();
+        // window.picturefill();
         swiper.update(true);
 
         // Fix iOS Safari update bug.
@@ -135,7 +191,7 @@ function dutchartdailyslides(data) {
 // The dom is ready, do your magic.
 domready(function() {
 
-  var path = 'api/' + currentMonth + '-slides.json.js';
+  var path = '/api/' + currentMonth + '-posts.json.js';
 
   JSONP({
     url: path,

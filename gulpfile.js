@@ -143,23 +143,24 @@ gulp.task('sass', function()
 
 gulp.task('js', function()
 {
-    // gulp.src(['./js/*.js', '!./js/*.min.js'])
-    // .pipe(rename({
-    //     suffix: '.min'
-    // }))
-
-    // .pipe(gulp.dest('./js/'));
     gulp.src([
-      './js/src/ready.min.js',
-      // './js/src/svg4everybody.min.js',
       './js/src/modernizr.min.js',
       './js/src/picturefill.min.js',
-      './js/src/pf.mutation.min.js',
-      './js/src/jsonp.min.js',
-      './js/src/swiper.min.js',
-      './js/src/init.js',
+			'./js/src/pf.mutation.min.js',
     ])
     .pipe(concat('scripts.js'))
+    .pipe(uglify({
+        mangle: true
+    }))
+    .pipe(gulp.dest('./js/'))
+    .pipe(gulp.dest('./_site/js/'));
+		gulp.src([
+			'./js/src/swiper.min.js',
+			'./js/src/jsonp.min.js',
+      './js/src/ready.min.js',
+      './js/src/init.js',
+    ])
+    .pipe(concat('slider.js'))
     .pipe(uglify({
         mangle: true
     }))
@@ -176,7 +177,7 @@ gulp.task('js', function()
 gulp.task('watch', function()
 {
    gulp.watch('./_sass/**/*.scss', ['sass']);
-   gulp.watch(['./js/**/*.js', '!./js/*.min.js', '!./js/scripts.js'], ['js']);
+   gulp.watch(['./js/**/*.js', '!./js/*.min.js', '!./js/scripts.js', '!./js/slider.js'], ['js']);
    gulp.watch(['index.html', '_slides/**/*.*', '_posts/**/*.*', '_data/*.*', '_layouts/*.*', '_includes/*.*', 'api/**/*.*', 'js/**/*.*'], ['jekyll-rebuild', 'favicons']);
    gulp.watch('./_assets/icons/*.svg', ['svg-sprite']);
 });

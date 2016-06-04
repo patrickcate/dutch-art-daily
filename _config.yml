@@ -2,7 +2,7 @@ name: Dutch Art Daily
 description: A new Dutch Golden Age artwork delivered every day!
 url: http://www.dutchartdaily.com
 markdown: kramdown
-#highlighter: pygments
+# highlighter: pygments
 relative_permalinks: false
 doctor: true
 show_drafts: true
@@ -13,15 +13,10 @@ destination:    ./_site
 plugins:        ./_plugins
 layouts:        ./_layouts
 include:        ['.htaccess']
-permalink:      posts/:month/:month-:day-:title.html
-
-collections:
-  slides:
-    output: false
-    permalink: slides/:path.html
+permalink:      /post/:month-:day/
 
 gems: [
-    rubygems,
+  rubygems,
 ]
 
 # Compress layout settings
@@ -36,17 +31,17 @@ compress_html:
   startings: []
 
 
+include: [
+  # '_slides'
+]
+
 exclude: [
     'node_modules',
     'grunt',
     'source',
     'assets',
-    '*.sublime-project',
-    '*.sublime-workspace',
-    'Gruntfile.js',
     'gulpfile.js',
     'config.rb',
-    # '*.json',
     '*.log',
     '*.DS_Store',
     'Gemfile',
