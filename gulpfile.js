@@ -13,7 +13,7 @@ var svgstore        = require('gulp-svgstore');
 var htmlmin         = require('gulp-htmlmin');
 var spawn           = require("gulp-spawn");
 var cheerio         = require('gulp-cheerio');
-var imageExport = require('image-size-export');
+var imageExport     = require('image-size-export');
 
 var processors = [
   autoprefixer({browsers: [
