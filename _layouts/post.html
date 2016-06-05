@@ -22,7 +22,7 @@ layout: default
               {% if page.art_medium %}<svg class="icon icon--medium" role="img"><title>Artwork Medium:</title><use xlink:href="#icon--medium"></use></svg> <span property="artMedium">{{ page.art_medium }}</span>{% if page.art_surface %} on <span property="artworkSurface">{{ page.art_surface }}</span>{% endif %}<br />{% endif %}
               {% if page.art_height %}<svg class="icon icon--size" role="img"><title>Artwork Size:</title><use xlink:href="#icon--size"></use></svg> <span property="height" typeof="Distance">{{ page.art_height }} cm</span> &times; <span property="width" typeof="Distance">{{ page.art_width }} cm</span><br />{% endif %}
               {% if page.art_location %}<svg class="icon icon--location" role="img"><title>Currently located at:</title><use xlink:href="#icon--location"></use></svg> {{ page.art_location }}<br />{% endif %}
-              {% if page.cite_url %}<svg class="icon icon--link" role="img" role="img"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> {{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em></a>{% endif %}</p>
+              {% if page.cite_url %}<svg class="icon icon--link" role="img"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> {{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em></a>{% endif %}</p>
           </div>
       </div>
   </article>

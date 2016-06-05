@@ -1,7 +1,7 @@
 ---
 layout: compress
 sitemap:
-  exclude: 'yes'
+  exclude: true
 ---
 {
   "pages": {

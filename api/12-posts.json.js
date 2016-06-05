@@ -1,7 +1,7 @@
 ---
 layout: compress
 sitemap:
-  exclude: 'yes'
+  exclude: true
 ---
 {% assign widths = site.data.srcset.widths %}
 {% assign srcset_sizes = site.data.srcset.sizes %}
