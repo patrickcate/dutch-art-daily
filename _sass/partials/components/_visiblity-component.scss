@@ -1,4 +1,4 @@
-// Visibility Component
+// ========== @file Visibility Component ========== //
 
 .is-hidden
 {
@@ -13,4 +13,16 @@
 .not-visible
 {
     visibility: hidden!important;
+}
+
+.is-visually-hidden
+{
+    position: absolute!important;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); // IE6, IE7
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    border: 0!important;
 }

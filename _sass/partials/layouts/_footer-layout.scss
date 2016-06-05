@@ -1,30 +1,28 @@
-// Footer Layout
+// ========== @file Footer Layout ========== //
 
 .l-footer
 {
-	position: relative;
-	z-index: 100;
-	flex: 1;
-	// text-align: center;
-	color: $biege;
-	background-color: $blue;
-	box-shadow: $drop-shadow;
+    position: relative;
+    z-index: 100;
+    color: $biege;
+    background-color: $blue;
+    box-shadow: $reverse-drop-shadow;
 }
 
 .l-footer__inner
 {
-	width: 100%;
-	max-width: $max-width;
-	margin: 0 auto;
-	padding: $grid-padding;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $grid-padding;
 
-	a
-	{
-		font-weight: bold;
+    a
+    {
+        font-weight: bold;
 
-		&:hover
-		{
-			text-decoration: underline;
-		}
-	}
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
 }

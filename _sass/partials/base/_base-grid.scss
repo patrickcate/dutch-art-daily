@@ -1,19 +1,14 @@
-// .l-nav, .l-post__inner
-// {
-// 	@include container;
-// }
-
+// ========== @file Base Grid ========== //
 
 .l-main
 {
     @include clearfix;
-    // background-color: $black;
 }
 
-.l-main__inner
-{
+// .l-main__inner
+// {
     // @include break(medium)
     // {
         // @include span(last 24 of 24);
     // }
-}
+// }

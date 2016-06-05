@@ -2,7 +2,6 @@
 
 $text-color: #222;
 
-// $gold: #ffbf00;
 $gold: #ffb600;
 $dark-gold: shade($gold, 20%);
 
@@ -30,10 +29,9 @@ $googleplus-color: #d55429;
 $comment-count-color: #ffa000;
 
 $drop-shadow: 0 2px 8px 0 rgba($black, 0.5);
-// $reverse-drop-shadow: 0 -4px 8px -2px rgba(0, 0, 0, 0.5);
+$reverse-drop-shadow: 0 -2px 8px -4px rgba($black, 0.5);
 $inset-light-text: 0 -1px 0 rgba($black, 0.85);
 $inset-dark-text: 0 1px 0 $white;
 $drop-text-shadow: 0 1px 0 rgba($black, 0.75);
-
 
 $semi-transparent: 0.35;

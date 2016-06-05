@@ -10,14 +10,14 @@
 
 .artwork__inner
 {
-    padding: ($grid-padding * 2)
+    padding: convert-length(50px, rem) + $quarter-grid-padding
     $grid-padding
     0
     $grid-padding;
 
     @include breakpoint($breakpoint-small)
     {
-        padding: ($grid-padding * 3)
+        padding: convert-length(60px, rem) + $half-grid-padding
         $grid-padding
         0
         $grid-padding;
@@ -25,23 +25,35 @@
 
     @include breakpoint($breakpoint-medium)
     {
-        padding: ($grid-padding * 3)
-        $grid-padding * 3.5
+        padding: convert-length(60px, rem) + $quarter-grid-padding
+        $grid-padding
         0
-        $grid-padding * 3.5;
+        $grid-padding;
+    }
+
+    .swiper-container &
+    {
+        padding-bottom: $grid-padding;
+
+        @include breakpoint($breakpoint-medium)
+        {
+            padding-right: $grid-padding * 3.5;
+            padding-left: $grid-padding * 3.5;
+        }
     }
 }
 
 .artwork__header
 {
     width: 100%;
+    margin-bottom: $quarter-grid-padding;
     vertical-align: middle;
     background-image: url('img/brush-stroke.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-    @include breakpoint($breakpoint-small--major)
+    @include breakpoint($breakpoint-small)
     {
         margin-bottom: $half-grid-padding;
     }
@@ -50,11 +62,16 @@
 .artwork__date
 {
     margin: 0;
-    padding: ($grid-padding + $quarter-grid-padding) 0 $grid-padding 0;
+    padding: ($half-grid-padding + $quarter-grid-padding) 0 $half-grid-padding 0;
     text-align: center;
     vertical-align: middle;
     color: $biege;
-    font-size: $text-size--medium;
+    font-size: $text-size--small;
+
+    @include breakpoint($breakpoint-tiny)
+    {
+        font-size: $text-size--medium;
+    }
 }
 
 .artwork__ordinal
@@ -67,9 +84,9 @@
 
 .artwork__image
 {
+    position: relative;
     margin: 0 auto $grid-padding auto;
     text-align: center;
-    position: relative;
 
     img
     {
@@ -108,12 +125,11 @@
 {
     display: flex;
     flex-direction: column;
-    margin-bottom: $grid-padding * 2;
+    margin-bottom: $grid-padding;
     padding: $grid-padding;
     color: $biege;
     background-color: $background-color;
     box-shadow: $drop-shadow;
-    // filter: drop-shadow(0 2px 8px rgba($black, 0.5));
 
     .icon
     {
