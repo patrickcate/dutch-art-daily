@@ -74,13 +74,14 @@
     }
 }
 
-.artwork__ordinal
-{
-    top: -0.5em;
-    font-size: convert-length($text-size--tiny, em);
+// .artwork__ordinal
+// {
+    // top: -0.66em;
+    // font-size: convert-length($text-size--tiny, em);
+    // font-size: convert-length(ms(-2), em);
     // font-size: 60%;
     // font-variant: small-caps;
-}
+// }
 
 .artwork__image
 {
