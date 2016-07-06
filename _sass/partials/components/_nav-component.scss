@@ -6,6 +6,7 @@
     appearance: none;
     border: none;
     background: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .nav-button--is-disabled
@@ -25,9 +26,14 @@
         transition: fill $speed-fast $default-easing;
         fill: $white;
 
+        &:active
+        {
+            fill: $gold;
+        }
+
         .no-touchevents &
         {
-            &:hover, &:active
+            &:hover
             {
                 fill: $gold;
             }
@@ -86,9 +92,14 @@
         transition: fill $speed-fast $default-easing;
         fill: $white;
 
+        &:active
+        {
+            fill: $gold;
+        }
+
         .no-touchevents &
         {
-            &:hover, &:active
+            &:hover
             {
                 fill: $gold;
             }
