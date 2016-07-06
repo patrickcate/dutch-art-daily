@@ -40,7 +40,7 @@ function emptyData(data) {
 }
 
 // Get today's date.
-// var today = new Date('2016-04-13 12:00:00 -05:00');
+// var today = new Date('2016-01-01 12:00:00 -05:00');
 var today = new Date();
 var currentMonth = formatMonth(today);
 var currentDay = formatDay(today);
@@ -98,7 +98,7 @@ function buildSlideTemplate(slideData) {
     isToday = 'Yesterday,&ensp;';
   }
 
-  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork"><div class="artwork__inner"><div class="artwork__header"><h3 class="artwork__date">' + isToday + slideData.date + '<sup class="artwork__ordinal">' + slideData.date_ordinal + '</sup></h3></div><div class="artwork__image"><img data-src="/images/' + slideData.image + '" alt="Photo of painting: ' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><span class="is-visually-hidden">Artwork Name:</span><h3 class="artwork__title">' + slideData.title + '</h3><span class="is-visually-hidden">Created by artist:</span><h4 class="artwork__artist">' + slideData.artist + '</h4><p>' + art_date + art_medium + art_surface + art_size + art_location + '<svg class="icon icon--link" role="img"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
+  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork"><div class="artwork__inner"><div class="artwork__header"><h3 class="artwork__date">' + isToday + slideData.date + '<sup>' + slideData.date_ordinal + '</sup></h3></div><div class="artwork__image"><img data-src="/images/' + slideData.image + '" alt="Photo of painting: ' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><span class="is-visually-hidden">Artwork Name:</span><h3 class="artwork__title">' + slideData.title + '</h3><span class="is-visually-hidden">Created by artist:</span><h4 class="artwork__artist">' + slideData.artist + '</h4><p>' + art_date + art_medium + art_surface + art_size + art_location + '<svg class="icon icon--link" role="img"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
 
 }
 
