@@ -10,18 +10,18 @@ layout: default
   <article class="artwork" vocab="http://schema.org/" typeof="VisualArtwork">
       <span property="artform" aria-hidden="true" style="display:none;">Painting</span>
       <div class="artwork__inner">
-          <div class="artwork__header"><h3 class="artwork__date">{{ page.date | date: '%B %-d' }}<sup>{{ page.date | date_to_string | ordinal }}</sup></h3></div>
+          <div class="artwork__header"><h1 class="artwork__date">{{ page.date | date: '%B %-d' }}<sup>{{ page.date | date_to_string | ordinal }}</sup></h1></div>
           <div class="artwork__image">
               <img property="image" src="/images/{{ page.image | replace: '.jpg', '--tiny.jpg' }}" alt="Photo of painting: {{ page.title }}" class="img swiper-lazy" srcset="{{ srcset }}" sizes="{{ srcset_sizes }}"  />
           </div>
           <div class="artwork__content">
-              <span class="is-visually-hidden">Artwork Name:</span><h3 property="name" class="artwork__title">{{ page.title }}</h3>
+              <span class="is-visually-hidden">Artwork Name:</span><h2 property="name" class="artwork__title">{{ page.title }}</h2>
               <span class="is-visually-hidden">Created by artist:</span><h4 property="creator" typeof="Person" class="artwork__artist"><span property="name">{{ page.artist }}</span></h4>
-              <p>{% if page.art_date %}<svg class="icon icon--date" role="img"><title>Date Created:</title><use xlink:href="#icon--date"></use></svg> <time property="dateCreated" datetime="{{ page.art_date | replace: '-', '&ndash;' }}">{{ page.art_date | replace: '-', '&ndash;' }}</time><br />{% endif %}
-              {% if page.art_medium %}<svg class="icon icon--medium" role="img"><title>Artwork Medium:</title><use xlink:href="#icon--medium"></use></svg> <span property="artMedium">{{ page.art_medium }}</span>{% if page.art_surface %} on <span property="artworkSurface">{{ page.art_surface }}</span>{% endif %}<br />{% endif %}
-              {% if page.art_height %}<svg class="icon icon--size" role="img"><title>Artwork Size:</title><use xlink:href="#icon--size"></use></svg> <span property="height" typeof="Distance">{{ page.art_height }} cm</span> &times; <span property="width" typeof="Distance">{{ page.art_width }} cm</span><br />{% endif %}
-              {% if page.art_location %}<svg class="icon icon--location" role="img"><title>Currently located at:</title><use xlink:href="#icon--location"></use></svg> {{ page.art_location }}<br />{% endif %}
-              {% if page.cite_url %}<svg class="icon icon--link" role="img"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> {{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em></a>{% endif %}</p>
+              <p>{% if page.art_date %}<svg class="icon icon--date" role="presentation"><title>Date Created:</title><use xlink:href="#icon--date"></use></svg> <time property="dateCreated" datetime="{{ page.art_date | replace: '-', '&ndash;' }}">{{ page.art_date | replace: '-', '&ndash;' }}</time><br />{% endif %}
+              {% if page.art_medium %}<svg class="icon icon--medium" role="presentation"><title>Artwork Medium:</title><use xlink:href="#icon--medium"></use></svg> <span property="artMedium">{{ page.art_medium }}</span>{% if page.art_surface %} on <span property="artworkSurface">{{ page.art_surface }}</span>{% endif %}<br />{% endif %}
+              {% if page.art_height %}<svg class="icon icon--size" role="presentation"><title>Artwork Size:</title><use xlink:href="#icon--size"></use></svg> <span property="height" typeof="Distance">{{ page.art_height }} cm</span> &times; <span property="width" typeof="Distance">{{ page.art_width }} cm</span><br />{% endif %}
+              {% if page.art_location %}<svg class="icon icon--location" role="presentation"><title>Currently located at:</title><use xlink:href="#icon--location"></use></svg> {{ page.art_location }}<br />{% endif %}
+              {% if page.cite_url %}<svg class="icon icon--link" role="presentation"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> {{ page.cite_author }}: <a href="{{ page.cite_url }}" target="_blank"><em>{{ page.title }} ({{ page.artist }})</em></a>{% endif %}</p>
           </div>
       </div>
   </article>

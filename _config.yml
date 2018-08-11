@@ -48,5 +48,6 @@ exclude: [
     'Gemfile.lock',
     '.sass-cache',
     'package.json',
+    'package-lock.json',
     'js/src/*'
 ]

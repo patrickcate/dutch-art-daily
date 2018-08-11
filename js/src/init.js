@@ -83,11 +83,11 @@ function buildSlideMetadata(slideData) {
 // Build template markup.
 function buildSlideTemplate(slideData) {
   var isToday = '';
-  var art_date = !emptyData(slideData.art_date) ? '<svg class="icon icon--date" role="img"><title>Date Created:</title><use xlink:href="#icon--date"></use></svg> ' + slideData.art_date + '<br />' : '';
-  var art_medium = !emptyData(slideData.art_medium) ? '<svg class="icon icon--medium" role="img"><title>Artwork Medium:</title><use xlink:href="#icon--medium"></use></svg> ' + slideData.art_medium : '';
+  var art_date = !emptyData(slideData.art_date) ? '<svg class="icon icon--date" role="presentation"><title>Date Created:</title><use xlink:href="#icon--date"></use></svg> ' + slideData.art_date + '<br />' : '';
+  var art_medium = !emptyData(slideData.art_medium) ? '<svg class="icon icon--medium" role="presentation"><title>Artwork Medium:</title><use xlink:href="#icon--medium"></use></svg> ' + slideData.art_medium : '';
   var art_surface = !emptyData(slideData.art_surface) ? ' on ' + slideData.art_surface + '<br />' : '';
-  var art_size = !emptyData(slideData.art_height) ? '<svg class="icon icon--size" role="img"><title>Artwork Size:</title><use xlink:href="#icon--size"></use></svg> ' + slideData.art_height + ' cm &times; ' + slideData.art_width + ' cm<br />' : '';
-  var art_location = !emptyData(slideData.art_location) ? '<svg class="icon icon--location" role="img"><title>Currently located at:</title><use xlink:href="#icon--location"></use></svg> ' + slideData.art_location + '<br />' : '';
+  var art_size = !emptyData(slideData.art_height) ? '<svg class="icon icon--size" role="presentation"><title>Artwork Size:</title><use xlink:href="#icon--size"></use></svg> ' + slideData.art_height + ' cm &times; ' + slideData.art_width + ' cm<br />' : '';
+  var art_location = !emptyData(slideData.art_location) ? '<svg class="icon icon--location" role="presentation"><title>Currently located at:</title><use xlink:href="#icon--location"></use></svg> ' + slideData.art_location + '<br />' : '';
 
   var today = new Date();
 
@@ -98,7 +98,7 @@ function buildSlideTemplate(slideData) {
     isToday = 'Yesterday,&ensp;';
   }
 
-  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork"><div class="artwork__inner"><div class="artwork__header"><h3 class="artwork__date">' + isToday + slideData.date + '<sup>' + slideData.date_ordinal + '</sup></h3></div><div class="artwork__image"><img data-src="/images/' + slideData.image + '" alt="Photo of painting: ' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><span class="is-visually-hidden">Artwork Name:</span><h3 class="artwork__title">' + slideData.title + '</h3><span class="is-visually-hidden">Created by artist:</span><h4 class="artwork__artist">' + slideData.artist + '</h4><p>' + art_date + art_medium + art_surface + art_size + art_location + '<svg class="icon icon--link" role="img"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
+  return '<div class="slide ' + 'slide--' + slideData.id + ' swiper-slide" data-hash="' + slideData.id + '">' + '<article class="artwork"><div class="artwork__inner"><div class="artwork__header"><h1 class="artwork__date">' + isToday + slideData.date + '<sup>' + slideData.date_ordinal + '</sup></h1></div><div class="artwork__image"><img data-src="/images/' + slideData.image + '" alt="Photo of painting: ' + slideData.title + '" class="img swiper-lazy" data-srcset="' + slideData.srcset + '" sizes="' + slideData.srcset_sizes + '" /><div class="artwork__preloader swiper-lazy-preloader swiper-lazy-preloader-white"></div></div><div class="artwork__content"><span class="is-visually-hidden">Artwork Name:</span><h2 class="artwork__title">' + slideData.title + '</h2><span class="is-visually-hidden">Created by artist:</span><h4 class="artwork__artist">' + slideData.artist + '</h4><p>' + art_date + art_medium + art_surface + art_size + art_location + '<svg class="icon icon--link" role="presentation"><title>Citation:</title><use xlink:href="#icon--link"></use></svg> ' + slideData.cite_author + ': <a href="' + slideData.cite_url + '" target="_blank"><em>' + slideData.title + ' (' + slideData.artist + ')</em></a></p></div></article></div>';
 
 }
 
@@ -175,11 +175,11 @@ function dutchartdailyslides(data) {
     //   // console.log(image.complete);
     // },
     onLazyImageReady: function(swiper, slide, image) {
-        // window.picturefill();
-        swiper.update(true);
+      // window.picturefill();
+      swiper.update(true);
 
-        // Fix iOS Safari update bug.
-        setInterval(swiper.update(true), 1000);
+      // Fix iOS Safari update bug.
+      setInterval(swiper.update(true), 1000);
     },
     onSlideChangeStart: function(swiper) {
       // var currentSlideDate = swiper.slides[swiper.activeIndex].querySelector('.artwork__date').innerHTML;
