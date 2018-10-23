@@ -1,0 +1,41 @@
+/* =============================================================================
+// @name Shared
+// @description Set attributes which are shared among different elements.
+// @group base
+// ========================================================================== */
+
+/* stylelint-disable selector-max-type */
+
+// Always have default margins going in the same direction:
+// @see http://csswizardry.com/2012/06/single-direction-margin-declarations
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-feature-settings: 'kern' 1;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

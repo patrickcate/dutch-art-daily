@@ -1,0 +1,63 @@
+// =============================================================================
+// @name Tools Imports
+// @description Imports all mixins, fuctions, and libraries.
+//              Nothing should every be imported into tools which generates any
+//              CSS by default. This makes it easy to import all tool imports
+//              into other Sass files without generating duplicate CSS.
+// @group import
+//
+// TABLE OF CONTENTS:
+// [1.1] Libraries ----- Third part Sass libraries. Many of the library paths
+//       are to npm node modules to make updating them easier.
+// [1.2] Functions ----- Any custom Sass functions.
+// [1.3] Mixins -------- Any custom Sass mixins.
+// [1.4] Settings ------ Custom Sass variables. Includes both global settings as
+//     well as component and object variables.
+// =============================================================================
+
+// [1.1] Libraries
+// =====================================
+
+// Set the em-base before importing modular scale.
+$em-base: 16px;
+
+// Don't show Bourbon deprecation warning.
+$output-bourbon-deprecation-warnings: false;
+
+// @see http://www.modularscale.com
+// @see https://github.com/modularscale/modularscale-sass
+@import './node_modules/modularscale-sass/stylesheets/_modularscale';
+
+// @see http://include-media.com
+@import './node_modules/include-media/dist/_include-media';
+
+// https://www.npmjs.com/package/font-face-generator
+@import './node_modules/font-face-generator/mixin';
+
+// [1.2] Functions
+// =====================================
+@import '1-2-functions/_function.strip-units';
+@import '1-2-functions/_function.px-to-em';
+@import '1-2-functions/_function.px-to-rem';
+@import '1-2-functions/_function.rem-to-px';
+@import '1-2-functions/_function.color-scheme';
+@import '1-2-functions/_function.z-index';
+
+// [1.3] Mixins
+// =====================================
+@import '1-3-mixins/mixin.sr-only.scss';
+
+// [1.4] Settings
+// =====================================
+@import '1-4-settings/_settings.typography';
+@import '1-4-settings/_settings.breakpoint';
+@import '1-4-settings/_settings.grid';
+@import '1-4-settings/_settings.color';
+// ↑ ---------------- ↑ IMPORT THESE FIRST.
+// Often later settings will use these as a base.
+
+@import '1-4-settings/_settings.motion';
+@import '1-4-settings/_settings.visibility';
+@import '1-4-settings/_settings.image';
+@import '1-4-settings/_settings.icon';
+@import '1-4-settings/_settings.link';

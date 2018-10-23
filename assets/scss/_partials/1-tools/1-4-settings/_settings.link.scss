@@ -1,0 +1,12 @@
+// =============================================================================
+// @name Link Settings
+// @description Settings for a[href] link elements.
+// @group settings
+// =============================================================================
+
+// Link Colors
+$link-color: $white;
+$link-color-hover: set-color(secondary);
+$link-color-visited: $white;
+$link-color-active: set-color(secondary);
+$link-color-focus: set-color(secondary);

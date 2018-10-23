@@ -1,0 +1,19 @@
+// =============================================================================
+// @name Spinning Loader
+// @description Add CSS w/ animation properties to show a spinning loader.
+// @file src/sass/_partials/1-tools/1-3-mixins/_mixin.spinning-loader.scss
+// =============================================================================
+
+@mixin spinning-loader {
+  display: block;
+  width: $spacing * 1.5;
+  height: $spacing * 1.5;
+  background-color: transparent;
+  border: 4px solid $lighter-gray;
+  border-top: 4px solid $blue;
+  border-radius: 50%;
+  animation-name: spinner;
+  animation-duration: $speed-slow;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

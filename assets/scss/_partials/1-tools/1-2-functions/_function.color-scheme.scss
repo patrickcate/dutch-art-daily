@@ -1,0 +1,28 @@
+// =============================================================================
+// @name Color Scheme Function
+// @description Helper Sass function to pull a color from a color map variable.
+// @group function
+// @file src/sass/_partials/1-tools/2-functions/_function.color-scheme.scss
+// =============================================================================
+
+@function set-color(
+  $color-group,
+  $color-name: base,
+  $color-map: $color-scheme
+) {
+  @if map-has-key($color-map, $color-group) {
+    $group: map-get($color-map, $color-group);
+
+    @if map-has-key($group, $color-name) {
+      @return map-get($group, $color-name);
+    } @else {
+      @warn 'There doesn\'t appear to be a color named: `#{$color-name}`';
+
+      @return null;
+    }
+  } @else {
+    @warn 'There doesn\'t appear to be a color group named: `#{$color-group}`';
+
+    @return null;
+  }
+}

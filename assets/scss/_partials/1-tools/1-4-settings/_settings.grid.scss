@@ -1,0 +1,13 @@
+// =============================================================================
+// @name Grid Settings
+// @description General project grid and spacing settings.
+// @group settings
+// =============================================================================
+
+// Setup a base measurement system based on the body font size.
+$spacing: $base-font-size * $base-line-height;
+$three-quarter-spacing: $spacing * 0.75;
+$half-spacing: $spacing / 2;
+$quarter-spacing: $spacing / 4;
+$eighth-spacing: $spacing / 8;
+$double-spacing: $spacing * 2;

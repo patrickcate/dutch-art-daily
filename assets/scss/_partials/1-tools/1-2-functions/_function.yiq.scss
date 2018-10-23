@@ -1,0 +1,19 @@
+// =============================================================================
+// @name YIQ Function
+// @description Helper function to make using the the sass-yiq YIQ contast
+//              color function a bit easier.
+// @group function
+// @file src/sass/_partials/1-tools/2-functions/_function.yiq.scss
+// @see https://github.com/timhettler/sass-yiq
+// =============================================================================
+
+@function yiq(
+  $base,
+  $dark: $yiq-contrasted-dark-default,
+  $light: $yiq-contrasted-light-default,
+  $threshold: $yiq-contrasted-threshold
+) {
+  $color: yiq-contrast-color($base, $dark, $light, $threshold);
+
+  @return $color;
+}

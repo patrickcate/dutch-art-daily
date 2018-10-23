@@ -1,0 +1,25 @@
+xs3:
+  width: 640
+  height: 522
+xs2:
+  width: 800
+  height: 653
+xs:
+  width: 960
+  height: 784
+sm:
+  width: 1120
+  height: 914
+id: 04-21
+vibrant: '#956a44'
+lightVibrant: '#d5bba3'
+darkVibrant: '#583c2a'
+muted: '#927859'
+lightMuted: '#bba481'
+darkMuted: '#3f2920'
+titleText: '#fff'
+bodyText: '#fff'
+width: 1225
+height: 1000
+ratio: 0.816327
+hash: cEqlmkOcFw8

@@ -1,8 +1,0 @@
-widths:
-  tiny: 480w
-  small: 640w
-  medium: 720w
-  large: 840w
-  huge: 960w
-
-sizes: '(min-width: 940px) 800px, (min-width: 600px) calc(100vw - 140px), calc(100vw - 40px)'

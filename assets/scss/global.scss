@@ -1,0 +1,52 @@
+// =============================================================================
+// @name Dutch Art Daily Styles
+// @description Main import stylesheet for Ascender theme.
+// @group import
+//
+// TABLE OF CONTENTS:
+// [1] Tools ---------- Vendor libraries and custom Sass functions, mixins, and
+//     variables. Nothing in the core import generates CSS by default.
+// ↑ ---------------- ↑ NO CSS GENERATED ABOVE THIS POINT.
+// [2] Vendor --------- Third party Sass and CSS libraries that generate CSS
+//     by default.
+// [3] Base ------- Unclassed HTML elements (e.g. `h2`, `ul`) styling.
+// ↓ ---------------- ↓ ONLY CSS CLASSES BEYOND THIS POINT.
+// [4] Layouts -------- Abstract layout and main site layout sections.
+//     Should primarily be used for object/positioning. Minimal to no styling.
+// [5] Components ----- Reuseable styled UI components.
+// [6] Utilities ------ Helper/utility classes. Use sparingly as many are hard
+//     overrides using !important.
+// [7] Hotfix --------- Emergency styling fixes. This file should be regularly
+//     refactored into new components/objects, or replaced with existing ones.
+// =============================================================================
+
+// [1] Tools
+// =====================================
+@import '_partials/1-tools/_import';
+
+// [2] Vendor
+// =====================================
+@import '_partials/2-vendor/_vendor.swiper';
+
+// [3] Base
+// =====================================
+@import '_partials/3-base/_base.globals';
+@import '_partials/3-base/_base.shared';
+@import '_partials/3-base/_base.page';
+@import '_partials/3-base/_base.typography';
+@import '_partials/3-base/_base.header';
+@import '_partials/3-base/_base.list';
+@import '_partials/3-base/_base.image';
+@import '_partials/3-base/_base.link';
+
+// [4] Layouts
+// =====================================
+@import '_partials/4-layout/_layout.page';
+
+// [5] Components
+// =====================================
+@import '_partials/5-components/_component.nav-button';
+
+// [6] Utilities
+// =====================================
+@import '_partials/6-utilties/_utilities.visibility';

@@ -1,0 +1,16 @@
+// Generate individal icon classes based on the _settings.icon.scss list definition.
+@mixin icon-generator {
+  @each $icon, $entity in $icons {
+    .icon--#{$icon} {
+      &::before {
+        content: unicode($entity);
+      }
+
+      &.icon--right {
+        &::after {
+          content: unquote($entity);
+        }
+      }
+    }
+  }
+}

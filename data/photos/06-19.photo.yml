@@ -1,0 +1,40 @@
+xs3:
+  width: 640
+  height: 675
+xs2:
+  width: 800
+  height: 844
+xs:
+  width: 960
+  height: 1013
+sm:
+  width: 1120
+  height: 1182
+md:
+  width: 1280
+  height: 1351
+lg:
+  width: 1440
+  height: 1520
+xl:
+  width: 1600
+  height: 1688
+xl2:
+  width: 1760
+  height: 1857
+xl3:
+  width: 1920
+  height: 2026
+id: 06-19
+vibrant: '#ca8963'
+lightVibrant: '#ddb49c'
+darkVibrant: '#235461'
+muted: '#957760'
+lightMuted: '#9ca599'
+darkMuted: '#513731'
+titleText: '#fff'
+bodyText: '#fff'
+width: 2008
+height: 2119
+ratio: 1.055279
+hash: eoHA40MA061

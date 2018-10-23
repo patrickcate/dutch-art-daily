@@ -1,0 +1,9 @@
+// Base icon font settings.
+@mixin icon-font {
+  display: inline-block;
+  font-family: $icon-font;
+  font-weight: $font-normal;
+  text-decoration: none;
+  content: '';
+  speak: none;
+}

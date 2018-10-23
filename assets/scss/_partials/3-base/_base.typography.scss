@@ -1,0 +1,28 @@
+// =============================================================================
+// @name Base Typography
+// @description Base CSS for header and other typography tags.
+// @group base
+// =============================================================================
+
+/* stylelint-disable selector-max-type */
+
+code {
+  // @include word-wrap;
+
+  padding: $half-spacing;
+  font-family: $mono-font;
+  color: $text-color;
+  background-color: set-color(tertiary, lightest);
+}
+
+figure {
+  margin: 0;
+}
+
+// figcaption {
+//
+// }
+
+p {
+  margin-bottom: $spacing;
+}

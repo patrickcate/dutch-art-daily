@@ -1,0 +1,35 @@
+// =============================================================================
+// @name Base Links
+// @description Base CSS for link styling.
+// @group base
+// =============================================================================
+
+/* stylelint-disable selector-max-type */
+
+a {
+  font-style: italic;
+  text-decoration-skip: box-decoration;
+  color: $link-color;
+  transition: color $speed-fastest $base-easing,
+    border-colorcolor $speed-fastest $base-easing;
+
+  &:link {
+    color: $link-color;
+  }
+
+  &:visited {
+    color: $link-color-visited;
+  }
+
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:focus {
+    color: $link-color-focus;
+  }
+
+  &:active {
+    color: $link-color-active;
+  }
+}
