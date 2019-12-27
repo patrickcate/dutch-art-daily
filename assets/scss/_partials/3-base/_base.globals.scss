@@ -1,0 +1,61 @@
+/* =============================================================================
+// @name Globals
+// @description Set global attributes used site-white by default.
+// @group base
+// ========================================================================== */
+
+/* stylelint-disable selector-max-type */
+
+// Add Janson webfonts.
+@include font-face(
+  $fonts: (
+    'Janson': (
+      400: (
+        normal: 'janson-roman',
+        italic: 'janson-italic',
+      ),
+    ),
+  ),
+  $types: 'woff2' 'woff',
+  $path: '~assets/fonts',
+){ font-display: swap };
+
+// Set the default box-sizing to the more useful 'border-box'.
+// @see https://css-tricks.com/?p=175473
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  // Set the anti-alias settings.
+  // -moz-osx-font-smoothing: grayscale || auto
+  // -webkit-font-smoothing: antialiased || subpixel-antialiased
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  // Set the default background repeat to the more common 'no-repeat' so we
+  // don't have to constantly override it.
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  color: $white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

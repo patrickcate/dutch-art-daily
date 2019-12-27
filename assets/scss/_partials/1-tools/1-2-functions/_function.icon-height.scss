@@ -1,0 +1,13 @@
+// SVG Icon Width Getter Function
+
+@function icon-height($icon-name, $icon-width) {
+  @if map-has-key($icons, $icon-name) {
+    $icon: map-get($icons, $icon-name);
+
+    @return map-get($icon, ratio) / $icon-width;
+  } @else {
+    @warn 'There doesn\'t appear to be a icon named: `#{$icon-name}`';
+
+    @return null;
+  }
+}

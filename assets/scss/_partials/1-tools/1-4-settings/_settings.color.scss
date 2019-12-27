@@ -1,0 +1,59 @@
+// =============================================================================
+// @name Color Settings
+// @description Global project color settings are set here for a consistent
+//              color scheme. More specific component or element settings may
+//              contain their own color settings, but usually these will in
+//              some what be based on the global ones.
+// @group settings
+// =============================================================================
+// Base
+$white: #fff;
+$black: #000;
+$text-color: $white;
+
+$primary-color: #1a3f68;
+$secondary-color: #ffb600;
+$tertiary-color: #d9ccad;
+
+// Social Media Colors
+$twitter-color: #00aced;
+$facebook-color: #4b71b8;
+
+// Add color variables to $colors map.
+$color-scheme: (
+  primary: (
+    base: $primary-color,
+    light: tint($primary-color, 25%),
+    lighter: tint($primary-color, 50%),
+    lightest: tint($primary-color, 75%),
+    dark: shade($primary-color, 25%),
+    darker: shade($primary-color, 50%),
+    darkest: shade($primary-color, 75%),
+  ),
+  secondary: (
+    base: $secondary-color,
+    light: tint($secondary-color, 25%),
+    lighter: tint($secondary-color, 50%),
+    lightest: tint($secondary-color, 75%),
+    dark: shade($secondary-color, 25%),
+    darker: shade($secondary-color, 50%),
+    darkest: shade($secondary-color, 75%),
+  ),
+  tertiary: (
+    base: $tertiary-color,
+    light: tint($tertiary-color, 25%),
+    lighter: tint($tertiary-color, 50%),
+    lightest: tint($tertiary-color, 85%),
+    dark: shade($tertiary-color, 25%),
+    darker: shade($tertiary-color, 50%),
+    darkest: shade($tertiary-color, 75%),
+  ),
+);
+
+// YIQ Color Settings
+// @see https://github.com/timhettler/sass-yiq
+$yiq-contrasted-threshold: 135;
+$yiq-contrasted-light-default: $white;
+$yiq-contrasted-dark-default: $black;
+
+$overlay: rgba($black, 0.5);

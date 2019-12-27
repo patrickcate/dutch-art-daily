@@ -1,0 +1,13 @@
+// =============================================================================
+// @name Base Images
+// @description Base CSS for images and image related elements.
+// @group base
+// =============================================================================
+
+/* stylelint-disable selector-max-type */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

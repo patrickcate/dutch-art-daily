@@ -1,0 +1,54 @@
+// =============================================================================
+// @name Icon Settings
+// @description Project icon settings are set here so they can be used by
+//              the icon function to easily added them via pseudo-elements.
+// @group settings
+// @see _functions/_icon.scss
+// =============================================================================
+
+// Map of icon name and HTML entity.
+$icons: (
+  question-circle: \e924,
+  resources-outline: \e925,
+  ascender: \e926,
+  email: \e921,
+  video: \e922,
+  audio: \e923,
+  checkmark-circle-outline: \e91a,
+  checkmark-circle: \e91b,
+  clear-circle: \e91c,
+  error: \e90c,
+  info: \e91d,
+  files: \e900,
+  files-outline: \e91e,
+  clock: \e901,
+  clock-outline: \e91f,
+  resources: \e902,
+  settings: \e903,
+  badge: \e904,
+  badge-outline: \e920,
+  arrow-circle-right: \e906,
+  arrow-circle-left: \e907,
+  arrow-circle-down: \e908,
+  arrow-circle-up: \e909,
+  news: \e90a,
+  folder: \e90d,
+  staff-search: \e90e,
+  book: \e911,
+  search: \e912,
+  staff: \e913,
+  tools: \e914,
+  travel: \e915,
+  chart: \e916,
+  view: \e917,
+  excel: \e918,
+  zip: \e919,
+  pdf: \e90f,
+  ppt: \e910,
+  doc: \e90b,
+  home: \e905,
+  cog: \e994,
+  plus: \ea0a,
+  minus: \ea0b,
+  external: \ea7e,
+);

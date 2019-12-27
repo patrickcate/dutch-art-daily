@@ -1,0 +1,32 @@
+// =============================================================================
+// @name Breakpoint Settings
+// @description Project breakpoints for media queries.
+// @group settings
+// =============================================================================
+
+// Set breakpoint variables, and convert all px breakpoints to em's
+// @see https://zellwk.com/blog/media-query-units why this is good.
+$break-min: em(320);
+$break-xxs: em(360);
+$break-xs: em(400);
+$break-sm: em(600);
+$break-md: em(700);
+$break-lg: em(960);
+$break-xl: em(1280);
+$break-max: $break-xl;
+
+// Set more expressive/semantic breakpoint variables.
+// $break-one-sidebar: $break-md;
+// $break-two-sidebars: $break-lg;
+$max-width: $break-max;
+
+// Set breakpoints and tweakpoint map.
+$breakpoints: (
+  xxs: $break-xxs,
+  xs: $break-xs,
+  sm: $break-sm,
+  md: $break-md,
+  lg: $break-lg,
+  xl: $break-xl,
+  max-width: $max-width,
+);

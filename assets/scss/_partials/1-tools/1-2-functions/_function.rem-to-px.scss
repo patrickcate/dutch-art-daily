@@ -1,0 +1,20 @@
+// Bourbon 4.x px - rem function. Saved separately so it is still available
+// after it is deprecated in 5.x.
+
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+
+@function px($remval) {
+  @if not unitless($remval) {
+    $remval: strip-units($remval);
+  }
+
+  $base: $em-base;
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+
+  @return ($remval * $base) * 1px;
+}

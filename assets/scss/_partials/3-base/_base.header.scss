@@ -1,0 +1,41 @@
+/* =============================================================================
+// @name Base Headers
+// @description Base CSS for header tags.
+// @group base
+// ========================================================================== */
+
+/* stylelint-disable selector-max-type */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-normal;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: $font-size-xl;
+}
+
+h2 {
+  font-size: $font-size-lg;
+}
+
+h3 {
+  font-size: $font-size-md;
+}
+
+h4 {
+  font-size: $font-size-md;
+}
+
+h5 {
+  font-size: $font-size-sm;
+}
+
+h6 {
+  font-size: $font-size-xs;
+}

@@ -1,0 +1,18 @@
+// =============================================================================
+// @name Image Settings
+// @description Settings for image and image-related elements.
+// @group settings
+// =============================================================================
+
+$drop-shadow: 0 0 $eighth-spacing 0 rgba($black, 0.05),
+  0 0 $eighth-spacing * 2 0 rgba($black, 0.05),
+  0 0 $eighth-spacing * 3 0 rgba($black, 0.05),
+  0 0 $eighth-spacing * 4 0 rgba($black, 0.05),
+  0 0 $eighth-spacing * 5 0 rgba($black, 0.1),
+  0 0 $eighth-spacing * 6 0 rgba($black, 0.1),
+  0 0 $eighth-spacing * 7 0 rgba($black, 0.1),
+  0 0 $eighth-spacing * 8 0 rgba($black, 0.15),
+  0 0 $eighth-spacing * 9 0 rgba($black, 0.15),
+  0 0 $eighth-spacing * 10 0 rgba($black, 0.15);
+
+$blur-size: 40px;

@@ -1,0 +1,18 @@
+// =============================================================================
+// @name Visibility Settings
+// @description Sass settings for showing and hiding elements.
+// @group settings
+// =============================================================================
+
+$z-index: (
+  hidden: -1,
+  base: 0,
+  nudge: 10,
+  step: 1000,
+  jump: 2000,
+  fixed: 3000,
+  sticky: 4000,
+  popup: 5000,
+  overlay: 6000,
+  modal: 7000,
+);

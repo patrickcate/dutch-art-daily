@@ -1,0 +1,36 @@
+// =============================================================================
+// @name Nav Button Component
+// @description Styling for swiper slider previous and next buttons.
+// @group component
+// =============================================================================
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $spacing * 2;
+  height: $spacing * 2;
+  margin-top: $half-spacing;
+  font-size: $font-size-xl;
+  line-height: 1;
+  color: $white;
+  cursor: pointer;
+  background-color: transparent;
+  border: 4px solid $white;
+  border-radius: 50%;
+  transition: color $speed-fast ease, border-color $speed-fast ease,
+    opacity $speed-fast ease;
+
+  &:hover {
+    color: set-color(secondary);
+    border-color: set-color(secondary);
+  }
+
+  &[disabled] {
+    color: $white;
+    pointer-events: none;
+    cursor: default;
+    border-color: $white;
+    opacity: 0.35;
+  }
+}

@@ -1,0 +1,16 @@
+// =============================================================================
+// @name Motion Settings
+// @description Project motion settings are set here for consistent
+//              animation and easing.
+// @group settings
+// =============================================================================
+
+$base-easing: ease-in-out;
+
+$speed-fastest: 0.1s;
+$speed-faster: 0.15s;
+$speed-fast: 0.25s;
+$speed-medium: 0.35s;
+$speed-slow: 0.5s;
+$speed-slower: 0.55s;
+$speed-slowest: 1s;

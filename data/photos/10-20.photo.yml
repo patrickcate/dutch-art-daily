@@ -1,0 +1,40 @@
+xs3:
+  width: 640
+  height: 806
+xs2:
+  width: 800
+  height: 1007
+xs:
+  width: 960
+  height: 1208
+sm:
+  width: 1120
+  height: 1410
+md:
+  width: 1280
+  height: 1611
+lg:
+  width: 1440
+  height: 1812
+xl:
+  width: 1600
+  height: 2014
+xl2:
+  width: 1760
+  height: 2215
+xl3:
+  width: 1920
+  height: 2417
+id: 10-20
+vibrant: '#ad6224'
+lightVibrant: '#f5dba7'
+darkVibrant: '#7d3d11'
+muted: '#b89364'
+lightMuted: '#c2b49f'
+darkMuted: '#5b462d'
+titleText: '#fff'
+bodyText: '#000'
+width: 3967
+height: 4993
+ratio: 1.258634
+hash: 8LdNs1oyxqc

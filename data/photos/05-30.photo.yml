@@ -1,0 +1,37 @@
+xs3:
+  width: 640
+  height: 712
+xs2:
+  width: 800
+  height: 889
+xs:
+  width: 960
+  height: 1067
+sm:
+  width: 1120
+  height: 1245
+md:
+  width: 1280
+  height: 1423
+lg:
+  width: 1440
+  height: 1601
+xl:
+  width: 1600
+  height: 1779
+xl2:
+  width: 1760
+  height: 1957
+id: 05-30
+vibrant: '#77362b'
+lightVibrant: '#dba69d'
+darkVibrant: '#56261c'
+muted: '#a28076'
+lightMuted: '#703328'
+darkMuted: '#47342c'
+titleText: '#fff'
+bodyText: '#fff'
+width: 1798
+height: 1999
+ratio: 1.111791
+hash: 8Hcp4H8I03A

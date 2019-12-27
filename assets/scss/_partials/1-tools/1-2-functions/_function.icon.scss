@@ -1,0 +1,12 @@
+// Icon Getter Function
+
+@function icon($icon-name) {
+  // If it exists, return the icon name's unicode character.
+  @if map-has-key($icons, $icon-name) {
+    @return unicode(map-get($icons, $icon-name));
+  }
+
+  @warn 'There doesn\'t appear to be a icon named: `#{$icon-name}`';
+
+  @return null;
+}

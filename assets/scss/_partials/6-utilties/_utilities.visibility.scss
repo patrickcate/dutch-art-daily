@@ -1,0 +1,10 @@
+/* =============================================================================
+// @name Visibility Utilities
+// @description Utility visibility classes.
+// @group utilities
+// ========================================================================== */
+
+// Only show elements to screen readers.
+.u-sr-only {
+  @include sr-only;
+}
