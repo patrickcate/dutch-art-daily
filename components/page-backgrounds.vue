@@ -75,7 +75,7 @@ export default {
   </transition-group>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .page-background-container {

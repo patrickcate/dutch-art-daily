@@ -29,7 +29,7 @@ export default {
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .header {

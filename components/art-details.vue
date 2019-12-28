@@ -32,7 +32,7 @@ export default {
   </swiper-carousel>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .art-details {

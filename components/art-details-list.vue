@@ -99,7 +99,7 @@ export default {
   </ul>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .art-details__list {
