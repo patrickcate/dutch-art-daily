@@ -50,7 +50,7 @@ export default {
       return srcset.join(', ')
     },
     srcSizes(image) {
-      return `(min-aspect-ratio: ${image.width}/${image.height}) calc((${image.width} / ${image.height}) * (100vh - 250px)), 100vw`
+      return `(min-aspect-ratio: ${image.width}/${image.height}) calc((${image.width} / ${image.height}) * (100vh - 280px)), 100vw`
     },
   },
 }
