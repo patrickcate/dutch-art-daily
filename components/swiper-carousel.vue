@@ -3,6 +3,7 @@ import {
   A11y,
   Controller,
   Keyboard,
+  Lazy,
   Navigation,
   Swiper,
 } from 'swiper/dist/js/swiper.esm'
@@ -54,7 +55,7 @@ export default {
   mounted() {
     this.addSlideClass()
     const self = this
-    Swiper.use([A11y, Navigation, Controller])
+    Swiper.use([A11y, Lazy, Navigation, Controller])
 
     const options = {
       speed: 500,
@@ -73,6 +74,12 @@ export default {
       simulateTouch: self.simulateTouch,
       controller: true,
       passiveListeners: true,
+      preloadImages: false,
+      lazy: {
+        loadPrevNext: true,
+        loadOnTransitionStart: true,
+        loadPrevNextAmount: 1,
+      },
       on: {
         init() {
           self.initialized = true
@@ -86,6 +93,9 @@ export default {
           self.updateHeight(this.slides[this.activeIndex])
         },
         imagesReady() {
+          self.updateHeight(this.slides[this.activeIndex])
+        },
+        lazyImageReady() {
           self.updateHeight(this.slides[this.activeIndex])
         },
         resize() {
@@ -181,6 +191,14 @@ export default {
   opacity: 0;
 
   &.swiper--initialized {
+    opacity: 1;
+  }
+}
+
+.swiper-lazy {
+  opacity: 0;
+
+  &.swiper-lazy-loaded {
     opacity: 1;
   }
 }
