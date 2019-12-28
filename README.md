@@ -2,6 +2,8 @@
 
 > A new Dutch Golden Age artwork delivered every day!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4c25ae-740d-4471-b62d-abc6740924ce/deploy-status)](https://app.netlify.com/sites/dutchartdaily/deploys)
+
 ## Build Setup
 
 ```bash
@@ -33,10 +35,11 @@ yarn generatePhotoData
 Photos will be run through `imagemin` when generated.
 
 ## Commit Code
+
 This repo uses commitizen to standardize git commits. To run commitizen run:
 
 ```bash
-gitcommit
+yarn gitcommit
 ```
 
 and follow to CLI prompts.
