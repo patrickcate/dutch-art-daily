@@ -21,7 +21,7 @@ export function getDateOrdinal(day) {
  */
 export function formatDate(ISODate, part) {
   // Parse the ISO 8601 string into an actual Date object.
-  const date = new Date(ISODate)
+  const date = new Date('2016-' + ISODate)
 
   // Setup date formatting options.
   // @see https://mzl.la/1TepFRT
