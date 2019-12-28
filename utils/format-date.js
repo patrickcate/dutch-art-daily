@@ -19,9 +19,9 @@ export function getDateOrdinal(day) {
  * for display as the page date title.
  * @param {String} ISODate
  */
-export function formatDate(ISODate, part) {
+export function formatDate(id, part) {
   // Parse the ISO 8601 string into an actual Date object.
-  const date = new Date('2016-' + ISODate)
+  const date = new Date(getISODate(id))
 
   // Setup date formatting options.
   // @see https://mzl.la/1TepFRT
@@ -42,13 +42,8 @@ export function formatDate(ISODate, part) {
 }
 
 export function getISODate(id) {
-  // Break the date parameters into an array so we can access the month
-  // and day separately.
-  const date = id.split('-')
-
-  const year = new Date().getFullYear()
-  const isoDate = new Date(year, date[0] - 1, date[1])
-  return isoDate.toISOString()
+  // Convert a artwork date id to an ISO date string.
+  return getDateObjFromId(id).toISOString()
 }
 
 export function getDateObjFromId(id) {
