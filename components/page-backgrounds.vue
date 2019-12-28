@@ -82,12 +82,12 @@ export default {
   width: 100%;
   height: 100%;
   opacity: 0;
-  will-change: opacity;
   transition: opacity $speed-slower ease;
 }
 
 .page-background-container--today {
   opacity: 1;
+  will-change: opacity;
 }
 
 .page-background {
@@ -100,7 +100,7 @@ export default {
   filter: blur($blur-size) brightness(0.75);
   background-position: center;
   background-size: cover;
-  transform: scale3d(1.15, 1.15, 1.15);
+  transform: scale3d(1.15, 1.15, 1.15) rotate(0.01deg);
   object-fit: cover;
 }
 </style>

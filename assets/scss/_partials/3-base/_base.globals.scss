@@ -17,8 +17,10 @@
     ),
   ),
   $types: 'woff2' 'woff',
-  $path: '~assets/fonts',
-){ font-display: swap };
+  $path: '~assets/fonts'
+) {
+  font-display: swap;
+}
 
 // Set the default box-sizing to the more useful 'border-box'.
 // @see https://css-tricks.com/?p=175473
