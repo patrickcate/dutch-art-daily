@@ -43,6 +43,9 @@ export default {
     initClass() {
       return this.initialized ? 'swiper--initialized' : null
     },
+    wrapperClass() {
+      return `${this.name}__list`
+    },
     slideHeight: {
       get: function() {
         return this.$store.state.currentHeight
@@ -61,7 +64,7 @@ export default {
       speed: 500,
       centeredSlides: true,
       slidesPerView: self.slideNumber,
-      roundLengths: true,
+      roundLengths: false,
       keyboard: {
         enabled: self.keyboard,
         onlyInViewport: true,
@@ -176,7 +179,7 @@ export default {
 </script>
 <template>
   <div ref="swiperInstance" class="swiper-container" :class="initClass">
-    <ul class="swiper-wrapper">
+    <ul class="swiper-wrapper" :class="wrapperClass">
       <slot></slot>
     </ul>
   </div>
