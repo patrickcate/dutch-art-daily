@@ -61,7 +61,7 @@ export default {
 
     await store.dispatch('setSlideData', slides)
     store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
-    store.commit('SET_CURRENT_PAGE', pageDate)
+    store.dispatch('setCurrentPage', pageDate)
   },
 }
 </script>

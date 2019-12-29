@@ -32,7 +32,7 @@ export default {
       return srcset.join(', ')
     },
     srcSizes() {
-      return `(orientation: portrait and min-aspect-ratio: ${this.image.width}/${this.image.height}) calc((${this.image.width} / ${this.image.height}) * (100vh - 250px)), 100vw`
+      return `(orientation: portrait and min-aspect-ratio: ${this.image.width}/${this.image.height}) calc((${this.image.width} / ${this.image.height}) * (100vh - 280px)), 100vw`
     },
   },
 }
@@ -40,16 +40,17 @@ export default {
 <template>
   <div class="art-image-frame swiper-zoom-container">
     <img
-      :src="`/photos/${id}/${id}--xs3-${image.hash}.jpg`"
-      :srcset="srcSet"
+      :data-src="`/photos/${id}/${id}--xs3-${image.hash}.jpg`"
+      :data-srcset="srcSet"
       :sizes="srcSizes"
       :alt="alt"
-      class="art-image"
+      :data-id="id"
+      class="art-image swiper-lazy"
     />
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .art-image-frame {
@@ -63,7 +64,7 @@ export default {
   box-shadow: $drop-shadow;
 
   @include media('height>md') {
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 280px);
   }
 }
 </style>

@@ -3,6 +3,7 @@ import {
   A11y,
   Controller,
   Keyboard,
+  Lazy,
   Navigation,
   Swiper,
 } from 'swiper/dist/js/swiper.esm'
@@ -42,6 +43,9 @@ export default {
     initClass() {
       return this.initialized ? 'swiper--initialized' : null
     },
+    wrapperClass() {
+      return `${this.name}__list`
+    },
     slideHeight: {
       get: function() {
         return this.$store.state.currentHeight
@@ -54,13 +58,13 @@ export default {
   mounted() {
     this.addSlideClass()
     const self = this
-    Swiper.use([A11y, Navigation, Controller])
+    Swiper.use([A11y, Lazy, Navigation, Controller])
 
     const options = {
       speed: 500,
       centeredSlides: true,
       slidesPerView: self.slideNumber,
-      roundLengths: true,
+      roundLengths: false,
       keyboard: {
         enabled: self.keyboard,
         onlyInViewport: true,
@@ -73,6 +77,12 @@ export default {
       simulateTouch: self.simulateTouch,
       controller: true,
       passiveListeners: true,
+      preloadImages: false,
+      lazy: {
+        loadPrevNext: true,
+        loadOnTransitionStart: true,
+        loadPrevNextAmount: 2,
+      },
       on: {
         init() {
           self.initialized = true
@@ -86,6 +96,13 @@ export default {
           self.updateHeight(this.slides[this.activeIndex])
         },
         imagesReady() {
+          self.updateHeight(this.slides[this.activeIndex])
+        },
+        lazyImageReady(slideEl, imageEl) {
+          self.$store.commit(
+            'SET_LOADED_SLIDES',
+            imageEl.getAttribute('data-id')
+          )
           self.updateHeight(this.slides[this.activeIndex])
         },
         resize() {
@@ -151,8 +168,8 @@ export default {
     updateCurrentSlide(index) {
       if (this.$store.state.currentSlideIndex !== index) {
         this.$store.commit('SET_CURRENT_SLIDE_INDEX', index)
-        this.$store.commit(
-          'SET_CURRENT_PAGE',
+        this.$store.dispatch(
+          'setCurrentPage',
           this.$store.state.slides[index].id
         )
       }
@@ -162,7 +179,7 @@ export default {
 </script>
 <template>
   <div ref="swiperInstance" class="swiper-container" :class="initClass">
-    <ul class="swiper-wrapper">
+    <ul class="swiper-wrapper" :class="wrapperClass">
       <slot></slot>
     </ul>
   </div>
@@ -181,6 +198,14 @@ export default {
   opacity: 0;
 
   &.swiper--initialized {
+    opacity: 1;
+  }
+}
+
+.swiper-lazy {
+  opacity: 0;
+
+  &.swiper-lazy-loaded {
     opacity: 1;
   }
 }

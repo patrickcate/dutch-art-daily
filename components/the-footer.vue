@@ -21,7 +21,7 @@ export default {
   </footer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .l-footer {

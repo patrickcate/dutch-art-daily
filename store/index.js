@@ -1,6 +1,7 @@
 export const state = () => ({
   currentPage: null,
   slides: [],
+  loadedSlides: {},
   currentSlideIndex: 6,
   progress: 1,
   currentHeight: 1000,
@@ -34,6 +35,9 @@ export const mutations = {
   SET_SLIDES(state, payload) {
     state.slides = payload
   },
+  SET_LOADED_SLIDES(state, payload) {
+    state.loadedSlides[payload] = payload
+  },
   SET_CURRENT_SLIDE_INDEX(state, payload) {
     state.currentSlideIndex = payload
   },
@@ -59,6 +63,15 @@ export const actions = {
       commit('SET_PAGINATION_NUMBER', 3)
     } else {
       commit('SET_PAGINATION_NUMBER', 5)
+    }
+  },
+  setCurrentPage({ state, commit }, id) {
+    if (state.currentPage !== id) {
+      commit('SET_CURRENT_PAGE', id)
+    }
+
+    if (!state.loadedSlides[id]) {
+      commit('SET_LOADED_SLIDES', id)
     }
   },
 }

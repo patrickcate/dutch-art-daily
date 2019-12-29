@@ -5,13 +5,16 @@
 // =============================================================================
 
 .nav-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: $spacing * 2;
+  min-width: $spacing * 2;
   height: $spacing * 2;
+  min-height: $spacing * 2;
   margin-top: $half-spacing;
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
   line-height: 1;
   color: $white;
   cursor: pointer;
@@ -20,6 +23,13 @@
   border-radius: 50%;
   transition: color $speed-fast ease, border-color $speed-fast ease,
     opacity $speed-fast ease;
+
+  .svg-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   &:hover {
     color: set-color(secondary);

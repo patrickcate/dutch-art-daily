@@ -24,7 +24,7 @@ export default {
   </svg>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .svg-icon {

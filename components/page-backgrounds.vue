@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import {
   getDateObjFromId,
   dateId,
@@ -9,22 +10,11 @@ import {
 export default {
   name: 'PageBackgrounds',
   computed: {
-    images() {
-      return this.$store.state.slides
-    },
-    todayId() {
-      return this.$store.state.currentPage
-    },
-    yesterdayId() {
-      const yesterday = getDateObjFromId(this.todayId)
-
-      return yesterdayDateId(yesterday)
-    },
-    tomorrowId() {
-      const tomorrow = getDateObjFromId(this.todayId)
-
-      return tomorrowDateId(tomorrow)
-    },
+    ...mapState({
+      images: 'slides',
+      todayId: 'currentPage',
+      loadedSlides: 'loadedSlides',
+    }),
   },
   methods: {
     visibleBackground(id) {
@@ -50,7 +40,7 @@ export default {
       return srcset.join(', ')
     },
     srcSizes(image) {
-      return `(min-aspect-ratio: ${image.width}/${image.height}) calc((${image.width} / ${image.height}) * (100vh - 250px)), 100vw`
+      return `(min-aspect-ratio: ${image.width}/${image.height}) calc((${image.width} / ${image.height}) * (100vh - 280px)), 100vw`
     },
   },
 }
@@ -64,9 +54,10 @@ export default {
       :class="visibleBackground(image.id)"
     >
       <img
+        v-if="loadedSlides[image.id]"
         :src="srcUrl(image)"
         :srcset="srcSet(image)"
-        :sizes="srcSizes"
+        :sizes="srcSizes(image)"
         role="presentation"
         alt=""
         class="page-background"
@@ -75,19 +66,19 @@ export default {
   </transition-group>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@theme';
 
 .page-background-container {
   width: 100%;
   height: 100%;
   opacity: 0;
-  will-change: opacity;
   transition: opacity $speed-slower ease;
 }
 
 .page-background-container--today {
   opacity: 1;
+  will-change: opacity;
 }
 
 .page-background {
@@ -100,7 +91,7 @@ export default {
   filter: blur($blur-size) brightness(0.75);
   background-position: center;
   background-size: cover;
-  transform: scale3d(1.15, 1.15, 1.15);
+  transform: scale3d(1.15, 1.15, 1.15) rotate(0.01deg);
   object-fit: cover;
 }
 </style>
