@@ -1,6 +1,6 @@
 {
   "name": "dutch-art-daily",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "A new Dutch Golden Age artwork delivered every day!",
   "author": "Patrick Cate",
   "private": true,
@@ -16,7 +16,8 @@
     "start": "nuxt start",
     "serve": "nuxt",
     "generate": "nuxt generate",
-    "generate:modern": "generate --modern=client",
+    "generate:modern": "nuxt generate --modern",
+    "generate:images": "rm -rf ./static/photos && node -e 'require(\"./utils/generate-photo-data.js\").generatePhotoData()'",
     "analyze": "yarn build --analyze",
     "lint:scripts": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:scripts:fix": "eslint --ext .js,.vue --fix --ignore-path .gitignore . && prettier --list-different --write \"**/*.{js,json,vue,yml}\"",
@@ -24,8 +25,7 @@
     "lint:styles:fix": "stylelint --fix \"**/*.vue\" \"**/*.scss\" && prettier --list-different --write \"**/*.{css,scss,vue}\"",
     "lint:all:fix": "eslint --ext .js,.vue --fix . && stylelint --fix \"**/*.vue\" \"**/*.scss\" && prettier --list-different --write \"**/*.{js,json,css,scss,vue,yml}\"",
     "precommit": "yarn lint:all:fix",
-    "gitcommit": "git-cz",
-    "generate:images": "rm -rf ./static/photos && node -e 'require(\"./utils/generate-photo-data.js\").generatePhotoData()'"
+    "gitcommit": "git-cz"
   },
   "dependencies": {
     "date-fns": "^1.29.0",
