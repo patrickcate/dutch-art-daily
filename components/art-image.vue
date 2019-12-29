@@ -44,6 +44,7 @@ export default {
       :data-srcset="srcSet"
       :sizes="srcSizes"
       :alt="alt"
+      :data-id="id"
       class="art-image swiper-lazy"
     />
   </div>

@@ -78,7 +78,7 @@ export default {
       lazy: {
         loadPrevNext: true,
         loadOnTransitionStart: true,
-        loadPrevNextAmount: 1,
+        loadPrevNextAmount: 2,
       },
       on: {
         init() {
@@ -95,7 +95,11 @@ export default {
         imagesReady() {
           self.updateHeight(this.slides[this.activeIndex])
         },
-        lazyImageReady() {
+        lazyImageReady(slideEl, imageEl) {
+          self.$store.commit(
+            'SET_LOADED_SLIDES',
+            imageEl.getAttribute('data-id')
+          )
           self.updateHeight(this.slides[this.activeIndex])
         },
         resize() {
@@ -161,8 +165,8 @@ export default {
     updateCurrentSlide(index) {
       if (this.$store.state.currentSlideIndex !== index) {
         this.$store.commit('SET_CURRENT_SLIDE_INDEX', index)
-        this.$store.commit(
-          'SET_CURRENT_PAGE',
+        this.$store.dispatch(
+          'setCurrentPage',
           this.$store.state.slides[index].id
         )
       }

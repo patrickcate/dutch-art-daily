@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import {
   getDateObjFromId,
   dateId,
@@ -9,22 +10,11 @@ import {
 export default {
   name: 'PageBackgrounds',
   computed: {
-    images() {
-      return this.$store.state.slides
-    },
-    todayId() {
-      return this.$store.state.currentPage
-    },
-    yesterdayId() {
-      const yesterday = getDateObjFromId(this.todayId)
-
-      return yesterdayDateId(yesterday)
-    },
-    tomorrowId() {
-      const tomorrow = getDateObjFromId(this.todayId)
-
-      return tomorrowDateId(tomorrow)
-    },
+    ...mapState({
+      images: 'slides',
+      todayId: 'currentPage',
+      loadedSlides: 'loadedSlides',
+    }),
   },
   methods: {
     visibleBackground(id) {
@@ -64,9 +54,10 @@ export default {
       :class="visibleBackground(image.id)"
     >
       <img
+        v-if="loadedSlides[image.id]"
         :src="srcUrl(image)"
         :srcset="srcSet(image)"
-        :sizes="srcSizes"
+        :sizes="srcSizes(image)"
         role="presentation"
         alt=""
         class="page-background"

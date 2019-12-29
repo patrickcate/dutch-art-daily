@@ -14,7 +14,7 @@ export default function({ store, redirect }, inject) {
 
       await store.dispatch('setSlideData', slides)
 
-      store.commit('SET_CURRENT_PAGE', today)
+      store.dispatch('setCurrentPage', today)
 
       redirect(`/${today}`)
     }
