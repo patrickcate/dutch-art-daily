@@ -36,7 +36,7 @@ export default {
   position: relative;
   z-index: z-index(fixed);
   display: grid;
-  grid-template-columns: 50px 2fr 50px;
+  grid-template-columns: 44px 2fr 44px;
 
   @include media('>sm') {
     grid-template-columns: 1fr 2fr 1fr;

@@ -42,7 +42,11 @@ export default {
 $segment-width: 4px;
 
 .timeline-nav {
-  width: calc(100% - 96px);
+  width: calc(100% - 88px);
+
+  @include media('>xs') {
+     width: calc(100% - 96px);
+  }
 
   @include media('>max-width') {
     max-width: $max-width;

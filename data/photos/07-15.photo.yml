@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 104
 xs3:
   width: 640
   height: 415
@@ -38,3 +41,4 @@ width: 4135
 height: 2682
 ratio: 0.648609
 hash: c0ff617u2Cn
+maxWidth: xl3

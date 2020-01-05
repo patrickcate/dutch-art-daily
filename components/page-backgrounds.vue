@@ -11,87 +11,59 @@ export default {
   name: 'PageBackgrounds',
   computed: {
     ...mapState({
-      images: 'slides',
       todayId: 'currentPage',
       loadedSlides: 'loadedSlides',
     }),
   },
   methods: {
+    image(id) {
+      return this.$store.getters.getArtById(id)
+    },
     visibleBackground(id) {
-      return id === this.todayId ? 'page-background-container--today' : null
+      return id === this.todayId ? 'page-background--today' : null
     },
-    srcUrl(image) {
-      return `/photos/${image.id}/${image.id}--xs3-${image.hash}.jpg`
-    },
-    srcSet(image) {
-      const imageWidths = this.$store.state.imageWidths
-      const imageSizes = Object.keys(imageWidths)
-      const srcset = imageSizes.reduce((accumulator, size) => {
-        if (image[size]) {
-          accumulator.push(
-            `/photos/${image.id}/${image.id}--${size}-${image.hash}.jpg` +
-              ` ${image[size].width}w`
-          )
-        }
-
-        return accumulator
-      }, [])
-
-      return srcset.join(', ')
-    },
-    srcSizes(image) {
-      return `(min-aspect-ratio: ${image.width}/${image.height}) calc((${image.width} / ${image.height}) * (100vh - 280px)), 100vw`
+    backgroundImage(image) {
+      return {
+        backgroundImage: `url('/photos/${image.id}/${image.id}--lqi-${image.hash}.jpg')`,
+      }
     },
   },
 }
 </script>
 <template>
-  <transition-group tag="div">
-    <div
-      v-for="image in images"
-      :key="image.id"
-      class="page-background-container"
-      :class="visibleBackground(image.id)"
-    >
-      <img
-        v-if="loadedSlides[image.id]"
-        :src="srcUrl(image)"
-        :srcset="srcSet(image)"
-        :sizes="srcSizes(image)"
-        role="presentation"
-        alt=""
+  <div>
+    <template v-for="id in loadedSlides">
+      <div
+        :key="id"
         class="page-background"
-      />
-    </div>
-  </transition-group>
+        :class="visibleBackground(id)"
+        :style="backgroundImage(image(id))"
+      ></div>
+    </template>
+  </div>
 </template>
 
 <style lang="scss">
 @import '@theme';
 
-.page-background-container {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity $speed-slower ease;
-}
-
-.page-background-container--today {
-  opacity: 1;
-  will-change: opacity;
-}
-
 .page-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur($blur-size) brightness(0.75);
-  background-position: center;
+  overflow: hidden;
+  filter: blur(px($spacing));
+  background-position: top;
   background-size: cover;
-  transform: scale3d(1.15, 1.15, 1.15) rotate(0.01deg);
-  object-fit: cover;
+  opacity: 0;
+  transition: opacity $speed-slowest ease, z-index $speed-slowest ease;
+  transform: translateZ(0);
+}
+
+.page-background--today {
+  z-index: 1;
+  opacity: 1;
+  will-change: opacity, z-index, filter;
 }
 </style>

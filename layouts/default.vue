@@ -14,12 +14,13 @@ export default {
     id() {
       return this.$store.state.currentPage
     },
-    backgroundColor() {
+    background() {
       const artwork = this.$store.getters.getArtById(this.id)
 
       return artwork
         ? {
             backgroundColor: artwork.darkMuted,
+            backgroundImage: `url('/photos/${artwork.id}/${artwork.id}--lqi-${artwork.hash}.jpg')`,
           }
         : null
     },
@@ -37,9 +38,9 @@ export default {
 <template>
   <div class="l-page">
     <page-backgrounds
-      v-if="backgroundColor"
+      v-if="background"
       class="l-page__bg"
-      :style="backgroundColor"
+      :style="background"
     />
     <div class="l-page__content">
       <the-header class="l-page__header" />

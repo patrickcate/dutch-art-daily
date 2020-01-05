@@ -82,3 +82,6 @@ dist
 
 # VSCode History plugin
 .history
+
+# Site source image assets
+_source

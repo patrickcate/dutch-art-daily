@@ -32,17 +32,17 @@ export default {
       return srcset.join(', ')
     },
     srcSizes() {
-      return `(orientation: portrait and min-aspect-ratio: ${this.image.width}/${this.image.height}) calc((${this.image.width} / ${this.image.height}) * (100vh - 280px)), 100vw`
+      return `(min-height: 700px) calc((${this.image.width} / ${this.image.height}) * (100vh - 280px)), calc((${this.image.width} / ${this.image.height}) * 100vh), 100vw`
     },
   },
 }
 </script>
 <template>
-  <div class="art-image-frame swiper-zoom-container">
+  <div class="art-image-frame">
     <img
       :data-src="`/photos/${id}/${id}--xs3-${image.hash}.jpg`"
       :data-srcset="srcSet"
-      :sizes="srcSizes"
+      :data-sizes="srcSizes"
       :alt="alt"
       :data-id="id"
       class="art-image swiper-lazy"
@@ -63,8 +63,16 @@ export default {
   margin: 0 auto;
   box-shadow: $drop-shadow;
 
+  &.swiper-lazy-loading {
+    height: calc(100vh - 200px);
+  }
+
   @include media('height>md') {
     max-height: calc(100vh - 280px);
+
+    &.swiper-lazy-loading {
+      height: calc(100vh - 280px);
+    }
   }
 }
 </style>

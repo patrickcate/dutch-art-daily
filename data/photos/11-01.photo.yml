@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 138
 xs3:
   width: 640
   height: 552
@@ -38,3 +41,4 @@ width: 4000
 height: 3453
 ratio: 0.86325
 hash: cVNMso6x312
+maxWidth: xl3

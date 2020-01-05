@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 121
 xs3:
   width: 640
   height: 485
@@ -38,3 +41,4 @@ width: 3827
 height: 2899
 ratio: 0.757512
 hash: 9GagbgPotoP
+maxWidth: xl3

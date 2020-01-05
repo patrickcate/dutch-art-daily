@@ -3,6 +3,7 @@ module.exports = async function(filePath, photoData) {
   const Jimp = require('jimp')
 
   const imageWidths = {
+    lqi: 160,
     xs3: 640,
     xs2: 800,
     xs: 960,
@@ -26,15 +27,25 @@ module.exports = async function(filePath, photoData) {
     const size = imageSizes[i]
     const width = imageWidths[size]
 
-    if (photoData.width >= width) {
+    if (photoData.width >= width || size === 'lqi') {
+      photoData.maxWidth = size
+
       await Jimp.read(filePath)
         .then(async image => {
           // Clone the image so we are always working with a copy.
           const photo = image.clone()
 
-          photo
-            .resize(width, Jimp.AUTO, Jimp.RESIZE_BEZIER) // Resize
-            .quality(85) // JPEG quality
+          if (size === 'lqi') {
+            photo
+              .resize(width, Jimp.AUTO, Jimp.RESIZE_BEZIER) // Resize
+              .brightness(-0.25)
+              .blur(5)
+              .quality(85) // JPEG quality
+          } else {
+            photo
+              .resize(width, Jimp.AUTO, Jimp.RESIZE_BEZIER) // Resize
+              .quality(width > 1280 ? 60 : 80) // JPEG quality
+          }
 
           imageSizeData[size] = await {
             width: photo.bitmap.width,
