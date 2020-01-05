@@ -59,9 +59,13 @@ export default {
 .art-details__title {
   margin-bottom: $quarter-spacing;
   font-family: $serif-font;
-  font-size: $font-size-xl;
+  font-size: $font-size-lg-alt;
   font-style: italic;
   color: set-color(secondary);
+
+  @include media('>xs') {
+    font-size: $font-size-xl;
+  }
 }
 
 .art-details__artist {

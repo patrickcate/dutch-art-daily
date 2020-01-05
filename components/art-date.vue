@@ -93,16 +93,12 @@ $distance: 10px;
 .artwork-date {
   display: block;
   font-family: $serif-font;
-  font-size: $font-size-xs;
+  font-size: $font-size-sm;
   line-height: 1;
   color: set-color(secondary);
   text-align: center;
 
   @include media('>xxs') {
-    font-size: $font-size-sm;
-  }
-
-  @include media('>xs') {
     font-size: $font-size-md;
   }
 

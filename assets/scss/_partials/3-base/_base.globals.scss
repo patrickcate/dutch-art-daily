@@ -31,6 +31,9 @@ html {
   padding: 0;
   margin: 0;
 
+  // Prevent iOS Safari change font size with orientation change.
+  -webkit-text-size-adjust: 100%;
+
   // Set the anti-alias settings.
   // -moz-osx-font-smoothing: grayscale || auto
   // -webkit-font-smoothing: antialiased || subpixel-antialiased

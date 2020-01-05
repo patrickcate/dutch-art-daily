@@ -94,11 +94,15 @@ $segment-width: 4px;
 
 .line-segment__accent {
   width: $segment-width;
-  height: $spacing;
+  height: #{$spacing - $quarter-spacing};
   background-color: $white;
   transition: background-color $speed-slow ease, transform $speed-slow ease;
   transform: scaleY(0);
   transform-origin: bottom center;
+
+  @include media('>md') {
+    height: $spacing;
+  }
 }
 
 .swiper-slide-active {
