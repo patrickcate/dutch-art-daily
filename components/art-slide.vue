@@ -32,9 +32,9 @@ export default {
     currentPage: function() {
       if (
         this.currentPage === this.artwork.id &&
-        this.slideHeight !== this.$el.children.offsetHeight
+        this.slideHeight !== this.$el.children[0].offsetHeight
       ) {
-        this.slideHeight = this.$el.children.offsetHeight
+        this.slideHeight = this.$el.children[0].offsetHeight
       }
     },
   },
@@ -65,7 +65,7 @@ export default {
 }
 
 .carousel__slide {
-  padding: $spacing 0;
+  padding: #{$spacing - $quarter-spacing} 0;
 }
 
 .carousel__slide-image {
@@ -77,6 +77,7 @@ export default {
     grid-template-rows: 1fr;
     grid-template-columns: minmax(min-content, 34%) auto;
     grid-gap: $spacing;
+    padding: $spacing 0;
     margin-right: auto;
     margin-left: auto;
   }

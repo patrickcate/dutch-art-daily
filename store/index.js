@@ -36,7 +36,12 @@ export const mutations = {
     state.slides = payload
   },
   SET_LOADED_SLIDES(state, payload) {
-    state.loadedSlides[payload] = payload
+    state.loadedSlides = {
+      ...state.loadedSlides,
+      ...{
+        [payload]: payload,
+      },
+    }
   },
   SET_CURRENT_SLIDE_INDEX(state, payload) {
     state.currentSlideIndex = payload
