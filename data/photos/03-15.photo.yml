@@ -1,40 +1,44 @@
+lqi:
+  width: 160
+  height: 178
 xs3:
   width: 640
-  height: 715
+  height: 713
 xs2:
   width: 800
-  height: 894
+  height: 891
 xs:
   width: 960
-  height: 1073
+  height: 1069
 sm:
   width: 1120
-  height: 1251
+  height: 1247
 md:
   width: 1280
-  height: 1430
+  height: 1425
 lg:
   width: 1440
-  height: 1609
+  height: 1604
 xl:
   width: 1600
-  height: 1788
+  height: 1782
 xl2:
   width: 1760
-  height: 1966
+  height: 1960
 xl3:
   width: 1920
-  height: 2145
+  height: 2138
 id: 03-15
-vibrant: '#ad2b1e'
-lightVibrant: '#f8e381'
-darkVibrant: '#773223'
-muted: '#63719d'
-lightMuted: '#d2d8e2'
-darkMuted: '#483227'
+vibrant: '#9e7433'
+lightVibrant: '#dec39a'
+darkVibrant: '#733513'
+muted: '#b4a375'
+lightMuted: '#c7cac8'
+darkMuted: '#524a3c'
 titleText: '#fff'
-bodyText: '#fff'
-width: 3829
-height: 4278
-ratio: 1.117263
-hash: cgXssgtec9u
+bodyText: '#000'
+width: 2024
+height: 2254
+ratio: 1.113636
+hash: cgPssitec9u
+maxWidth: xl3

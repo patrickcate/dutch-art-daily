@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 195
 xs3:
   width: 640
   height: 779
@@ -11,12 +14,13 @@ id: 01-14
 vibrant: '#bf846b'
 lightVibrant: '#d6b2a2'
 darkVibrant: '#701c14'
-muted: '#887777'
-lightMuted: '#9c9499'
+muted: '#887677'
+lightMuted: '#9c9494'
 darkMuted: '#51322c'
 titleText: '#fff'
 bodyText: '#fff'
-width: 1100
-height: 1339
-ratio: 1.217273
+width: 1094
+height: 1332
+ratio: 1.21755
 hash: eEEc9fcp13j
+maxWidth: xs

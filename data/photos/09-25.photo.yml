@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 180
 xs3:
   width: 640
   height: 722
@@ -38,3 +41,4 @@ width: 2072
 height: 2336
 ratio: 1.127413
 hash: dPM08atekpC
+maxWidth: xl3

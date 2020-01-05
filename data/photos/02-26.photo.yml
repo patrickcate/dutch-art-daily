@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 198
 xs3:
   width: 640
   height: 793
@@ -20,3 +23,4 @@ width: 1100
 height: 1363
 ratio: 1.239091
 hash: 8ewejPiOkIq
+maxWidth: xs

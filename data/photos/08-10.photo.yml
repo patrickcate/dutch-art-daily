@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 209
 xs3:
   width: 640
   height: 836
@@ -29,3 +32,4 @@ width: 1532
 height: 2000
 ratio: 1.305483
 hash: b4diP1BjF39
+maxWidth: lg

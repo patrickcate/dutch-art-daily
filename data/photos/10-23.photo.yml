@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 188
 xs3:
   width: 640
   height: 753
@@ -23,3 +26,4 @@ width: 1166
 height: 1371
 ratio: 1.175815
 hash: cNAMc2431w8
+maxWidth: sm

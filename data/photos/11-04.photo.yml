@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 130
 xs3:
   width: 640
   height: 518
@@ -12,7 +15,7 @@ sm:
   height: 907
 md:
   width: 1280
-  height: 1036
+  height: 1037
 lg:
   width: 1440
   height: 1166
@@ -26,15 +29,16 @@ xl3:
   width: 1920
   height: 1555
 id: 11-04
-vibrant: '#8c1a13'
-lightVibrant: '#ef908a'
+vibrant: '#8c1a14'
+lightVibrant: '#ee8f8a'
 darkVibrant: '#660b0b'
 muted: '#a5685a'
 lightMuted: '#a99a86'
 darkMuted: '#674238'
 titleText: '#fff'
 bodyText: '#fff'
-width: 4004
-height: 3242
-ratio: 0.80969
-hash: f4Ua0ono0Pg
+width: 3985
+height: 3227
+ratio: 0.809787
+hash: f4Ua0onq0Ok
+maxWidth: xl3

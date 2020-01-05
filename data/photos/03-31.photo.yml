@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 203
 xs3:
   width: 640
   height: 813
@@ -38,3 +41,4 @@ width: 3750
 height: 4762
 ratio: 1.269867
 hash: chygp180000
+maxWidth: xl3

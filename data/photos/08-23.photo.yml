@@ -1,3 +1,6 @@
+lqi:
+  width: 160
+  height: 194
 xs3:
   width: 640
   height: 778
@@ -23,3 +26,4 @@ width: 1200
 height: 1458
 ratio: 1.215
 hash: cPT10cz277S
+maxWidth: sm
