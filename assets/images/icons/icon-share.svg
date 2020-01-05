@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="48px" height="52px" viewBox="0 0 48 52" style="enable-background:new 0 0 48 52;" xml:space="preserve">
-<title>icon-arrow-left</title>
-<path d="M39.4,16.1L24,0L8.6,16.1c-0.3,0.3-0.3,0.7,0,0.9l3.1,3.2c0.3,0.3,0.7,0.3,1,0c0,0,0,0,0,0l8.4-8.8v22.5h5.8V11.4l8.4,8.8
-	c0.3,0.3,0.7,0.3,1,0c0,0,0,0,0,0l3.1-3.2C39.6,16.7,39.6,16.3,39.4,16.1z"/>
-<polygon points="42.2,25 42.2,46.2 5.8,46.2 5.8,25 0,25 0,52 4.4,52 5.8,52 42.2,52 44.8,52 48,52 48,25 "/>
-</svg>
+<svg enable-background="new 0 0 48 52" height="52" viewBox="0 0 48 52" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m39.4 16.1-15.4-16.1-15.4 16.1c-.3.3-.3.7 0 .9l3.1 3.2c.3.3.7.3 1 0l8.4-8.8v22.5h5.8v-22.5l8.4 8.8c.3.3.7.3 1 0l3.1-3.2c.2-.3.2-.7 0-.9z"/><path d="m42.2 25v21.2h-36.4v-21.2h-5.8v27h4.4 1.4 36.4 2.6 3.2v-27z"/></svg>
