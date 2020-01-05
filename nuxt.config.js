@@ -1,5 +1,4 @@
 import { generateRoutes } from './utils/generate-routes'
-const imagemin = require('imagemin')
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const path = require('path')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
@@ -117,6 +116,18 @@ module.exports = {
       },
     },
     extractCSS: process.env.NODE_ENV === 'production',
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|scss|vue)$/,
+            chunks: 'all',
+            enforce: true,
+          },
+        },
+      },
+    },
 
     plugins: [
       new SpriteLoaderPlugin({
