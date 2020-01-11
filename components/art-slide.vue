@@ -30,11 +30,13 @@ export default {
   },
   watch: {
     currentPage: function() {
+      const slideHeight = this.$el.children[0].scrollHeight
       if (
+        slideHeight &&
         this.currentPage === this.artwork.id &&
-        this.slideHeight !== this.$el.children[0].offsetHeight
+        this.slideHeight !== slideHeight
       ) {
-        this.slideHeight = this.$el.children[0].offsetHeight
+        this.slideHeight = slideHeight
       }
     },
   },

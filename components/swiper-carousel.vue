@@ -56,7 +56,9 @@ export default {
     },
   },
   mounted() {
+    // Add the default carousel slide class.
     this.addSlideClass()
+
     const self = this
     Swiper.use([A11y, Lazy, Navigation, Controller])
 
@@ -95,15 +97,16 @@ export default {
           self.updateCurrentSlide(this.activeIndex)
           self.updateHeight(this.slides[this.activeIndex])
         },
-        imagesReady() {
-          self.updateHeight(this.slides[this.activeIndex])
-        },
         lazyImageReady(slideEl, imageEl) {
-          self.$store.commit(
-            'SET_LOADED_SLIDES',
-            imageEl.getAttribute('data-id')
-          )
-          self.updateHeight(this.slides[this.activeIndex])
+          const imageId = imageEl.getAttribute('data-id')
+
+          self.$store.commit('SET_LOADED_SLIDES', imageId)
+
+          const slideIndex = self.$store.getters.getSlideIndexById(imageId)
+
+          if (self.slideIndex === slideIndex) {
+            self.updateHeight(this.slides[this.activeIndex])
+          }
         },
         resize() {
           self.updateHeight(this.slides[this.activeIndex])
@@ -158,11 +161,14 @@ export default {
     },
     updateHeight(slide) {
       if (this.name === 'carousel') {
-        const slideHeight = slide.querySelector('.carousel__slide')
+        this.$nextTick(function() {
+          const imageHeight = slide.querySelector('img').scrollHeight
+          const slideHeight = slide.children[0].scrollHeight
 
-        if (slideHeight && slideHeight.offsetHeight !== this.slideHeight) {
-          this.slideHeight = slideHeight.offsetHeight
-        }
+          if (imageHeight && slideHeight > imageHeight) {
+            this.slideHeight = slideHeight
+          }
+        })
       }
     },
     updateCurrentSlide(index) {
