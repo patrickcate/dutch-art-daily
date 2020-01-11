@@ -18,9 +18,6 @@ export default {
   },
   data() {
     return {
-      facebook: `https://www.facebook.com/sharer/sharer.php?u=https%3A//www.dutchartdaily.com/${this.$store.state.currentPage}`,
-      twitter: `https://twitter.com/home?status=https%3A//www.dutchartdaily.com/${this.$store.state.currentPage}`,
-      pinterest: `https://pinterest.com/pin/create/button/?url=&media=https%3A//www.dutchartdaily.com/${this.$store.state.currentPage}`,
       github: 'https://github.com/patrickcate/dutch-art-daily',
       iconFacebook: IconFacebook,
       iconTwitter: IconTwitter,
@@ -28,11 +25,34 @@ export default {
       iconGithub: IconGithub,
     }
   },
+  computed: {
+    currentPage() {
+      return this.$store.state.currentPage
+    },
+    artwork() {
+      return this.$store.getters.getArtById(this.currentPage)
+    },
+    shareDescription() {
+      return encodeURI(`${this.artwork.title} by ${this.artwork.artist}`)
+    },
+    shareImage() {
+      return `https%3A//www.dutchartdaily.com/photos/${this.artwork.id}/${this.artwork.id}--xs3-${this.artwork.hash}.jpg`
+    },
+    facebook() {
+      return `https://www.facebook.com/sharer/sharer.php?u=https%3A//www.dutchartdaily.com/${this.currentPage}`
+    },
+    twitter() {
+      return `https://twitter.com/intent/tweet?url=https%3A//www.dutchartdaily.com/${this.currentPage}&text=${this.shareDescription}`
+    },
+    pinterest() {
+      return `https://pinterest.com/pin/create/link/?url=https%3A//www.dutchartdaily.com/${this.currentPage}&media=${this.shareImage}&description=${this.shareDescription}`
+    },
+  },
 }
 </script>
 
 <template>
-  <ul class="share-list" :class="`share-list--${direction}`">
+  <ul v-if="artwork" class="share-list" :class="`share-list--${direction}`">
     <li class="share-list__item share-list__item--facebook">
       <a :href="facebook" class="share-list__item-link">
         <span class="u-sr-only">Share on Facebook</span>
@@ -105,22 +125,6 @@ export default {
     transform: translate(0, 0);
   }
 
-  // .share-list__item--facebook {
-  //   transform: translate(-#{$spacing * 3.75}, -#{$half-spacing});
-  // }
-
-  // .share-list__item--twitter {
-  //   transform: translate(-#{$spacing * 2.75}, $spacing + $quarter-spacing);
-  // }
-
-  // .share-list__item--pinterest {
-  //   transform: translate(-#{$spacing * 1.25}, $spacing * 2.75);
-  // }
-
-  // .share-list__item--github {
-  //   transform: translate($quarter-spacing, $spacing * 4);
-  // }
-
   .share-list__icon {
     width: $font-size-xl;
     height: $font-size-xl;
@@ -133,24 +137,6 @@ export default {
       margin-right: $half-spacing;
     }
   }
-
-  // .share-list__item-link {
-  //   padding: $half-spacing 0 0 0;
-  // }
-
-  // .share-list__item {
-  //   &:first-child {
-  //     .share-list__item-link {
-  //       padding-left: 0;
-  //     }
-  //   }
-
-  //   &:last-child {
-  //     .share-list__item-link {
-  //       padding-right: 0;
-  //     }
-  //   }
-  // }
 }
 
 .share-list__icon {

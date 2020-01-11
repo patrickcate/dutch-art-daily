@@ -1,5 +1,6 @@
 <script>
 import { fetchArtworkData } from '@utils/fetch-artwork-data'
+import { generateRoutes } from '@utils/generate-routes'
 import SwiperCarousel from '@components/swiper-carousel'
 import ArtSlide from '@components/art-slide'
 import TimelineNav from '@components/timeline-nav'
@@ -31,8 +32,9 @@ export default {
     }
   },
   validate({ params }) {
-    // Must be a number
-    return true
+    const allRoutes = generateRoutes()
+
+    return allRoutes.includes(params.date)
   },
   computed: {
     currentDate() {
