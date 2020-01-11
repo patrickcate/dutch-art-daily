@@ -11,7 +11,6 @@
   ],
   "scripts": {
     "dev": "nuxt",
-    "dev:local": "HOST=10.0.1.12 yarn start",
     "build": "nuxt build",
     "start": "nuxt start",
     "serve": "nuxt",
@@ -30,7 +29,7 @@
   "dependencies": {
     "date-fns": "^1.29.0",
     "nuxt": "^2.0.0",
-    "swiper": "^4.4.5",
+    "swiper": "^5.2.1",
     "vue-screen": "^1.2.0"
   },
   "devDependencies": {

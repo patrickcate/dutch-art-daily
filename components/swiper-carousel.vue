@@ -6,7 +6,7 @@ import {
   Lazy,
   Navigation,
   Swiper,
-} from 'swiper/dist/js/swiper.esm'
+} from 'swiper/js/swiper.esm'
 
 export default {
   name: 'SwiperCarousel',
