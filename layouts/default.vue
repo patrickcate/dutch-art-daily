@@ -30,7 +30,9 @@ export default {
     this.$root.swipers = {}
 
     // Set the inital page id to the current page.
-    this.$store.dispatch('setCurrentPage', this.$route.params.date)
+    if (!this.$store.state.currentPage) {
+      this.$store.dispatch('setCurrentPage', this.$route.params.date)
+    }
   },
 }
 </script>

@@ -23,9 +23,11 @@ export default {
       return id === this.todayId ? 'page-background--today' : null
     },
     backgroundImage(image) {
-      return {
-        backgroundImage: `url('/photos/${image.id}/${image.id}--lqi-${image.hash}.jpg')`,
-      }
+      return image
+        ? {
+            backgroundImage: `url('/photos/${image.id}/${image.id}--lqi-${image.hash}.jpg')`,
+          }
+        : null
     },
   },
 }
@@ -53,7 +55,7 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  filter: blur(px($spacing));
+  filter: blur($half-spacing);
   background-position: top;
   background-size: cover;
   opacity: 0;

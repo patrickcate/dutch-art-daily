@@ -16,9 +16,8 @@ export default {
 <template>
   <swiper-carousel class="details-list" name="details">
     <li
-      v-for="(slide, index) in slides"
+      v-for="slide in slides"
       :key="slide.id"
-      :class="index === slides.length - 1 ? 'swiper-slide-active' : null"
       class="details-list__item swiper-slide"
     >
       <div class="art-details">

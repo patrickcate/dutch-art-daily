@@ -1,4 +1,5 @@
 <script>
+import { dateId } from '@utils/format-date.js'
 import SvgIcon from '@components/svg-icon.vue'
 import AppLogo from '@assets/images/logos/logo.svg'
 import AppLogoCondensed from '@assets/images/logos/logo-sm.svg'
@@ -14,12 +15,23 @@ export default {
       AppLogoCondensed,
     }
   },
+  methods: {
+    today() {
+      const today = dateId(new Date())
+
+      if (this.$store.getters.getSlideIndexById(today) >= 0) {
+        this.$root.swipers.carousel.slideTo(6)
+      } else {
+        this.$router.push(today ? `/${today}` : '/')
+      }
+    },
+  },
 }
 </script>
 
 <template>
   <div>
-    <a href="/" rel="home" class="home" @click.prevent="$homepageRedirect()">
+    <a href="/" rel="home" class="home" @click.prevent="today">
       <svg-icon :icon="AppLogo" class="logo" aria-label="Home" />
       <svg-icon :icon="AppLogoCondensed" class="logo-sm" aria-label="Home" />
     </a>
