@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 210
+  },
+  "xs3": {
+    "width": 640,
+    "height": 839
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1049
+  },
+  "xs": {
+    "width": 960,
+    "height": 1258
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1468
+  },
+  "md": {
+    "width": 1280,
+    "height": 1678
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1888
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2097
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2307
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2517
+  },
+  "title": "The Return of the Prodigal Son",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "c. 1663-1665",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 262,
+  "art_width": 205,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "07-27",
+  "artwork_date": "2016-07-27T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#cc7b2c",
+  "lightVibrant": "#d9ab62",
+  "darkVibrant": "#7c390e",
+  "muted": "#8a6c44",
+  "lightMuted": "#7b571d",
+  "darkMuted": "#514429",
+  "width": 2200,
+  "height": 2884,
+  "ratio": 1.310909,
+  "hash": "8GqJ61xq6C3",
+  "maxWidth": "xl3"
+}

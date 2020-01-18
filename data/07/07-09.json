@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 129
+  },
+  "xs3": {
+    "width": 640,
+    "height": 516
+  },
+  "xs2": {
+    "width": 800,
+    "height": 645
+  },
+  "xs": {
+    "width": 960,
+    "height": 774
+  },
+  "title": "Celebrating the Birth",
+  "artist": "Jan Steen",
+  "art_date": "1664",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 89,
+  "art_width": 109,
+  "art_location": "Wallace Collection, London",
+  "id": "07-09",
+  "artwork_date": "2016-07-09T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Steen_Celebrating_the_Birth.jpg",
+  "orientation": "landscape",
+  "vibrant": "#bd7a5b",
+  "lightVibrant": "#d8b2a0",
+  "darkVibrant": "#542414",
+  "muted": "#9e7661",
+  "lightMuted": "#bdb9b8",
+  "darkMuted": "#563930",
+  "width": 1116,
+  "height": 900,
+  "ratio": 0.806452,
+  "hash": "8yi5y0OP6r5",
+  "maxWidth": "xs"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 179
+  },
+  "xs3": {
+    "width": 640,
+    "height": 715
+  },
+  "xs2": {
+    "width": 800,
+    "height": 894
+  },
+  "xs": {
+    "width": 960,
+    "height": 1072
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1251
+  },
+  "md": {
+    "width": 1280,
+    "height": 1430
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1609
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1787
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1966
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2145
+  },
+  "title": "Portrait of a Young Woman",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1665-1967",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 44.5,
+  "art_width": 40,
+  "art_location": "Metropolitan Museum of Art, New York City",
+  "id": "10-15",
+  "artwork_date": "2016-10-15T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Portrait_of_a_Young_Woman_(Vermeer)&oldid=598728281",
+  "orientation": "portrait",
+  "vibrant": "#945624",
+  "lightVibrant": "#e0ac82",
+  "darkVibrant": "#5c1b0e",
+  "muted": "#9d7767",
+  "lightMuted": "#d2b5b7",
+  "darkMuted": "#313554",
+  "width": 3195,
+  "height": 3569,
+  "ratio": 1.117058,
+  "hash": "8tGu167PjAW",
+  "maxWidth": "xl3"
+}

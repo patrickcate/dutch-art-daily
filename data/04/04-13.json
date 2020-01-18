@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 98
+  },
+  "xs3": {
+    "width": 640,
+    "height": 394
+  },
+  "xs2": {
+    "width": 800,
+    "height": 492
+  },
+  "xs": {
+    "width": 960,
+    "height": 591
+  },
+  "sm": {
+    "width": 1120,
+    "height": 689
+  },
+  "md": {
+    "width": 1280,
+    "height": 788
+  },
+  "lg": {
+    "width": 1440,
+    "height": 886
+  },
+  "xl": {
+    "width": 1600,
+    "height": 985
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1083
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1182
+  },
+  "title": "Pastoral Scene with a Shepherd Family Against Countryside Background",
+  "artist": "Abraham Bloemaert",
+  "art_date": "",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 68,
+  "art_width": 107,
+  "art_location": null,
+  "id": "04-13",
+  "artwork_date": "2016-04-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Bloemaert_(Kreis)_Pastorale_Szene.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ba8f40",
+  "lightVibrant": "#fcfaf6",
+  "darkVibrant": "#764a1b",
+  "muted": "#618798",
+  "lightMuted": "#c9bda8",
+  "darkMuted": "#4d3f2c",
+  "width": 3036,
+  "height": 1869,
+  "ratio": 0.615613,
+  "hash": "e8F7f0FMBy6",
+  "maxWidth": "xl3"
+}

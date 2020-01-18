@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 202
+  },
+  "xs3": {
+    "width": 640,
+    "height": 807
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1009
+  },
+  "xs": {
+    "width": 960,
+    "height": 1211
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1412
+  },
+  "md": {
+    "width": 1280,
+    "height": 1614
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1816
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2018
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2219
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2421
+  },
+  "title": "Self Portrait as a Lutenist",
+  "artist": "Jan Steen",
+  "art_date": "1652-1655",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 55.5,
+  "art_width": 44,
+  "art_location": "Sammlung Thyssen-Bornemisza, Madrid",
+  "id": "12-29",
+  "artwork_date": "2016-12-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Steen_010.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ad5150",
+  "lightVibrant": "#c6a57f",
+  "darkVibrant": "#7c3448",
+  "muted": "#9d7059",
+  "lightMuted": "#a3a49d",
+  "darkMuted": "#4f3f47",
+  "width": 2000,
+  "height": 2522,
+  "ratio": 1.261,
+  "hash": "8wMoPjbw1gI",
+  "maxWidth": "xl3"
+}

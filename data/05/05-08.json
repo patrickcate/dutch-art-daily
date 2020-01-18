@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 181
+  },
+  "xs3": {
+    "width": 640,
+    "height": 724
+  },
+  "xs2": {
+    "width": 800,
+    "height": 905
+  },
+  "xs": {
+    "width": 960,
+    "height": 1086
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1266
+  },
+  "title": "Buffoon Playing a Lute.",
+  "artist": "Frans Hals",
+  "art_date": "c. 1623-1624",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 70,
+  "art_width": 62,
+  "art_location": "Louvre Museum, Paris",
+  "id": "05-08",
+  "artwork_date": "2016-05-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Luitspelende_nar.jpg",
+  "orientation": "portrait",
+  "vibrant": "#98693e",
+  "lightVibrant": "#c6997c",
+  "darkVibrant": "#7c2c2f",
+  "muted": "#9e765f",
+  "lightMuted": "#a18d80",
+  "darkMuted": "#4c383f",
+  "width": 1178,
+  "height": 1332,
+  "ratio": 1.13073,
+  "hash": "d4iq5yxgNMM",
+  "maxWidth": "sm"
+}

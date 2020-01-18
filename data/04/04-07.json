@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 185
+  },
+  "xs3": {
+    "width": 640,
+    "height": 739
+  },
+  "xs2": {
+    "width": 800,
+    "height": 923
+  },
+  "xs": {
+    "width": 960,
+    "height": 1108
+  },
+  "title": "A Mother Combing the Hair of Her Child",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1652-1653",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 33.5,
+  "art_width": 29,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "04-07",
+  "artwork_date": "2016-04-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Mother_Combing_the_Hair_of_Her_Child_1652-3_Gerard_ter_Borch.jpg",
+  "orientation": "portrait",
+  "vibrant": "#aa8050",
+  "lightVibrant": "#e0d0b2",
+  "darkVibrant": "#943c22",
+  "muted": "#837e75",
+  "lightMuted": "#e6ded0",
+  "darkMuted": "#4a3d2f",
+  "width": 1000,
+  "height": 1154,
+  "ratio": 1.154,
+  "hash": "8kAs37d1JEN",
+  "maxWidth": "xs"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 198
+  },
+  "xs3": {
+    "width": 640,
+    "height": 793
+  },
+  "xs2": {
+    "width": 800,
+    "height": 992
+  },
+  "xs": {
+    "width": 960,
+    "height": 1190
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1388
+  },
+  "md": {
+    "width": 1280,
+    "height": 1587
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1785
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1983
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2181
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2380
+  },
+  "title": "A Praying Hermit in a Ruin",
+  "artist": "Jan Adriaensz van Staveren",
+  "art_date": "1650-1668",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 33,
+  "art_width": 27,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "06-12",
+  "artwork_date": "2016-06-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Een_biddende_kluizenaar_in_een_ru%C3%AFne_Rijksmuseum_SK-A-381.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#b0734e",
+  "lightVibrant": "#d6b6a3",
+  "darkVibrant": "#5c3c29",
+  "muted": "#897757",
+  "lightMuted": "#69452f",
+  "darkMuted": "#655339",
+  "width": 2017,
+  "height": 2500,
+  "ratio": 1.239465,
+  "hash": "8yyhsQSA4By",
+  "maxWidth": "xl3"
+}

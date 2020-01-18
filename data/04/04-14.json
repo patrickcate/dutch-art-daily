@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 171
+  },
+  "xs3": {
+    "width": 640,
+    "height": 686
+  },
+  "xs2": {
+    "width": 800,
+    "height": 857
+  },
+  "xs": {
+    "width": 960,
+    "height": 1029
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1200
+  },
+  "md": {
+    "width": 1280,
+    "height": 1372
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1543
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1715
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1886
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2057
+  },
+  "title": "A Woman with a Child in a Pantry",
+  "artist": "Pieter de Hooch",
+  "art_date": "c. 1658",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 65,
+  "art_width": 60.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "04-14",
+  "artwork_date": "2016-04-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_007.jpg",
+  "orientation": "portrait",
+  "vibrant": "#9e6f27",
+  "lightVibrant": "#e4c594",
+  "darkVibrant": "#815516",
+  "muted": "#a99d79",
+  "lightMuted": "#7a561e",
+  "darkMuted": "#574f37",
+  "width": 2430,
+  "height": 2604,
+  "ratio": 1.071605,
+  "hash": "8RUppyqNPak",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 123
+  },
+  "xs3": {
+    "width": 640,
+    "height": 492
+  },
+  "xs2": {
+    "width": 800,
+    "height": 615
+  },
+  "xs": {
+    "width": 960,
+    "height": 738
+  },
+  "title": "Peasants in an Interior",
+  "artist": "Adriaen van Ostade",
+  "art_date": "1661",
+  "art_medium": "Oil",
+  "art_surface": "Copper",
+  "art_height": 37,
+  "art_width": 47,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "08-04",
+  "artwork_date": "2016-08-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Peasants_in_an_Interior_(1661)_Adriaen_van_Ostade.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b28456",
+  "lightVibrant": "#ddc596",
+  "darkVibrant": "#6c341c",
+  "muted": "#91744f",
+  "lightMuted": "#735925",
+  "darkMuted": "#533a31",
+  "width": 1041,
+  "height": 800,
+  "ratio": 0.768492,
+  "hash": "aHzN1Esf4Tq",
+  "maxWidth": "xs"
+}

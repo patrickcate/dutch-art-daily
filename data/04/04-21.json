@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 131
+  },
+  "xs3": {
+    "width": 640,
+    "height": 522
+  },
+  "xs2": {
+    "width": 800,
+    "height": 653
+  },
+  "xs": {
+    "width": 960,
+    "height": 784
+  },
+  "sm": {
+    "width": 1120,
+    "height": 914
+  },
+  "title": "Woman Tearing a Letter",
+  "artist": "Dirck Hals",
+  "art_date": "1631",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 45,
+  "art_width": 55,
+  "art_location": "Landesmuseum Mainz, Mainz",
+  "id": "04-21",
+  "artwork_date": "2016-04-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Dirck_Hals_-_Woman_Tearing_a_Letter_-_WGA11046.jpg",
+  "orientation": "landscape",
+  "vibrant": "#956a44",
+  "lightVibrant": "#d5bba3",
+  "darkVibrant": "#583c2a",
+  "muted": "#927859",
+  "lightMuted": "#bba481",
+  "darkMuted": "#3f2920",
+  "width": 1225,
+  "height": 1000,
+  "ratio": 0.816327,
+  "hash": "cEqlmkOcFw8",
+  "maxWidth": "sm"
+}

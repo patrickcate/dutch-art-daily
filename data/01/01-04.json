@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 198
+  },
+  "xs3": {
+    "width": 640,
+    "height": 791
+  },
+  "xs2": {
+    "width": 800,
+    "height": 988
+  },
+  "xs": {
+    "width": 960,
+    "height": 1186
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1384
+  },
+  "md": {
+    "width": 1280,
+    "height": 1581
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1779
+  },
+  "title": "A Boy Blowing Soap Bubbles",
+  "artist": "Caspar Netscher",
+  "art_date": "1679",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 28.5,
+  "art_width": 23,
+  "art_location": "Private Collection",
+  "id": "01-04",
+  "artwork_date": "2016-01-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Caspar_Netscher_-_A_boy_blowing_soap_bubbles.jpg",
+  "orientation": "portrait",
+  "vibrant": "#e0661e",
+  "lightVibrant": "#efaf8a",
+  "darkVibrant": "#58280c",
+  "muted": "#b79070",
+  "lightMuted": "#93948c",
+  "darkMuted": "#57432b",
+  "width": 1457,
+  "height": 1800,
+  "ratio": 1.235415,
+  "hash": "8pUp8irc236",
+  "maxWidth": "lg"
+}

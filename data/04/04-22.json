@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 116
+  },
+  "xs3": {
+    "width": 640,
+    "height": 465
+  },
+  "xs2": {
+    "width": 800,
+    "height": 581
+  },
+  "xs": {
+    "width": 960,
+    "height": 698
+  },
+  "sm": {
+    "width": 1120,
+    "height": 814
+  },
+  "md": {
+    "width": 1280,
+    "height": 930
+  },
+  "title": "The Judgment of Paris",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "1628",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 40,
+  "art_width": 52,
+  "art_location": "Museum of Fine Arts, Budapest",
+  "id": "04-22",
+  "artwork_date": "2016-04-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_Cornelisz._van_Haarlem_-_The_Judgment_of_Paris_-_WGA05252.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b85825",
+  "lightVibrant": "#eadab3",
+  "darkVibrant": "#722b1b",
+  "muted": "#9f8756",
+  "lightMuted": "#d3c59f",
+  "darkMuted": "#625430",
+  "width": 1307,
+  "height": 950,
+  "ratio": 0.726855,
+  "hash": "8Lzeb3DSb0K",
+  "maxWidth": "md"
+}

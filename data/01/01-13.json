@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 185
+  },
+  "xs3": {
+    "width": 640,
+    "height": 740
+  },
+  "xs2": {
+    "width": 800,
+    "height": 925
+  },
+  "xs": {
+    "width": 960,
+    "height": 1110
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1295
+  },
+  "md": {
+    "width": 1280,
+    "height": 1480
+  },
+  "title": "The Raising of Lazarus",
+  "artist": "Jan Pynas",
+  "art_date": "c. 1620",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 57.8,
+  "art_width": 50.5,
+  "art_location": "Philadelphia Museum of Art, Philadelphia",
+  "id": "01-13",
+  "artwork_date": "2016-01-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Symonsz._Pynas_-_De_opwekking_van_Lazarus.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a37747",
+  "lightVibrant": "#d6bda2",
+  "darkVibrant": "#6c381a",
+  "muted": "#8a754e",
+  "lightMuted": "#6a4d2e",
+  "darkMuted": "#55322d",
+  "width": 1290,
+  "height": 1492,
+  "ratio": 1.156589,
+  "hash": "8sjiCMM8Vah",
+  "maxWidth": "md"
+}

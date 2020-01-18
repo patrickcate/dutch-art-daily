@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 185
+  },
+  "xs3": {
+    "width": 640,
+    "height": 740
+  },
+  "xs2": {
+    "width": 800,
+    "height": 925
+  },
+  "xs": {
+    "width": 960,
+    "height": 1110
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1295
+  },
+  "md": {
+    "width": 1280,
+    "height": 1481
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1666
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1851
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2036
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2221
+  },
+  "title": "Christ in the House of Martha and Mary",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1655",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 160,
+  "art_width": 142,
+  "art_location": "The National Gallery of Scotland, Edinburgh",
+  "id": "01-15",
+  "artwork_date": "2016-01-15T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Christ_in_the_House_of_Martha_and_Mary_(Vermeer)&oldid=589481499",
+  "orientation": "portrait",
+  "vibrant": "#a67b31",
+  "lightVibrant": "#e0c698",
+  "darkVibrant": "#721311",
+  "muted": "#a16748",
+  "lightMuted": "#beaf8e",
+  "darkMuted": "#3c231f",
+  "width": 3459,
+  "height": 4001,
+  "ratio": 1.156693,
+  "hash": "cykcSf8jics",
+  "maxWidth": "xl3"
+}

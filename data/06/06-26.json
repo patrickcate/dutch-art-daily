@@ -1,0 +1,38 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 190
+  },
+  "xs3": {
+    "width": 640,
+    "height": 758
+  },
+  "xs2": {
+    "width": 800,
+    "height": 948
+  },
+  "title": "The Seduction",
+  "artist": "Caspar Netscher",
+  "art_date": "1664",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 38,
+  "art_width": 32,
+  "art_location": "Private Collection",
+  "id": "06-26",
+  "artwork_date": "2016-06-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Caspar_Netscher_-_The_Seduction_-_WGA16528.jpg",
+  "orientation": "portrait",
+  "vibrant": "#8c4428",
+  "lightVibrant": "#e1ac97",
+  "darkVibrant": "#563014",
+  "muted": "#9b866a",
+  "lightMuted": "#cfc6a7",
+  "darkMuted": "#654a31",
+  "width": 920,
+  "height": 1090,
+  "ratio": 1.184783,
+  "hash": "aGBiN0QrkD3",
+  "maxWidth": "xs2"
+}

@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 214
+  },
+  "xs3": {
+    "width": 640,
+    "height": 857
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1071
+  },
+  "xs": {
+    "width": 960,
+    "height": 1286
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1500
+  },
+  "title": "Saint John the Evangelist on Patmos",
+  "artist": "Pieter Lastman",
+  "art_date": "1613",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 36,
+  "art_width": 26.7,
+  "art_location": "Museum Boijmans Van Beuningen,\tRotterdam",
+  "id": "11-16",
+  "artwork_date": "2016-11-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Pieter_Lastman_005.jpg",
+  "orientation": "portrait",
+  "vibrant": "#913a30",
+  "lightVibrant": "#dea29b",
+  "darkVibrant": "#684323",
+  "muted": "#9b7f6a",
+  "lightMuted": "#b4a78a",
+  "darkMuted": "#523c30",
+  "width": 1188,
+  "height": 1591,
+  "ratio": 1.339226,
+  "hash": "bxMo80Qw084",
+  "maxWidth": "sm"
+}

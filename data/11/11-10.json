@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 225
+  },
+  "xs3": {
+    "width": 640,
+    "height": 899
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1124
+  },
+  "xs": {
+    "width": 960,
+    "height": 1349
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1574
+  },
+  "md": {
+    "width": 1280,
+    "height": 1799
+  },
+  "lg": {
+    "width": 1440,
+    "height": 2024
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2248
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2473
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2698
+  },
+  "title": "Maid at the Window",
+  "artist": "Gerard Dou",
+  "art_date": "c. 1660",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 38,
+  "art_width": 28,
+  "art_location": "Museum Boijmans Van Beuningen, Rotterdam",
+  "id": "11-10",
+  "artwork_date": "2016-11-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://en.wikipedia.org/wiki/File:Gerard_Dou_-_Maid_at_the_Window_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#864c2c",
+  "lightVibrant": "#deb39b",
+  "darkVibrant": "#542414",
+  "muted": "#99875f",
+  "lightMuted": "#bfb990",
+  "darkMuted": "#635438",
+  "width": 3514,
+  "height": 4938,
+  "ratio": 1.405236,
+  "hash": "94dozajp2C9",
+  "maxWidth": "xl3"
+}

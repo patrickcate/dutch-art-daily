@@ -1,0 +1,38 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 135
+  },
+  "xs3": {
+    "width": 640,
+    "height": 541
+  },
+  "xs2": {
+    "width": 800,
+    "height": 676
+  },
+  "title": "Jacob Reproaching Laban",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "1627",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 97.5,
+  "art_width": 114.3,
+  "art_location": "The National Gallery, London",
+  "id": "05-10",
+  "artwork_date": "2016-05-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Hendrick_ter_Brugghen_-_Jacob_Reproaching_Laban_-_WGA22181.jpg",
+  "orientation": "landscape",
+  "vibrant": "#cc4434",
+  "lightVibrant": "#e5d196",
+  "darkVibrant": "#7e2f23",
+  "muted": "#ac8c56",
+  "lightMuted": "#c2b280",
+  "darkMuted": "#543c28",
+  "width": 900,
+  "height": 761,
+  "ratio": 0.845556,
+  "hash": "d6i9e2pe61J",
+  "maxWidth": "xs2"
+}

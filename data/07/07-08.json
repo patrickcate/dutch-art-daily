@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 129
+  },
+  "xs3": {
+    "width": 640,
+    "height": 517
+  },
+  "xs2": {
+    "width": 800,
+    "height": 646
+  },
+  "xs": {
+    "width": 960,
+    "height": 775
+  },
+  "sm": {
+    "width": 1120,
+    "height": 904
+  },
+  "md": {
+    "width": 1280,
+    "height": 1033
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1163
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1292
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1421
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1550
+  },
+  "title": "The Adoration of the Magi",
+  "artist": "Joris van Schooten",
+  "art_date": "1646",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 153,
+  "art_width": 188.8,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "07-08",
+  "artwork_date": "2016-07-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:De_aanbidding_der_koningen_Rijksmuseum_SK-A-974.jpeg",
+  "orientation": "landscape",
+  "vibrant": "#957747",
+  "lightVibrant": "#d4c2a5",
+  "darkVibrant": "#6f541a",
+  "muted": "#ab925d",
+  "lightMuted": "#675231",
+  "darkMuted": "#5a542f",
+  "width": 2928,
+  "height": 2364,
+  "ratio": 0.807377,
+  "hash": "c0MO8nD00wA",
+  "maxWidth": "xl3"
+}

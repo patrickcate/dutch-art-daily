@@ -3,19 +3,20 @@ module.exports.generatePhotoData = function() {
   const path = require('path')
   const Jimp = require('jimp')
   const Vibrant = require('node-vibrant')
+  const readData = require('read-data')
   const writeData = require('write-data')
   const generateImageSizes = require('./generate-image-sizes')
 
   // Build the directory name we want to scan.
-  const directory = path.join(__dirname, '../_source/photos/')
+  const photosSrcDirectory = path.join(__dirname, '../_source/photos/')
 
   // Get an array of all files in the directory.
   const files = fs
-    .readdirSync(directory)
+    .readdirSync(photosSrcDirectory)
     .filter(path => path.indexOf('.jpg') !== -1)
 
-  // Build the directory path we want to store our palette data files in.
-  const photoDataDirectory = path.join(__dirname, '../data/photos/')
+  const dataSrcDirectory = path.join(__dirname, '../_source/data/')
+  const dataDestDirectory = path.join(__dirname, '../data/')
 
   // Get the total number of files in the directory.
   const length = files.length
@@ -24,15 +25,19 @@ module.exports.generatePhotoData = function() {
     for (let i = 0; i < length; ) {
       const file = files[i]
       const fileId = file.replace('.jpg', '')
+      const date = fileId.split('-')
       console.log('READ', fileId)
 
       // Build the full path to the file.
-      const filePath = path.join(directory, file)
+      const filePath = path.join(photosSrcDirectory, file)
 
-      // Create an empty object to store out palette info in.
-      let photoData = {
-        id: fileId,
-      }
+      let photoData = readData.sync(
+        `${dataSrcDirectory}${date[0]}/${fileId}.yml`
+      )
+
+      // Calculate the artwork's orientation.
+      photoData.orientation =
+        photoData.art_width > photoData.art_height ? 'landscape' : 'portrait'
 
       await Vibrant.from(filePath)
         .getPalette()
@@ -51,12 +56,6 @@ module.exports.generatePhotoData = function() {
           photoData.darkMuted = palette.DarkMuted
             ? palette.DarkMuted.getHex()
             : null
-          photoData.titleText = palette.Muted.getTitleTextColor()
-            ? palette.Muted.getTitleTextColor()
-            : '#ffffff'
-          photoData.bodyText = palette.Muted.getBodyTextColor()
-            ? palette.Muted.getBodyTextColor()
-            : '#ffffff'
 
           await Jimp.read(filePath).then(async image => {
             photoData.width = image.bitmap.width
@@ -74,9 +73,9 @@ module.exports.generatePhotoData = function() {
               ...photoData,
             }
 
-            // Save the photo data to .yml files so they can be imported later.
+            // Save the photo data to .json files so they can be imported later.
             await writeData.sync(
-              `${photoDataDirectory}${file.replace('.jpg', '')}.photo.yml`,
+              `${dataDestDirectory}${date[0]}/${fileId}.json`,
               photoData
             )
 

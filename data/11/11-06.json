@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 180
+  },
+  "xs3": {
+    "width": 640,
+    "height": 721
+  },
+  "xs2": {
+    "width": 800,
+    "height": 901
+  },
+  "xs": {
+    "width": 960,
+    "height": 1082
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1262
+  },
+  "md": {
+    "width": 1280,
+    "height": 1442
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1623
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1803
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1983
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2164
+  },
+  "title": "Aegina Awaits the Arrival of Zeus",
+  "artist": "Ferdinand Bol",
+  "art_date": "c. 17th Century",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 88.1,
+  "art_width": 78.1,
+  "art_location": "Meininger Museum, Meiningen",
+  "id": "11-06",
+  "artwork_date": "2016-11-06T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Ferdinand_Bol_-_Aegina_wacht_op_de_komst_van_Zeus.jpg",
+  "orientation": "portrait",
+  "vibrant": "#906914",
+  "lightVibrant": "#eecf8a",
+  "darkVibrant": "#662324",
+  "muted": "#9c6454",
+  "lightMuted": "#d2c1ae",
+  "darkMuted": "#54462e",
+  "width": 2215,
+  "height": 2496,
+  "ratio": 1.126862,
+  "hash": "9D9p39poaj6",
+  "maxWidth": "xl3"
+}

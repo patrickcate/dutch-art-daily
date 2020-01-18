@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 207
+  },
+  "xs3": {
+    "width": 640,
+    "height": 830
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1037
+  },
+  "xs": {
+    "width": 960,
+    "height": 1245
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1452
+  },
+  "md": {
+    "width": 1280,
+    "height": 1660
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1867
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2075
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2282
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2489
+  },
+  "title": "The Incorruptible Consul Marcus Curius Dentatus",
+  "artist": "Govert Flinck",
+  "art_date": "1656",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 485,
+  "art_width": 377,
+  "art_location": "Royal Palace of Amsterdam, Amsterdam",
+  "id": "04-06",
+  "artwork_date": "2016-04-06T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Govaert_Flinck_-_The_incorruptible_Consul_Marcus_Curius_Dentatus_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b55620",
+  "lightVibrant": "#e1ce95",
+  "darkVibrant": "#761b0a",
+  "muted": "#937c58",
+  "lightMuted": "#c5b68a",
+  "darkMuted": "#62462e",
+  "width": 3200,
+  "height": 4149,
+  "ratio": 1.296563,
+  "hash": "84$fblw5VT8",
+  "maxWidth": "xl3"
+}

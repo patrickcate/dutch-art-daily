@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 124
+  },
+  "xs3": {
+    "width": 640,
+    "height": 497
+  },
+  "xs2": {
+    "width": 800,
+    "height": 621
+  },
+  "xs": {
+    "width": 960,
+    "height": 745
+  },
+  "sm": {
+    "width": 1120,
+    "height": 869
+  },
+  "md": {
+    "width": 1280,
+    "height": 993
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1117
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1241
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1365
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1490
+  },
+  "title": "The Merry Family",
+  "artist": "Jan Steen",
+  "art_date": "1668",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 110.5,
+  "art_width": 141,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "11-09",
+  "artwork_date": "2016-11-09T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Jan_Steen_Vrolijke_huisgezin.jpg",
+  "orientation": "landscape",
+  "vibrant": "#854c1c",
+  "lightVibrant": "#e7b891",
+  "darkVibrant": "#6e3f14",
+  "muted": "#8d724c",
+  "lightMuted": "#bdab86",
+  "darkMuted": "#544027",
+  "width": 5804,
+  "height": 4503,
+  "ratio": 0.775844,
+  "hash": "8z08c2hk0g8",
+  "maxWidth": "xl3"
+}

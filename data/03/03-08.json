@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 166
+  },
+  "xs3": {
+    "width": 640,
+    "height": 664
+  },
+  "xs2": {
+    "width": 800,
+    "height": 830
+  },
+  "xs": {
+    "width": 960,
+    "height": 996
+  },
+  "title": "Interior with a Sleeping Soldier",
+  "artist": "Caspar Netscher",
+  "art_date": "c. 1660",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 78,
+  "art_width": 76,
+  "art_location": "Private Collection",
+  "id": "03-08",
+  "artwork_date": "2016-03-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Caspar_Netscher_-_Interior_with_a_Sleeping_Soldier_-_WGA16522.jpg",
+  "orientation": "portrait",
+  "vibrant": "#8d6a41",
+  "lightVibrant": "#d5bea4",
+  "darkVibrant": "#67401c",
+  "muted": "#8d7548",
+  "lightMuted": "#baa588",
+  "darkMuted": "#59452a",
+  "width": 1000,
+  "height": 1038,
+  "ratio": 1.038,
+  "hash": "aEkqmyAcVBc",
+  "maxWidth": "xs"
+}

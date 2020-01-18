@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 151
+  },
+  "xs3": {
+    "width": 640,
+    "height": 604
+  },
+  "xs2": {
+    "width": 800,
+    "height": 755
+  },
+  "xs": {
+    "width": 960,
+    "height": 906
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1057
+  },
+  "md": {
+    "width": 1280,
+    "height": 1208
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1359
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1510
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1661
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1811
+  },
+  "title": "A Maid Milking a Cow in a Barn",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1652-1654",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 47.3,
+  "art_width": 49.8,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "02-07",
+  "artwork_date": "2016-02-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Gerad_ter_Borch_De_Koestal.jpg",
+  "orientation": "landscape",
+  "vibrant": "#6c4d33",
+  "lightVibrant": "#d4baa4",
+  "darkVibrant": "#5a2414",
+  "muted": "#8f7d67",
+  "lightMuted": "#b7a99f",
+  "darkMuted": "#4a3a32",
+  "width": 2618,
+  "height": 2470,
+  "ratio": 0.943468,
+  "hash": "bFQp9gAh6i9",
+  "maxWidth": "xl3"
+}

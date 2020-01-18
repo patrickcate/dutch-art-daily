@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 184
+  },
+  "xs3": {
+    "width": 640,
+    "height": 735
+  },
+  "xs2": {
+    "width": 800,
+    "height": 919
+  },
+  "xs": {
+    "width": 960,
+    "height": 1102
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1286
+  },
+  "title": "The Unwelcome News",
+  "artist": "Gerard ter Borch",
+  "art_date": "1653",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 66.7,
+  "art_width": 59.5,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "08-07",
+  "artwork_date": "2016-08-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_(II)_020.jpg",
+  "orientation": "portrait",
+  "vibrant": "#98402e",
+  "lightVibrant": "#d69c97",
+  "darkVibrant": "#5d342a",
+  "muted": "#6a86b0",
+  "lightMuted": "#c3b493",
+  "darkMuted": "#4a473d",
+  "width": 1200,
+  "height": 1378,
+  "ratio": 1.148333,
+  "hash": "a98GppFE4B8",
+  "maxWidth": "sm"
+}

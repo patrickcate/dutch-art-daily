@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 183
+  },
+  "xs3": {
+    "width": 640,
+    "height": 730
+  },
+  "xs2": {
+    "width": 800,
+    "height": 913
+  },
+  "xs": {
+    "width": 960,
+    "height": 1095
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1278
+  },
+  "md": {
+    "width": 1280,
+    "height": 1460
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1643
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1825
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2008
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2190
+  },
+  "title": "Artemisia",
+  "artist": "Gerard van Honthorst",
+  "art_date": "c. 1635",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 170,
+  "art_width": 147.5,
+  "art_location": "Princeton University Art Museum, Princeton",
+  "id": "12-30",
+  "artwork_date": "2016-12-30T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AGerrit_van_Honthorst_-_Artemisia_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ab2324",
+  "lightVibrant": "#d8be9b",
+  "darkVibrant": "#6e260c",
+  "muted": "#a88762",
+  "lightMuted": "#c2ab94",
+  "darkMuted": "#463125",
+  "width": 3467,
+  "height": 3955,
+  "ratio": 1.140756,
+  "hash": "9ofm98xippw",
+  "maxWidth": "xl3"
+}

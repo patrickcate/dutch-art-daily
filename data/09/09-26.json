@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 205
+  },
+  "xs3": {
+    "width": 640,
+    "height": 820
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1025
+  },
+  "xs": {
+    "width": 960,
+    "height": 1231
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1436
+  },
+  "md": {
+    "width": 1280,
+    "height": 1641
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1846
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2051
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2256
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2461
+  },
+  "title": "The Flight into Egypt",
+  "artist": "Abraham Bloemaert",
+  "art_date": "c. 1651",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 46,
+  "art_width": 35,
+  "art_location": "Museo Carmen Thyssen, Málaga",
+  "id": "09-26",
+  "artwork_date": "2016-09-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_Flight_into_Egypt.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ac7b22",
+  "lightVibrant": "#dcc393",
+  "darkVibrant": "#784c14",
+  "muted": "#a8885c",
+  "lightMuted": "#c3b294",
+  "darkMuted": "#534537",
+  "width": 2200,
+  "height": 2820,
+  "ratio": 1.281818,
+  "hash": "coUX8cqjk7i",
+  "maxWidth": "xl3"
+}

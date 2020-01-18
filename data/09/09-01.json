@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 180
+  },
+  "xs3": {
+    "width": 640,
+    "height": 721
+  },
+  "xs2": {
+    "width": 800,
+    "height": 901
+  },
+  "xs": {
+    "width": 960,
+    "height": 1081
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1261
+  },
+  "md": {
+    "width": 1280,
+    "height": 1441
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1621
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1801
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1982
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2162
+  },
+  "title": "Woman with a Water Jug",
+  "artist": "Johannes Vermeer",
+  "art_date": "1660-1662",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 45.7,
+  "art_width": 40.6,
+  "art_location": "Metropolitan Museum of Art, New York City",
+  "id": "09-01",
+  "artwork_date": "2016-09-01T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "ttp://en.wikipedia.org/w/index.php?title=Woman_with_a_Water_Jug&oldid=592502407",
+  "orientation": "portrait",
+  "vibrant": "#bc4e39",
+  "lightVibrant": "#cbcbe8",
+  "darkVibrant": "#4f251c",
+  "muted": "#946f53",
+  "lightMuted": "#c4b8bb",
+  "darkMuted": "#58453d",
+  "width": 3011,
+  "height": 3390,
+  "ratio": 1.125872,
+  "hash": "dzz000E2000",
+  "maxWidth": "xl3"
+}

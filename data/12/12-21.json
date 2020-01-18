@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 200
+  },
+  "xs3": {
+    "width": 640,
+    "height": 801
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1001
+  },
+  "xs": {
+    "width": 960,
+    "height": 1201
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1402
+  },
+  "md": {
+    "width": 1280,
+    "height": 1602
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1802
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2002
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2202
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2403
+  },
+  "title": "Young Man with Jew's Harp",
+  "artist": "Dirck van Baburen",
+  "art_date": "1621",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 8.4,
+  "art_width": 7.07,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "12-21",
+  "artwork_date": "2016-12-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_Young_man_with_jew%27s_harp_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b78b56",
+  "lightVibrant": "#f0ce92",
+  "darkVibrant": "#774a13",
+  "muted": "#977745",
+  "lightMuted": "#d6c8b3",
+  "darkMuted": "#5d4034",
+  "width": 2916,
+  "height": 3649,
+  "ratio": 1.251372,
+  "hash": "9QPkJwAd6D6",
+  "maxWidth": "xl3"
+}

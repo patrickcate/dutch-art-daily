@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 107
+  },
+  "xs3": {
+    "width": 640,
+    "height": 427
+  },
+  "xs2": {
+    "width": 800,
+    "height": 534
+  },
+  "xs": {
+    "width": 960,
+    "height": 641
+  },
+  "sm": {
+    "width": 1120,
+    "height": 747
+  },
+  "title": "The Emmaus Disciples",
+  "artist": "Abraham Bloemaert",
+  "art_date": "1622",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 145,
+  "art_width": 215.5,
+  "art_location": "Royal Museums of Fine Arts of Belgium, Antwerpen",
+  "id": "01-11",
+  "artwork_date": "2016-01-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Bloemaert_Emmaus.jpg",
+  "orientation": "landscape",
+  "vibrant": "#bd6e4b",
+  "lightVibrant": "#f3d0a2",
+  "darkVibrant": "#794838",
+  "muted": "#948468",
+  "lightMuted": "#875411",
+  "darkMuted": "#53352d",
+  "width": 1124,
+  "height": 750,
+  "ratio": 0.66726,
+  "hash": "98WqkwVpz87",
+  "maxWidth": "sm"
+}

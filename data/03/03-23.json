@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 200
+  },
+  "xs3": {
+    "width": 640,
+    "height": 799
+  },
+  "xs2": {
+    "width": 800,
+    "height": 999
+  },
+  "xs": {
+    "width": 960,
+    "height": 1199
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1399
+  },
+  "md": {
+    "width": 1280,
+    "height": 1598
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1798
+  },
+  "title": "The Lace Maker",
+  "artist": "Caspar Netscher",
+  "art_date": "1662",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 33,
+  "art_width": 27,
+  "art_location": "Wallace Collection, London",
+  "id": "03-23",
+  "artwork_date": "2016-03-23T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3ACaspar_Netscher_003.jpg",
+  "orientation": "portrait",
+  "vibrant": "#e04545",
+  "lightVibrant": "#e3bd85",
+  "darkVibrant": "#89393f",
+  "muted": "#a6775a",
+  "lightMuted": "#d5ba9e",
+  "darkMuted": "#444044",
+  "width": 1576,
+  "height": 1968,
+  "ratio": 1.248731,
+  "hash": "cFMA0H0Ax0g",
+  "maxWidth": "lg"
+}

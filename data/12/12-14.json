@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 100
+  },
+  "xs3": {
+    "width": 640,
+    "height": 399
+  },
+  "xs2": {
+    "width": 800,
+    "height": 499
+  },
+  "xs": {
+    "width": 960,
+    "height": 598
+  },
+  "sm": {
+    "width": 1120,
+    "height": 698
+  },
+  "md": {
+    "width": 1280,
+    "height": 798
+  },
+  "lg": {
+    "width": 1440,
+    "height": 898
+  },
+  "xl": {
+    "width": 1600,
+    "height": 997
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1097
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1197
+  },
+  "title": "Landscape with the Flight to Egypt",
+  "artist": "Cornelis van Poelenburgh",
+  "art_date": "1625",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 4.82,
+  "art_width": 7.11,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "12-14",
+  "artwork_date": "2016-12-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_van_Poelenburch_-_Landscape_with_the_Flight_to_Egypt_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#787c34",
+  "lightVibrant": "#d4d7a1",
+  "darkVibrant": "#503621",
+  "muted": "#548498",
+  "lightMuted": "#b6c6c9",
+  "darkMuted": "#525d3a",
+  "width": 3792,
+  "height": 2364,
+  "ratio": 0.623418,
+  "hash": "c44cxEZ6FMM",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 199
+  },
+  "xs3": {
+    "width": 640,
+    "height": 796
+  },
+  "xs2": {
+    "width": 800,
+    "height": 995
+  },
+  "xs": {
+    "width": 960,
+    "height": 1194
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1393
+  },
+  "md": {
+    "width": 1280,
+    "height": 1592
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1791
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1990
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2189
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2388
+  },
+  "title": "The Storm on the Sea of Galilee",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "1633",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 160,
+  "art_width": 128,
+  "art_location": null,
+  "id": "05-12",
+  "artwork_date": "2016-05-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=The_Storm_on_the_Sea_of_Galilee&oldid=594603128",
+  "orientation": "portrait",
+  "vibrant": "#da9a41",
+  "lightVibrant": "#dfc7a5",
+  "darkVibrant": "#041414",
+  "muted": "#9c8066",
+  "lightMuted": "#ae9f90",
+  "darkMuted": "#5d493a",
+  "width": 1930,
+  "height": 2400,
+  "ratio": 1.243523,
+  "hash": "cj4d6xFiA8i",
+  "maxWidth": "xl3"
+}

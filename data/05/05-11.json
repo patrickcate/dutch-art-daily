@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 199
+  },
+  "xs3": {
+    "width": 640,
+    "height": 794
+  },
+  "xs2": {
+    "width": 800,
+    "height": 993
+  },
+  "xs": {
+    "width": 960,
+    "height": 1192
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1390
+  },
+  "md": {
+    "width": 1280,
+    "height": 1589
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1787
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1986
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2185
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2383
+  },
+  "title": "Interior with a Man Reading and a Woman Spinning Yarn",
+  "artist": "Domenicus van Tol",
+  "art_date": "1650-1676",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 53,
+  "art_width": 42,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "05-11",
+  "artwork_date": "2016-05-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Binnenhuis_met_lezende_man_en_haspelende_vrouw_Rijksmuseum_SK-A-2341.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#956824",
+  "lightVibrant": "#d4c896",
+  "darkVibrant": "#642c1c",
+  "muted": "#a68d54",
+  "lightMuted": "#6c602c",
+  "darkMuted": "#5c5c35",
+  "width": 2267,
+  "height": 2814,
+  "ratio": 1.241288,
+  "hash": "9EAh1qg588A",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 199
+  },
+  "xs3": {
+    "width": 640,
+    "height": 794
+  },
+  "xs2": {
+    "width": 800,
+    "height": 993
+  },
+  "xs": {
+    "width": 960,
+    "height": 1191
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1390
+  },
+  "title": "Woman Playing a Flute",
+  "artist": "Dirck Hals",
+  "art_date": "1630",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 37,
+  "art_width": 29,
+  "art_location": "Frans Hals Museum, Haarlem",
+  "id": "03-21",
+  "artwork_date": "2016-03-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Dirck_Hals_-_Woman_playing_a_flute_FHM01_OS-I-107.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a47a3c",
+  "lightVibrant": "#caa962",
+  "darkVibrant": "#81291c",
+  "muted": "#a9905f",
+  "lightMuted": "#a4947c",
+  "darkMuted": "#543424",
+  "width": 1158,
+  "height": 1437,
+  "ratio": 1.240933,
+  "hash": "8G6iCwNc24A",
+  "maxWidth": "sm"
+}

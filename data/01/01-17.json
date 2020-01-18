@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 221
+  },
+  "xs3": {
+    "width": 640,
+    "height": 883
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1104
+  },
+  "xs": {
+    "width": 960,
+    "height": 1325
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1545
+  },
+  "md": {
+    "width": 1280,
+    "height": 1766
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1987
+  },
+  "title": "The Judgement of Paris",
+  "artist": "Adriaen van der Werff",
+  "art_date": "1716",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 63.3,
+  "art_width": 45.7,
+  "art_location": "Dulwich Picture Gallery, London",
+  "id": "01-17",
+  "artwork_date": "2016-01-17T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Van_der_Werff,_Adriaen_-_The_Judgement_of_Paris_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b4542e",
+  "lightVibrant": "#dcb58b",
+  "darkVibrant": "#792c0c",
+  "muted": "#a57d54",
+  "lightMuted": "#cab39d",
+  "darkMuted": "#371e1a",
+  "width": 1488,
+  "height": 2053,
+  "ratio": 1.379704,
+  "hash": "9wMscl08z26",
+  "maxWidth": "lg"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 199
+  },
+  "xs3": {
+    "width": 640,
+    "height": 797
+  },
+  "xs2": {
+    "width": 800,
+    "height": 997
+  },
+  "xs": {
+    "width": 960,
+    "height": 1196
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1396
+  },
+  "md": {
+    "width": 1280,
+    "height": 1595
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1794
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1994
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2193
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2392
+  },
+  "title": "Three Peasants at an Inn",
+  "artist": "Adriaen van Ostade",
+  "art_date": "1647",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 27.1,
+  "art_width": 21.6,
+  "art_location": "Dulwich Picture Gallery, London",
+  "id": "01-05",
+  "artwork_date": "2016-01-05T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Van_Ostade,_Adriaen_-_Three_Peasants_at_an_Inn_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a03c2c",
+  "lightVibrant": "#f1d2aa",
+  "darkVibrant": "#683723",
+  "muted": "#ad7d5a",
+  "lightMuted": "#c4adb1",
+  "darkMuted": "#534235",
+  "width": 3817,
+  "height": 4756,
+  "ratio": 1.246005,
+  "hash": "8Gdhi9Ags0I",
+  "maxWidth": "xl3"
+}

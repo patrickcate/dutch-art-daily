@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 105
+  },
+  "xs3": {
+    "width": 640,
+    "height": 421
+  },
+  "xs2": {
+    "width": 800,
+    "height": 527
+  },
+  "xs": {
+    "width": 960,
+    "height": 632
+  },
+  "sm": {
+    "width": 1120,
+    "height": 738
+  },
+  "md": {
+    "width": 1280,
+    "height": 843
+  },
+  "lg": {
+    "width": 1440,
+    "height": 948
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1054
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1159
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1264
+  },
+  "title": "Joseph and his Brothers",
+  "artist": "Abraham Bloemaert",
+  "art_date": "c. 1595-1600",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 14.13,
+  "art_width": 21.1,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "10-11",
+  "artwork_date": "2016-10-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Joseph_and_his_Brothers_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ac4939",
+  "lightVibrant": "#e7cc7a",
+  "darkVibrant": "#5f311f",
+  "muted": "#af6e5d",
+  "lightMuted": "#bfa67f",
+  "darkMuted": "#4f372d",
+  "width": 3713,
+  "height": 2445,
+  "ratio": 0.658497,
+  "hash": "8cME3VwozM4",
+  "maxWidth": "xl3"
+}

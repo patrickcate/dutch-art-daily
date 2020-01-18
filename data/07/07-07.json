@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 215
+  },
+  "xs3": {
+    "width": 640,
+    "height": 859
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1074
+  },
+  "xs": {
+    "width": 960,
+    "height": 1289
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1504
+  },
+  "md": {
+    "width": 1280,
+    "height": 1719
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1933
+  },
+  "title": "Officer Writing a Letter",
+  "artist": "Gerard ter Borch",
+  "art_date": "",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 51.5,
+  "art_width": 38.5,
+  "art_location": "Gemäldegalerie Alte Meister, Dresden",
+  "id": "07-07",
+  "artwork_date": "2016-07-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_d._J._006.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c0814a",
+  "lightVibrant": "#ca9c64",
+  "darkVibrant": "#6d3414",
+  "muted": "#aa8459",
+  "lightMuted": "#b49273",
+  "darkMuted": "#522625",
+  "width": 1576,
+  "height": 2116,
+  "ratio": 1.34264,
+  "hash": "aEXpC0xPkil",
+  "maxWidth": "lg"
+}

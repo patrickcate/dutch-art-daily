@@ -1,0 +1,58 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 131
+  },
+  "xs3": {
+    "width": 640,
+    "height": 522
+  },
+  "xs2": {
+    "width": 800,
+    "height": 653
+  },
+  "xs": {
+    "width": 960,
+    "height": 783
+  },
+  "sm": {
+    "width": 1120,
+    "height": 913
+  },
+  "md": {
+    "width": 1280,
+    "height": 1044
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1175
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1305
+  },
+  "title": "Susanna and the Elders",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "1647",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 76.6,
+  "art_width": 92.8,
+  "art_location": "Gemäldegalerie Museum, Berlin",
+  "id": "12-12",
+  "artwork_date": "2016-12-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Rembrandt_-_Susanna_and_the_Elders_-_WGA19104.jpg",
+  "orientation": "landscape",
+  "vibrant": "#9a4524",
+  "lightVibrant": "#e9c79e",
+  "darkVibrant": "#71250c",
+  "muted": "#ad805b",
+  "lightMuted": "#7c511c",
+  "darkMuted": "#5f442f",
+  "width": 1600,
+  "height": 1305,
+  "ratio": 0.815625,
+  "hash": "99wobagosag",
+  "maxWidth": "xl"
+}

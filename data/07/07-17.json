@@ -1,0 +1,38 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 186
+  },
+  "xs3": {
+    "width": 640,
+    "height": 746
+  },
+  "xs2": {
+    "width": 800,
+    "height": 932
+  },
+  "title": "Hagar and the Angel",
+  "artist": "Carel Fabritius",
+  "art_date": "c. 1643-1645",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 158,
+  "art_width": 136,
+  "art_location": "Residenzgalerie, Salzburg",
+  "id": "07-17",
+  "artwork_date": "2016-07-17T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Carel_Fabritius_-_Hagar_and_the_Angel_-_WGA07722.jpg",
+  "orientation": "portrait",
+  "vibrant": "#bf835b",
+  "lightVibrant": "#ecc299",
+  "darkVibrant": "#672e1c",
+  "muted": "#946a5c",
+  "lightMuted": "#804b18",
+  "darkMuted": "#52322d",
+  "width": 944,
+  "height": 1100,
+  "ratio": 1.165254,
+  "hash": "90BpYL4d3Jc",
+  "maxWidth": "xs2"
+}

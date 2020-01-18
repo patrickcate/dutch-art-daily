@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 196
+  },
+  "xs3": {
+    "width": 640,
+    "height": 782
+  },
+  "xs2": {
+    "width": 800,
+    "height": 978
+  },
+  "xs": {
+    "width": 960,
+    "height": 1173
+  },
+  "title": "Old Woman with a Candle",
+  "artist": "Matthias Stom",
+  "art_date": "c. 1640",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 85,
+  "art_width": 71,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "09-27",
+  "artwork_date": "2016-09-27T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stom_-_Old_Woman_with_a_Candle_-_WGA21809.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ec8420",
+  "lightVibrant": "#d9a14f",
+  "darkVibrant": "#6e2a19",
+  "muted": "#807137",
+  "lightMuted": "#7d551b",
+  "darkMuted": "#4f362c",
+  "width": 1027,
+  "height": 1255,
+  "ratio": 1.222006,
+  "hash": "9mNsBb6i2wI",
+  "maxWidth": "xs"
+}

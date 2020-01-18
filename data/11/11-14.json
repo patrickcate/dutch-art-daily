@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 188
+  },
+  "xs3": {
+    "width": 640,
+    "height": 752
+  },
+  "xs2": {
+    "width": 800,
+    "height": 940
+  },
+  "xs": {
+    "width": 960,
+    "height": 1128
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1316
+  },
+  "md": {
+    "width": 1280,
+    "height": 1504
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1692
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1880
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2068
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2256
+  },
+  "title": "The Martyrdom of Saint Stephen",
+  "artist": "Cornelis van Poelenburgh",
+  "art_date": "c. 1615-1630",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 28.3,
+  "art_width": 24.1,
+  "art_location": "The Museum of Fine Arts, Houston",
+  "id": "11-14",
+  "artwork_date": "2016-11-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_van_Poelenburgh_-_The_Martyrdom_of_Saint_Stephen_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c19e3d",
+  "lightVibrant": "#dfcc9a",
+  "darkVibrant": "#261f0c",
+  "muted": "#968058",
+  "lightMuted": "#b3c1c4",
+  "darkMuted": "#514831",
+  "width": 2043,
+  "height": 2401,
+  "ratio": 1.175233,
+  "hash": "cMQ009yw000",
+  "maxWidth": "xl3"
+}

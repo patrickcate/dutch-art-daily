@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 208
+  },
+  "xs3": {
+    "width": 640,
+    "height": 831
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1038
+  },
+  "xs": {
+    "width": 960,
+    "height": 1246
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1454
+  },
+  "md": {
+    "width": 1280,
+    "height": 1661
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1869
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2077
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2284
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2492
+  },
+  "title": "A Man with a Little Drink Bottle",
+  "artist": "Ary de Vois",
+  "art_date": "1660-1680",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 16,
+  "art_width": 12,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "02-11",
+  "artwork_date": "2016-02-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Een_man_met_een_borrelflesje_Rijksmuseum_SK-A-456.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#8f693d",
+  "lightVibrant": "#d7bea2",
+  "darkVibrant": "#5c300c",
+  "muted": "#7c7c7c",
+  "lightMuted": "#6b4e2d",
+  "darkMuted": "#4b402e",
+  "width": 2017,
+  "height": 2618,
+  "ratio": 1.297967,
+  "hash": "98sfI24f210",
+  "maxWidth": "xl3"
+}

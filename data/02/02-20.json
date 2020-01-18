@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 158
+  },
+  "xs3": {
+    "width": 640,
+    "height": 633
+  },
+  "xs2": {
+    "width": 800,
+    "height": 791
+  },
+  "xs": {
+    "width": 960,
+    "height": 949
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1107
+  },
+  "md": {
+    "width": 1280,
+    "height": 1266
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1424
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1582
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1740
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1898
+  },
+  "title": "Venus presenting Aeneas with Armour from Vulcano's Smithy",
+  "artist": "Ferdinand Bol",
+  "art_date": "c. 1660",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 408,
+  "art_width": 413,
+  "art_location": "The Peace Palace, The Hague",
+  "id": "02-20",
+  "artwork_date": "2016-02-20T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:F._Bol_Venus_presenting_Aeneas_with_armour_from_Vulcano%27s_smithy.jpg",
+  "orientation": "landscape",
+  "vibrant": "#91583a",
+  "lightVibrant": "#d9b3a0",
+  "darkVibrant": "#774333",
+  "muted": "#977e62",
+  "lightMuted": "#cdb898",
+  "darkMuted": "#55342f",
+  "width": 2500,
+  "height": 2472,
+  "ratio": 0.9888,
+  "hash": "d8wgdw0w210",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 126
+  },
+  "xs3": {
+    "width": 640,
+    "height": 505
+  },
+  "xs2": {
+    "width": 800,
+    "height": 631
+  },
+  "xs": {
+    "width": 960,
+    "height": 757
+  },
+  "sm": {
+    "width": 1120,
+    "height": 883
+  },
+  "md": {
+    "width": 1280,
+    "height": 1009
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1135
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1262
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1388
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1514
+  },
+  "title": "Italian Landscape with Horsemen by a Spring",
+  "artist": "Jan Baptist Weenix",
+  "art_date": "c. 1657",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 43.8,
+  "art_width": 56,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "07-13",
+  "artwork_date": "2016-07-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Jan_Baptist_Weenix_-_Italian_Landscape_with_Horsemen_by_a_Spring_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#af521a",
+  "lightVibrant": "#dcd2ab",
+  "darkVibrant": "#7e3307",
+  "muted": "#897e4b",
+  "lightMuted": "#bcbc9b",
+  "darkMuted": "#635a35",
+  "width": 3673,
+  "height": 2896,
+  "ratio": 0.788456,
+  "hash": "c8V31opo600",
+  "maxWidth": "xl3"
+}

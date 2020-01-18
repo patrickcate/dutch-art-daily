@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 117
+  },
+  "xs3": {
+    "width": 640,
+    "height": 468
+  },
+  "xs2": {
+    "width": 800,
+    "height": 585
+  },
+  "xs": {
+    "width": 960,
+    "height": 703
+  },
+  "sm": {
+    "width": 1120,
+    "height": 820
+  },
+  "md": {
+    "width": 1280,
+    "height": 937
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1054
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1171
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1288
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1405
+  },
+  "title": "The Stoning of Saint Stephen",
+  "artist": "Bartholomeus Breenbergh",
+  "art_date": "1632",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 67.5,
+  "art_width": 92.1,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "03-28",
+  "artwork_date": "2016-03-28T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Breenbergh,_Bartholomeus_-_The_Stoning_of_Saint_Stephen_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#bd7832",
+  "lightVibrant": "#dcc387",
+  "darkVibrant": "#623312",
+  "muted": "#a58854",
+  "lightMuted": "#d1c39d",
+  "darkMuted": "#61412d",
+  "width": 4341,
+  "height": 3177,
+  "ratio": 0.731859,
+  "hash": "cn8o2h8g000",
+  "maxWidth": "xl3"
+}

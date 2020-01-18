@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 181
+  },
+  "xs3": {
+    "width": 640,
+    "height": 725
+  },
+  "xs2": {
+    "width": 800,
+    "height": 907
+  },
+  "xs": {
+    "width": 960,
+    "height": 1088
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1269
+  },
+  "md": {
+    "width": 1280,
+    "height": 1451
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1632
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1814
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1995
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2176
+  },
+  "title": "Woman Holding a Balance",
+  "artist": "Johannes Vermeer",
+  "art_date": "1662-1663",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 42.5,
+  "art_width": 38,
+  "art_location": "The National Gallery of Art, Washington D.C.",
+  "id": "05-01",
+  "artwork_date": "2016-05-01T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Woman_Holding_a_Balance&oldid=590099471",
+  "orientation": "portrait",
+  "vibrant": "#cb8e33",
+  "lightVibrant": "#e4c495",
+  "darkVibrant": "#6b4b1b",
+  "muted": "#b9a37c",
+  "lightMuted": "#7a551e",
+  "darkMuted": "#433824",
+  "width": 3200,
+  "height": 3627,
+  "ratio": 1.133438,
+  "hash": "cBUd0MONcAO",
+  "maxWidth": "xl3"
+}

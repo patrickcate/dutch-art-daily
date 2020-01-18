@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 118
+  },
+  "xs3": {
+    "width": 640,
+    "height": 471
+  },
+  "xs2": {
+    "width": 800,
+    "height": 589
+  },
+  "xs": {
+    "width": 960,
+    "height": 707
+  },
+  "sm": {
+    "width": 1120,
+    "height": 825
+  },
+  "md": {
+    "width": 1280,
+    "height": 943
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1060
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1178
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1296
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1414
+  },
+  "title": "A Company Celebrating the Birthday of Prince William III",
+  "artist": "Jan Steen",
+  "art_date": "c. 1660-1679",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 46,
+  "art_width": 62.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "06-09",
+  "artwork_date": "2016-06-09T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Prince%27s_Day,_by_Jan_Steen.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b84846",
+  "lightVibrant": "#daa09e",
+  "darkVibrant": "#471c1b",
+  "muted": "#a77e69",
+  "lightMuted": "#939489",
+  "darkMuted": "#4c2f26",
+  "width": 5834,
+  "height": 4296,
+  "ratio": 0.736373,
+  "hash": "aFkp894C1g1",
+  "maxWidth": "xl3"
+}

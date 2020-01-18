@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 161
+  },
+  "xs3": {
+    "width": 640,
+    "height": 642
+  },
+  "xs2": {
+    "width": 800,
+    "height": 803
+  },
+  "xs": {
+    "width": 960,
+    "height": 963
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1124
+  },
+  "md": {
+    "width": 1280,
+    "height": 1284
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1445
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1605
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1766
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1926
+  },
+  "title": "Bathsheba with David’s Letter",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "1654",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 142,
+  "art_width": 142,
+  "art_location": "Louvre Museum, Paris",
+  "id": "11-27",
+  "artwork_date": "2016-11-27T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_016.jpg",
+  "orientation": "portrait",
+  "vibrant": "#9c4c2c",
+  "lightVibrant": "#d5b69e",
+  "darkVibrant": "#69341c",
+  "muted": "#a38060",
+  "lightMuted": "#d7bcb0",
+  "darkMuted": "#4e322b",
+  "width": 2490,
+  "height": 2498,
+  "ratio": 1.003213,
+  "hash": "9hEdoJOFY1Y",
+  "maxWidth": "xl3"
+}

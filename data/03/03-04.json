@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 154
+  },
+  "xs3": {
+    "width": 640,
+    "height": 616
+  },
+  "xs2": {
+    "width": 800,
+    "height": 770
+  },
+  "xs": {
+    "width": 960,
+    "height": 924
+  },
+  "title": "The Paternal Admonition",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1653-1655",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 71,
+  "art_width": 73,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "03-04",
+  "artwork_date": "2016-03-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_(II)_019.jpg",
+  "orientation": "landscape",
+  "vibrant": "#977741",
+  "lightVibrant": "#ddb78d",
+  "darkVibrant": "#6e2f14",
+  "muted": "#9f8355",
+  "lightMuted": "#cfccc6",
+  "darkMuted": "#4b3e2b",
+  "width": 1039,
+  "height": 1000,
+  "ratio": 0.962464,
+  "hash": "bGjrmFIq9ek",
+  "maxWidth": "xs"
+}

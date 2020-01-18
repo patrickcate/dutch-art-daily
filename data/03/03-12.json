@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 191
+  },
+  "xs3": {
+    "width": 640,
+    "height": 763
+  },
+  "xs2": {
+    "width": 800,
+    "height": 954
+  },
+  "xs": {
+    "width": 960,
+    "height": 1145
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1336
+  },
+  "md": {
+    "width": 1280,
+    "height": 1526
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1717
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1908
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2099
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2290
+  },
+  "title": "The Raising of Lazarus",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "c. 1630-1632",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 96.4,
+  "art_width": 81.3,
+  "art_location": "Los Angeles County Museum of Art, Los Angeles",
+  "id": "03-12",
+  "artwork_date": "2016-03-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_The_Raising_of_Lazarus_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ea9914",
+  "lightVibrant": "#f4c985",
+  "darkVibrant": "#2e1e04",
+  "muted": "#b2996b",
+  "lightMuted": "#8c5b0c",
+  "darkMuted": "#413321",
+  "width": 4113,
+  "height": 4905,
+  "ratio": 1.19256,
+  "hash": "cj9P3gI9wN8",
+  "maxWidth": "xl3"
+}

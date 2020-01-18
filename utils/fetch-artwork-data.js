@@ -9,24 +9,13 @@ export async function fetchArtworkData(id) {
       // and day separately.
       const date = item.split('-')
 
-      // Use the function form of import to dynamically parse the .yml content
-      // files and return them as json.
+      // Use the function form of import to dynamically parse the .json content
+      // files.
       const artwork = await import(
-        `../data/${date[0]}/${date[0]}-${date[1]}.yml`
+        `../data/${date[0]}/${date[0]}-${date[1]}.json`
       )
 
-      const palette = await import(
-        `../data/photos/${date[0]}-${date[1]}.photo.yml`
-      )
-
-      return {
-        ...artwork.default,
-        orientation:
-          artwork.default.art_width > artwork.default.art_height
-            ? 'landscape'
-            : 'portrait',
-        ...palette.default,
-      }
+      return artwork.default
     })
   )
 

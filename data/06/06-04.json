@@ -1,0 +1,62 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 173
+  },
+  "xs3": {
+    "width": 640,
+    "height": 694
+  },
+  "xs2": {
+    "width": 800,
+    "height": 867
+  },
+  "xs": {
+    "width": 960,
+    "height": 1040
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1214
+  },
+  "md": {
+    "width": 1280,
+    "height": 1387
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1561
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1734
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1907
+  },
+  "title": "The Cottage Dooryard",
+  "artist": "Adriaen van Ostade",
+  "art_date": "1673",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 44,
+  "art_width": 39.5,
+  "art_location": "The National Gallery of Art, Washington D.C.",
+  "id": "06-04",
+  "artwork_date": "2016-06-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:The_Cottage_Dooryard-1673-Adriaen_van_Ostade.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b27537",
+  "lightVibrant": "#84aeea",
+  "darkVibrant": "#663713",
+  "muted": "#8b7a55",
+  "lightMuted": "#bea577",
+  "darkMuted": "#4f422f",
+  "width": 1816,
+  "height": 1968,
+  "ratio": 1.0837,
+  "hash": "eFMh1f0Uc02",
+  "maxWidth": "xl2"
+}

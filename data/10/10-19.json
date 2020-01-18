@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 188
+  },
+  "xs3": {
+    "width": 640,
+    "height": 754
+  },
+  "xs2": {
+    "width": 800,
+    "height": 942
+  },
+  "xs": {
+    "width": 960,
+    "height": 1131
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1319
+  },
+  "md": {
+    "width": 1280,
+    "height": 1507
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1696
+  },
+  "title": "The Happy Couple",
+  "artist": "Judith Leyster",
+  "art_date": "1630",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 68,
+  "art_width": 55,
+  "art_location": "Louvre Museum, Paris",
+  "id": "10-19",
+  "date": "2016-10-19T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Judith_Leyster_001.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ad693b",
+  "lightVibrant": "#e3a893",
+  "darkVibrant": "#68181f",
+  "muted": "#b5705c",
+  "lightMuted": "#dfdbc7",
+  "darkMuted": "#71453c",
+  "width": 1576,
+  "height": 1856,
+  "ratio": 1.177665,
+  "hash": "8qhcq9PUs6q",
+  "maxWidth": "lg"
+}

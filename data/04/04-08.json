@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 198
+  },
+  "xs3": {
+    "width": 640,
+    "height": 792
+  },
+  "xs2": {
+    "width": 800,
+    "height": 990
+  },
+  "xs": {
+    "width": 960,
+    "height": 1188
+  },
+  "title": "The Laughing Cavalier",
+  "artist": "Frans Hals",
+  "art_date": "1624",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 83,
+  "art_width": 67.3,
+  "art_location": "Wallace Collection, London",
+  "id": "04-08",
+  "artwork_date": "2016-04-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Cavalier_soldier_Hals-1624x.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b67349",
+  "lightVibrant": "#d9b6a0",
+  "darkVibrant": "#6d2c24",
+  "muted": "#8c8472",
+  "lightMuted": "#d8d0c4",
+  "darkMuted": "#584f36",
+  "width": 1034,
+  "height": 1280,
+  "ratio": 1.237911,
+  "hash": "cWosGqJQgoI",
+  "maxWidth": "xs"
+}

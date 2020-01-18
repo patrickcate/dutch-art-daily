@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 117
+  },
+  "xs3": {
+    "width": 640,
+    "height": 467
+  },
+  "xs2": {
+    "width": 800,
+    "height": 584
+  },
+  "xs": {
+    "width": 960,
+    "height": 701
+  },
+  "sm": {
+    "width": 1120,
+    "height": 817
+  },
+  "md": {
+    "width": 1280,
+    "height": 934
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1051
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1168
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1284
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1401
+  },
+  "title": "The Quack",
+  "artist": "Jan Steen",
+  "art_date": "c. 1650-1660",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 37.5,
+  "art_width": 52,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "01-29",
+  "artwork_date": "2016-01-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Steen_-_De_kwakzalver.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b55d56",
+  "lightVibrant": "#d6a6a2",
+  "darkVibrant": "#041424",
+  "muted": "#896856",
+  "lightMuted": "#b0c7cf",
+  "darkMuted": "#54382d",
+  "width": 3500,
+  "height": 2554,
+  "ratio": 0.729714,
+  "hash": "e3wu90YMgo0",
+  "maxWidth": "xl3"
+}

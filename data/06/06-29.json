@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 127
+  },
+  "xs3": {
+    "width": 640,
+    "height": 508
+  },
+  "xs2": {
+    "width": 800,
+    "height": 636
+  },
+  "xs": {
+    "width": 960,
+    "height": 763
+  },
+  "sm": {
+    "width": 1120,
+    "height": 890
+  },
+  "md": {
+    "width": 1280,
+    "height": 1017
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1144
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1271
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1398
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1525
+  },
+  "title": "The Village Wedding",
+  "artist": "Jan Steen",
+  "art_date": "1653",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 64,
+  "art_width": 81,
+  "art_location": "Museum Boijmans Van Beuningen,\tRotterdam",
+  "id": "06-29",
+  "artwork_date": "2016-06-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Havicksz._Steen_-_The_Village_Wedding_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c78637",
+  "lightVibrant": "#e2c097",
+  "darkVibrant": "#65441c",
+  "muted": "#937d5e",
+  "lightMuted": "#775021",
+  "darkMuted": "#52412d",
+  "width": 5249,
+  "height": 4170,
+  "ratio": 0.794437,
+  "hash": "e0p3C36f642",
+  "maxWidth": "xl3"
+}

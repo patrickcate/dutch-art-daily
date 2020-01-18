@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 174
+  },
+  "xs3": {
+    "width": 640,
+    "height": 697
+  },
+  "xs2": {
+    "width": 800,
+    "height": 872
+  },
+  "xs": {
+    "width": 960,
+    "height": 1046
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1220
+  },
+  "md": {
+    "width": 1280,
+    "height": 1394
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1569
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1743
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1917
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2092
+  },
+  "title": "Officer and a Laughing Girl",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1657",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 50.5,
+  "art_width": 46,
+  "art_location": "Frick Collection. New York City",
+  "id": "02-01",
+  "artwork_date": "2016-02-01T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_De_Soldaat_en_het_Lachende_Meisje_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a45444",
+  "lightVibrant": "#dfceab",
+  "darkVibrant": "#521712",
+  "muted": "#aa6a58",
+  "lightMuted": "#d0c5a6",
+  "darkMuted": "#554835",
+  "width": 4785,
+  "height": 5213,
+  "ratio": 1.089446,
+  "hash": "dIA39UV838x",
+  "maxWidth": "xl3"
+}

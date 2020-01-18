@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 126
+  },
+  "xs3": {
+    "width": 640,
+    "height": 503
+  },
+  "xs2": {
+    "width": 800,
+    "height": 628
+  },
+  "xs": {
+    "width": 960,
+    "height": 754
+  },
+  "sm": {
+    "width": 1120,
+    "height": 880
+  },
+  "md": {
+    "width": 1280,
+    "height": 1005
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1131
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1257
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1382
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1508
+  },
+  "title": "The Artist in His Studio",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "c. 1626-1628",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 24.8,
+  "art_width": 31.7,
+  "art_location": "Museum of Fine Arts, Boston",
+  "id": "01-12",
+  "artwork_date": "2016-01-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Rembrandt_The_Artist_in_his_studio.jpg",
+  "orientation": "landscape",
+  "vibrant": "#a48c44",
+  "lightVibrant": "#dec591",
+  "darkVibrant": "#745624",
+  "muted": "#a48452",
+  "lightMuted": "#baa575",
+  "darkMuted": "#5a4d38",
+  "width": 3746,
+  "height": 2942,
+  "ratio": 0.785371,
+  "hash": "aSFi3pyM8gx",
+  "maxWidth": "xl3"
+}

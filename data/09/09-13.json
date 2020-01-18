@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 211
+  },
+  "xs3": {
+    "width": 640,
+    "height": 844
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1055
+  },
+  "xs": {
+    "width": 960,
+    "height": 1266
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1477
+  },
+  "md": {
+    "width": 1280,
+    "height": 1689
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1900
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2111
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2322
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2533
+  },
+  "title": "Saint Jerome",
+  "artist": "Pieter van der Werff",
+  "art_date": "1710",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 46,
+  "art_width": 36,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "09-13",
+  "artwork_date": "2016-09-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:De_heilige_Hieronymus_Rijksmuseum_SK-A-470.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#9d8246",
+  "lightVibrant": "#d6c6a3",
+  "darkVibrant": "#6c2b14",
+  "muted": "#a39158",
+  "lightMuted": "#69572f",
+  "darkMuted": "#646437",
+  "width": 2046,
+  "height": 2699,
+  "ratio": 1.319159,
+  "hash": "cGocgoN8Yhx",
+  "maxWidth": "xl3"
+}

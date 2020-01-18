@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 196
+  },
+  "xs3": {
+    "width": 640,
+    "height": 782
+  },
+  "xs2": {
+    "width": 800,
+    "height": 978
+  },
+  "xs": {
+    "width": 960,
+    "height": 1173
+  },
+  "title": "Virginal Player",
+  "artist": "Gabriël Metsu",
+  "art_date": "c. 1661",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 32,
+  "art_width": 24,
+  "art_location": "Louvre Museum, Paris",
+  "id": "06-10",
+  "artwork_date": "2016-06-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Gabri%C3%ABl_Metsu_-_Virginal_Player_-_WGA15099.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a44d2b",
+  "lightVibrant": "#e3ab95",
+  "darkVibrant": "#5e2914",
+  "muted": "#ae9276",
+  "lightMuted": "#dad0b6",
+  "darkMuted": "#54443c",
+  "width": 1000,
+  "height": 1222,
+  "ratio": 1.222,
+  "hash": "8Fxr9oNj9io",
+  "maxWidth": "xs"
+}

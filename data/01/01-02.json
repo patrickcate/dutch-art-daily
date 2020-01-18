@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 211
+  },
+  "xs3": {
+    "width": 640,
+    "height": 845
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1056
+  },
+  "xs": {
+    "width": 960,
+    "height": 1267
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1479
+  },
+  "md": {
+    "width": 1280,
+    "height": 1690
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1901
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2112
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2324
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2535
+  },
+  "title": "The Idle Servant",
+  "artist": "Nicolaes Maes",
+  "art_date": "1655",
+  "art_medium": "Oil",
+  "art_surface": "Wood",
+  "art_height": 70,
+  "art_width": 53.3,
+  "art_location": "The National Gallery, London",
+  "id": "01-02",
+  "artwork_date": "2016-01-02T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AThe_idle_servant.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b58e5c",
+  "lightVibrant": "#d5bfa3",
+  "darkVibrant": "#593714",
+  "muted": "#9d8f65",
+  "lightMuted": "#b1a16d",
+  "darkMuted": "#423221",
+  "width": 3201,
+  "height": 4226,
+  "ratio": 1.320212,
+  "hash": "8BAoia4yi0O",
+  "maxWidth": "xl3"
+}

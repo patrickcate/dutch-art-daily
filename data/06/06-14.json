@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 216
+  },
+  "xs3": {
+    "width": 640,
+    "height": 866
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1082
+  },
+  "xs": {
+    "width": 960,
+    "height": 1299
+  },
+  "title": "A Woman with a Baby in Her Lap, and a Small Child",
+  "artist": "Pieter de Hooch",
+  "art_date": "1658",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 60,
+  "art_width": 47,
+  "art_location": "Private Collection",
+  "id": "06-14",
+  "artwork_date": "2016-06-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_with_a_Baby_in_Her_Lap,_and_a_Small_Child_-_WGA11693.jpg",
+  "orientation": "portrait",
+  "vibrant": "#aa2123",
+  "lightVibrant": "#e6d0a7",
+  "darkVibrant": "#782e1c",
+  "muted": "#b8936d",
+  "lightMuted": "#d3b99a",
+  "darkMuted": "#492c22",
+  "width": 1035,
+  "height": 1400,
+  "ratio": 1.352657,
+  "hash": "8Sot6cVxj33",
+  "maxWidth": "xs"
+}

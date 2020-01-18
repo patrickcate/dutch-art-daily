@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 106
+  },
+  "xs3": {
+    "width": 640,
+    "height": 423
+  },
+  "xs2": {
+    "width": 800,
+    "height": 528
+  },
+  "xs": {
+    "width": 960,
+    "height": 634
+  },
+  "sm": {
+    "width": 1120,
+    "height": 740
+  },
+  "md": {
+    "width": 1280,
+    "height": 845
+  },
+  "lg": {
+    "width": 1440,
+    "height": 951
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1057
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1162
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1268
+  },
+  "title": "The Merry Flea Hunt",
+  "artist": "Gerard van Honthorst",
+  "art_date": "c. 1628",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 132.7,
+  "art_width": 199.4,
+  "art_location": "Dayton Art Institute, Dayton",
+  "id": "02-29",
+  "artwork_date": "2016-02-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3A'The_Flea_Hunt'_by_Gerrit_van_Honthorst%2C_Dayton_Art_Institute.JPG",
+  "orientation": "landscape",
+  "vibrant": "#a13f26",
+  "lightVibrant": "#ebe5d0",
+  "darkVibrant": "#3e2604",
+  "muted": "#9d704b",
+  "lightMuted": "#c2ab83",
+  "darkMuted": "#4b302c",
+  "width": 2650,
+  "height": 1750,
+  "ratio": 0.660377,
+  "hash": "9RCuFRCS4AQ",
+  "maxWidth": "xl3"
+}

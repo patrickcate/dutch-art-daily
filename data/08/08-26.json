@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 121
+  },
+  "xs3": {
+    "width": 640,
+    "height": 485
+  },
+  "xs2": {
+    "width": 800,
+    "height": 606
+  },
+  "xs": {
+    "width": 960,
+    "height": 727
+  },
+  "sm": {
+    "width": 1120,
+    "height": 848
+  },
+  "md": {
+    "width": 1280,
+    "height": 970
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1091
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1212
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1333
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1454
+  },
+  "title": "Mercury, Argus and Io",
+  "artist": "Abraham Bloemaert",
+  "art_date": "c. 1592",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 6.35,
+  "art_width": 8.13,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "08-26",
+  "artwork_date": "2016-08-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Mercury,_Argus_and_Io_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ae6d1e",
+  "lightVibrant": "#e4bf98",
+  "darkVibrant": "#733c11",
+  "muted": "#a56e50",
+  "lightMuted": "#d0b9a0",
+  "darkMuted": "#534626",
+  "width": 3827,
+  "height": 2899,
+  "ratio": 0.757512,
+  "hash": "9GagbgPotoP",
+  "maxWidth": "xl3"
+}

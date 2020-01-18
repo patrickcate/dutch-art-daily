@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 144
+  },
+  "xs3": {
+    "width": 640,
+    "height": 575
+  },
+  "xs2": {
+    "width": 800,
+    "height": 719
+  },
+  "xs": {
+    "width": 960,
+    "height": 863
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1007
+  },
+  "md": {
+    "width": 1280,
+    "height": 1151
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1295
+  },
+  "title": "Bacchus and Ariadne",
+  "artist": "Ferdinand Bol",
+  "art_date": "1664",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 160,
+  "art_width": 182,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "12-06",
+  "artwork_date": "2016-12-06T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Ferdinand_Bol_-_Bacchus_and_Ariadne.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c28836",
+  "lightVibrant": "#eac470",
+  "darkVibrant": "#750e13",
+  "muted": "#948c54",
+  "lightMuted": "#856113",
+  "darkMuted": "#56542d",
+  "width": 1476,
+  "height": 1327,
+  "ratio": 0.899051,
+  "hash": "8ZIi38Vcu3a",
+  "maxWidth": "lg"
+}

@@ -1,0 +1,38 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 219
+  },
+  "xs3": {
+    "width": 640,
+    "height": 875
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1094
+  },
+  "title": "The Annunciation",
+  "artist": "Pieter Lastman",
+  "art_date": "1618",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 56,
+  "art_width": 39,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "03-24",
+  "artwork_date": "2016-03-24T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Pieter_Lastman_-_Annunciation_-_WGA12484.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b6825b",
+  "lightVibrant": "#d6b9a3",
+  "darkVibrant": "#6e270c",
+  "muted": "#937555",
+  "lightMuted": "#69482f",
+  "darkMuted": "#5a4430",
+  "width": 918,
+  "height": 1255,
+  "ratio": 1.367102,
+  "hash": "fD10ChC003U",
+  "maxWidth": "xs2"
+}

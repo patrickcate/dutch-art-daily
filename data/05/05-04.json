@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 133
+  },
+  "xs3": {
+    "width": 640,
+    "height": 532
+  },
+  "xs2": {
+    "width": 800,
+    "height": 665
+  },
+  "xs": {
+    "width": 960,
+    "height": 798
+  },
+  "sm": {
+    "width": 1120,
+    "height": 931
+  },
+  "md": {
+    "width": 1280,
+    "height": 1064
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1197
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1330
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1463
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1596
+  },
+  "title": "Battle Between Carnival and Lent",
+  "artist": "Jan Miense Molenaer",
+  "art_date": "c. 1633-1634",
+  "art_medium": "Oil",
+  "art_surface": "Wood",
+  "art_height": 41,
+  "art_width": 55.2,
+  "art_location": "Indianapolis Museum of Art, Indianapolis",
+  "id": "05-04",
+  "artwork_date": "2016-05-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Molenaer,_Jan_Miense_-_Battle_Between_Carnival_and_Lent_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#bc8638",
+  "lightVibrant": "#d9bba3",
+  "darkVibrant": "#6e2008",
+  "muted": "#a57e5e",
+  "lightMuted": "#aab2cc",
+  "darkMuted": "#2c3748",
+  "width": 6151,
+  "height": 5113,
+  "ratio": 0.831247,
+  "hash": "c677xEUe6AL",
+  "maxWidth": "xl3"
+}

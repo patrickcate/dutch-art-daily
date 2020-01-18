@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 121
+  },
+  "xs3": {
+    "width": 640,
+    "height": 482
+  },
+  "xs2": {
+    "width": 800,
+    "height": 603
+  },
+  "xs": {
+    "width": 960,
+    "height": 723
+  },
+  "sm": {
+    "width": 1120,
+    "height": 844
+  },
+  "md": {
+    "width": 1280,
+    "height": 964
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1085
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1206
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1326
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1447
+  },
+  "title": "Holy Family",
+  "artist": "Matthias Stom",
+  "art_date": "c. 1640",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 94.48,
+  "art_width": 124.51,
+  "art_location": "Museu Nacional d'Art de Catalunya, Barcelona",
+  "id": "10-10",
+  "artwork_date": "2016-10-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stom_-_Holy_Family_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#dc8a1b",
+  "lightVibrant": "#e9c565",
+  "darkVibrant": "#714615",
+  "muted": "#798953",
+  "lightMuted": "#856613",
+  "darkMuted": "#61552e",
+  "width": 3817,
+  "height": 2876,
+  "ratio": 0.753471,
+  "hash": "91xqFFCop24",
+  "maxWidth": "xl3"
+}

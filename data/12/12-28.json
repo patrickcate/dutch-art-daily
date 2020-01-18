@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 121
+  },
+  "xs3": {
+    "width": 640,
+    "height": 483
+  },
+  "xs2": {
+    "width": 800,
+    "height": 604
+  },
+  "xs": {
+    "width": 960,
+    "height": 725
+  },
+  "sm": {
+    "width": 1120,
+    "height": 846
+  },
+  "md": {
+    "width": 1280,
+    "height": 967
+  },
+  "title": "Venus and Adonis",
+  "artist": "Christiaen van Couwenbergh",
+  "art_date": "1645",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 136,
+  "art_width": 171,
+  "art_location": "Galerie d'Arenberg, Brussels",
+  "id": "12-28",
+  "artwork_date": "2016-12-28T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AChristiaen_van_Couwenbergh_-_Venus_and_Adonis_-_WGA05572.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c39b72",
+  "lightVibrant": "#eccb99",
+  "darkVibrant": "#642419",
+  "muted": "#ab7e53",
+  "lightMuted": "#c4b097",
+  "darkMuted": "#4d352b",
+  "width": 1324,
+  "height": 1000,
+  "ratio": 0.755287,
+  "hash": "8DVvcfi3IgN",
+  "maxWidth": "md"
+}

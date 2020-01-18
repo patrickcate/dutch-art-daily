@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 206
+  },
+  "xs3": {
+    "width": 640,
+    "height": 823
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1028
+  },
+  "xs": {
+    "width": 960,
+    "height": 1234
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1440
+  },
+  "md": {
+    "width": 1280,
+    "height": 1646
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1851
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2057
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2263
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2468
+  },
+  "title": "Youth Making a Face",
+  "artist": "Adriaen Brouwer",
+  "art_date": "c. 1632-1635",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 13.7,
+  "art_width": 10.5,
+  "art_location": "The National Gallery of Art, Washington, D.C.",
+  "id": "12-25",
+  "artwork_date": "2016-12-25T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Adriaen_Brower_-_Youth_Making_a_Face.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b2834d",
+  "lightVibrant": "#d6bea2",
+  "darkVibrant": "#502d0c",
+  "muted": "#9d8261",
+  "lightMuted": "#a49c84",
+  "darkMuted": "#533f24",
+  "width": 2332,
+  "height": 2998,
+  "ratio": 1.285592,
+  "hash": "em9Mwoow0wg",
+  "maxWidth": "xl3"
+}

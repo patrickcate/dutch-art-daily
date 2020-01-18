@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 215
+  },
+  "xs3": {
+    "width": 640,
+    "height": 859
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1074
+  },
+  "xs": {
+    "width": 960,
+    "height": 1289
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1504
+  },
+  "title": "The Flight into Egypt",
+  "artist": "Adriaen van der Werff",
+  "art_date": "1710",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 47,
+  "art_width": 36.5,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "07-11",
+  "artwork_date": "2016-07-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Adriaen_van_der_Werff_033.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a57b4a",
+  "lightVibrant": "#d8c092",
+  "darkVibrant": "#6c341b",
+  "muted": "#b0935c",
+  "lightMuted": "#a99c86",
+  "darkMuted": "#524225",
+  "width": 1167,
+  "height": 1567,
+  "ratio": 1.342759,
+  "hash": "fPwUc0009M2",
+  "maxWidth": "sm"
+}

@@ -1,0 +1,62 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 218
+  },
+  "xs3": {
+    "width": 640,
+    "height": 871
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1089
+  },
+  "xs": {
+    "width": 960,
+    "height": 1307
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1524
+  },
+  "md": {
+    "width": 1280,
+    "height": 1742
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1960
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2178
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2395
+  },
+  "title": "God Holds Adam and Eve Responsible",
+  "artist": "Adriaen van der Werff",
+  "art_date": "1717",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 55.7,
+  "art_width": 41.1,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "04-05",
+  "artwork_date": "2016-04-05T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:God_roept_Adam_en_Eva_ter_verantwoording_Rijksmuseum_SK-A-4918.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#a48942",
+  "lightVibrant": "#efd78c",
+  "darkVibrant": "#66481c",
+  "muted": "#ad985e",
+  "lightMuted": "#b9b49c",
+  "darkMuted": "#463d27",
+  "width": 1900,
+  "height": 2586,
+  "ratio": 1.361053,
+  "hash": "8yktmBzcFza",
+  "maxWidth": "xl2"
+}

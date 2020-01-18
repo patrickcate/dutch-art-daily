@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 202
+  },
+  "xs3": {
+    "width": 640,
+    "height": 807
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1009
+  },
+  "xs": {
+    "width": 960,
+    "height": 1211
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1413
+  },
+  "title": "The Proposition",
+  "artist": "Judith Leyster",
+  "art_date": "1631",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 30.9,
+  "art_width": 24.2,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "02-23",
+  "artwork_date": "2016-02-23T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=The_Proposition_(painting)&oldid=598109603",
+  "orientation": "portrait",
+  "vibrant": "#936d39",
+  "lightVibrant": "#d9c19f",
+  "darkVibrant": "#844f14",
+  "muted": "#968556",
+  "lightMuted": "#c6af8f",
+  "darkMuted": "#5c5333",
+  "width": 1200,
+  "height": 1514,
+  "ratio": 1.261667,
+  "hash": "cUscib2z02g",
+  "maxWidth": "sm"
+}

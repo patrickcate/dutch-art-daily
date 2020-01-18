@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 132
+  },
+  "xs3": {
+    "width": 640,
+    "height": 527
+  },
+  "xs2": {
+    "width": 800,
+    "height": 659
+  },
+  "xs": {
+    "width": 960,
+    "height": 791
+  },
+  "sm": {
+    "width": 1120,
+    "height": 923
+  },
+  "md": {
+    "width": 1280,
+    "height": 1054
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1186
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1318
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1450
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1582
+  },
+  "title": "Isaac blessing Jacob",
+  "artist": "Govert Flinck",
+  "art_date": "1638",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 117,
+  "art_width": 141,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "02-06",
+  "artwork_date": "2016-02-06T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AIsaac_Blessing_Jacob_-_Govert_Flinck.jpg",
+  "orientation": "landscape",
+  "vibrant": "#8c3220",
+  "lightVibrant": "#e6a093",
+  "darkVibrant": "#783118",
+  "muted": "#a67a55",
+  "lightMuted": "#7c2c1c",
+  "darkMuted": "#52422f",
+  "width": 3200,
+  "height": 2636,
+  "ratio": 0.82375,
+  "hash": "9sMipaSr4YN",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 208
+  },
+  "xs3": {
+    "width": 640,
+    "height": 833
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1041
+  },
+  "xs": {
+    "width": 960,
+    "height": 1249
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1457
+  },
+  "title": "The Spinner",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1650-1659",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 33.6,
+  "art_width": 28.6,
+  "art_location": "Museum Boijmans Van Beuningen,\tRotterdam",
+  "id": "03-07",
+  "artwork_date": "2016-03-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_(II)_008.jpg",
+  "orientation": "portrait",
+  "vibrant": "#844018",
+  "lightVibrant": "#eab08e",
+  "darkVibrant": "#652d0c",
+  "muted": "#927659",
+  "lightMuted": "#c6a48d",
+  "darkMuted": "#423828",
+  "width": 1230,
+  "height": 1600,
+  "ratio": 1.300813,
+  "hash": "9TjosOmoIQ6",
+  "maxWidth": "sm"
+}

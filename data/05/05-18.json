@@ -1,0 +1,58 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 199
+  },
+  "xs3": {
+    "width": 640,
+    "height": 795
+  },
+  "xs2": {
+    "width": 800,
+    "height": 994
+  },
+  "xs": {
+    "width": 960,
+    "height": 1193
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1391
+  },
+  "md": {
+    "width": 1280,
+    "height": 1590
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1789
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1988
+  },
+  "title": "The Soldier and the Girl",
+  "artist": "Gerard van Honthorst",
+  "art_date": "c. 1621",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 82,
+  "art_width": 66,
+  "art_location": "Herzog Anton Ulrich Museum, Braunschweig",
+  "id": "05-18",
+  "artwork_date": "2016-05-18T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AThe_soldier_and_the_girl%2C_by_Gerard_van_Honthorst.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c9795f",
+  "lightVibrant": "#e9c494",
+  "darkVibrant": "#541e0c",
+  "muted": "#a86851",
+  "lightMuted": "#e0c4bc",
+  "darkMuted": "#492c23",
+  "width": 1610,
+  "height": 2000,
+  "ratio": 1.242236,
+  "hash": "9tCs1FF72gV",
+  "maxWidth": "xl"
+}

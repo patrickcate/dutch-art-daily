@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 129
+  },
+  "xs3": {
+    "width": 640,
+    "height": 517
+  },
+  "xs2": {
+    "width": 800,
+    "height": 646
+  },
+  "xs": {
+    "width": 960,
+    "height": 775
+  },
+  "title": "Esau Selling His Birthright",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "c. 1625",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 84.9,
+  "art_width": 116.3,
+  "art_location": "Gemäldegalerie Museum, Berlin",
+  "id": "04-10",
+  "artwork_date": "2016-04-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Hendrick_ter_Brugghen_-_Esau_Selling_His_Birthright_-_WGA22163.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c18c3c",
+  "lightVibrant": "#d6bf91",
+  "darkVibrant": "#67311f",
+  "muted": "#9c7c5c",
+  "lightMuted": "#c4a47c",
+  "darkMuted": "#663d2c",
+  "width": 1115,
+  "height": 900,
+  "ratio": 0.807175,
+  "hash": "cQocd_fc3z7",
+  "maxWidth": "xs"
+}

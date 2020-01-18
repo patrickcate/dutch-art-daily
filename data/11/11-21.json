@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 195
+  },
+  "xs3": {
+    "width": 640,
+    "height": 780
+  },
+  "xs2": {
+    "width": 800,
+    "height": 975
+  },
+  "xs": {
+    "width": 960,
+    "height": 1170
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1365
+  },
+  "md": {
+    "width": 1280,
+    "height": 1560
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1755
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1950
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2145
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2341
+  },
+  "title": "Young Man Singing",
+  "artist": "Dirck van Baburen",
+  "art_date": "1622",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 71,
+  "art_width": 58.8,
+  "art_location": "Städtische Galerie, Frankfurt",
+  "id": "11-21",
+  "artwork_date": "2016-11-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_Young_Man_Singing_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#bf852d",
+  "lightVibrant": "#e2c795",
+  "darkVibrant": "#16555e",
+  "muted": "#a08b65",
+  "lightMuted": "#c8b892",
+  "darkMuted": "#59442c",
+  "width": 3986,
+  "height": 4859,
+  "ratio": 1.219017,
+  "hash": "9CQp8uYdkYe",
+  "maxWidth": "xl3"
+}

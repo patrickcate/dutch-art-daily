@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 206
+  },
+  "xs3": {
+    "width": 640,
+    "height": 825
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1031
+  },
+  "xs": {
+    "width": 960,
+    "height": 1237
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1443
+  },
+  "md": {
+    "width": 1280,
+    "height": 1649
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1856
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2062
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2268
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2474
+  },
+  "title": "Young Woman with Lemon",
+  "artist": "Godfried Schalcken",
+  "art_date": "1685-1690",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 23,
+  "art_width": 18,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "05-22",
+  "artwork_date": "2016-05-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Jonge_vrouw_met_citroen_Rijksmuseum_SK-A-2339.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#7b402a",
+  "lightVibrant": "#ddad9c",
+  "darkVibrant": "#765a1c",
+  "muted": "#a58a59",
+  "lightMuted": "#723b26",
+  "darkMuted": "#624f2e",
+  "width": 2069,
+  "height": 2666,
+  "ratio": 1.288545,
+  "hash": "9yg8jlINI8o",
+  "maxWidth": "xl3"
+}

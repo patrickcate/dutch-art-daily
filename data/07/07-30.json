@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 194
+  },
+  "xs3": {
+    "width": 640,
+    "height": 775
+  },
+  "xs2": {
+    "width": 800,
+    "height": 968
+  },
+  "xs": {
+    "width": 960,
+    "height": 1162
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1356
+  },
+  "md": {
+    "width": 1280,
+    "height": 1549
+  },
+  "title": "The Empty Glass",
+  "artist": "Pieter de Hooch",
+  "art_date": "c. 1652",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 46,
+  "art_width": 37,
+  "art_location": "Museum Boijmans Van Beuningen,\tRotterdam",
+  "id": "07-30",
+  "artwork_date": "2016-07-30T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_The_Empty_Glass_-_WGA11680.jpg",
+  "orientation": "portrait",
+  "vibrant": "#cf792f",
+  "lightVibrant": "#e6b993",
+  "darkVibrant": "#76451b",
+  "muted": "#9a7b56",
+  "lightMuted": "#b6a98f",
+  "darkMuted": "#5a3f28",
+  "width": 1322,
+  "height": 1600,
+  "ratio": 1.210287,
+  "hash": "8UNusb46iH6",
+  "maxWidth": "md"
+}

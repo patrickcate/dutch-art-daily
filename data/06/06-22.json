@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 208
+  },
+  "xs3": {
+    "width": 640,
+    "height": 833
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1042
+  },
+  "xs": {
+    "width": 960,
+    "height": 1250
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1458
+  },
+  "md": {
+    "width": 1280,
+    "height": 1667
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1875
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2083
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2292
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2500
+  },
+  "title": "Pomona Receiving the Harvest of Fruit",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "1626",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 44.5,
+  "art_width": 32,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "06-22",
+  "artwork_date": "2016-06-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_Cornelisz_van_Haarlem_-_Pomona_ontvangt_de_fruitoogst.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b47444",
+  "lightVibrant": "#e5c0a1",
+  "darkVibrant": "#503214",
+  "muted": "#997257",
+  "lightMuted": "#d4b39c",
+  "darkMuted": "#514132",
+  "width": 1920,
+  "height": 2500,
+  "ratio": 1.302083,
+  "hash": "92m0MFBM327",
+  "maxWidth": "xl3"
+}

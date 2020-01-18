@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 210
+  },
+  "xs3": {
+    "width": 640,
+    "height": 839
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1049
+  },
+  "xs": {
+    "width": 960,
+    "height": 1258
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1468
+  },
+  "md": {
+    "width": 1280,
+    "height": 1678
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1888
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2097
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2307
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2517
+  },
+  "title": "Girl at a Window",
+  "artist": "Nicolaes Maes",
+  "art_date": "c. 1654",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 123,
+  "art_width": 96,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "10-02",
+  "artwork_date": "2016-10-02T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Nicolaes_Maes_-_Meisje_aan_het_venster,_bekend_als_%27De_peinzende%27_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ab784b",
+  "lightVibrant": "#d6bba2",
+  "darkVibrant": "#81490b",
+  "muted": "#847c58",
+  "lightMuted": "#6a4a2e",
+  "darkMuted": "#534c31",
+  "width": 3800,
+  "height": 4981,
+  "ratio": 1.310789,
+  "hash": "8qQM4j2cz34",
+  "maxWidth": "xl3"
+}

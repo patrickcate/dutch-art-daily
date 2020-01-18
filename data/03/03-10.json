@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 208
+  },
+  "xs3": {
+    "width": 640,
+    "height": 831
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1039
+  },
+  "xs": {
+    "width": 960,
+    "height": 1247
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1455
+  },
+  "md": {
+    "width": 1280,
+    "height": 1662
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1870
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2078
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2286
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2493
+  },
+  "title": "Woman Reading a Letter",
+  "artist": "Gabriël Metsu",
+  "art_date": "c. 1664-1666",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 52.5,
+  "art_width": 40.2,
+  "art_location": "The National Gallery of Ireland, Dublin",
+  "id": "03-10",
+  "artwork_date": "2016-03-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Woman_Reading_a_Letter_by_Gabri%C3%ABl_Metsu.jpg",
+  "orientation": "portrait",
+  "vibrant": "#bc5240",
+  "lightVibrant": "#d6bea4",
+  "darkVibrant": "#6d1710",
+  "muted": "#93746d",
+  "lightMuted": "#cfc3b9",
+  "darkMuted": "#533028",
+  "width": 3000,
+  "height": 3896,
+  "ratio": 1.298667,
+  "hash": "d$kc17AoxcI",
+  "maxWidth": "xl3"
+}

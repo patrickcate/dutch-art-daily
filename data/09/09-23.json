@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 186
+  },
+  "xs3": {
+    "width": 640,
+    "height": 742
+  },
+  "xs2": {
+    "width": 800,
+    "height": 928
+  },
+  "xs": {
+    "width": 960,
+    "height": 1113
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1299
+  },
+  "md": {
+    "width": 1280,
+    "height": 1484
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1670
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1855
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2041
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2226
+  },
+  "title": "The Love Letter",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1666",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 44,
+  "art_width": 38.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "09-23",
+  "artwork_date": "2016-09-23T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=The_Love_Letter_(Vermeer)&oldid=588082073",
+  "orientation": "portrait",
+  "vibrant": "#a38844",
+  "lightVibrant": "#d7c8a1",
+  "darkVibrant": "#623912",
+  "muted": "#a19375",
+  "lightMuted": "#ccc4a6",
+  "darkMuted": "#362d1d",
+  "width": 4000,
+  "height": 4638,
+  "ratio": 1.1595,
+  "hash": "8misC21Doty",
+  "maxWidth": "xl3"
+}

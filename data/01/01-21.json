@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 105
+  },
+  "xs3": {
+    "width": 640,
+    "height": 422
+  },
+  "xs2": {
+    "width": 800,
+    "height": 527
+  },
+  "xs": {
+    "width": 960,
+    "height": 632
+  },
+  "sm": {
+    "width": 1120,
+    "height": 738
+  },
+  "md": {
+    "width": 1280,
+    "height": 843
+  },
+  "lg": {
+    "width": 1440,
+    "height": 949
+  },
+  "title": "The Marriage Bed of Tobias and Sarah",
+  "artist": "Jan Steen",
+  "art_date": "c. 1660",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 81,
+  "art_width": 123,
+  "art_location": "Museum Bredius, The Hague",
+  "id": "01-21",
+  "artwork_date": "2016-01-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Steen_-_Tobias_en_Sarah_bidden_terwijl_Rafael_bindt_de_demon.jpg",
+  "orientation": "landscape",
+  "vibrant": "#872b14",
+  "lightVibrant": "#ed9f8b",
+  "darkVibrant": "#5f2404",
+  "muted": "#7c5f47",
+  "lightMuted": "#ad9d8f",
+  "darkMuted": "#4e3a29",
+  "width": 1506,
+  "height": 992,
+  "ratio": 0.658699,
+  "hash": "8yc5ylwuxSg",
+  "maxWidth": "lg"
+}

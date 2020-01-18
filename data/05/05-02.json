@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 224
+  },
+  "xs3": {
+    "width": 640,
+    "height": 896
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1120
+  },
+  "xs": {
+    "width": 960,
+    "height": 1344
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1568
+  },
+  "md": {
+    "width": 1280,
+    "height": 1792
+  },
+  "lg": {
+    "width": 1440,
+    "height": 2016
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2240
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2464
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2688
+  },
+  "title": "Two Chattering Housewives",
+  "artist": "Nicolaes Maes",
+  "art_date": "1655-1660",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 56.3,
+  "art_width": 41.6,
+  "art_location": "Dordrechts Museum, Dordrecht",
+  "id": "05-02",
+  "artwork_date": "2016-05-02T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Two_chattering_housewives,_by_Nicolaes_Maes.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b4944c",
+  "lightVibrant": "#e4bbb0",
+  "darkVibrant": "#663c1c",
+  "muted": "#b17d62",
+  "lightMuted": "#b7b2b1",
+  "darkMuted": "#4c362a",
+  "width": 2460,
+  "height": 3444,
+  "ratio": 1.4,
+  "hash": "94Ko1Wjp3yh",
+  "maxWidth": "xl3"
+}

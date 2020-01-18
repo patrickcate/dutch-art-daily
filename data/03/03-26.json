@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 128
+  },
+  "xs3": {
+    "width": 640,
+    "height": 514
+  },
+  "xs2": {
+    "width": 800,
+    "height": 642
+  },
+  "xs": {
+    "width": 960,
+    "height": 770
+  },
+  "sm": {
+    "width": 1120,
+    "height": 899
+  },
+  "title": "Charikleia and Theagenes",
+  "artist": "Abraham Bloemaert",
+  "art_date": "1625",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 118,
+  "art_width": 95,
+  "art_location": "Sanssouci Picture Gallery, Germany",
+  "id": "03-26",
+  "artwork_date": "2016-03-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Charikleia_and_Theagenes_-_WGA02275.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c39551",
+  "lightVibrant": "#e4c997",
+  "darkVibrant": "#5c2c14",
+  "muted": "#8d6f4c",
+  "lightMuted": "#c2b49d",
+  "darkMuted": "#65432f",
+  "width": 1246,
+  "height": 1000,
+  "ratio": 0.802568,
+  "hash": "ct27a1adc4r",
+  "maxWidth": "sm"
+}

@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 113
+  },
+  "xs3": {
+    "width": 640,
+    "height": 454
+  },
+  "xs2": {
+    "width": 800,
+    "height": 567
+  },
+  "xs": {
+    "width": 960,
+    "height": 681
+  },
+  "title": "Venus and Adonis",
+  "artist": "Ferdinand Bol",
+  "art_date": "c. 1658",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 168,
+  "art_width": 230,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "01-20",
+  "artwork_date": "2016-01-20T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Ferdinand_Bol_-_Venus_and_Adonis_-_WGA2367.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b55f42",
+  "lightVibrant": "#cfab8b",
+  "darkVibrant": "#642414",
+  "muted": "#9d7c5a",
+  "lightMuted": "#e2d6c8",
+  "darkMuted": "#593c2f",
+  "width": 1100,
+  "height": 780,
+  "ratio": 0.709091,
+  "hash": "8FyqpNwg9oC",
+  "maxWidth": "xs"
+}

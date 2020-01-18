@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 113
+  },
+  "xs3": {
+    "width": 640,
+    "height": 453
+  },
+  "xs2": {
+    "width": 800,
+    "height": 566
+  },
+  "xs": {
+    "width": 960,
+    "height": 679
+  },
+  "sm": {
+    "width": 1120,
+    "height": 792
+  },
+  "md": {
+    "width": 1280,
+    "height": 905
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1018
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1132
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1245
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1358
+  },
+  "title": "The Dancing Couple",
+  "artist": "Jan Steen",
+  "art_date": "1663",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 102.5,
+  "art_width": 142.5,
+  "art_location": "The National Gallery of Art, Washington D.C.",
+  "id": "02-09",
+  "artwork_date": "2016-02-09T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:The_Dancing_Couple-1663-Jan_Steen.jpg",
+  "orientation": "landscape",
+  "vibrant": "#bb6d24",
+  "lightVibrant": "#c2aa76",
+  "darkVibrant": "#6c300b",
+  "muted": "#9d8f5b",
+  "lightMuted": "#a6a37d",
+  "darkMuted": "#483e26",
+  "width": 5000,
+  "height": 3536,
+  "ratio": 0.7072,
+  "hash": "c8qf60A1e0i",
+  "maxWidth": "xl3"
+}

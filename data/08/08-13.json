@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 125
+  },
+  "xs3": {
+    "width": 640,
+    "height": 502
+  },
+  "xs2": {
+    "width": 800,
+    "height": 627
+  },
+  "xs": {
+    "width": 960,
+    "height": 753
+  },
+  "sm": {
+    "width": 1120,
+    "height": 878
+  },
+  "md": {
+    "width": 1280,
+    "height": 1004
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1129
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1255
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1380
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1506
+  },
+  "title": "The Raising of Lazarus",
+  "artist": "Jan Pynas",
+  "art_date": "1609",
+  "art_medium": "Oil",
+  "art_surface": "Oak",
+  "art_height": 40,
+  "art_width": 60,
+  "art_location": "Staatsgalerie Aschaffenburg, Aschaffenburg",
+  "id": "08-13",
+  "artwork_date": "2016-08-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Symonsz._Pynas_-_De_opwekking_van_Lazarus_(Aschaffenburg).jpg",
+  "orientation": "landscape",
+  "vibrant": "#e0612c",
+  "lightVibrant": "#e6be70",
+  "darkVibrant": "#04141c",
+  "muted": "#a2835c",
+  "lightMuted": "#95958b",
+  "darkMuted": "#2f444a",
+  "width": 1997,
+  "height": 1566,
+  "ratio": 0.784176,
+  "hash": "ev2gxlB$fA3",
+  "maxWidth": "xl3"
+}

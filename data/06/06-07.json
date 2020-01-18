@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 211
+  },
+  "xs3": {
+    "width": 640,
+    "height": 846
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1057
+  },
+  "xs": {
+    "width": 960,
+    "height": 1269
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1480
+  },
+  "title": "A Lady Dressing Her Hair",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1657-1658",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 36,
+  "art_width": 28,
+  "art_location": "Wallace Collection, London",
+  "id": "06-07",
+  "artwork_date": "2016-06-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_d._J._002.jpg",
+  "orientation": "portrait",
+  "vibrant": "#d3ab80",
+  "lightVibrant": "#dcbd9c",
+  "darkVibrant": "#5a3228",
+  "muted": "#7d533d",
+  "lightMuted": "#8c9f91",
+  "darkMuted": "#472925",
+  "width": 1256,
+  "height": 1660,
+  "ratio": 1.321656,
+  "hash": "9dEooCSoNx6",
+  "maxWidth": "sm"
+}

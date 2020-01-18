@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 130
+  },
+  "xs3": {
+    "width": 640,
+    "height": 519
+  },
+  "xs2": {
+    "width": 800,
+    "height": 648
+  },
+  "xs": {
+    "width": 960,
+    "height": 778
+  },
+  "sm": {
+    "width": 1120,
+    "height": 908
+  },
+  "md": {
+    "width": 1280,
+    "height": 1037
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1167
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1297
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1426
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1556
+  },
+  "title": "Esau Selling Jacob His Birthright",
+  "artist": "Matthias Stom",
+  "art_date": "c. 1640",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 96,
+  "art_width": 117,
+  "art_location": "Dorotheum Museum, Wien",
+  "id": "11-24",
+  "artwork_date": "2016-11-24T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stomer_(Umkreis)_Das_Linsengericht.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ae8847",
+  "lightVibrant": "#dcc292",
+  "darkVibrant": "#7d1c18",
+  "muted": "#877256",
+  "lightMuted": "#735825",
+  "darkMuted": "#472d23",
+  "width": 5957,
+  "height": 4828,
+  "ratio": 0.810475,
+  "hash": "8SOkINzckOD",
+  "maxWidth": "xl3"
+}

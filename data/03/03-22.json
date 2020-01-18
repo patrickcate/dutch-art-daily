@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 119
+  },
+  "xs3": {
+    "width": 640,
+    "height": 478
+  },
+  "xs2": {
+    "width": 800,
+    "height": 597
+  },
+  "xs": {
+    "width": 960,
+    "height": 716
+  },
+  "sm": {
+    "width": 1120,
+    "height": 836
+  },
+  "md": {
+    "width": 1280,
+    "height": 955
+  },
+  "title": "Temperance",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "c. 1605",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 95,
+  "art_width": 142,
+  "art_location": "Sanssouci Picture Gallery, Berlin",
+  "id": "03-22",
+  "artwork_date": "2016-03-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_Cornelisz._van_Haarlem_-_Temperance_-_WGA05259.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b47e4c",
+  "lightVibrant": "#e1c794",
+  "darkVibrant": "#5d3928",
+  "muted": "#698198",
+  "lightMuted": "#e2d4be",
+  "darkMuted": "#604f3a",
+  "width": 1340,
+  "height": 1000,
+  "ratio": 0.746269,
+  "hash": "b0bAHN9Y2kP",
+  "maxWidth": "md"
+}

@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 181
+  },
+  "xs3": {
+    "width": 640,
+    "height": 726
+  },
+  "xs2": {
+    "width": 800,
+    "height": 907
+  },
+  "xs": {
+    "width": 960,
+    "height": 1088
+  },
+  "title": "King David in Prayer",
+  "artist": "Pieter de Grebber",
+  "art_date": "c. 1635-1640",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 94,
+  "art_width": 84.5,
+  "art_location": "Museum Catharijneconvent, Utrecht",
+  "id": "06-28",
+  "artwork_date": "2016-06-28T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:5201-king-david-in-prayer-pieter-de-grebber.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c89429",
+  "lightVibrant": "#e4c45c",
+  "darkVibrant": "#8c441e",
+  "muted": "#9f8b6a",
+  "lightMuted": "#dfd4c1",
+  "darkMuted": "#3c3c4c",
+  "width": 1024,
+  "height": 1161,
+  "ratio": 1.133789,
+  "hash": "f3wobmq32oi",
+  "maxWidth": "xs"
+}

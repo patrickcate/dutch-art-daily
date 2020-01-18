@@ -1,0 +1,38 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 224
+  },
+  "xs3": {
+    "width": 640,
+    "height": 895
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1119
+  },
+  "title": "Andromeda Chained to the Rocks",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "c. 1631",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 34,
+  "art_width": 24.5,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "02-12",
+  "artwork_date": "2016-02-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Andromeda_Chained_to_the_Rocks&oldid=572699347",
+  "orientation": "portrait",
+  "vibrant": "#7a4e29",
+  "lightVibrant": "#ddb99b",
+  "darkVibrant": "#4c1c0c",
+  "muted": "#7f7b89",
+  "lightMuted": "#cdc2b5",
+  "darkMuted": "#392926",
+  "width": 858,
+  "height": 1200,
+  "ratio": 1.398601,
+  "hash": "9N6oDCgD6VD",
+  "maxWidth": "xs2"
+}

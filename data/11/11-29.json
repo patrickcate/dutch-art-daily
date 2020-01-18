@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 113
+  },
+  "xs3": {
+    "width": 640,
+    "height": 452
+  },
+  "xs2": {
+    "width": 800,
+    "height": 565
+  },
+  "xs": {
+    "width": 960,
+    "height": 678
+  },
+  "sm": {
+    "width": 1120,
+    "height": 792
+  },
+  "md": {
+    "width": 1280,
+    "height": 905
+  },
+  "title": "Argument over a Card Game",
+  "artist": "Jan Steen",
+  "art_date": "1665",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 90,
+  "art_width": 119,
+  "art_location": "Staatliche Museen, Berlin",
+  "id": "11-29",
+  "artwork_date": "2016-11-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Steen_Argument_over_a_Card_Game.jpg",
+  "orientation": "landscape",
+  "vibrant": "#975a46",
+  "lightVibrant": "#c9977c",
+  "darkVibrant": "#58291c",
+  "muted": "#906d50",
+  "lightMuted": "#94a0b0",
+  "darkMuted": "#5a3932",
+  "width": 1415,
+  "height": 1000,
+  "ratio": 0.706714,
+  "hash": "84mk3NxPCqo",
+  "maxWidth": "md"
+}

@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 210
+  },
+  "xs3": {
+    "width": 640,
+    "height": 839
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1049
+  },
+  "xs": {
+    "width": 960,
+    "height": 1259
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1469
+  },
+  "md": {
+    "width": 1280,
+    "height": 1679
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1889
+  },
+  "title": "The Sacrifice of Isaac",
+  "artist": "Jan Lievens",
+  "art_date": "c. 1638",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 180,
+  "art_width": 136,
+  "art_location": "Herzog Anton Ulrich Museum, Braunschweig",
+  "id": "09-03",
+  "artwork_date": "2016-09-03T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Lievens_-_The_Sacrifice_of_Isaac_(c.1638).jpg",
+  "orientation": "portrait",
+  "vibrant": "#c47b42",
+  "lightVibrant": "#ceac6c",
+  "darkVibrant": "#551d0c",
+  "muted": "#a59068",
+  "lightMuted": "#cbc096",
+  "darkMuted": "#574334",
+  "width": 1525,
+  "height": 2000,
+  "ratio": 1.311475,
+  "hash": "8M1sgb4Lp2A",
+  "maxWidth": "lg"
+}

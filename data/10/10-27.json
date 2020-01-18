@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 112
+  },
+  "xs3": {
+    "width": 640,
+    "height": 449
+  },
+  "xs2": {
+    "width": 800,
+    "height": 561
+  },
+  "xs": {
+    "width": 960,
+    "height": 673
+  },
+  "sm": {
+    "width": 1120,
+    "height": 785
+  },
+  "md": {
+    "width": 1280,
+    "height": 897
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1009
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1121
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1233
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1346
+  },
+  "title": "The Adoration of the Shepherds",
+  "artist": "Matthias Stom",
+  "art_date": "c. 1636",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 113.7,
+  "art_width": 161.6,
+  "art_location": "North Carolina Museum of Art, Raleigh",
+  "id": "10-27",
+  "date": "2016-10-27T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:The_Adoration_of_the_Shepherds_-_Matthias_Stom_(Stomer)_-_Google_Cultural_Institute.jpg",
+  "orientation": "landscape",
+  "vibrant": "#dc9a17",
+  "lightVibrant": "#e4cb89",
+  "darkVibrant": "#752b0a",
+  "muted": "#748587",
+  "lightMuted": "#8b988c",
+  "darkMuted": "#665135",
+  "width": 6040,
+  "height": 4233,
+  "ratio": 0.700828,
+  "hash": "9lGqGgQD6cN",
+  "maxWidth": "xl3"
+}

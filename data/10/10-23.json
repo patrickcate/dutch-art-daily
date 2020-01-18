@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 188
+  },
+  "xs3": {
+    "width": 640,
+    "height": 753
+  },
+  "xs2": {
+    "width": 800,
+    "height": 941
+  },
+  "xs": {
+    "width": 960,
+    "height": 1129
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1317
+  },
+  "title": "The Lacemaker",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1669-1670",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 24.5,
+  "art_width": 21,
+  "art_location": "Louvre Museum, Paris",
+  "id": "10-23",
+  "date": "2016-10-23T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=The_Lacemaker_(Vermeer)&oldid=589177403",
+  "orientation": "portrait",
+  "vibrant": "#c48c54",
+  "lightVibrant": "#e6d7b7",
+  "darkVibrant": "#0c051c",
+  "muted": "#937257",
+  "lightMuted": "#c8c4b2",
+  "darkMuted": "#263144",
+  "width": 1166,
+  "height": 1371,
+  "ratio": 1.175815,
+  "hash": "cNAMc2431w8",
+  "maxWidth": "sm"
+}

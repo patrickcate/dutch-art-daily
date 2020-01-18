@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 92
+  },
+  "xs3": {
+    "width": 640,
+    "height": 367
+  },
+  "xs2": {
+    "width": 800,
+    "height": 459
+  },
+  "xs": {
+    "width": 960,
+    "height": 551
+  },
+  "sm": {
+    "width": 1120,
+    "height": 643
+  },
+  "md": {
+    "width": 1280,
+    "height": 735
+  },
+  "lg": {
+    "width": 1440,
+    "height": 826
+  },
+  "xl": {
+    "width": 1600,
+    "height": 918
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1010
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1102
+  },
+  "title": "Paris and Oenone",
+  "artist": "Pieter Lastman",
+  "art_date": "1610",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 65.4,
+  "art_width": 111,
+  "art_location": "High Museum of Art, Atlanta",
+  "id": "01-16",
+  "artwork_date": "2016-01-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Paris_and_Oenone_by_Pieter_Lastman,_oil_on_panel,_1610,_High_Museum_of_Art.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c18459",
+  "lightVibrant": "#dab79e",
+  "darkVibrant": "#7b4913",
+  "muted": "#9b8c69",
+  "lightMuted": "#6f4629",
+  "darkMuted": "#51452a",
+  "width": 2657,
+  "height": 1525,
+  "ratio": 0.573956,
+  "hash": "cfzg8cge0Qg",
+  "maxWidth": "xl3"
+}

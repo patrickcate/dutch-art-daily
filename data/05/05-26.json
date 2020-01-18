@@ -1,0 +1,62 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 122
+  },
+  "xs3": {
+    "width": 640,
+    "height": 487
+  },
+  "xs2": {
+    "width": 800,
+    "height": 609
+  },
+  "xs": {
+    "width": 960,
+    "height": 731
+  },
+  "sm": {
+    "width": 1120,
+    "height": 852
+  },
+  "md": {
+    "width": 1280,
+    "height": 974
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1096
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1218
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1339
+  },
+  "title": "Parable of the Wheat and the Tares",
+  "artist": "Abraham Bloemaert",
+  "art_date": "1624",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 100.4,
+  "art_width": 132.5,
+  "art_location": "Walters Art Museum, Baltimore",
+  "id": "05-26",
+  "artwork_date": "2016-05-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Abraham_Bloemaert_-_Parable_of_the_Wheat_and_the_Tares_-_Walters_372505.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ac7c4f",
+  "lightVibrant": "#d5bba4",
+  "darkVibrant": "#642c0c",
+  "muted": "#907a4d",
+  "lightMuted": "#bbbdc1",
+  "darkMuted": "#575030",
+  "width": 1799,
+  "height": 1369,
+  "ratio": 0.760978,
+  "hash": "cwx9E71u25$",
+  "maxWidth": "xl2"
+}

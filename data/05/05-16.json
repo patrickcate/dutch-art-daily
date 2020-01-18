@@ -1,0 +1,62 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 111
+  },
+  "xs3": {
+    "width": 640,
+    "height": 442
+  },
+  "xs2": {
+    "width": 800,
+    "height": 553
+  },
+  "xs": {
+    "width": 960,
+    "height": 664
+  },
+  "sm": {
+    "width": 1120,
+    "height": 774
+  },
+  "md": {
+    "width": 1280,
+    "height": 885
+  },
+  "lg": {
+    "width": 1440,
+    "height": 995
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1106
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1217
+  },
+  "title": "Haman Begging Esther for Mercy",
+  "artist": "Pieter Lastman",
+  "art_date": "c. 1618",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 52,
+  "art_width": 78,
+  "art_location": "National Museum, Warsaw",
+  "id": "05-16",
+  "artwork_date": "2016-05-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Lastman_Haman.png",
+  "orientation": "landscape",
+  "vibrant": "#c8832e",
+  "lightVibrant": "#efd59d",
+  "darkVibrant": "#872518",
+  "muted": "#546da8",
+  "lightMuted": "#cac3a2",
+  "darkMuted": "#423226",
+  "width": 1908,
+  "height": 1319,
+  "ratio": 0.6913,
+  "hash": "bEji_wCU1FO",
+  "maxWidth": "xl2"
+}

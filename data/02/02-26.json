@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 198
+  },
+  "xs3": {
+    "width": 640,
+    "height": 793
+  },
+  "xs2": {
+    "width": 800,
+    "height": 991
+  },
+  "xs": {
+    "width": 960,
+    "height": 1190
+  },
+  "title": "Allegory of Winter",
+  "artist": "Abraham Bloemaert",
+  "art_date": "c. 1625-1630",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 70,
+  "art_width": 57,
+  "art_location": "Louvre Museum, Paris",
+  "id": "02-26",
+  "artwork_date": "2016-02-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Allegory_of_Winter_-_WGA2273.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ae2c1f",
+  "lightVibrant": "#dab98d",
+  "darkVibrant": "#62241a",
+  "muted": "#bb8e66",
+  "lightMuted": "#d4c7b8",
+  "darkMuted": "#2e1f1a",
+  "width": 1100,
+  "height": 1363,
+  "ratio": 1.239091,
+  "hash": "8ewejPiOkIq",
+  "maxWidth": "xs"
+}

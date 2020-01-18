@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 139
+  },
+  "xs3": {
+    "width": 640,
+    "height": 557
+  },
+  "xs2": {
+    "width": 800,
+    "height": 696
+  },
+  "xs": {
+    "width": 960,
+    "height": 835
+  },
+  "sm": {
+    "width": 1120,
+    "height": 974
+  },
+  "title": "Elijah Fed by an Angel",
+  "artist": "Ferdinand Bol",
+  "art_date": "1660-1663",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 135,
+  "art_width": 153,
+  "art_location": "Private Collection",
+  "id": "09-06",
+  "artwork_date": "2016-09-06T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Ferdinand_Bol_-_Elijah_Fed_by_an_Angel_-_WGA2360.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b89c52",
+  "lightVibrant": "#e3cb6f",
+  "darkVibrant": "#5e4123",
+  "muted": "#9c9454",
+  "lightMuted": "#806a18",
+  "darkMuted": "#513b2c",
+  "width": 1150,
+  "height": 1000,
+  "ratio": 0.869565,
+  "hash": "apoj9qj313M",
+  "maxWidth": "sm"
+}

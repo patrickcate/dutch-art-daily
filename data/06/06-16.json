@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 118
+  },
+  "xs3": {
+    "width": 640,
+    "height": 473
+  },
+  "xs2": {
+    "width": 800,
+    "height": 591
+  },
+  "xs": {
+    "width": 960,
+    "height": 709
+  },
+  "sm": {
+    "width": 1120,
+    "height": 828
+  },
+  "md": {
+    "width": 1280,
+    "height": 946
+  },
+  "title": "The Calling of St. Matthew",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "1621",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 102,
+  "art_width": 137,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "06-16",
+  "artwork_date": "2016-06-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Brugghen,_Hendrick_ter_-_The_Calling_of_St._Matthew_-_1621.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c37839",
+  "lightVibrant": "#f2bf8e",
+  "darkVibrant": "#72242c",
+  "muted": "#ac8661",
+  "lightMuted": "#aaaeaa",
+  "darkMuted": "#4b2e30",
+  "width": 1417,
+  "height": 1047,
+  "ratio": 0.738885,
+  "hash": "ckUgxy4xspw",
+  "maxWidth": "md"
+}

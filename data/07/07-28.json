@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 139
+  },
+  "xs3": {
+    "width": 640,
+    "height": 556
+  },
+  "xs2": {
+    "width": 800,
+    "height": 695
+  },
+  "xs": {
+    "width": 960,
+    "height": 833
+  },
+  "sm": {
+    "width": 1120,
+    "height": 972
+  },
+  "title": "God Inviting Christ to Sit on the Throne at His Right Hand",
+  "artist": "Pieter de Grebber",
+  "art_date": "1645",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 115,
+  "art_width": 133,
+  "art_location": "Museum Catharijneconvent, Utrecht",
+  "id": "07-28",
+  "artwork_date": "2016-07-28T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:De_Grebber-God_Inviting_Christ_to_Sit_on_the_Throne_at_His_Right_Hand.jpg",
+  "orientation": "landscape",
+  "vibrant": "#aa6f2a",
+  "lightVibrant": "#cfbe97",
+  "darkVibrant": "#702814",
+  "muted": "#a48d69",
+  "lightMuted": "#ccc3ba",
+  "darkMuted": "#523d32",
+  "width": 1153,
+  "height": 1001,
+  "ratio": 0.86817,
+  "hash": "c3ybb5UA25y",
+  "maxWidth": "sm"
+}

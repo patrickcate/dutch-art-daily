@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 182
+  },
+  "xs3": {
+    "width": 640,
+    "height": 728
+  },
+  "xs2": {
+    "width": 800,
+    "height": 910
+  },
+  "xs": {
+    "width": 960,
+    "height": 1092
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1274
+  },
+  "title": "Peasant Family in a Cottage Interior",
+  "artist": "Adriaen van Ostade",
+  "art_date": "1661",
+  "art_medium": "Oil",
+  "art_surface": "Oak Panel",
+  "art_height": 35,
+  "art_width": 31,
+  "art_location": "Private Collection",
+  "id": "10-04",
+  "artwork_date": "2016-10-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Adriaen_van_Ostade_022.jpg",
+  "orientation": "portrait",
+  "vibrant": "#9c3321",
+  "lightVibrant": "#e79e91",
+  "darkVibrant": "#2c0c04",
+  "muted": "#a98a61",
+  "lightMuted": "#d0c7bd",
+  "darkMuted": "#674a35",
+  "width": 1143,
+  "height": 1300,
+  "ratio": 1.137358,
+  "hash": "9q5qTIOd1yo",
+  "maxWidth": "sm"
+}

@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 223
+  },
+  "xs3": {
+    "width": 640,
+    "height": 891
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1114
+  },
+  "xs": {
+    "width": 960,
+    "height": 1337
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1560
+  },
+  "md": {
+    "width": 1280,
+    "height": 1783
+  },
+  "title": "Portrait of Jan Andrea Lievens",
+  "artist": "Jan Lievens",
+  "art_date": "1666-1674",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 84,
+  "art_width": 61,
+  "art_location": null,
+  "id": "07-03",
+  "artwork_date": "2016-07-03T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Jan_Lievens_%26_Jan_Andrea_Lievens_-_Portret_van_Jan_Andrea_Lievens_als_zinnebeeld_op_de_Matigheid.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b4914b",
+  "lightVibrant": "#b9a366",
+  "darkVibrant": "#60441c",
+  "muted": "#9e8e56",
+  "lightMuted": "#685930",
+  "darkMuted": "#504e2e",
+  "width": 1436,
+  "height": 2000,
+  "ratio": 1.392758,
+  "hash": "82smSD1xyFw",
+  "maxWidth": "md"
+}

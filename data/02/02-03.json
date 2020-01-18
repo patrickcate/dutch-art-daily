@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 181
+  },
+  "xs3": {
+    "width": 640,
+    "height": 722
+  },
+  "xs2": {
+    "width": 800,
+    "height": 903
+  },
+  "xs": {
+    "width": 960,
+    "height": 1083
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1264
+  },
+  "md": {
+    "width": 1280,
+    "height": 1445
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1625
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1806
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1986
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2167
+  },
+  "title": "St. Paul",
+  "artist": "Jan Lievens",
+  "art_date": "c. 1627-1629",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 118.8,
+  "art_width": 108,
+  "art_location": "National Museum of Fine Arts, Stockholm",
+  "id": "02-03",
+  "artwork_date": "2016-02-03T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Jan_Lievens,_Painting_of_St_Paul,_ca._1627-29._Oil_on_canvas._Nationalmuseum_Sweden.jpg",
+  "orientation": "portrait",
+  "vibrant": "#975444",
+  "lightVibrant": "#dcb493",
+  "darkVibrant": "#100c04",
+  "muted": "#9e5f55",
+  "lightMuted": "#c8bdb9",
+  "darkMuted": "#423a38",
+  "width": 2659,
+  "height": 3001,
+  "ratio": 1.12862,
+  "hash": "cbcS9j9A10g",
+  "maxWidth": "xl3"
+}

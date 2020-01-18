@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 218
+  },
+  "xs3": {
+    "width": 640,
+    "height": 873
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1091
+  },
+  "xs": {
+    "width": 960,
+    "height": 1309
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1527
+  },
+  "title": "Woman Writing a Letter",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1650-1659",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 39,
+  "art_width": 29.5,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "05-07",
+  "artwork_date": "2016-05-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_d._J._001.jpg",
+  "orientation": "portrait",
+  "vibrant": "#96232f",
+  "lightVibrant": "#dcbc8c",
+  "darkVibrant": "#5b141f",
+  "muted": "#a4736a",
+  "lightMuted": "#d2b6b0",
+  "darkMuted": "#623b3b",
+  "width": 1147,
+  "height": 1564,
+  "ratio": 1.363557,
+  "hash": "9aArpeop9eP",
+  "maxWidth": "sm"
+}

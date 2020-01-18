@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 130
+  },
+  "xs3": {
+    "width": 640,
+    "height": 521
+  },
+  "xs2": {
+    "width": 800,
+    "height": 651
+  },
+  "xs": {
+    "width": 960,
+    "height": 781
+  },
+  "sm": {
+    "width": 1120,
+    "height": 912
+  },
+  "md": {
+    "width": 1280,
+    "height": 1042
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1172
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1302
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1433
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1563
+  },
+  "title": "The Choice between Young and Old",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "1597",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 72.5,
+  "art_width": 89,
+  "art_location": "Private Collection",
+  "id": "01-22",
+  "artwork_date": "2016-01-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_van_Haarlem_The_Choice_between_the_Young_and_Old.jpg",
+  "orientation": "landscape",
+  "vibrant": "#9c5033",
+  "lightVibrant": "#dead9b",
+  "darkVibrant": "#713421",
+  "muted": "#a5845a",
+  "lightMuted": "#c8ac8d",
+  "darkMuted": "#5a4a2f",
+  "width": 2000,
+  "height": 1628,
+  "ratio": 0.814,
+  "hash": "82p8mciBcwE",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 117
+  },
+  "xs3": {
+    "width": 640,
+    "height": 466
+  },
+  "xs2": {
+    "width": 800,
+    "height": 583
+  },
+  "xs": {
+    "width": 960,
+    "height": 700
+  },
+  "sm": {
+    "width": 1120,
+    "height": 816
+  },
+  "md": {
+    "width": 1280,
+    "height": 933
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1050
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1166
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1283
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1399
+  },
+  "title": "Sacrifice of Isaac",
+  "artist": "Matthias Stom",
+  "art_date": "",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 101,
+  "art_width": 136,
+  "art_location": "Musée Fesch, Ajaccio",
+  "id": "07-24",
+  "artwork_date": "2016-07-24T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stom_-_Le_sacrifice_d%27Abraham.jpg",
+  "orientation": "landscape",
+  "vibrant": "#dc3f10",
+  "lightVibrant": "#f4cbac",
+  "darkVibrant": "#842208",
+  "muted": "#a07c56",
+  "lightMuted": "#d0b6a5",
+  "darkMuted": "#473f38",
+  "width": 2954,
+  "height": 2153,
+  "ratio": 0.728842,
+  "hash": "96xrAFdeDb2",
+  "maxWidth": "xl3"
+}

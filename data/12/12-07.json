@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 209
+  },
+  "xs3": {
+    "width": 640,
+    "height": 834
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1043
+  },
+  "xs": {
+    "width": 960,
+    "height": 1251
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1460
+  },
+  "md": {
+    "width": 1280,
+    "height": 1668
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1877
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2085
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2294
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2502
+  },
+  "title": "The Gallant Soldier",
+  "artist": "Gerard ter Borch",
+  "art_date": "c. 1660-1663",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 67,
+  "art_width": 55,
+  "art_location": "Louvre Museum, Paris",
+  "id": "12-07",
+  "artwork_date": "2016-12-07T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_d._J._007.jpg",
+  "orientation": "portrait",
+  "vibrant": "#af4543",
+  "lightVibrant": "#ddad78",
+  "darkVibrant": "#5c242c",
+  "muted": "#916951",
+  "lightMuted": "#d1c4af",
+  "darkMuted": "#543236",
+  "width": 2024,
+  "height": 2638,
+  "ratio": 1.30336,
+  "hash": "aH1p68wC0O0",
+  "maxWidth": "xl3"
+}

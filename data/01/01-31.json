@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 199
+  },
+  "xs3": {
+    "width": 640,
+    "height": 795
+  },
+  "xs2": {
+    "width": 800,
+    "height": 993
+  },
+  "xs": {
+    "width": 960,
+    "height": 1192
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1390
+  },
+  "md": {
+    "width": 1280,
+    "height": 1589
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1788
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1986
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2185
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2384
+  },
+  "title": "Girl in a Blue Dress",
+  "artist": "Johannes Cornelisz Verspronck",
+  "art_date": "1641",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 82,
+  "art_width": 66.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "01-31",
+  "artwork_date": "2016-01-31T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AJohannes_Cornelisz._Verspronck_-_Portret_van_een_meisje_in_het_blauw_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#994933",
+  "lightVibrant": "#dda99b",
+  "darkVibrant": "#682c1c",
+  "muted": "#997057",
+  "lightMuted": "#aba294",
+  "darkMuted": "#54412b",
+  "width": 4000,
+  "height": 4966,
+  "ratio": 1.2415,
+  "hash": "8cApcCiczz6",
+  "maxWidth": "xl3"
+}

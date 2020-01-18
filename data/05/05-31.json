@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 129
+  },
+  "xs3": {
+    "width": 640,
+    "height": 517
+  },
+  "xs2": {
+    "width": 800,
+    "height": 647
+  },
+  "xs": {
+    "width": 960,
+    "height": 776
+  },
+  "sm": {
+    "width": 1120,
+    "height": 906
+  },
+  "md": {
+    "width": 1280,
+    "height": 1035
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1164
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1294
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1423
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1552
+  },
+  "title": "Women Bathing in a Landscape",
+  "artist": "Cornelis van Poelenburgh",
+  "art_date": "1630",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 35,
+  "art_width": 43.5,
+  "art_location": "The National Gallery, London",
+  "id": "05-31",
+  "artwork_date": "2016-05-31T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_van_Poelenburch_-_Women_bathing_in_a_Landscape.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b4745f",
+  "lightVibrant": "#a3b1da",
+  "darkVibrant": "#463c1c",
+  "muted": "#8a6a53",
+  "lightMuted": "#b9bac7",
+  "darkMuted": "#563f30",
+  "width": 4000,
+  "height": 3234,
+  "ratio": 0.8085,
+  "hash": "ej6340z0020",
+  "maxWidth": "xl3"
+}

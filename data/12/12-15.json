@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 183
+  },
+  "xs3": {
+    "width": 640,
+    "height": 731
+  },
+  "xs2": {
+    "width": 800,
+    "height": 914
+  },
+  "xs": {
+    "width": 960,
+    "height": 1097
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1279
+  },
+  "md": {
+    "width": 1280,
+    "height": 1462
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1645
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1828
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2010
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2193
+  },
+  "title": "Mistress and Maid",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1666–1667",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 90.2,
+  "art_width": 78.7,
+  "art_location": "Frick Collection, New York City",
+  "id": "12-15",
+  "artwork_date": "2016-12-15 12:00:00 -05:00\nVermeer",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Mistress_and_Maid&oldid=574010281",
+  "orientation": "portrait",
+  "vibrant": "#d8bc44",
+  "lightVibrant": "#e9dd91",
+  "darkVibrant": "#643813",
+  "muted": "#a58361",
+  "lightMuted": "#acb9d4",
+  "darkMuted": "#452f24",
+  "width": 2854,
+  "height": 3260,
+  "ratio": 1.142256,
+  "hash": "9p6appCCpoM",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 198
+  },
+  "xs3": {
+    "width": 640,
+    "height": 794
+  },
+  "xs2": {
+    "width": 800,
+    "height": 992
+  },
+  "xs": {
+    "width": 960,
+    "height": 1191
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1389
+  },
+  "md": {
+    "width": 1280,
+    "height": 1588
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1786
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1985
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2183
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2382
+  },
+  "title": "Flora",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "1634",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 125,
+  "art_width": 101,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "07-12",
+  "artwork_date": "2016-07-12T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Harmensz_van_Rijn_Rembrandt_-_%D0%A4%D0%BB%D0%BE%D1%80%D0%B0_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#d0692e",
+  "lightVibrant": "#e6b192",
+  "darkVibrant": "#592d14",
+  "muted": "#988056",
+  "lightMuted": "#7c3f1c",
+  "darkMuted": "#605438",
+  "width": 3209,
+  "height": 3981,
+  "ratio": 1.240573,
+  "hash": "9wzrYy1cEX6",
+  "maxWidth": "xl3"
+}

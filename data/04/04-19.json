@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 194
+  },
+  "xs3": {
+    "width": 640,
+    "height": 776
+  },
+  "xs2": {
+    "width": 800,
+    "height": 970
+  },
+  "xs": {
+    "width": 960,
+    "height": 1164
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1358
+  },
+  "md": {
+    "width": 1280,
+    "height": 1552
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1746
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1940
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2134
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2328
+  },
+  "title": "A Boy and a Girl with a Cat and an Eel",
+  "artist": "Judith Leyster",
+  "art_date": "c. 1635",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 59,
+  "art_width": 49,
+  "art_location": "The National Gallery, London",
+  "id": "04-19",
+  "artwork_date": "2016-04-19T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AJudith_Leyster_A_Boy_and_a_Girl_with_a_Cat_and_an_Eel.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ae492a",
+  "lightVibrant": "#ceae80",
+  "darkVibrant": "#703d13",
+  "muted": "#947d51",
+  "lightMuted": "#9b9c84",
+  "darkMuted": "#473621",
+  "width": 3486,
+  "height": 4226,
+  "ratio": 1.212278,
+  "hash": "d84p30VaY9c",
+  "maxWidth": "xl3"
+}

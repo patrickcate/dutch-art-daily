@@ -1,0 +1,38 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 196
+  },
+  "xs3": {
+    "width": 640,
+    "height": 786
+  },
+  "xs2": {
+    "width": 800,
+    "height": 982
+  },
+  "title": "Entombment of Christ",
+  "artist": "Pieter Lastman",
+  "art_date": "1612",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 123,
+  "art_width": 101,
+  "art_location": "Palais des Beaux-Arts de Lille, Lille",
+  "id": "04-24",
+  "artwork_date": "2016-04-24T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_Lastman_-_Graflegging.jpg",
+  "orientation": "portrait",
+  "vibrant": "#cc3f31",
+  "lightVibrant": "#dcc69a",
+  "darkVibrant": "#710d13",
+  "muted": "#9b866c",
+  "lightMuted": "#c8b39b",
+  "darkMuted": "#69452f",
+  "width": 800,
+  "height": 982,
+  "ratio": 1.2275,
+  "hash": "99xjRKVIcbj",
+  "maxWidth": "xs2"
+}

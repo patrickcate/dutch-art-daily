@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 132
+  },
+  "xs3": {
+    "width": 640,
+    "height": 528
+  },
+  "xs2": {
+    "width": 800,
+    "height": 661
+  },
+  "xs": {
+    "width": 960,
+    "height": 793
+  },
+  "sm": {
+    "width": 1120,
+    "height": 925
+  },
+  "md": {
+    "width": 1280,
+    "height": 1057
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1189
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1321
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1453
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1585
+  },
+  "title": "A Gathering of the Gods in the Clouds",
+  "artist": "Cornelis van Poelenburgh",
+  "art_date": "c. 1630",
+  "art_medium": "Oil",
+  "art_surface": "Copper",
+  "art_height": 38,
+  "art_width": 49,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "03-13",
+  "artwork_date": "2016-03-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Meeting_Gods_In_The_Clouds_by_Cornelis_van_Poelenburch.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c24d3a",
+  "lightVibrant": "#f8c471",
+  "darkVibrant": "#612814",
+  "muted": "#987c66",
+  "lightMuted": "#cbbcac",
+  "darkMuted": "#6a4333",
+  "width": 3000,
+  "height": 2477,
+  "ratio": 0.825667,
+  "hash": "fi90Ag0C18y",
+  "maxWidth": "xl3"
+}

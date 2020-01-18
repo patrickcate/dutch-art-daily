@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 194
+  },
+  "xs3": {
+    "width": 640,
+    "height": 778
+  },
+  "xs2": {
+    "width": 800,
+    "height": 972
+  },
+  "xs": {
+    "width": 960,
+    "height": 1166
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1361
+  },
+  "title": "Lady Writing a Letter with Her Maid",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1670-1671",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 72.2,
+  "art_width": 59.5,
+  "art_location": "The National Gallery of Ireland, Dublin",
+  "id": "08-23",
+  "artwork_date": "2016-08-23T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Lady_Writing_a_Letter_with_her_Maid&oldid=589178175",
+  "orientation": "portrait",
+  "vibrant": "#ea1468",
+  "lightVibrant": "#f485b0",
+  "darkVibrant": "#2d0414",
+  "muted": "#797598",
+  "lightMuted": "#c2aea3",
+  "darkMuted": "#422b2b",
+  "width": 1200,
+  "height": 1458,
+  "ratio": 1.215,
+  "hash": "cPT10cz277S",
+  "maxWidth": "sm"
+}

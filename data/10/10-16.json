@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 102
+  },
+  "xs3": {
+    "width": 640,
+    "height": 409
+  },
+  "xs2": {
+    "width": 800,
+    "height": 512
+  },
+  "xs": {
+    "width": 960,
+    "height": 614
+  },
+  "sm": {
+    "width": 1120,
+    "height": 717
+  },
+  "title": "Abraham's Journey to Canaan",
+  "artist": "Pieter Lastman",
+  "art_date": "1614",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 72,
+  "art_width": 122,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "10-16",
+  "artwork_date": "2016-10-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Lastman,_Pieter_-_Abraham%27s_Journey_to_Canaan_-_1614.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c18221",
+  "lightVibrant": "#f4dba6",
+  "darkVibrant": "#87260b",
+  "muted": "#b18151",
+  "lightMuted": "#c4ac8e",
+  "darkMuted": "#5f482d",
+  "width": 1255,
+  "height": 803,
+  "ratio": 0.639841,
+  "hash": "e0d6z8_FAy4",
+  "maxWidth": "sm"
+}

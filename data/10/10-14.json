@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 113
+  },
+  "xs3": {
+    "width": 640,
+    "height": 453
+  },
+  "xs2": {
+    "width": 800,
+    "height": 566
+  },
+  "xs": {
+    "width": 960,
+    "height": 680
+  },
+  "sm": {
+    "width": 1120,
+    "height": 793
+  },
+  "md": {
+    "width": 1280,
+    "height": 906
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1020
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1133
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1246
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1360
+  },
+  "title": "The Musical Contest between Apollo and Marsyas",
+  "artist": "Cornelis van Poelenburgh",
+  "art_date": "1630",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 56,
+  "art_width": 77,
+  "art_location": "Hallwyl Museum, Stockholm",
+  "id": "10-14",
+  "artwork_date": "2016-10-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_van_Poelenburgh_-_The_Musical_Contest_between_Apollo_and_Marsyas_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#cd7d42",
+  "lightVibrant": "#deb08f",
+  "darkVibrant": "#693d13",
+  "muted": "#987f63",
+  "lightMuted": "#e2d8cf",
+  "darkMuted": "#584f35",
+  "width": 4882,
+  "height": 3457,
+  "ratio": 0.708111,
+  "hash": "diB0YN8O0ww",
+  "maxWidth": "xl3"
+}

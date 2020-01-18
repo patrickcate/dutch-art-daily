@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 119
+  },
+  "xs3": {
+    "width": 640,
+    "height": 475
+  },
+  "xs2": {
+    "width": 800,
+    "height": 593
+  },
+  "xs": {
+    "width": 960,
+    "height": 712
+  },
+  "sm": {
+    "width": 1120,
+    "height": 830
+  },
+  "md": {
+    "width": 1280,
+    "height": 949
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1068
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1186
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1305
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1424
+  },
+  "title": "Mucius Scaevola, in the Presence of Lars Porsenna",
+  "artist": "Matthias Stom",
+  "art_date": "c. 1640",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 167.5,
+  "art_width": 220,
+  "art_location": "Art Gallery of New South Wales, Sydney",
+  "id": "05-25",
+  "artwork_date": "2016-05-25T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stomer_-_Mucius_Scaevola_in_the_presence_of_Lars_Porsenna_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b8772c",
+  "lightVibrant": "#edc469",
+  "darkVibrant": "#7a1c0a",
+  "muted": "#837a66",
+  "lightMuted": "#92988f",
+  "darkMuted": "#463225",
+  "width": 5001,
+  "height": 3708,
+  "ratio": 0.741452,
+  "hash": "ckAcIFI6p50",
+  "maxWidth": "xl3"
+}

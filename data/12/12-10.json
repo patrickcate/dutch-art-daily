@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 207
+  },
+  "xs3": {
+    "width": 640,
+    "height": 828
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1035
+  },
+  "xs": {
+    "width": 960,
+    "height": 1242
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1449
+  },
+  "md": {
+    "width": 1280,
+    "height": 1657
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1864
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2071
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2278
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2485
+  },
+  "title": "Old Woman Reading",
+  "artist": "Gerard Dou",
+  "art_date": "c. 1631-1632",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 71,
+  "art_width": 55.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "12-10",
+  "artwork_date": "2016-12-10T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Lezende_oude_vrouw_Rijksmuseum_SK-A-2627.jpeg",
+  "orientation": "portrait",
+  "vibrant": "#7c5824",
+  "lightVibrant": "#e1c398",
+  "darkVibrant": "#4e3614",
+  "muted": "#b0945c",
+  "lightMuted": "#b3a575",
+  "darkMuted": "#64532f",
+  "width": 2016,
+  "height": 2609,
+  "ratio": 1.294147,
+  "hash": "dCpe65Dc336",
+  "maxWidth": "xl3"
+}

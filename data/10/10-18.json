@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 137
+  },
+  "xs3": {
+    "width": 640,
+    "height": 549
+  },
+  "xs2": {
+    "width": 800,
+    "height": 687
+  },
+  "xs": {
+    "width": 960,
+    "height": 824
+  },
+  "sm": {
+    "width": 1120,
+    "height": 962
+  },
+  "md": {
+    "width": 1280,
+    "height": 1099
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1236
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1374
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1511
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1648
+  },
+  "title": "The Bedroom",
+  "artist": "Pieter de Hooch",
+  "art_date": "1658-1660",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 5.1,
+  "art_width": 6,
+  "art_location": "The National Gallery of Art, Washington, D.C.",
+  "id": "10-18",
+  "date": "2016-10-18T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_The_Bedroom_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#805322",
+  "lightVibrant": "#e3be96",
+  "darkVibrant": "#542904",
+  "muted": "#928061",
+  "lightMuted": "#bda683",
+  "darkMuted": "#4e3e2d",
+  "width": 4213,
+  "height": 3617,
+  "ratio": 0.858533,
+  "hash": "cz4q40Sf35E",
+  "maxWidth": "xl3"
+}

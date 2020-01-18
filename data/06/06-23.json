@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 184
+  },
+  "xs3": {
+    "width": 640,
+    "height": 736
+  },
+  "xs2": {
+    "width": 800,
+    "height": 920
+  },
+  "xs": {
+    "width": 960,
+    "height": 1105
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1289
+  },
+  "md": {
+    "width": 1280,
+    "height": 1473
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1657
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1841
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2025
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2209
+  },
+  "title": "The Guitar Player",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1670-1672",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 53,
+  "art_width": 46.3,
+  "art_location": "Kenwood House, London",
+  "id": "06-23",
+  "artwork_date": "2016-06-23T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=The_Guitar_Player_(Vermeer)&oldid=587915541",
+  "orientation": "portrait",
+  "vibrant": "#a27132",
+  "lightVibrant": "#d6c6a4",
+  "darkVibrant": "#744416",
+  "muted": "#ac8c56",
+  "lightMuted": "#cbbba4",
+  "darkMuted": "#4d402f",
+  "width": 3673,
+  "height": 4226,
+  "ratio": 1.150558,
+  "hash": "8DhkAawgg8w",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 187
+  },
+  "xs3": {
+    "width": 640,
+    "height": 747
+  },
+  "xs2": {
+    "width": 800,
+    "height": 933
+  },
+  "xs": {
+    "width": 960,
+    "height": 1120
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1307
+  },
+  "md": {
+    "width": 1280,
+    "height": 1494
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1680
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1867
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2054
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2240
+  },
+  "title": "Young Woman with a Pot Full of Donuts",
+  "artist": "Aelbert Cuyp",
+  "art_date": "c. 1652",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 40,
+  "art_width": 34,
+  "art_location": "Dordrechts Museum, Dordrecht",
+  "id": "12-08",
+  "artwork_date": "2016-12-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File%3AMeid_met_oliebollen%2C_door_Aelbert_Cuyp.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a64c3b",
+  "lightVibrant": "#dca79d",
+  "darkVibrant": "#723e2c",
+  "muted": "#af7667",
+  "lightMuted": "#bdb4ac",
+  "darkMuted": "#59392c",
+  "width": 3428,
+  "height": 4000,
+  "ratio": 1.166861,
+  "hash": "cDgdyNNMY5c",
+  "maxWidth": "xl3"
+}

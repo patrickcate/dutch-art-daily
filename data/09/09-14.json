@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 186
+  },
+  "xs3": {
+    "width": 640,
+    "height": 745
+  },
+  "xs2": {
+    "width": 800,
+    "height": 931
+  },
+  "xs": {
+    "width": 960,
+    "height": 1117
+  },
+  "title": "A Woman Drinking with Two Men",
+  "artist": "Pieter de Hooch",
+  "art_date": "c. 1658",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 73.7,
+  "art_width": 64.6,
+  "art_location": "The National Gallery, London",
+  "id": "09-14",
+  "artwork_date": "2016-09-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_Drinking_with_Two_Men_-_WGA11694.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b4723b",
+  "lightVibrant": "#e5d0a2",
+  "darkVibrant": "#642414",
+  "muted": "#8d7250",
+  "lightMuted": "#c3af8c",
+  "darkMuted": "#4f3026",
+  "width": 1031,
+  "height": 1200,
+  "ratio": 1.163919,
+  "hash": "aL2s6j6Ppj6",
+  "maxWidth": "xs"
+}

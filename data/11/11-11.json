@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 132
+  },
+  "xs3": {
+    "width": 640,
+    "height": 526
+  },
+  "xs2": {
+    "width": 800,
+    "height": 658
+  },
+  "xs": {
+    "width": 960,
+    "height": 789
+  },
+  "sm": {
+    "width": 1120,
+    "height": 921
+  },
+  "md": {
+    "width": 1280,
+    "height": 1052
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1184
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1315
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1447
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1579
+  },
+  "title": "Niobe Weeping for her Children",
+  "artist": "Abraham Bloemaert",
+  "art_date": "1591",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 203,
+  "art_width": 249.5,
+  "art_location": "Statens Museum for Kunst, Copenhagen",
+  "id": "11-11",
+  "artwork_date": "2016-11-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Apollon_og_Diana_straffer_Niobe_ved_at_dr%C3%A6be_hendes_b%C3%B8rn.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ac813a",
+  "lightVibrant": "#e5c893",
+  "darkVibrant": "#8e6624",
+  "muted": "#93754e",
+  "lightMuted": "#b89b74",
+  "darkMuted": "#56442c",
+  "width": 6342,
+  "height": 5214,
+  "ratio": 0.822138,
+  "hash": "9g1tgUIYwoI",
+  "maxWidth": "xl3"
+}

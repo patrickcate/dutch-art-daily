@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 184
+  },
+  "xs3": {
+    "width": 640,
+    "height": 738
+  },
+  "xs2": {
+    "width": 800,
+    "height": 922
+  },
+  "xs": {
+    "width": 960,
+    "height": 1107
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1291
+  },
+  "md": {
+    "width": 1280,
+    "height": 1476
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1660
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1844
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2029
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2213
+  },
+  "title": "Bacchante with an Ape",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "1627",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 102.9,
+  "art_width": 90.2,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "07-16",
+  "artwork_date": "2016-07-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Hendrick_ter_Brugghen_(Dutch_-_Bacchante_with_an_Ape_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ad4035",
+  "lightVibrant": "#e4c2a3",
+  "darkVibrant": "#631d10",
+  "muted": "#885c47",
+  "lightMuted": "#cbad8e",
+  "darkMuted": "#4c3a31",
+  "width": 3488,
+  "height": 4021,
+  "ratio": 1.15281,
+  "hash": "dzgpiQO9I71",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 134
+  },
+  "xs3": {
+    "width": 640,
+    "height": 535
+  },
+  "xs2": {
+    "width": 800,
+    "height": 669
+  },
+  "xs": {
+    "width": 960,
+    "height": 803
+  },
+  "sm": {
+    "width": 1120,
+    "height": 936
+  },
+  "md": {
+    "width": 1280,
+    "height": 1070
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1204
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1338
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1471
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1605
+  },
+  "title": "The Cheated Bridegroom",
+  "artist": "Jan Steen",
+  "art_date": "c. 1670",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 57,
+  "art_width": 68,
+  "art_location": "Kunsthistorisches Museum, Vienna",
+  "id": "12-09",
+  "artwork_date": "2016-12-09T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:JanSteen01.jpg",
+  "orientation": "landscape",
+  "vibrant": "#914511",
+  "lightVibrant": "#c29368",
+  "darkVibrant": "#6c350a",
+  "muted": "#9f8c60",
+  "lightMuted": "#a3a4a6",
+  "darkMuted": "#574c30",
+  "width": 2554,
+  "height": 2135,
+  "ratio": 0.835944,
+  "hash": "cagk69ac98h",
+  "maxWidth": "xl3"
+}

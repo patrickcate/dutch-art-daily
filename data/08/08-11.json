@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 125
+  },
+  "xs3": {
+    "width": 640,
+    "height": 499
+  },
+  "xs2": {
+    "width": 800,
+    "height": 624
+  },
+  "xs": {
+    "width": 960,
+    "height": 748
+  },
+  "sm": {
+    "width": 1120,
+    "height": 873
+  },
+  "md": {
+    "width": 1280,
+    "height": 998
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1123
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1247
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1372
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1497
+  },
+  "title": "The Four Evangelists",
+  "artist": "Abraham Bloemaert",
+  "art_date": "c. 1612-1615",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 179,
+  "art_width": 227.3,
+  "art_location": "Princeton University Art Museum, Princeton",
+  "id": "08-11",
+  "artwork_date": "2016-08-11T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_The_Four_Evangelists_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ab3528",
+  "lightVibrant": "#e2d49a",
+  "darkVibrant": "#7d191a",
+  "muted": "#b47153",
+  "lightMuted": "#b3ad94",
+  "darkMuted": "#5b3c2a",
+  "width": 4128,
+  "height": 3218,
+  "ratio": 0.779554,
+  "hash": "85HQahFRG58",
+  "maxWidth": "xl3"
+}

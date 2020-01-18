@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 142
+  },
+  "xs3": {
+    "width": 640,
+    "height": 569
+  },
+  "xs2": {
+    "width": 800,
+    "height": 711
+  },
+  "xs": {
+    "width": 960,
+    "height": 853
+  },
+  "sm": {
+    "width": 1120,
+    "height": 995
+  },
+  "md": {
+    "width": 1280,
+    "height": 1138
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1280
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1422
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1564
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1706
+  },
+  "title": "The Double Game",
+  "artist": "Jan Steen",
+  "art_date": "c. 1660-1679",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 63,
+  "art_width": 69.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "10-29",
+  "date": "2016-10-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Steen_015.jpg",
+  "orientation": "landscape",
+  "vibrant": "#f1b00d",
+  "lightVibrant": "#f7d681",
+  "darkVibrant": "#473404",
+  "muted": "#94884e",
+  "lightMuted": "#906a08",
+  "darkMuted": "#4a4025",
+  "width": 3126,
+  "height": 2778,
+  "ratio": 0.888676,
+  "hash": "aBUNyoA7FCg",
+  "maxWidth": "xl3"
+}

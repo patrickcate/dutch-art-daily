@@ -5,12 +5,6 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 const pkg = require('./package')
 
 module.exports = {
-  // other configs
-  // server: {
-  //   port: 8000, // default: 3000
-  //   host: '0.0.0.0', // default: localhost
-  // },
-
   mode: 'universal',
   debug: process.dev !== true,
   /*
@@ -154,12 +148,6 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      // Load YAML parser loader.
-      config.module.rules.push({
-        test: /\.yml$/,
-        use: 'js-yaml-loader',
-      })
-
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         // ESLint loader.

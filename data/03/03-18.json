@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 212
+  },
+  "xs3": {
+    "width": 640,
+    "height": 848
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1061
+  },
+  "xs": {
+    "width": 960,
+    "height": 1273
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1485
+  },
+  "md": {
+    "width": 1280,
+    "height": 1697
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1909
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2121
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2333
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2545
+  },
+  "title": "Portrait of a Lady",
+  "artist": "Gabriël Metsu",
+  "art_date": "1667",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 57.2,
+  "art_width": 43.2,
+  "art_location": "Minneapolis Institute of Arts, Minneapolis",
+  "id": "03-18",
+  "artwork_date": "2016-03-18T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Gabriel_Metsu_-_Portrait_of_a_Lady_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a01f15",
+  "lightVibrant": "#ef9189",
+  "darkVibrant": "#74150e",
+  "muted": "#978468",
+  "lightMuted": "#d6c6b7",
+  "darkMuted": "#443428",
+  "width": 4494,
+  "height": 5958,
+  "ratio": 1.325768,
+  "hash": "8Fpqprcfd9x",
+  "maxWidth": "xl3"
+}

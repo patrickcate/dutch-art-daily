@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 211
+  },
+  "xs3": {
+    "width": 640,
+    "height": 842
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1053
+  },
+  "xs": {
+    "width": 960,
+    "height": 1264
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1474
+  },
+  "md": {
+    "width": 1280,
+    "height": 1685
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1895
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2106
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2317
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2527
+  },
+  "title": "Mars and Venus Surprised by the Gods",
+  "artist": "Joachim Wtewael",
+  "art_date": "c. 1606-1610",
+  "art_medium": "Oil",
+  "art_surface": "Copper",
+  "art_height": 20.29,
+  "art_width": 15.49,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "09-05",
+  "artwork_date": "2016-09-05T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Joachim_Anthonisz._Wtewael_(Dutch,_1566_-_1638)_-_Mars_and_Venus_Surprised_by_the_Gods_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#9e4e2b",
+  "lightVibrant": "#cca471",
+  "darkVibrant": "#543404",
+  "muted": "#a98662",
+  "lightMuted": "#bfb1aa",
+  "darkMuted": "#5d5a37",
+  "width": 3273,
+  "height": 4308,
+  "ratio": 1.316224,
+  "hash": "d0hU044Aw80",
+  "maxWidth": "xl3"
+}

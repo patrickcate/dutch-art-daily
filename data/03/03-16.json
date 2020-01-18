@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 106
+  },
+  "xs3": {
+    "width": 640,
+    "height": 423
+  },
+  "xs2": {
+    "width": 800,
+    "height": 529
+  },
+  "xs": {
+    "width": 960,
+    "height": 634
+  },
+  "sm": {
+    "width": 1120,
+    "height": 740
+  },
+  "title": "David Handing over a Letter to Uriah",
+  "artist": "Pieter Lastman",
+  "art_date": "1619",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 42.5,
+  "art_width": 63,
+  "art_location": "Private Collection",
+  "id": "03-16",
+  "artwork_date": "2016-03-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Lastman,_Pieter_-_David_handing_over_a_letter_to_Uriah_-_1619.jpg",
+  "orientation": "landscape",
+  "vibrant": "#835230",
+  "lightVibrant": "#dbb79d",
+  "darkVibrant": "#795221",
+  "muted": "#7d6656",
+  "lightMuted": "#a8988d",
+  "darkMuted": "#623d31",
+  "width": 1200,
+  "height": 793,
+  "ratio": 0.660833,
+  "hash": "azw82y80y1x",
+  "maxWidth": "sm"
+}

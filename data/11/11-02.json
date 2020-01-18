@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 183
+  },
+  "xs3": {
+    "width": 640,
+    "height": 734
+  },
+  "xs2": {
+    "width": 800,
+    "height": 917
+  },
+  "xs": {
+    "width": 960,
+    "height": 1100
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1284
+  },
+  "md": {
+    "width": 1280,
+    "height": 1467
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1651
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1834
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2017
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2201
+  },
+  "title": "Adoration of the Shepherds",
+  "artist": "Nicolaes Maes",
+  "art_date": "c. 1660",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 120.7,
+  "art_width": 95.9,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "11-02",
+  "artwork_date": "2016-11-02T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Nicolaes_Maes_(Dutch_-_Adoration_of_the_Shepherds_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#9c3020",
+  "lightVibrant": "#e3c89a",
+  "darkVibrant": "#6e2117",
+  "muted": "#aa9973",
+  "lightMuted": "#dfd5b6",
+  "darkMuted": "#4b3122",
+  "width": 3495,
+  "height": 4006,
+  "ratio": 1.146209,
+  "hash": "fMfp38wE8cb",
+  "maxWidth": "xl3"
+}

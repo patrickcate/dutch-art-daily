@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 178
+  },
+  "xs3": {
+    "width": 640,
+    "height": 713
+  },
+  "xs2": {
+    "width": 800,
+    "height": 891
+  },
+  "xs": {
+    "width": 960,
+    "height": 1069
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1247
+  },
+  "md": {
+    "width": 1280,
+    "height": 1425
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1604
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1782
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1960
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2138
+  },
+  "title": "The Procuress",
+  "artist": "Johannes Vermeer",
+  "art_date": "1656",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 143,
+  "art_width": 130,
+  "art_location": "Gemäldegalerie Alte Meister, Dresden",
+  "id": "03-15",
+  "artwork_date": "2016-03-15T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=The_Procuress_(Vermeer)&oldid=581405454",
+  "orientation": "portrait",
+  "vibrant": "#9e7433",
+  "lightVibrant": "#dec39a",
+  "darkVibrant": "#733513",
+  "muted": "#b4a375",
+  "lightMuted": "#c7cac8",
+  "darkMuted": "#524a3c",
+  "width": 2024,
+  "height": 2254,
+  "ratio": 1.113636,
+  "hash": "cgPssitec9u",
+  "maxWidth": "xl3"
+}

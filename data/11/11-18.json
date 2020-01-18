@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 201
+  },
+  "xs3": {
+    "width": 640,
+    "height": 804
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1006
+  },
+  "xs": {
+    "width": 960,
+    "height": 1207
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1408
+  },
+  "md": {
+    "width": 1280,
+    "height": 1609
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1810
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2011
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2212
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2413
+  },
+  "title": "Bringer of Bad News",
+  "artist": "Pieter de Hooch",
+  "art_date": "c. 1655",
+  "art_medium": "Oil",
+  "art_surface": "Wood",
+  "art_height": 67.8,
+  "art_width": 56,
+  "art_location": "Museu Nacional d'Art de Catalunya, \tBarcelona",
+  "id": "11-18",
+  "artwork_date": "2016-11-18T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_Bringer_of_Bad_News_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a96d30",
+  "lightVibrant": "#e1bd97",
+  "darkVibrant": "#744c04",
+  "muted": "#b59f6d",
+  "lightMuted": "#774c21",
+  "darkMuted": "#615036",
+  "width": 3556,
+  "height": 4470,
+  "ratio": 1.25703,
+  "hash": "8cin4xKgUeh",
+  "maxWidth": "xl3"
+}

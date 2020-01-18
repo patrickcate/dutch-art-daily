@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 100
+  },
+  "xs3": {
+    "width": 640,
+    "height": 400
+  },
+  "xs2": {
+    "width": 800,
+    "height": 500
+  },
+  "xs": {
+    "width": 960,
+    "height": 600
+  },
+  "sm": {
+    "width": 1120,
+    "height": 700
+  },
+  "md": {
+    "width": 1280,
+    "height": 800
+  },
+  "title": "Juno Discovering Jupiter with Io",
+  "artist": "Pieter Lastman",
+  "art_date": "1618",
+  "art_medium": "Oil",
+  "art_surface": "Oak",
+  "art_height": 54,
+  "art_width": 78,
+  "art_location": "The National Gallery, London",
+  "id": "04-16",
+  "artwork_date": "2016-04-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Juno_Discovering_Jupiter_with_Io_by_Pieter_Lastman.jpg",
+  "orientation": "landscape",
+  "vibrant": "#af7f2d",
+  "lightVibrant": "#f6e6af",
+  "darkVibrant": "#875b1c",
+  "muted": "#837a6a",
+  "lightMuted": "#c1b095",
+  "darkMuted": "#423123",
+  "width": 1300,
+  "height": 813,
+  "ratio": 0.625385,
+  "hash": "dvQ10s26wxF",
+  "maxWidth": "md"
+}

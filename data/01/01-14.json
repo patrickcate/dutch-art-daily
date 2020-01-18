@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 195
+  },
+  "xs3": {
+    "width": 640,
+    "height": 779
+  },
+  "xs2": {
+    "width": 800,
+    "height": 974
+  },
+  "xs": {
+    "width": 960,
+    "height": 1169
+  },
+  "title": "A Woman Nursing an Infant with a Child and a Dog",
+  "artist": "Pieter de Hooch",
+  "art_date": "1558-1560",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 67.9,
+  "art_width": 55.6,
+  "art_location": "Fine Arts Museums of San Francisco, San Francisco",
+  "id": "01-14",
+  "artwork_date": "2016-01-14T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_Nursing_an_Infant_with_a_Child_and_a_Dog_-_WGA11697.jpg",
+  "orientation": "portrait",
+  "vibrant": "#bf846b",
+  "lightVibrant": "#d6b2a2",
+  "darkVibrant": "#701c14",
+  "muted": "#887677",
+  "lightMuted": "#9c9494",
+  "darkMuted": "#51322c",
+  "width": 1094,
+  "height": 1332,
+  "ratio": 1.21755,
+  "hash": "eEEc9fcp13j",
+  "maxWidth": "xs"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 65
+  },
+  "xs3": {
+    "width": 640,
+    "height": 260
+  },
+  "xs2": {
+    "width": 800,
+    "height": 325
+  },
+  "xs": {
+    "width": 960,
+    "height": 390
+  },
+  "sm": {
+    "width": 1120,
+    "height": 455
+  },
+  "md": {
+    "width": 1280,
+    "height": 520
+  },
+  "lg": {
+    "width": 1440,
+    "height": 585
+  },
+  "xl": {
+    "width": 1600,
+    "height": 650
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 715
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 779
+  },
+  "title": "Aaron Changing the Water of the Nile into Blood",
+  "artist": "Jan Pynas",
+  "art_date": "1610",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 70.5,
+  "art_width": 170.8,
+  "art_location": "Rembrandt House Museum, Amsterdam",
+  "id": "10-13",
+  "artwork_date": "2016-10-13T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:PynasAaronNile.jpg",
+  "orientation": "landscape",
+  "vibrant": "#9d4313",
+  "lightVibrant": "#f0ac88",
+  "darkVibrant": "#6e4b0b",
+  "muted": "#a28d52",
+  "lightMuted": "#bea97a",
+  "darkMuted": "#574926",
+  "width": 1973,
+  "height": 801,
+  "ratio": 0.405981,
+  "hash": "ewy9dy2z002",
+  "maxWidth": "xl3"
+}

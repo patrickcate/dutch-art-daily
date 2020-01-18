@@ -1,0 +1,62 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 204
+  },
+  "xs3": {
+    "width": 640,
+    "height": 816
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1020
+  },
+  "xs": {
+    "width": 960,
+    "height": 1224
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1428
+  },
+  "md": {
+    "width": 1280,
+    "height": 1632
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1836
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2040
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2244
+  },
+  "title": "Adam and Eve",
+  "artist": "Adriaen van der Werff",
+  "art_date": "c. 1711",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 45,
+  "art_width": 35.5,
+  "art_location": "Louvre Museum, Paris",
+  "id": "02-17",
+  "artwork_date": "2016-02-17T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Adriaen_van_der_Werff_-_Adam_en_Eva.jpg",
+  "orientation": "portrait",
+  "vibrant": "#9c4a27",
+  "lightVibrant": "#e4c3a5",
+  "darkVibrant": "#653713",
+  "muted": "#a77b4f",
+  "lightMuted": "#cfb29d",
+  "darkMuted": "#5a4429",
+  "width": 1894,
+  "height": 2415,
+  "ratio": 1.275079,
+  "hash": "9YMsoZw7ccz",
+  "maxWidth": "xl2"
+}

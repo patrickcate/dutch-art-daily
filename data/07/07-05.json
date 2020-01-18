@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 120
+  },
+  "xs3": {
+    "width": 640,
+    "height": 480
+  },
+  "xs2": {
+    "width": 800,
+    "height": 600
+  },
+  "xs": {
+    "width": 960,
+    "height": 720
+  },
+  "sm": {
+    "width": 1120,
+    "height": 840
+  },
+  "title": "Supper at Emmaus",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "c. 1621",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 109,
+  "art_width": 141,
+  "art_location": "Sanssouci Picture Gallery, Potsdam",
+  "id": "07-05",
+  "artwork_date": "2016-07-05T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:The_supper_at_Emmaus.jpg",
+  "orientation": "landscape",
+  "vibrant": "#b5835a",
+  "lightVibrant": "#d5baa3",
+  "darkVibrant": "#2c1404",
+  "muted": "#8c8474",
+  "lightMuted": "#69492f",
+  "darkMuted": "#402c1e",
+  "width": 1134,
+  "height": 850,
+  "ratio": 0.749559,
+  "hash": "e0oqCak64A7",
+  "maxWidth": "sm"
+}

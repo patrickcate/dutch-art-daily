@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 125
+  },
+  "xs3": {
+    "width": 640,
+    "height": 500
+  },
+  "xs2": {
+    "width": 800,
+    "height": 625
+  },
+  "xs": {
+    "width": 960,
+    "height": 750
+  },
+  "sm": {
+    "width": 1120,
+    "height": 875
+  },
+  "md": {
+    "width": 1280,
+    "height": 1000
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1124
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1249
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1374
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1499
+  },
+  "title": "Shepherd Boy Pointing at Tobias and the Angel",
+  "artist": "Abraham Bloemaert",
+  "art_date": "c. 1625-1630",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 92.1,
+  "art_width": 117.8,
+  "art_location": "Minneapolis Institute of Arts, Minneapolis",
+  "id": "01-26",
+  "artwork_date": "2016-01-26T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Bloemaert_-_Jeune_Berger_montrant_Tobie_et_l%27Ange.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c23415",
+  "lightVibrant": "#d8b98c",
+  "darkVibrant": "#7a2816",
+  "muted": "#ab8d5b",
+  "lightMuted": "#c2b5a9",
+  "darkMuted": "#514923",
+  "width": 3984,
+  "height": 3111,
+  "ratio": 0.780873,
+  "hash": "c2M10g0wc80",
+  "maxWidth": "xl3"
+}

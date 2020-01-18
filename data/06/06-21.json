@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 200
+  },
+  "xs3": {
+    "width": 640,
+    "height": 800
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1000
+  },
+  "xs": {
+    "width": 960,
+    "height": 1201
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1401
+  },
+  "md": {
+    "width": 1280,
+    "height": 1601
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1801
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2001
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2201
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2401
+  },
+  "title": "Pipe Smoker",
+  "artist": "Dirck van Baburen",
+  "art_date": "1623",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 73.66,
+  "art_width": 60.96,
+  "art_location": "Musée Marmottan Monet, Paris",
+  "id": "06-21",
+  "artwork_date": "2016-06-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Fumeur_de_pipe.JPG",
+  "orientation": "portrait",
+  "vibrant": "#b68d52",
+  "lightVibrant": "#e4c392",
+  "darkVibrant": "#683a16",
+  "muted": "#a27f52",
+  "lightMuted": "#ba9e6d",
+  "darkMuted": "#514c32",
+  "width": 2458,
+  "height": 3074,
+  "ratio": 1.25061,
+  "hash": "bt8a99J6Dyh",
+  "maxWidth": "xl3"
+}

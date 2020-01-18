@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 203
+  },
+  "xs3": {
+    "width": 640,
+    "height": 813
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1016
+  },
+  "xs": {
+    "width": 960,
+    "height": 1219
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1422
+  },
+  "md": {
+    "width": 1280,
+    "height": 1625
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1829
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2032
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2235
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2438
+  },
+  "title": "Bathing Nymphs",
+  "artist": "Cornelis van Poelenburgh",
+  "art_date": "c. 1667",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 25,
+  "art_width": 20,
+  "art_location": null,
+  "id": "03-31",
+  "artwork_date": "2016-03-31T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_van_Poelenburch_Badende_Nymphen.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c5a051",
+  "lightVibrant": "#e4d1b5",
+  "darkVibrant": "#6b482b",
+  "muted": "#a18061",
+  "lightMuted": "#ccbfaa",
+  "darkMuted": "#4f3a25",
+  "width": 3750,
+  "height": 4762,
+  "ratio": 1.269867,
+  "hash": "chygp180000",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 215
+  },
+  "xs3": {
+    "width": 640,
+    "height": 858
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1073
+  },
+  "xs": {
+    "width": 960,
+    "height": 1288
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1502
+  },
+  "md": {
+    "width": 1280,
+    "height": 1717
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1932
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2146
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2361
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2575
+  },
+  "title": "The Resurrection",
+  "artist": "Pieter Lastman",
+  "art_date": "1612",
+  "art_medium": "Oil",
+  "art_surface": "Oak Panel",
+  "art_height": 43.2,
+  "art_width": 32.4,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "12-16",
+  "artwork_date": "2016-12-16T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_Lastman_(Dutch_-_The_Resurrection_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#af3306",
+  "lightVibrant": "#d6c499",
+  "darkVibrant": "#811b06",
+  "muted": "#b29360",
+  "lightMuted": "#d4c9ab",
+  "darkMuted": "#655936",
+  "width": 3208,
+  "height": 4303,
+  "ratio": 1.341334,
+  "hash": "fnz0zi974wy",
+  "maxWidth": "xl3"
+}

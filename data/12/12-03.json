@@ -1,0 +1,58 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 106
+  },
+  "xs3": {
+    "width": 640,
+    "height": 422
+  },
+  "xs2": {
+    "width": 800,
+    "height": 528
+  },
+  "xs": {
+    "width": 960,
+    "height": 633
+  },
+  "sm": {
+    "width": 1120,
+    "height": 739
+  },
+  "md": {
+    "width": 1280,
+    "height": 844
+  },
+  "lg": {
+    "width": 1440,
+    "height": 950
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1055
+  },
+  "title": "Christ Washing the Apostles Feet",
+  "artist": "Dirck van Baburen",
+  "art_date": "c. 1616",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 199,
+  "art_width": 297,
+  "art_location": "Gemäldegalerie Museum, Berlin",
+  "id": "12-03",
+  "artwork_date": "2016-12-03T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_Christ_Washing_the_Apostles_Feet_-_WGA1090.jpg",
+  "orientation": "landscape",
+  "vibrant": "#c08554",
+  "lightVibrant": "#dbb99e",
+  "darkVibrant": "#5c1c0c",
+  "muted": "#835f44",
+  "lightMuted": "#6f4929",
+  "darkMuted": "#512b25",
+  "width": 1600,
+  "height": 1055,
+  "ratio": 0.659375,
+  "hash": "eG8j8ys9X8N",
+  "maxWidth": "xl"
+}

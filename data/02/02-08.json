@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 196
+  },
+  "xs3": {
+    "width": 640,
+    "height": 783
+  },
+  "xs2": {
+    "width": 800,
+    "height": 978
+  },
+  "xs": {
+    "width": 960,
+    "height": 1174
+  },
+  "title": "A Woman Peeling Apples",
+  "artist": "Pieter de Hooch",
+  "art_date": "c. 1663",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 67.1,
+  "art_width": 54.7,
+  "art_location": "Wallace Collection, London",
+  "id": "02-08",
+  "artwork_date": "2016-02-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_A_Woman_Peeling_Apples.jpg",
+  "orientation": "portrait",
+  "vibrant": "#864a33",
+  "lightVibrant": "#daaf9e",
+  "darkVibrant": "#5c4814",
+  "muted": "#bb9e77",
+  "lightMuted": "#979f90",
+  "darkMuted": "#615031",
+  "width": 1100,
+  "height": 1345,
+  "ratio": 1.222727,
+  "hash": "eEEscu0c9J0",
+  "maxWidth": "xs"
+}

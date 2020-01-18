@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 184
+  },
+  "xs3": {
+    "width": 640,
+    "height": 735
+  },
+  "xs2": {
+    "width": 800,
+    "height": 919
+  },
+  "xs": {
+    "width": 960,
+    "height": 1103
+  },
+  "title": "Children Playing before a Hercules Group",
+  "artist": "Adriaen van der Werff",
+  "art_date": "1687",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 46.7,
+  "art_width": 34.9,
+  "art_location": "Alte Pinakothek, Munich",
+  "id": "03-17",
+  "artwork_date": "2016-03-17T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Adriaen_van_der_Werff_-_Children_Playing_before_a_Hercules_Group_(detail)_-_WGA25528.jpg",
+  "orientation": "portrait",
+  "vibrant": "#bc7a48",
+  "lightVibrant": "#e6bb87",
+  "darkVibrant": "#5e2814",
+  "muted": "#a0754b",
+  "lightMuted": "#9e918e",
+  "darkMuted": "#523c2d",
+  "width": 1100,
+  "height": 1264,
+  "ratio": 1.149091,
+  "hash": "bA0qxdwoFKI",
+  "maxWidth": "xs"
+}

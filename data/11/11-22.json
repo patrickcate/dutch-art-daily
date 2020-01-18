@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 130
+  },
+  "xs3": {
+    "width": 640,
+    "height": 520
+  },
+  "xs2": {
+    "width": 800,
+    "height": 650
+  },
+  "xs": {
+    "width": 960,
+    "height": 780
+  },
+  "sm": {
+    "width": 1120,
+    "height": 911
+  },
+  "title": "The Baptism of Christ",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "1588",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 170,
+  "art_width": 206,
+  "art_location": "Louvre Museum, Paris",
+  "id": "11-22",
+  "artwork_date": "2016-11-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_Cornelisz._van_Haarlem_-_The_Baptism_of_Christ_-_WGA05247.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ae632b",
+  "lightVibrant": "#ddbd96",
+  "darkVibrant": "#7c2c14",
+  "muted": "#b78963",
+  "lightMuted": "#c3b7a8",
+  "darkMuted": "#5e4836",
+  "width": 1230,
+  "height": 1000,
+  "ratio": 0.813008,
+  "hash": "9crwetDw1z3",
+  "maxWidth": "sm"
+}

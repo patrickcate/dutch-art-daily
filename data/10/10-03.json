@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 188
+  },
+  "xs3": {
+    "width": 640,
+    "height": 754
+  },
+  "xs2": {
+    "width": 800,
+    "height": 942
+  },
+  "xs": {
+    "width": 960,
+    "height": 1130
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1319
+  },
+  "md": {
+    "width": 1280,
+    "height": 1507
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1695
+  },
+  "title": "Lute Player",
+  "artist": "Jan Lievens",
+  "art_date": "c. 1629",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 92.7,
+  "art_width": 78.3,
+  "art_location": "Walters Art Museum, Baltimore",
+  "id": "10-03",
+  "artwork_date": "2016-10-03T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Lievensz_-_Lute_Player_-_Walters_372493.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c0943c",
+  "lightVibrant": "#ecc876",
+  "darkVibrant": "#6b461f",
+  "muted": "#a9895f",
+  "lightMuted": "#cfbd95",
+  "darkMuted": "#625235",
+  "width": 1528,
+  "height": 1799,
+  "ratio": 1.177356,
+  "hash": "9AyndlBfcrj",
+  "maxWidth": "lg"
+}

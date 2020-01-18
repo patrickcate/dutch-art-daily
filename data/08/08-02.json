@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 175
+  },
+  "xs3": {
+    "width": 640,
+    "height": 699
+  },
+  "xs2": {
+    "width": 800,
+    "height": 874
+  },
+  "xs": {
+    "width": 960,
+    "height": 1049
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1224
+  },
+  "title": "The Old Lacemaker",
+  "artist": "Nicolaes Maes",
+  "art_date": "c. 1655",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 37.5,
+  "art_width": 35,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "08-02",
+  "artwork_date": "2016-08-02T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Nicolaes_Maes_009.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a44c33",
+  "lightVibrant": "#dcc3a3",
+  "darkVibrant": "#582420",
+  "muted": "#a48060",
+  "lightMuted": "#d5c1af",
+  "darkMuted": "#5e3a2c",
+  "width": 1200,
+  "height": 1311,
+  "ratio": 1.0925,
+  "hash": "8pEd9dFxFIU",
+  "maxWidth": "sm"
+}

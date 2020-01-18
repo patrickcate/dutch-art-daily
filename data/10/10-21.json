@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 194
+  },
+  "xs3": {
+    "width": 640,
+    "height": 776
+  },
+  "xs2": {
+    "width": 800,
+    "height": 970
+  },
+  "xs": {
+    "width": 960,
+    "height": 1164
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1358
+  },
+  "md": {
+    "width": 1280,
+    "height": 1552
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1746
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1940
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2134
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2329
+  },
+  "title": "The Lute Player",
+  "artist": "Dirck van Baburen",
+  "art_date": "1622",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 7.12,
+  "art_width": 5.85,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "10-21",
+  "date": "2016-10-21T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_The_Lute_Player_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b1873e",
+  "lightVibrant": "#c8b182",
+  "darkVibrant": "#784911",
+  "muted": "#928458",
+  "lightMuted": "#6a562e",
+  "darkMuted": "#625535",
+  "width": 3055,
+  "height": 3705,
+  "ratio": 1.212766,
+  "hash": "daQ48rLd412",
+  "maxWidth": "xl3"
+}

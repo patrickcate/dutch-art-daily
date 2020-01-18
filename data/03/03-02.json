@@ -1,0 +1,50 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 192
+  },
+  "xs3": {
+    "width": 640,
+    "height": 766
+  },
+  "xs2": {
+    "width": 800,
+    "height": 958
+  },
+  "xs": {
+    "width": 960,
+    "height": 1150
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1341
+  },
+  "md": {
+    "width": 1280,
+    "height": 1533
+  },
+  "title": "An Old Woman Praying",
+  "artist": "Nicolaes Maes",
+  "art_date": "c. 1656",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 134,
+  "art_width": 113,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "03-02",
+  "artwork_date": "2016-03-02T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Nicolaes_Maes_-_Oude_vrouw_in_gebed.jpg",
+  "orientation": "portrait",
+  "vibrant": "#e2a523",
+  "lightVibrant": "#ebcc83",
+  "darkVibrant": "#984005",
+  "muted": "#9d9767",
+  "lightMuted": "#cccaa8",
+  "darkMuted": "#5e5a31",
+  "width": 1336,
+  "height": 1600,
+  "ratio": 1.197605,
+  "hash": "cpEbhHxNsoQ",
+  "maxWidth": "md"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 177
+  },
+  "xs3": {
+    "width": 640,
+    "height": 708
+  },
+  "xs2": {
+    "width": 800,
+    "height": 885
+  },
+  "xs": {
+    "width": 960,
+    "height": 1062
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1239
+  },
+  "md": {
+    "width": 1280,
+    "height": 1415
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1592
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1769
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1946
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2123
+  },
+  "title": "Prometheus Chained by Vulcan",
+  "artist": "Dirck van Baburen",
+  "art_date": "1623",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 201,
+  "art_width": 182,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "11-08",
+  "artwork_date": "2016-11-08T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_Prometheus_door_Vulcanus_geketend.jpg",
+  "orientation": "portrait",
+  "vibrant": "#955b33",
+  "lightVibrant": "#d0b294",
+  "darkVibrant": "#642421",
+  "muted": "#a58162",
+  "lightMuted": "#c7a683",
+  "darkMuted": "#4e382d",
+  "width": 4592,
+  "height": 5078,
+  "ratio": 1.105836,
+  "hash": "8e7j1Esb1b0",
+  "maxWidth": "xl3"
+}

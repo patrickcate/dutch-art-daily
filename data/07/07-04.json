@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 119
+  },
+  "xs3": {
+    "width": 640,
+    "height": 477
+  },
+  "xs2": {
+    "width": 800,
+    "height": 596
+  },
+  "xs": {
+    "width": 960,
+    "height": 715
+  },
+  "sm": {
+    "width": 1120,
+    "height": 834
+  },
+  "md": {
+    "width": 1280,
+    "height": 954
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1073
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1192
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1311
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1430
+  },
+  "title": "An Alchemist",
+  "artist": "Adriaen van Ostade",
+  "art_date": "1661",
+  "art_medium": "Oil",
+  "art_surface": "Oak",
+  "art_height": 34,
+  "art_width": 45.2,
+  "art_location": "The National Gallery, London",
+  "id": "07-04",
+  "artwork_date": "2016-07-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Adriaen_van_Ostade_-_Alchemist_-_WGA16738.jpg",
+  "orientation": "landscape",
+  "vibrant": "#bfa05c",
+  "lightVibrant": "#d9c79f",
+  "darkVibrant": "#835f1b",
+  "muted": "#998c58",
+  "lightMuted": "#9a9d7d",
+  "darkMuted": "#5a4d31",
+  "width": 5673,
+  "height": 4226,
+  "ratio": 0.744932,
+  "hash": "8kUgc8E7eec",
+  "maxWidth": "xl3"
+}

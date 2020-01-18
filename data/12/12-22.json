@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 123
+  },
+  "xs3": {
+    "width": 640,
+    "height": 493
+  },
+  "xs2": {
+    "width": 800,
+    "height": 617
+  },
+  "xs": {
+    "width": 960,
+    "height": 740
+  },
+  "sm": {
+    "width": 1120,
+    "height": 864
+  },
+  "md": {
+    "width": 1280,
+    "height": 987
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1110
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1234
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1357
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1480
+  },
+  "title": "The Fall of the Titans",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "c. 1588-1590",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 239,
+  "art_width": 307,
+  "art_location": "Statens Museum for Kunst, \tCopenhagen",
+  "id": "12-22",
+  "artwork_date": "2016-12-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Titanernes_fald.jpg",
+  "orientation": "landscape",
+  "vibrant": "#ae7848",
+  "lightVibrant": "#d3b584",
+  "darkVibrant": "#624327",
+  "muted": "#b07f5c",
+  "lightMuted": "#c7b7a0",
+  "darkMuted": "#3f3523",
+  "width": 3000,
+  "height": 2313,
+  "ratio": 0.771,
+  "hash": "dh800dUP28M",
+  "maxWidth": "xl3"
+}

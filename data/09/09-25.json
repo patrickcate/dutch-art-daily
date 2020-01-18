@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 180
+  },
+  "xs3": {
+    "width": 640,
+    "height": 722
+  },
+  "xs2": {
+    "width": 800,
+    "height": 902
+  },
+  "xs": {
+    "width": 960,
+    "height": 1082
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1263
+  },
+  "md": {
+    "width": 1280,
+    "height": 1443
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1623
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1804
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1984
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2165
+  },
+  "title": "Mars Asleep",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "1629",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 152,
+  "art_width": 140,
+  "art_location": "Centraal Museum, Utrecht",
+  "id": "09-25",
+  "artwork_date": "2016-09-25T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:Hendrick_ter_Brugghen_-_Mars_Asleep_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#ae4729",
+  "lightVibrant": "#ca8d62",
+  "darkVibrant": "#7e2b15",
+  "muted": "#8d7157",
+  "lightMuted": "#d6ccb4",
+  "darkMuted": "#544737",
+  "width": 2072,
+  "height": 2336,
+  "ratio": 1.127413,
+  "hash": "dPM08atekpC",
+  "maxWidth": "xl3"
+}

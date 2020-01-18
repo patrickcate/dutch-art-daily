@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 186
+  },
+  "xs3": {
+    "width": 640,
+    "height": 743
+  },
+  "xs2": {
+    "width": 800,
+    "height": 929
+  },
+  "xs": {
+    "width": 960,
+    "height": 1115
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1301
+  },
+  "md": {
+    "width": 1280,
+    "height": 1487
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1673
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1858
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2044
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2230
+  },
+  "title": "The \"Rederijker\"",
+  "artist": "Jan Steen",
+  "art_date": "1664-1666",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 39.9,
+  "art_width": 30.8,
+  "art_location": "Alte Pinakothek, Munich",
+  "id": "04-29",
+  "artwork_date": "2016-04-29T17:00:00.000Z",
+  "cite_author": "Alte Pinakothek Museum",
+  "cite_url": "https://www.sammlung.pinakothek.de/en/artist/jan-steen/die-34-rederijker-34",
+  "orientation": "portrait",
+  "vibrant": "#b97a5a",
+  "lightVibrant": "#d4a784",
+  "darkVibrant": "#692824",
+  "muted": "#8d4d3d",
+  "lightMuted": "#cec5c4",
+  "darkMuted": "#58342f",
+  "width": 2024,
+  "height": 2351,
+  "ratio": 1.161561,
+  "hash": "9qkpS9Eqm6d",
+  "maxWidth": "xl3"
+}

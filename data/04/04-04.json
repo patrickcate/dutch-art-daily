@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 192
+  },
+  "xs3": {
+    "width": 640,
+    "height": 770
+  },
+  "xs2": {
+    "width": 800,
+    "height": 962
+  },
+  "xs": {
+    "width": 960,
+    "height": 1155
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1347
+  },
+  "md": {
+    "width": 1280,
+    "height": 1540
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1732
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1925
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2117
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2310
+  },
+  "title": "A Lady with a Parrot and a Gentleman with a Monkey",
+  "artist": "Caspar Netscher",
+  "art_date": "1664",
+  "art_medium": "Oil",
+  "art_surface": "Copper",
+  "art_height": 35.1,
+  "art_width": 28.3,
+  "art_location": "Columbus Museum of Art, Columbus",
+  "id": "04-04",
+  "artwork_date": "2016-04-04T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Caspar_Netscher_-_A_Lady_with_a_Parrot_and_a_Gentleman_with_a_Monkey_(1664).jpg",
+  "orientation": "portrait",
+  "vibrant": "#bca26e",
+  "lightVibrant": "#d5c4a4",
+  "darkVibrant": "#562c04",
+  "muted": "#939471",
+  "lightMuted": "#685530",
+  "darkMuted": "#53412c",
+  "width": 2591,
+  "height": 3117,
+  "ratio": 1.20301,
+  "hash": "cW6s330O8cw",
+  "maxWidth": "xl3"
+}

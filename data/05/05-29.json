@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 200
+  },
+  "xs3": {
+    "width": 640,
+    "height": 801
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1001
+  },
+  "xs": {
+    "width": 960,
+    "height": 1202
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1402
+  },
+  "md": {
+    "width": 1280,
+    "height": 1602
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1802
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2003
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2203
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2403
+  },
+  "title": "A Tooth-Puller",
+  "artist": "Jan Steen",
+  "art_date": "1651",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 32.5,
+  "art_width": 26.7,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "05-29",
+  "artwork_date": "2016-05-29T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Steen_020.jpg",
+  "orientation": "portrait",
+  "vibrant": "#804b21",
+  "lightVibrant": "#e3b895",
+  "darkVibrant": "#5f3404",
+  "muted": "#b3886a",
+  "lightMuted": "#79471f",
+  "darkMuted": "#4e342c",
+  "width": 2397,
+  "height": 3000,
+  "ratio": 1.251564,
+  "hash": "f3A7wP194i1",
+  "maxWidth": "xl3"
+}

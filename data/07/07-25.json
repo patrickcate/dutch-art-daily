@@ -1,0 +1,58 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 111
+  },
+  "xs3": {
+    "width": 640,
+    "height": 445
+  },
+  "xs2": {
+    "width": 800,
+    "height": 556
+  },
+  "xs": {
+    "width": 960,
+    "height": 668
+  },
+  "sm": {
+    "width": 1120,
+    "height": 779
+  },
+  "md": {
+    "width": 1280,
+    "height": 890
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1002
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1113
+  },
+  "title": "Scene at a Surgeon",
+  "artist": "Adriaen Brouwer",
+  "art_date": "",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": null,
+  "art_width": null,
+  "art_location": "National Art Museum of Azerbaijan, Baku",
+  "id": "07-25",
+  "artwork_date": "2016-07-25T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Adriaen_Brouwer_-_Scene_at_a_surgeon.jpg",
+  "orientation": "portrait",
+  "vibrant": "#a1690f",
+  "lightVibrant": "#f3c985",
+  "darkVibrant": "#6e3204",
+  "muted": "#6e683d",
+  "lightMuted": "#8b5b0d",
+  "darkMuted": "#545c2c",
+  "width": 1754,
+  "height": 1220,
+  "ratio": 0.695553,
+  "hash": "c0RrN4lOGj8",
+  "maxWidth": "xl"
+}

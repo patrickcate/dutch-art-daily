@@ -1,0 +1,54 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 216
+  },
+  "xs3": {
+    "width": 640,
+    "height": 863
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1079
+  },
+  "xs": {
+    "width": 960,
+    "height": 1294
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1510
+  },
+  "md": {
+    "width": 1280,
+    "height": 1726
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1942
+  },
+  "title": "The Poultry-Seller",
+  "artist": "Gabriël Metsu",
+  "art_date": "1662",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 61.5,
+  "art_width": 45.5,
+  "art_location": "Gemäldegalerie Alte Meister, Dresden",
+  "id": "06-18",
+  "artwork_date": "2016-06-18T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://en.wikipedia.org/wiki/File:Gabriel_Metsu_003.jpg",
+  "orientation": "portrait",
+  "vibrant": "#c92d1f",
+  "lightVibrant": "#cdaa80",
+  "darkVibrant": "#6a2a0c",
+  "muted": "#907667",
+  "lightMuted": "#6d4f2b",
+  "darkMuted": "#4c2b38",
+  "width": 1576,
+  "height": 2125,
+  "ratio": 1.34835,
+  "hash": "9kIjpNwD95B",
+  "maxWidth": "lg"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 205
+  },
+  "xs3": {
+    "width": 640,
+    "height": 822
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1027
+  },
+  "xs": {
+    "width": 960,
+    "height": 1233
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1438
+  },
+  "md": {
+    "width": 1280,
+    "height": 1644
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1849
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2054
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2260
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2465
+  },
+  "title": "The Fall of Ixion",
+  "artist": "Cornelis van Haarlem",
+  "art_date": "c. 1588",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 192,
+  "art_width": 152,
+  "art_location": "Museum Boijmans Van Beuningen,\tRotterdam",
+  "id": "10-22",
+  "date": "2016-10-22T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_Ixion_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#963804",
+  "lightVibrant": "#cdb88d",
+  "darkVibrant": "#642404",
+  "muted": "#a48263",
+  "lightMuted": "#c5b8a2",
+  "darkMuted": "#584527",
+  "width": 3852,
+  "height": 4946,
+  "ratio": 1.284008,
+  "hash": "8v2saN8pzi0",
+  "maxWidth": "xl3"
+}

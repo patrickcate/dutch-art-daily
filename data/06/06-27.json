@@ -1,0 +1,46 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 114
+  },
+  "xs3": {
+    "width": 640,
+    "height": 454
+  },
+  "xs2": {
+    "width": 800,
+    "height": 568
+  },
+  "xs": {
+    "width": 960,
+    "height": 681
+  },
+  "sm": {
+    "width": 1120,
+    "height": 795
+  },
+  "title": "The Jewish Bride",
+  "artist": "Rembrandt van Rijn",
+  "art_date": "c. 1667",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 121.5,
+  "art_width": 166.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "06-27",
+  "artwork_date": "2016-06-27T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/The_Jewish_Bride",
+  "orientation": "landscape",
+  "vibrant": "#b74030",
+  "lightVibrant": "#e3b87f",
+  "darkVibrant": "#732423",
+  "muted": "#ae744d",
+  "lightMuted": "#b58766",
+  "darkMuted": "#53332d",
+  "width": 1236,
+  "height": 877,
+  "ratio": 0.709547,
+  "hash": "8y4szeMocD6",
+  "maxWidth": "sm"
+}

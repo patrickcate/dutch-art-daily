@@ -1,0 +1,58 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 127
+  },
+  "xs3": {
+    "width": 640,
+    "height": 509
+  },
+  "xs2": {
+    "width": 800,
+    "height": 636
+  },
+  "xs": {
+    "width": 960,
+    "height": 763
+  },
+  "sm": {
+    "width": 1120,
+    "height": 890
+  },
+  "md": {
+    "width": 1280,
+    "height": 1018
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1145
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1272
+  },
+  "title": "The Incredulity of St. Thomas",
+  "artist": "Hendrick ter Brugghen",
+  "art_date": "c. 1622",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 108.8,
+  "art_width": 136.5,
+  "art_location": "Rijksmuseum, Amsterdam",
+  "id": "02-27",
+  "artwork_date": "2016-02-27T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/wiki/File:BrugghenDoubtingThomas.jpeg",
+  "orientation": "landscape",
+  "vibrant": "#ae8036",
+  "lightVibrant": "#dfc499",
+  "darkVibrant": "#75400c",
+  "muted": "#94744c",
+  "lightMuted": "#745524",
+  "darkMuted": "#59412c",
+  "width": 1600,
+  "height": 1272,
+  "ratio": 0.795,
+  "hash": "d0fcp1fMi4u",
+  "maxWidth": "xl"
+}

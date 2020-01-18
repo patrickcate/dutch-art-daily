@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 209
+  },
+  "xs3": {
+    "width": 640,
+    "height": 837
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1046
+  },
+  "xs": {
+    "width": 960,
+    "height": 1255
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1465
+  },
+  "md": {
+    "width": 1280,
+    "height": 1674
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1883
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2092
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2302
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2511
+  },
+  "title": "Girl Reading a Letter at an Open Window",
+  "artist": "Johannes Vermeer",
+  "art_date": "c. 1657-1659",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 83,
+  "art_width": 64.5,
+  "art_location": "Gemäldegalerie Alte Meister, Dresden",
+  "id": "04-15",
+  "artwork_date": "2016-04-15T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://en.wikipedia.org/w/index.php?title=Girl_Reading_a_Letter_at_an_Open_Window&oldid=587024965",
+  "orientation": "portrait",
+  "vibrant": "#b85c33",
+  "lightVibrant": "#eec380",
+  "darkVibrant": "#6c361c",
+  "muted": "#c0a070",
+  "lightMuted": "#865912",
+  "darkMuted": "#4b4032",
+  "width": 3266,
+  "height": 4271,
+  "ratio": 1.307716,
+  "hash": "c4obcx8N9z0",
+  "maxWidth": "xl3"
+}

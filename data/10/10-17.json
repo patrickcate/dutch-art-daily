@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 188
+  },
+  "xs3": {
+    "width": 640,
+    "height": 753
+  },
+  "xs2": {
+    "width": 800,
+    "height": 942
+  },
+  "xs": {
+    "width": 960,
+    "height": 1130
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1318
+  },
+  "md": {
+    "width": 1280,
+    "height": 1506
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1695
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1883
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2071
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2260
+  },
+  "title": "The Gate Guard",
+  "artist": "Carel Fabritius",
+  "art_date": "1654",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 68,
+  "art_width": 58,
+  "art_location": "Staatliches Museum, Schwerin",
+  "id": "10-17",
+  "artwork_date": "2016-10-17T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Carel_Fabritius_-_Die_Torwache.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b57743",
+  "lightVibrant": "#d4b78f",
+  "darkVibrant": "#7a4724",
+  "muted": "#936d4e",
+  "lightMuted": "#cec4a8",
+  "darkMuted": "#573c2f",
+  "width": 2024,
+  "height": 2382,
+  "ratio": 1.176877,
+  "hash": "9FV1eyk0C0g",
+  "maxWidth": "xl3"
+}

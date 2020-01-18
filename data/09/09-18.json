@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 134
+  },
+  "xs3": {
+    "width": 640,
+    "height": 534
+  },
+  "xs2": {
+    "width": 800,
+    "height": 668
+  },
+  "xs": {
+    "width": 960,
+    "height": 802
+  },
+  "sm": {
+    "width": 1120,
+    "height": 935
+  },
+  "md": {
+    "width": 1280,
+    "height": 1069
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1203
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1336
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1470
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 1603
+  },
+  "title": "Suckling Mother and Maid",
+  "artist": "Pieter de Hooch",
+  "art_date": "1663-1665",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 64,
+  "art_width": 76,
+  "art_location": "Kunsthistorisches Museum, Vienna",
+  "id": "09-18",
+  "artwork_date": "2016-09-18T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Pieter_de_Hooch_-_Woman_and_Child_with_Serving_Maid_-_Google_Art_Project.jpg",
+  "orientation": "landscape",
+  "vibrant": "#af8a4a",
+  "lightVibrant": "#d7c3a1",
+  "darkVibrant": "#762304",
+  "muted": "#938456",
+  "lightMuted": "#6b542d",
+  "darkMuted": "#5a4a2c",
+  "width": 3209,
+  "height": 2680,
+  "ratio": 0.835151,
+  "hash": "bN9iphA0H9C",
+  "maxWidth": "xl3"
+}

@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 205
+  },
+  "xs3": {
+    "width": 640,
+    "height": 820
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1025
+  },
+  "xs": {
+    "width": 960,
+    "height": 1230
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1435
+  },
+  "md": {
+    "width": 1280,
+    "height": 1640
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1844
+  },
+  "xl": {
+    "width": 1600,
+    "height": 2049
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 2254
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2459
+  },
+  "title": "Saint John the Evangelist",
+  "artist": "Frans Hals",
+  "art_date": "c. 1625-1628",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 70,
+  "art_width": 54.99,
+  "art_location": "J. Paul Getty Museum, Los Angeles",
+  "id": "12-20",
+  "artwork_date": "2016-12-20T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Frans_Hals_(Dutch_-_Saint_John_the_Evangelist_-_Google_Art_Project.jpg",
+  "orientation": "portrait",
+  "vibrant": "#b42504",
+  "lightVibrant": "#dbbc9d",
+  "darkVibrant": "#9d2107",
+  "muted": "#936c4a",
+  "lightMuted": "#dac2b1",
+  "darkMuted": "#5b4c32",
+  "width": 3304,
+  "height": 4232,
+  "ratio": 1.280872,
+  "hash": "8kotz73j3Fr",
+  "maxWidth": "xl3"
+}

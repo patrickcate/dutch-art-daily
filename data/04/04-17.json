@@ -1,0 +1,42 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 200
+  },
+  "xs3": {
+    "width": 640,
+    "height": 802
+  },
+  "xs2": {
+    "width": 800,
+    "height": 1002
+  },
+  "xs": {
+    "width": 960,
+    "height": 1202
+  },
+  "title": "Sarah Bringing Hagar to Abraham",
+  "artist": "Adriaen van der Werff",
+  "art_date": "1696",
+  "art_medium": "Oil",
+  "art_surface": "Canvas",
+  "art_height": 86,
+  "art_width": 68.5,
+  "art_location": "Hermitage Museum, Saint Petersburg",
+  "id": "04-17",
+  "artwork_date": "2016-04-17T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "https://commons.wikimedia.org/wiki/File:Adriaen_van_der_Werff_007.jpg",
+  "orientation": "portrait",
+  "vibrant": "#dc9424",
+  "lightVibrant": "#e5bb69",
+  "darkVibrant": "#8f370d",
+  "muted": "#b49464",
+  "lightMuted": "#825d16",
+  "darkMuted": "#5d482d",
+  "width": 1002,
+  "height": 1255,
+  "ratio": 1.252495,
+  "hash": "9BFpFatrpa4",
+  "maxWidth": "xs"
+}

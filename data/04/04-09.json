@@ -1,0 +1,66 @@
+{
+  "lqi": {
+    "width": 160,
+    "height": 180
+  },
+  "xs3": {
+    "width": 640,
+    "height": 719
+  },
+  "xs2": {
+    "width": 800,
+    "height": 899
+  },
+  "xs": {
+    "width": 960,
+    "height": 1078
+  },
+  "sm": {
+    "width": 1120,
+    "height": 1258
+  },
+  "md": {
+    "width": 1280,
+    "height": 1438
+  },
+  "lg": {
+    "width": 1440,
+    "height": 1618
+  },
+  "xl": {
+    "width": 1600,
+    "height": 1797
+  },
+  "xl2": {
+    "width": 1760,
+    "height": 1977
+  },
+  "xl3": {
+    "width": 1920,
+    "height": 2157
+  },
+  "title": "Woman Playing the Sistrum",
+  "artist": "Jan Steen",
+  "art_date": "c. 1662",
+  "art_medium": "Oil",
+  "art_surface": "Panel",
+  "art_height": 31,
+  "art_width": 27.5,
+  "art_location": "Royal Picture Gallery Mauritshuis, The Hague",
+  "id": "04-09",
+  "artwork_date": "2016-04-09T17:00:00.000Z",
+  "cite_author": "Wikipedia",
+  "cite_url": "http://commons.wikimedia.org/wiki/File:Jan_Steen_007.jpg",
+  "orientation": "portrait",
+  "vibrant": "#795139",
+  "lightVibrant": "#d4b6a4",
+  "darkVibrant": "#763b07",
+  "muted": "#8e7555",
+  "lightMuted": "#b99a7e",
+  "darkMuted": "#4d392a",
+  "width": 3500,
+  "height": 3932,
+  "ratio": 1.123429,
+  "hash": "bcFj3VdUp8s",
+  "maxWidth": "xl3"
+}
