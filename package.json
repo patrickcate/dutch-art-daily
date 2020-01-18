@@ -24,7 +24,8 @@
     "lint:styles:fix": "stylelint --fix \"**/*.vue\" \"**/*.scss\" && prettier --list-different --write \"**/*.{css,scss,vue}\"",
     "lint:all:fix": "eslint --ext .js,.vue --fix . && stylelint --fix \"**/*.vue\" \"**/*.scss\" && prettier --list-different --write \"**/*.{js,json,css,scss,vue,yml}\"",
     "precommit": "yarn lint:all:fix",
-    "gitcommit": "git-cz"
+    "gitcommit": "git-cz",
+    "release": "standard-version"
   },
   "dependencies": {
     "date-fns": "^1.29.0",
@@ -64,6 +65,7 @@
     "prettier": "^1.18.2",
     "read-data": "^1.1.0",
     "sass-loader": "^7.1.0",
+    "standard-version": "^7.0.1",
     "stylelint": "^10.0.0",
     "stylelint-config-css-modules": "^1.3.0",
     "stylelint-config-prettier": "^5.0.0",
