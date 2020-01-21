@@ -93,21 +93,6 @@ export default {
           self.updateCurrentSlide(this.activeIndex)
           self.updateHeight(this.slides[this.activeIndex])
         },
-        slideChangeTransitionStart() {
-          self.updateCurrentSlide(this.activeIndex)
-          self.updateHeight(this.slides[this.activeIndex])
-        },
-        lazyImageReady(slideEl, imageEl) {
-          const imageId = imageEl.getAttribute('data-id')
-
-          self.$store.commit('SET_LOADED_SLIDES', imageId)
-
-          const slideIndex = self.$store.getters.getSlideIndexById(imageId)
-
-          if (self.slideIndex === slideIndex) {
-            self.updateHeight(this.slides[this.activeIndex])
-          }
-        },
         resize() {
           self.updateHeight(this.slides[this.activeIndex])
 
@@ -163,10 +148,9 @@ export default {
       if (this.name === 'carousel') {
         this.$nextTick(function() {
           const imageHeight = slide.querySelector('img').scrollHeight
-          const slideHeight = slide.children[0].scrollHeight
 
-          if (imageHeight && slideHeight > imageHeight) {
-            this.slideHeight = slideHeight
+          if (imageHeight) {
+            this.slideHeight = slide.children[0].scrollHeight
           }
         })
       }
