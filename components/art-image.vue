@@ -34,6 +34,30 @@ export default {
     srcSizes() {
       return `(min-height: 700px) calc((${this.image.width} / ${this.image.height}) * (100vh - 280px)), calc((${this.image.width} / ${this.image.height}) * 100vh), 100vw`
     },
+    currentPage() {
+      return this.$store.state.currentPage
+    },
+    currentHeight() {
+      return this.$store.currentHeight
+    },
+  },
+  methods: {
+    imageHasLoaded() {
+      this.$store.commit('SET_LOADED_SLIDES', this.id)
+      this.updateImageHeight()
+    },
+    updateImageHeight() {
+      if (this.currentPage === this.id) {
+        const slideHeight = this.$el.parentNode.scrollHeight
+
+        if (slideHeight && slideHeight !== this.currentHeight) {
+          this.$store.commit(
+            'SET_CURRENT_HEIGHT',
+            this.$el.parentNode.scrollHeight
+          )
+        }
+      }
+    },
   },
 }
 </script>
@@ -44,8 +68,8 @@ export default {
       :data-srcset="srcSet"
       :data-sizes="srcSizes"
       :alt="alt"
-      :data-id="id"
       class="art-image swiper-lazy"
+      @load="imageHasLoaded"
     />
   </div>
 </template>
@@ -63,16 +87,8 @@ export default {
   margin: 0 auto;
   box-shadow: $drop-shadow;
 
-  &.swiper-lazy-loading {
-    height: calc(100vh - 200px);
-  }
-
   @include media('height>md') {
     max-height: calc(100vh - 280px);
-
-    &.swiper-lazy-loading {
-      height: calc(100vh - 280px);
-    }
   }
 }
 </style>

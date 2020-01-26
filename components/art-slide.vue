@@ -28,18 +28,6 @@ export default {
       },
     },
   },
-  watch: {
-    currentPage: function() {
-      const slideHeight = this.$el.children[0].scrollHeight
-      if (
-        slideHeight &&
-        this.currentPage === this.artwork.id &&
-        this.slideHeight !== slideHeight
-      ) {
-        this.slideHeight = slideHeight
-      }
-    },
-  },
 }
 </script>
 
@@ -67,7 +55,7 @@ export default {
 }
 
 .carousel__slide {
-  padding: #{$spacing - $quarter-spacing} 0;
+  padding: #{$spacing + $quarter-spacing} 0;
 }
 
 .carousel__slide-image {

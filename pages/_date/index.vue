@@ -65,6 +65,20 @@ export default {
     store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
     store.dispatch('setCurrentPage', pageDate)
   },
+  methods: {
+    detailsHaveChanged(height) {
+      this.currentDetailsHeight(height)
+    },
+    currentDetailsHeight(height) {
+      return height
+        ? {
+            height: `${height}px`,
+          }
+        : {
+            height: `${200}px`,
+          }
+    },
+  },
 }
 </script>
 
@@ -75,7 +89,7 @@ export default {
         name="carousel"
         :keyboard="true"
         :simulate-touch="true"
-        class="carousel"
+        class="l-page__carousel"
         :style="currentHeight"
       >
         <art-slide v-for="slide in slides" :key="slide.id" :artwork="slide" />
@@ -93,7 +107,17 @@ export default {
 <style lang="scss">
 @import '@theme';
 
-.carousel {
-  transition: height $speed-medium ease;
+.l-page__carousel {
+  transition: height $speed-medium $base-easing;
+
+  @include media('<md') {
+    margin-top: -#{$half-spacing + $quarter-spacing};
+  }
+}
+
+.l-page__nav {
+  @include media('<md') {
+    margin-top: -#{$half-spacing};
+  }
 }
 </style>
