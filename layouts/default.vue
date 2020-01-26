@@ -51,3 +51,11 @@ export default {
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '@theme';
+
+.l-page__bg {
+  background-position: center;
+}
+</style>

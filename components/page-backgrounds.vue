@@ -56,7 +56,7 @@ export default {
   height: 100%;
   overflow: hidden;
   filter: blur($half-spacing);
-  background-position: top;
+  background-position: center;
   background-size: cover;
   opacity: 0;
   transition: opacity $speed-slowest ease, z-index $speed-slowest ease;
