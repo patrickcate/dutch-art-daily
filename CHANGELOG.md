@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/patrickcate/dutch-art-daily/compare/v2.1.0...v2.1.1) (2020-01-26)
+
+
+### Bug Fixes
+
+* fix artwork title formatting for 01-23 data ([de04ee5](https://github.com/patrickcate/dutch-art-daily/commit/de04ee53b67dd508c40c6d041d6c3b4dcee0eb56))
+
 ## [2.1.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.0.3...v2.1.0) (2020-01-18)
 
 
