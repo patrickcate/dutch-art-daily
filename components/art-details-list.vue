@@ -30,6 +30,24 @@ export default {
     artDate() {
       return this.art.art_date.replace('-', String.fromCharCode(0x2013))
     },
+    currentPage() {
+      return this.$store.state.currentPage
+    },
+  },
+  watch: {
+    currentPage: {
+      immediate: true,
+      handler(id) {
+        if (this.$el && this.art.id === this.currentPage) {
+          this.currentDetailsHeight(this.$el.parentNode.scrollHeight)
+        }
+      },
+    },
+  },
+  methods: {
+    currentDetailsHeight(height) {
+      this.$emit('details-have-changed', height)
+    },
   },
 }
 </script>

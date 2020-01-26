@@ -65,6 +65,20 @@ export default {
     store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
     store.dispatch('setCurrentPage', pageDate)
   },
+  methods: {
+    detailsHaveChanged(height) {
+      this.currentDetailsHeight(height)
+    },
+    currentDetailsHeight(height) {
+      return height
+        ? {
+            height: `${height}px`,
+          }
+        : {
+            height: `${200}px`,
+          }
+    },
+  },
 }
 </script>
 

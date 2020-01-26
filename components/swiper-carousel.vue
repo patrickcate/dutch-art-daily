@@ -78,6 +78,7 @@ export default {
       slideToClickedSlide: true,
       simulateTouch: self.simulateTouch,
       controller: true,
+      updateOnWindowResize: self.name !== 'timeline',
       passiveListeners: true,
       preloadImages: false,
       lazy: {
@@ -102,6 +103,11 @@ export default {
             self.$root.swipers.timeline.params.slidesPerView = 3
           } else {
             self.$root.swipers.timeline.params.slidesPerView = 7
+          }
+
+          if (self.name === 'timeline') {
+            this.updateSize()
+            this.updateSlides()
           }
         },
       },

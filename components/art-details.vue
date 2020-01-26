@@ -9,7 +9,26 @@ export default {
     ArtDetailsList,
     SwiperCarousel,
   },
-  computed: mapState(['slides']),
+  data() {
+    return {
+      detailsHeight: null,
+    }
+  },
+  computed: {
+    ...mapState(['slides', 'currentPage']),
+    currentDetailsHeight() {
+      return this.detailsHeight
+        ? {
+            height: `${this.detailsHeight}px`,
+          }
+        : null
+    },
+  },
+  methods: {
+    updateDetailsHeight(height) {
+      this.detailsHeight = height
+    },
+  },
 }
 </script>
 
@@ -25,7 +44,10 @@ export default {
           <h2 class="art-details__title">{{ slide.title }}</h2>
           <h3 class="art-details__artist"><em>by</em> {{ slide.artist }}</h3>
         </div>
-        <art-details-list :art="slide" />
+        <art-details-list
+          :art="slide"
+          @details-have-changed="updateDetailsHeight"
+        />
       </div>
     </li>
   </swiper-carousel>
