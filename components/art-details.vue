@@ -33,7 +33,11 @@ export default {
 </script>
 
 <template>
-  <swiper-carousel class="details-list" name="details">
+  <swiper-carousel
+    class="details-list"
+    name="details"
+    :style="currentDetailsHeight"
+  >
     <li
       v-for="slide in slides"
       :key="slide.id"

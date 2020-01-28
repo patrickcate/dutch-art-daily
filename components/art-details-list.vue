@@ -37,16 +37,13 @@ export default {
   watch: {
     currentPage: {
       immediate: true,
-      handler(id) {
-        if (this.$el && this.art.id === this.currentPage) {
-          this.currentDetailsHeight(this.$el.parentNode.scrollHeight)
-        }
+      handler() {
+        this.$nextTick(() => {
+          if (this.$el && this.art.id === this.currentPage) {
+            this.$emit('details-have-changed', this.$el.parentNode.scrollHeight)
+          }
+        })
       },
-    },
-  },
-  methods: {
-    currentDetailsHeight(height) {
-      this.$emit('details-have-changed', height)
     },
   },
 }
