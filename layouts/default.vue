@@ -20,7 +20,9 @@ export default {
   },
   created() {
     // Set a swipers object to store the individual swiper references.
-    this.$root.swipers = {}
+    if (!this.$root.swipers) {
+      this.$root.swipers = {}
+    }
 
     // Set the inital page activeId to the current page.
     if (!this.activeId) {

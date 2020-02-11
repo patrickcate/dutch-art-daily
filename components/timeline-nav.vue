@@ -28,10 +28,9 @@ export default {
       :simulate-touch="true"
     >
       <timeline-nav-item
-        v-for="(slide, index) in slides"
+        v-for="slide in slides"
         :id="slide.id"
         :key="slide.id"
-        :class="index === slides.length - 1 ? 'swiper-slide-active' : null"
         class="timeline-nav__list-item"
       />
     </swiper-carousel>

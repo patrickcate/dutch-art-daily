@@ -9,13 +9,6 @@ export default {
     ShareList,
     SvgIcon,
   },
-  props: {
-    transformWidth: {
-      type: Number,
-      default: 0,
-      required: false,
-    },
-  },
   data() {
     return {
       iconShare: IconShare,
@@ -29,7 +22,7 @@ export default {
   },
   methods: {
     toggleDropdown() {
-      this.expanded = this.expanded ? false : true
+      this.expanded = !this.expanded
     },
   },
 }
