@@ -63,6 +63,7 @@ module.exports = {
     confirmCommit: 'Are you sure you want to proceed with the commit above?',
   },
 
+  skipQuestions: ['scope'],
   allowCustomScopes: false,
   allowBreakingChanges: ['feat', 'fix'],
 
