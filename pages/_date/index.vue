@@ -1,7 +1,7 @@
 <script>
-import { fetchArtworkData } from '@utils/fetch-artwork-data'
 import { mapState, mapGetters } from 'vuex'
 import { generateRoutes } from '@utils/generate-routes'
+import { generateDateList } from '@utils/format-date'
 import SwiperCarousel from '@components/swiper-carousel'
 import ArtSlide from '@components/art-slide'
 import TimelineNav from '@components/timeline-nav'
@@ -63,13 +63,27 @@ export default {
     },
   },
   async fetch({ store, params, payload }) {
-    const pageDate = payload ? payload : params.date
+    const slideDates = generateDateList(params.date)
 
-    const slides = await fetchArtworkData(pageDate)
+    const slides = await Promise.all(
+      slideDates.map(async item => {
+        // Break the date parameters into an array so we can access the month
+        // and day separately.
+        const date = item.split('-')
+
+        // Use the function form of import to dynamically parse the .json content
+        // files.
+        const artwork = await import(
+          `../../data/${date[0]}/${date[0]}-${date[1]}.json`
+        )
+
+        return artwork.default
+      })
+    )
 
     await store.dispatch('setSlideData', slides)
     store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
-    store.dispatch('setCurrentPage', pageDate)
+    store.dispatch('setCurrentPage', params.date)
   },
   methods: {
     detailsHaveChanged(height) {
