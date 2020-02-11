@@ -1,5 +1,6 @@
 <script>
 import { fetchArtworkData } from '@utils/fetch-artwork-data'
+import { mapState, mapGetters } from 'vuex'
 import { generateRoutes } from '@utils/generate-routes'
 import SwiperCarousel from '@components/swiper-carousel'
 import ArtSlide from '@components/art-slide'
@@ -37,23 +38,28 @@ export default {
     return allRoutes.includes(params.date)
   },
   computed: {
-    currentDate() {
-      return this.$store.state.currentPage
+    ...mapState({
+      currentDate: 'currentPage',
+      slides: 'slides',
+      currentHeight: 'currentHeight',
+    }),
+    ...mapGetters(['getArtworkById']),
+    routeDate() {
+      return this.$route.params.date
+    },
+    artwork() {
+      return this.getArtworkById(this.routeDate)
     },
     page() {
-      const artwork = this.$store.getters.getArtById(this.$route.params.date)
-      return artwork
-        ? artwork
+      return this.artwork
+        ? this.artwork
         : {
             title: '',
             description: '',
           }
     },
-    slides() {
-      return this.$store.state.slides
-    },
-    currentHeight() {
-      return `height:${this.$store.state.currentHeight}px`
+    currentSlideHeight() {
+      return `height:${this.currentHeight}px`
     },
   },
   async fetch({ store, params, payload }) {
@@ -90,7 +96,7 @@ export default {
         :keyboard="true"
         :simulate-touch="true"
         class="l-page__carousel"
-        :style="currentHeight"
+        :style="currentSlideHeight"
       >
         <art-slide v-for="slide in slides" :key="slide.id" :artwork="slide" />
       </swiper-carousel>

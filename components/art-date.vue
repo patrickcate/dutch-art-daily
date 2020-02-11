@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import {
   formatDate,
   getDateOrdinal,
@@ -9,9 +10,9 @@ import {
 export default {
   name: 'ArtDate',
   computed: {
-    currentDate() {
-      return this.$store.state.currentPage
-    },
+    ...mapState({
+      currentDate: 'currentPage',
+    }),
     dateLabel() {
       return getDateLabel(this.currentDate)
         ? `${getDateLabel(this.currentDate)},`

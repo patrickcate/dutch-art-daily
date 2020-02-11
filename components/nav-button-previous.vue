@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import SvgIcon from '@components/svg-icon'
 import IconArrowLeft from '@icons/icon-arrow-left.svg'
 
@@ -13,9 +14,7 @@ export default {
     }
   },
   computed: {
-    currentSlideIndex() {
-      return this.$store.state.currentSlideIndex
-    },
+    ...mapState(['currentSlideIndex']),
     disabledPrevButton() {
       return this.currentSlideIndex <= 0
     },

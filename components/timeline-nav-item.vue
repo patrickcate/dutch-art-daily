@@ -1,4 +1,5 @@
 <script>
+import { mapState, mapGetters } from 'vuex'
 import {
   dateId,
   dateShort,
@@ -18,6 +19,10 @@ export default {
     },
   },
   computed: {
+    ...mapState({
+      activeId: 'currentPage',
+    }),
+    ...mapGetters(['getSlideIndexById']),
     date() {
       return dateArray(this.id)
     },
@@ -30,10 +35,8 @@ export default {
   },
   methods: {
     toSlide() {
-      if (this.$store.state.currentPage !== this.id) {
-        this.$root.swipers.carousel.slideTo(
-          this.$store.getters.getSlideIndexById(this.id)
-        )
+      if (this.activeId !== this.id) {
+        this.$root.swipers.carousel.slideTo(this.getSlideIndexById(this.id))
       }
     },
   },

@@ -1,4 +1,5 @@
 <script>
+import { mapState, mapGetters } from 'vuex'
 import SvgIcon from '@components/svg-icon.vue'
 import IconFacebook from '@icons/icon-facebook.svg'
 import IconTwitter from '@icons/icon-twitter.svg'
@@ -26,11 +27,10 @@ export default {
     }
   },
   computed: {
-    currentPage() {
-      return this.$store.state.currentPage
-    },
+    ...mapState(['currentPage']),
+    ...mapGetters(['getArtworkById']),
     artwork() {
-      return this.$store.getters.getArtById(this.currentPage)
+      return this.getArtworkById(this.currentPage)
     },
     shareDescription() {
       return encodeURI(`${this.artwork.title} by ${this.artwork.artist}`)

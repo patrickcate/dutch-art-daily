@@ -10,7 +10,9 @@ export default {
     TimelineNavItem,
     SwiperCarousel,
   },
-  computed: mapState(['slides', 'paginationNumber']),
+  computed: {
+    ...mapState(['slides', 'paginationNumber']),
+  },
   beforeMount() {
     this.$store.dispatch('updatePaginationNumber')
   },

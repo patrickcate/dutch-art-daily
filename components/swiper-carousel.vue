@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import {
   A11y,
   Controller,
@@ -34,11 +35,12 @@ export default {
     }
   },
   computed: {
-    slideIndex() {
-      return this.$store.state.currentSlideIndex
-    },
+    ...mapState({
+      slideIndex: 'currentSlideIndex',
+      slides: 'slides',
+    }),
     initialSlide() {
-      return this.$store.state.slides.length - 1
+      return this.slides.length - 1
     },
     initClass() {
       return this.initialized ? 'swiper--initialized' : null
