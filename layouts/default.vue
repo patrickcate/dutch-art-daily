@@ -1,15 +1,14 @@
 <script>
-import { dateId, generateDateList } from '@utils/format-date'
 import { mapState } from 'vuex'
 import TheHeader from '@components/the-header'
 import TheFooter from '@components/the-footer'
-import PageBackgrounds from '@components/page-backgrounds'
+import BackgroundStack from '@components/background-stack'
 
 export default {
   components: {
     TheHeader,
     TheFooter,
-    PageBackgrounds,
+    BackgroundStack,
   },
   computed: {
     ...mapState({
@@ -33,11 +32,7 @@ export default {
 
 <template>
   <div class="l-page">
-    <page-backgrounds
-      v-if="background"
-      class="l-page__bg"
-      :style="background"
-    />
+    <background-stack />
     <div class="l-page__content">
       <the-header class="l-page__header" />
       <nuxt :key="routeDate" />
@@ -48,8 +43,4 @@ export default {
 
 <style lang="scss">
 @import '@theme';
-
-.l-page__bg {
-  background-position: center;
-}
 </style>
