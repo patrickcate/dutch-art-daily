@@ -22,18 +22,10 @@ export default {
       return formatDate(this.currentDate, 'month')
     },
     todaysDay() {
-      return formatDate(this.currentDate, 'day').split('')
+      return formatDate(this.currentDate, 'day')
     },
     dateOrdinal() {
-      const day = new Date(this.currentDate).getDate()
-
-      return getDateOrdinal(day)
-    },
-    isoDate() {
-      return getISODate(this.currentDate)
-    },
-    dateArray() {
-      return `${this.dateLabel}${this.todaysMonth} ${this.todaysDay}${this.dateOrdinal}`
+      return getDateOrdinal(Number.parseInt(this.todaysDay, 10))
     },
   },
   mounted() {
