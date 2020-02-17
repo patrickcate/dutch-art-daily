@@ -6,7 +6,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 // Set the PWA start url based on the environment.
 let startUrl
 
-if (process.env.NETLIFY === true) {
+if (process.env.NODE_ENV === 'production') {
   startUrl = 'https://dutchartdaily.com'
 } else {
   startUrl = 'http://localhost:3000'
@@ -61,7 +61,7 @@ module.exports = {
    * (https://www.npmjs.com/package/@nuxtjs/sitemap)
    */
   sitemap: {
-    hostname: 'https://www.dutchartdaily.com',
+    hostname: 'https://dutchartdaily.com',
     defaults: {
       changefreq: 'monthly',
       priority: 1,
@@ -77,7 +77,7 @@ module.exports = {
   pwa: {
     meta: false,
     icon: {
-      iconSrc: './_source/icon.png',
+      iconSrc: './assets/images/logos/touch-icon.png',
     },
     manifest: {
       name: 'Dutch Art Daily',
