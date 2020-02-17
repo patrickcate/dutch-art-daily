@@ -10,7 +10,7 @@ import NavButtonNext from '@components/nav-button-next'
 import ArtDetails from '@components/art-details'
 
 export default {
-  layout: 'default',
+  name: 'ArtworkPage',
   components: {
     ArtSlide,
     SwiperCarousel,
@@ -205,5 +205,9 @@ export default {
   @include media('<md') {
     margin-top: -#{$half-spacing};
   }
+}
+
+.l-page__details {
+  transition: height $speed-medium $base-easing;
 }
 </style>

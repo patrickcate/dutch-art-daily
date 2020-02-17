@@ -1,6 +1,6 @@
 <script>
 export default {
-  layout: 'home',
+  name: 'HomePage',
   head() {
     return {
       title: 'Dutch Art Daily',
@@ -50,6 +50,9 @@ export default {
       link: [{ rel: 'apple-touch-icon', href: this.$icon(192) }],
     }
   },
+  beforeCreate() {
+    if (!process.server) {
+      this.$homepageRedirect()
     }
   },
   render() {
