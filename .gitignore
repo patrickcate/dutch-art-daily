@@ -85,3 +85,6 @@ dist
 
 # Site source image assets
 _source
+
+# Service Workers
+sw.*

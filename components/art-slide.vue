@@ -12,22 +12,6 @@ export default {
       required: true,
     },
   },
-  computed: {
-    altText() {
-      return `${this.artwork.artist}'s painting: ${this.artwork.title}`
-    },
-    currentPage() {
-      return this.$store.state.currentPage
-    },
-    slideHeight: {
-      get() {
-        return this.$store.state.currentHeight
-      },
-      set(height) {
-        this.$store.commit('SET_CURRENT_HEIGHT', height)
-      },
-    },
-  },
 }
 </script>
 
@@ -39,7 +23,6 @@ export default {
     >
       <art-image
         :id="artwork.id"
-        :alt="altText"
         :class="`artwork--${artwork.orientation}`"
         class="carousel__slide-image"
       />

@@ -2,35 +2,63 @@ import { generateRoutes } from './utils/generate-routes'
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const path = require('path')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
-const pkg = require('./package')
+
+// Set the PWA start url based on the environment.
+let startUrl
+
+if (process.env.NETLIFY === true) {
+  startUrl = 'https://dutchartdaily.com'
+} else {
+  startUrl = 'http://localhost:3000'
+}
 
 module.exports = {
   mode: 'universal',
   debug: process.dev !== true,
-  /*
-   ** Headers of the page
+
+  /**
+   * Headers metatags for all pages.
    */
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en-US',
     },
     title: 'Dutch Art Daily',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'charset', charset: 'utf-8' },
+      {
+        hid: 'viewport',
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+      },
+      {
+        hid: 'mobile-web-app-capable',
+        name: 'mobile-web-app-capable',
+        content: 'yes',
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'DutchArtDaily',
+      },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#1a3f68',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  /*
-   ** Customize the progress-bar color
+  /**
+   * Customize the progress-bar color
    */
-  loading: { color: 'transparent' },
+  loading: { color: '#ffb600' },
 
-  /*
-   ** Sitemap module configuration
-   ** (https://www.npmjs.com/package/@nuxtjs/sitemap)
+  /**
+   * Sitemap module configuration
+   * (https://www.npmjs.com/package/@nuxtjs/sitemap)
    */
   sitemap: {
     hostname: 'https://www.dutchartdaily.com',
@@ -42,25 +70,44 @@ module.exports = {
     },
   },
 
-  /*
-   ** Global CSS
+  /**
+   * PWA options
+   * (https://pwa.nuxtjs.org)
+   */
+  pwa: {
+    meta: false,
+    icon: {
+      iconSrc: './_source/icon.png',
+    },
+    manifest: {
+      name: 'Dutch Art Daily',
+      short_name: 'DutchArtDaily',
+      start_url: startUrl,
+      theme_color: '#1a3f68',
+      background_color: '#ffffff',
+      orientation: 'portrait-primary',
+      lang: 'en-US',
+      categories: ['education', 'photo'],
+    },
+  },
+
+  /**
+   * Global CSS
    */
   css: ['@/assets/scss/global.scss'],
 
-  router: {
-    // middleware: 'current-page',
-  },
+  router: {},
 
-  /*
-   ** Plugins to load before mounting the App
+  /**
+   *  Plugins to load before mounting the App
    */
   plugins: [
     { src: '@/plugins/current-page.js', mode: 'client' },
     { src: '@/plugins/vue-screen.client.js', mode: 'client' },
   ],
 
-  /*
-   ** Nuxt.js modules
+  /**
+   * Nuxt.js modules
    */
   modules: [
     [
@@ -70,10 +117,11 @@ module.exports = {
       },
     ],
     '@nuxtjs/sitemap',
+    ['@nuxtjs/pwa'],
   ],
 
-  /*
-   ** Nuxt hooks.
+  /**
+   * Nuxt hooks.
    */
   hooks: {
     ready(nuxt) {
@@ -85,15 +133,15 @@ module.exports = {
     },
   },
 
-  /*
-   ** Generate configuration
+  /**
+   * Generate configuration
    */
   generate: {
     routes: generateRoutes(),
   },
 
-  /*
-   ** Build configuration
+  /**
+   * Build configuration
    */
   build: {
     babel: {
@@ -144,8 +192,9 @@ module.exports = {
       },
     },
     transpile: ['dom7', 'ssr-window', 'swiper', 'vue-screen'],
-    /*
-     ** You can extend webpack config here
+
+    /**
+     * You can extend webpack config here
      */
     extend(config, ctx) {
       // Run ESLint on save

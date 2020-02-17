@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import SvgIcon from '@components/svg-icon'
 import iconArrowRight from '@icons/icon-arrow-right.svg'
 
@@ -13,11 +14,9 @@ export default {
     }
   },
   computed: {
-    currentSlideIndex() {
-      return this.$store.state.currentSlideIndex
-    },
+    ...mapState(['slides', 'currentSlideIndex']),
     maxSlideIndex() {
-      return this.$store.state.slides.length - 1
+      return this.slides.length - 1
     },
     disabledNextButton() {
       return this.currentSlideIndex >= this.maxSlideIndex

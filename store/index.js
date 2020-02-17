@@ -19,7 +19,7 @@ export const state = () => ({
 })
 
 export const getters = {
-  getArtById: state => id => {
+  getArtworkById: state => id => {
     return state.slides.filter(item => item.id === id)[0]
   },
   getSlideIndexById: state => id => {

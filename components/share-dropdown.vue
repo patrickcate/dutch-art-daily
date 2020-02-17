@@ -9,13 +9,6 @@ export default {
     ShareList,
     SvgIcon,
   },
-  props: {
-    transformWidth: {
-      type: Number,
-      default: 0,
-      required: false,
-    },
-  },
   data() {
     return {
       iconShare: IconShare,
@@ -24,12 +17,12 @@ export default {
   },
   computed: {
     toggleClass() {
-      return this.expanded ? 'share-dropdown--is-expanded' : ''
+      return this.expanded ? 'share-dropdown--is-expanded' : null
     },
   },
   methods: {
     toggleDropdown() {
-      this.expanded = this.expanded ? false : true
+      this.expanded = !this.expanded
     },
   },
 }
@@ -59,25 +52,40 @@ export default {
 
 <style lang="scss">
 @import '@theme';
+$size: 300px;
 
 .share-dropdown {
-  // &::before {
-  //   position: absolute;
-  //   top: 150px;
-  //   right: 150px;
-  //   width: 300px;
-  //   height: 300px;
-  //   content: '';
-  //   background-image: radial-gradient(
-  //     circle,
-  //     rgba(0, 0, 0, 0.5) 0%,
-  //     rgba(0, 0, 0, 0) 100%
-  //   );
-  // }
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -#{$size / 2};
+    right: -#{$size / 2};
+    z-index: -1;
+    width: $size;
+    height: $size;
+    content: '';
+    background-color: $black;
+    filter: blur($spacing);
+    border-radius: $size;
+    opacity: 1;
+    transition: transform $speed-medium $base-easing,
+      opacity $speed-medium $base-easing, z-index $speed-medium $base-easing;
+    transform: translate(50%, calc(-50% - #{$half-spacing}));
+  }
+
+  &.share-dropdown--is-expanded {
+    &::before {
+      z-index: z-index(base);
+      opacity: 0.65;
+      transform: translate(0, $half-spacing);
+    }
+  }
 }
 
 .share-dropdown__button {
   position: relative;
+  z-index: z-index(step);
   padding: $quarter-spacing;
   margin-right: -#{$quarter-spacing};
   font-size: $font-size-lg;

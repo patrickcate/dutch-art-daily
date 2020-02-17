@@ -1,4 +1,6 @@
 <script>
+import { mapState, mapGetters } from 'vuex'
+
 export default {
   name: 'ArtImage',
   props: {
@@ -6,23 +8,26 @@ export default {
       type: String,
       required: true,
     },
-    alt: {
-      type: String,
-      required: true,
-    },
   },
   computed: {
-    image() {
-      return this.$store.getters.getArtById(this.id)
+    ...mapState(['currentPage', 'currentHeight', 'imageWidths']),
+    ...mapGetters(['getArtworkById']),
+    artwork() {
+      return this.getArtworkById(this.id)
+    },
+    altText() {
+      return `${this.artwork.artist}'s painting: ${this.artwork.title}`
+    },
+    lazySrc() {
+      return `/photos/${this.id}/${this.id}--xs3-${this.artwork.hash}.jpg`
     },
     srcSet() {
-      const imageWidths = this.$store.state.imageWidths
-      const imageSizes = Object.keys(imageWidths)
+      const imageSizes = Object.keys(this.imageWidths)
       const srcset = imageSizes.reduce((accumulator, size) => {
-        if (this.image[size]) {
+        if (this.artwork[size]) {
           accumulator.push(
-            `/photos/${this.id}/${this.id}--${size}-${this.image.hash}.jpg` +
-              ` ${this.image[size].width}w`
+            `/photos/${this.id}/${this.id}--${size}-${this.artwork.hash}.jpg` +
+              ` ${this.artwork[size].width}w`
           )
         }
 
@@ -32,13 +37,7 @@ export default {
       return srcset.join(', ')
     },
     srcSizes() {
-      return `(min-height: 700px) calc((${this.image.width} / ${this.image.height}) * (100vh - 280px)), calc((${this.image.width} / ${this.image.height}) * 100vh), 100vw`
-    },
-    currentPage() {
-      return this.$store.state.currentPage
-    },
-    currentHeight() {
-      return this.$store.currentHeight
+      return `(min-height: 700px) calc((${this.artwork.width} / ${this.artwork.height}) * (100vh - 280px)), calc((${this.artwork.width} / ${this.artwork.height}) * 100vh), 100vw`
     },
   },
   methods: {
@@ -64,10 +63,10 @@ export default {
 <template>
   <div class="art-image-frame">
     <img
-      :data-src="`/photos/${id}/${id}--xs3-${image.hash}.jpg`"
+      :data-src="lazySrc"
       :data-srcset="srcSet"
       :data-sizes="srcSizes"
-      :alt="alt"
+      :alt="altText"
       class="art-image swiper-lazy"
       @load="imageHasLoaded"
     />

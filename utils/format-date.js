@@ -36,9 +36,7 @@ export function formatDate(id, part) {
   }
 
   // Format the date with the optional prefix.
-  const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date)
-
-  return formattedDate
+  return new Intl.DateTimeFormat('en-US', options).format(date)
 }
 
 export function getISODate(id) {

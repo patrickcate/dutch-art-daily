@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import {
   formatDate,
   getDateOrdinal,
@@ -9,11 +10,11 @@ import {
 export default {
   name: 'ArtDate',
   computed: {
-    currentDate() {
-      return this.$store.state.currentPage
-    },
+    ...mapState({
+      currentDate: 'currentPage',
+    }),
     dateLabel() {
-      return getDateLabel(this.currentDate)
+      return this.currentDate && getDateLabel(this.currentDate)
         ? `${getDateLabel(this.currentDate)},`
         : ''
     },
@@ -21,18 +22,10 @@ export default {
       return formatDate(this.currentDate, 'month')
     },
     todaysDay() {
-      return formatDate(this.currentDate, 'day').split('')
+      return formatDate(this.currentDate, 'day')
     },
     dateOrdinal() {
-      const day = new Date(this.currentDate).getDate()
-
-      return getDateOrdinal(day)
-    },
-    isoDate() {
-      return getISODate(this.currentDate)
-    },
-    dateArray() {
-      return `${this.dateLabel}${this.todaysMonth} ${this.todaysDay}${this.dateOrdinal}`
+      return getDateOrdinal(Number.parseInt(this.todaysDay, 10))
     },
   },
   mounted() {
@@ -60,6 +53,7 @@ export default {
 
 <template>
   <transition-group
+    v-if="currentDate"
     name="date"
     tag="div"
     class="artwork-date"

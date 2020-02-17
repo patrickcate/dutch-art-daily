@@ -1,4 +1,5 @@
 <script>
+import { mapGetters } from 'vuex'
 import { dateId } from '@utils/format-date.js'
 import SvgIcon from '@components/svg-icon.vue'
 import AppLogo from '@assets/images/logos/logo.svg'
@@ -15,11 +16,14 @@ export default {
       AppLogoCondensed,
     }
   },
+  computed: {
+    ...mapGetters(['getSlideIndexById']),
+  },
   methods: {
     today() {
       const today = dateId(new Date())
 
-      if (this.$store.getters.getSlideIndexById(today) >= 0) {
+      if (this.getSlideIndexById(today) >= 0) {
         this.$root.swipers.carousel.slideTo(6)
       } else {
         this.$router.push(today ? `/${today}` : '/')
