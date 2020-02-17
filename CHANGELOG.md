@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.0...v2.2.1) (2020-02-17)
+
+
+### Bug Fixes
+
+* correct path to source touch icon ([9a3978c](https://github.com/patrickcate/dutch-art-daily/commit/9a3978c01dfa4f8f3aebb458ec1ebd37c83d84e0))
+
 ## [2.2.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.1.1...v2.2.0) (2020-02-17)
 
 
