@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.1.1...v2.2.0) (2020-02-17)
+
+
+### Features
+
+* add and setup basic config for  Nuxt PWA module ([0fdcace](https://github.com/patrickcate/dutch-art-daily/commit/0fdcace32fabd25a39870a02adf2b972e5215ba0))
+* add backdrop shadow when mobile share menu is open ([3457ea6](https://github.com/patrickcate/dutch-art-daily/commit/3457ea69c2f7314a997c07270937188b927b3255))
+* set auto height of details slider ([ebf0fb0](https://github.com/patrickcate/dutch-art-daily/commit/ebf0fb0c4d6aad06fd374d4b70da766731b15d6a))
+
+
+### Bug Fixes
+
+* add conditional check for this.$icons ([2d1e876](https://github.com/patrickcate/dutch-art-daily/commit/2d1e876cbba8f225af182215f24c3297bb1eac66))
+* safari date ordinal parsing bug ([82cd70f](https://github.com/patrickcate/dutch-art-daily/commit/82cd70f402460d82c35decab5ca3aa8097039916))
+
 ### [2.1.1](https://github.com/patrickcate/dutch-art-daily/compare/v2.1.0...v2.1.1) (2020-01-26)
 
 
