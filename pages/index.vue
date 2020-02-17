@@ -47,7 +47,9 @@ export default {
           content: 'https://dutchartdaily.com',
         },
       ],
-      link: [{ rel: 'apple-touch-icon', href: this.$icon(192) }],
+      link: [
+        this.$icon ? { rel: 'apple-touch-icon', href: this.$icon(192) } : null,
+      ],
     }
   },
   beforeCreate() {

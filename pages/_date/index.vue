@@ -95,7 +95,9 @@ export default {
           content: `https://dutchartdaily.com/photos/${this.page.id}/${this.page.id}--xs3-${this.page.hash}.jpg`,
         },
       ],
-      link: [{ rel: 'apple-touch-icon', href: this.$icon(192) }],
+      link: [
+        this.$icon ? { rel: 'apple-touch-icon', href: this.$icon(192) } : null,
+      ],
     }
   },
   validate({ params }) {
