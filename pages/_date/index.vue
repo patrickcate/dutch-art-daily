@@ -95,9 +95,7 @@ export default {
           content: `https://dutchartdaily.com/photos/${this.page.id}/${this.page.id}--xs3-${this.page.hash}.jpg`,
         },
       ],
-      link: [
-        this.$icon ? { rel: 'apple-touch-icon', href: this.$icon(192) } : null,
-      ],
+      link: [{ rel: 'apple-touch-icon', href: this.touchIcon }],
     }
   },
   validate({ params }) {
@@ -112,6 +110,9 @@ export default {
       currentHeight: 'currentHeight',
     }),
     ...mapGetters(['getArtworkById']),
+    touchIcon() {
+      return this.$icon ? this.$icon(192) : ''
+    },
     routeDate() {
       return this.$route.params.date
     },

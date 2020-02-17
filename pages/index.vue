@@ -47,10 +47,13 @@ export default {
           content: 'https://dutchartdaily.com',
         },
       ],
-      link: [
-        this.$icon ? { rel: 'apple-touch-icon', href: this.$icon(192) } : null,
-      ],
+      link: [{ rel: 'apple-touch-icon', href: this.touchIcon }],
     }
+  },
+  computed: {
+    touchIcon() {
+      return this.$icon ? this.$icon(192) : ''
+    },
   },
   beforeCreate() {
     if (!process.server) {
