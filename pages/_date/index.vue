@@ -25,11 +25,77 @@ export default {
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.page.title,
+        },
+        {
+          hid: 'author',
+          name: 'author',
+          content: this.page.artist,
+        },
+        {
           hid: 'description',
           name: 'description',
           content: `${this.page.title} by ${this.page.artist}`,
         },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.page.title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: `${this.page.title} by ${this.page.artist}`,
+        },
+        {
+          hid: 'og:site_name',
+          name: 'og:site_name',
+          content: 'Dutch Art Daily',
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: `https://dutchartdaily.com/photos/${this.page.id}/${this.page.id}--xs3-${this.page.hash}.jpg`,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://dutchartdaily.com/${this.page.id}`,
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'photo',
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: 'Dutch Art Daily',
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.page.title,
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: this.page.artist,
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: `https://dutchartdaily.com/${this.page.id}`,
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: `https://dutchartdaily.com/photos/${this.page.id}/${this.page.id}--xs3-${this.page.hash}.jpg`,
+        },
       ],
+      link: [{ rel: 'apple-touch-icon', href: this.$icon(192) }],
     }
   },
   validate({ params }) {

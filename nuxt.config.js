@@ -2,7 +2,15 @@ import { generateRoutes } from './utils/generate-routes'
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const path = require('path')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
-const pkg = require('./package')
+
+// Set the PWA start url based on the environment.
+let startUrl
+
+if (process.env.NETLIFY === true) {
+  startUrl = 'https://dutchartdaily.com'
+} else {
+  startUrl = 'http://localhost:3000'
+}
 
 module.exports = {
   mode: 'universal',
@@ -12,13 +20,32 @@ module.exports = {
    */
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en-US',
     },
     title: 'Dutch Art Daily',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'charset', charset: 'utf-8' },
+      {
+        hid: 'viewport',
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+      },
+      {
+        hid: 'mobile-web-app-capable',
+        name: 'mobile-web-app-capable',
+        content: 'yes',
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'DutchArtDaily',
+      },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#1a3f68',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -39,6 +66,24 @@ module.exports = {
       priority: 1,
       lastmod: new Date(),
       lastmodrealtime: true,
+    },
+  },
+
+  /* PWA options */
+  pwa: {
+    meta: false,
+    icon: {
+      iconSrc: './_source/icon.png',
+    },
+    manifest: {
+      name: 'Dutch Art Daily',
+      short_name: 'DutchArtDaily',
+      start_url: startUrl,
+      theme_color: '#1a3f68',
+      background_color: '#ffffff',
+      orientation: 'portrait-primary',
+      lang: 'en-US',
+      categories: ['education', 'photo'],
     },
   },
 
@@ -70,6 +115,7 @@ module.exports = {
       },
     ],
     '@nuxtjs/sitemap',
+    ['@nuxtjs/pwa'],
   ],
 
   /*

@@ -28,6 +28,7 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.19",
     "date-fns": "^1.29.0",
     "nuxt": "^2.0.0",
     "swiper": "^5.2.1",
