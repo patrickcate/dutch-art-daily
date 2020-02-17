@@ -24,11 +24,8 @@ export default {
       immediate: true,
       handler() {
         this.$nextTick(() => {
-          if (this.$el && this.id === this.currentPage) {
-            this.$emit(
-              'details-have-changed',
-              this.$el.childNodes[0].scrollHeight
-            )
+          if (this.$refs.details && this.id === this.currentPage) {
+            this.$emit('details-have-changed', this.$refs.details.scrollHeight)
           }
         })
       },
@@ -39,7 +36,7 @@ export default {
 
 <template>
   <li v-if="artwork">
-    <div class="details">
+    <div ref="details" class="details">
       <div>
         <h2 class="details__title">{{ artwork.title }}</h2>
         <h3 class="details__artist"><em>by</em> {{ artwork.artist }}</h3>

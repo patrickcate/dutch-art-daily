@@ -21,9 +21,11 @@ export default {
       return this.id === this.activeId ? 'background-stack__item--today' : null
     },
     backgroundImage() {
-      return {
-        backgroundImage: `url('/photos/${this.id}/${this.id}--lqi-${this.artwork.hash}.jpg')`,
-      }
+      return this.artwork
+        ? {
+            backgroundImage: `url('/photos/${this.id}/${this.id}--lqi-${this.artwork.hash}.jpg')`,
+          }
+        : null
     },
   },
 }

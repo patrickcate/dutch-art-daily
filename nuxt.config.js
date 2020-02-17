@@ -15,8 +15,9 @@ if (process.env.NETLIFY === true) {
 module.exports = {
   mode: 'universal',
   debug: process.dev !== true,
-  /*
-   ** Headers of the page
+
+  /**
+   * Headers metatags for all pages.
    */
   head: {
     htmlAttrs: {
@@ -50,14 +51,14 @@ module.exports = {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  /*
-   ** Customize the progress-bar color
+  /**
+   * Customize the progress-bar color
    */
-  loading: { color: 'transparent' },
+  loading: { color: '#ffb600' },
 
-  /*
-   ** Sitemap module configuration
-   ** (https://www.npmjs.com/package/@nuxtjs/sitemap)
+  /**
+   * Sitemap module configuration
+   * (https://www.npmjs.com/package/@nuxtjs/sitemap)
    */
   sitemap: {
     hostname: 'https://www.dutchartdaily.com',
@@ -69,7 +70,10 @@ module.exports = {
     },
   },
 
-  /* PWA options */
+  /**
+   * PWA options
+   * (https://pwa.nuxtjs.org)
+   */
   pwa: {
     meta: false,
     icon: {
@@ -87,25 +91,23 @@ module.exports = {
     },
   },
 
-  /*
-   ** Global CSS
+  /**
+   * Global CSS
    */
   css: ['@/assets/scss/global.scss'],
 
-  router: {
-    // middleware: 'current-page',
-  },
+  router: {},
 
-  /*
-   ** Plugins to load before mounting the App
+  /**
+   *  Plugins to load before mounting the App
    */
   plugins: [
     { src: '@/plugins/current-page.js', mode: 'client' },
     { src: '@/plugins/vue-screen.client.js', mode: 'client' },
   ],
 
-  /*
-   ** Nuxt.js modules
+  /**
+   * Nuxt.js modules
    */
   modules: [
     [
@@ -118,8 +120,8 @@ module.exports = {
     ['@nuxtjs/pwa'],
   ],
 
-  /*
-   ** Nuxt hooks.
+  /**
+   * Nuxt hooks.
    */
   hooks: {
     ready(nuxt) {
@@ -131,15 +133,15 @@ module.exports = {
     },
   },
 
-  /*
-   ** Generate configuration
+  /**
+   * Generate configuration
    */
   generate: {
     routes: generateRoutes(),
   },
 
-  /*
-   ** Build configuration
+  /**
+   * Build configuration
    */
   build: {
     babel: {
@@ -190,8 +192,9 @@ module.exports = {
       },
     },
     transpile: ['dom7', 'ssr-window', 'swiper', 'vue-screen'],
-    /*
-     ** You can extend webpack config here
+
+    /**
+     * You can extend webpack config here
      */
     extend(config, ctx) {
       // Run ESLint on save

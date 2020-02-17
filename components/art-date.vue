@@ -14,7 +14,7 @@ export default {
       currentDate: 'currentPage',
     }),
     dateLabel() {
-      return getDateLabel(this.currentDate)
+      return this.currentDate && getDateLabel(this.currentDate)
         ? `${getDateLabel(this.currentDate)},`
         : ''
     },
@@ -53,6 +53,7 @@ export default {
 
 <template>
   <transition-group
+    v-if="currentDate"
     name="date"
     tag="div"
     class="artwork-date"
