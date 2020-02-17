@@ -33,11 +33,13 @@ export default {
     // first mounted, and set their bounding box style properties so they will
     // transition out from/to the correct positions.
     this.$nextTick(function() {
-      this.$children[0].$slots.default.forEach(item => {
-        if (item.tag) {
-          this.setBoundingBox(item.elm)
-        }
-      })
+      if (this.$children[0]) {
+        this.$children[0].$slots.default.forEach(item => {
+          if (item.tag) {
+            this.setBoundingBox(item.elm)
+          }
+        })
+      }
     })
   },
   methods: {

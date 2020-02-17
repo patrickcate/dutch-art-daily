@@ -3,7 +3,7 @@ export const state = () => ({
   slides: [],
   loadedSlides: {},
   currentSlideIndex: 6,
-  currentHeight: 1000,
+  currentHeight: 900,
   paginationNumber: 3,
   imageWidths: {
     xs3: 640,

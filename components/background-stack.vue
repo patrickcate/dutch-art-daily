@@ -30,12 +30,15 @@ export default {
           }
         : null
     },
+    hasLoadedSlide() {
+      return Object.keys(this.loadedSlides).length
+    },
   },
 }
 </script>
 
 <template>
-  <div class="background-stack" :style="activeBackground">
+  <div v-if="hasLoadedSlide" class="background-stack" :style="activeBackground">
     <background-stack-item v-for="id in loadedSlides" :id="id" :key="id" />
   </div>
 </template>
