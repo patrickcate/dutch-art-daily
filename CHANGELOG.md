@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.2](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.1...v2.2.2) (2020-02-18)
+
+
+### Bug Fixes
+
+* check for loaded slides and date route params before trying to render date and background images ([6609d67](https://github.com/patrickcate/dutch-art-daily/commit/6609d67911a502ec970808523b7a6019674033fe))
+
 ### [2.2.1](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.0...v2.2.1) (2020-02-17)
 
 
