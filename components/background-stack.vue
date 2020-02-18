@@ -50,15 +50,14 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
   overflow: hidden;
   background-position: center;
-  background-position: top;
   background-size: cover;
   transition: background-color $speed-slow $base-easing;
   transform: translateZ(0);
-  contain: paint;
 
   &:before,
   &:after {
@@ -70,6 +69,7 @@ export default {
     display: block;
     height: 50vh;
     content: '';
+    overflow: hidden;
   }
 
   &:before {
@@ -83,6 +83,7 @@ export default {
 
   &:after {
     top: 50vh;
+    bottom: 0;
     background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.75),
