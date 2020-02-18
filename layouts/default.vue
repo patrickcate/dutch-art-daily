@@ -25,7 +25,7 @@ export default {
     }
 
     // Set the inital page activeId to the current page.
-    if (!this.activeId) {
+    if (!this.activeId && this.routeDate) {
       this.$store.dispatch('setCurrentPage', this.routeDate)
     }
   },
