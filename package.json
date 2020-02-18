@@ -52,6 +52,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.3",
     "font-face-generator": "^1.1.1",
+    "husky": "^4.2.3",
     "imagemin-mozjpeg": "^8.0.0",
     "include-media": "^1.4.9",
     "jimp": "^0.9.3",
@@ -77,12 +78,17 @@
     "svgo-loader": "^2.2.0",
     "write-data": "^1.0.2"
   },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
   },
-  "peerDependencies": {
-    "webpack": "^4.0.0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn precommit"
+    }
   }
 }
