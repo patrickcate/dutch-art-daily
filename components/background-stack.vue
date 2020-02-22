@@ -49,9 +49,9 @@ export default {
 .background-stack {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   max-width: 100%;
   overflow: hidden;
   background-position: center;
@@ -59,8 +59,8 @@ export default {
   transition: background-color $speed-slow $base-easing;
   transform: translateZ(0);
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     position: fixed;
     top: 0;
     right: 0;
@@ -68,11 +68,11 @@ export default {
     z-index: z-index(nudge);
     display: block;
     height: 50vh;
-    content: '';
     overflow: hidden;
+    content: '';
   }
 
-  &:before {
+  &::before {
     background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.75),
@@ -81,7 +81,7 @@ export default {
     );
   }
 
-  &:after {
+  &::after {
     top: 50vh;
     bottom: 0;
     background-image: linear-gradient(

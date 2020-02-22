@@ -4,4 +4,3 @@ _source
 /dist/**
 /node_modules/**
 /tests/unit/coverage/**
-CHANGELOG.md

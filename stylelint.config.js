@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     // Use the Standard config as the base
     // https://github.com/stylelint/stylelint-config-standard
-    // 'stylelint-config-standard',
+    'stylelint-config-standard',
     // Enforce a standard order for CSS properties
     // https://github.com/stormwarning/stylelint-config-recess-order
     'stylelint-config-recess-order',
@@ -41,6 +41,8 @@ module.exports = {
         ignoreAtRules: ['else'],
       },
     ],
+    // Allow for non-descending specificity in selectors, since
+    'no-descending-specificity': null,
     // ===
     // SCSS
     // ===

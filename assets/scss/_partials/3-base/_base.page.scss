@@ -30,9 +30,8 @@ html {
 }
 
 body {
-    // Don't allow elements to break out of browser boundaries.
+  // Don't allow elements to break out of browser boundaries.
   overflow-x: hidden;
-
   font-size: $font-size-xs;
   color: $text-color;
   background-color: $black;
