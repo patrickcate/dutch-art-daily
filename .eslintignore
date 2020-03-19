@@ -1,4 +1,7 @@
-/dist/
-/tests/unit/coverage/
+_source
 .history
 .nuxt
+/dist/**
+/node_modules/**
+/tests/unit/coverage/**
+sw.js

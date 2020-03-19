@@ -29,13 +29,13 @@ $font-size-xxl: ms(5);
 $font-size-xxxl: ms(6);
 
 // System font stack in case we want to use them.
-$system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$system-fonts: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
+  oxygen-sans, ubuntu, cantarell, 'Helvetica Neue', sans-serif;
 
 // Set font family settings.
-$serif-font: 'Janson', 'Janson Text LT Std', 'Janson Text', JansonText,
-  'Janson MT', 'Times New Roman', Times, serif;
-$sans-serif-font: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$serif-font: 'Janson', 'Janson Text LT Std', 'Janson Text', jansontext,
+  'Janson MT', 'Times New Roman', times, serif;
+$sans-serif-font: 'Open Sans', 'Helvetica Neue', arial, sans-serif;
 
 $mono-font: monospace;
 $icon-font: 'dad-icons';
