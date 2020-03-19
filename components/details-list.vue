@@ -1,6 +1,6 @@
 <script>
 import { mapGetters } from 'vuex'
-import SvgIcon from '@components/svg-icon'
+import SvgIcon from '@components/svg-icon.vue'
 import IconDate from '@icons/icon-date.svg'
 import IconMedium from '@icons/icon-medium.svg'
 import IconSize from '@icons/icon-size.svg'

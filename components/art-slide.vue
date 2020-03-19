@@ -1,5 +1,5 @@
 <script>
-import ArtImage from '@components/art-image'
+import ArtImage from '@components/art-image.vue'
 
 export default {
   name: 'ArtSlide',

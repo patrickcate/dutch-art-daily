@@ -118,20 +118,21 @@ module.exports = {
     ],
     '@nuxtjs/sitemap',
     ['@nuxtjs/pwa'],
+    'nuxt-babel',
   ],
 
   /**
    * Nuxt hooks.
    */
-  hooks: {
-    ready(nuxt) {
-      // console.log('Nuxt is Ready')
-    },
-    build: {
-      before(nuxt, buildOptions) {},
-      done(nuxt) {},
-    },
-  },
+  // hooks: {
+  //   ready(nuxt) {
+  //     console.log('Nuxt is Ready')
+  //   },
+  //   build: {
+  //     before(nuxt, buildOptions) {},
+  //     done(nuxt) {},
+  //   },
+  // },
 
   /**
    * Generate configuration

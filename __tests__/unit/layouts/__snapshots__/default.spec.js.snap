@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultLayout Layout renders correctly 1`] = `
+<div class="l-page">
+  <background-stack-stub></background-stack-stub>
+  <div class="l-page__content">
+    <the-header-stub class="l-page__header"></the-header-stub>
+    <div></div>
+    <the-footer-stub class="l-page__footer"></the-footer-stub>
+  </div>
+</div>
+`;

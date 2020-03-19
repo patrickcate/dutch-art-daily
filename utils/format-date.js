@@ -1,7 +1,6 @@
 import isToday from 'date-fns/is_today'
 import isYesterday from 'date-fns/is_yesterday'
 import subDays from 'date-fns/sub_days'
-import addDays from 'date-fns/add_days'
 
 /**
  * Returns the date ordinal string base on the numeric day of the month.
@@ -18,6 +17,7 @@ export function getDateOrdinal(day) {
  * Takes a ISO 8601 formatted date string and formats it in the correct format
  * for display as the page date title.
  * @param {String} ISODate
+ * TODO: Update docblock
  */
 export function formatDate(id, part) {
   // Parse the ISO 8601 string into an actual Date object.
@@ -72,17 +72,17 @@ export function dateId(dateObj) {
   return `${month}-${day}`
 }
 
-export function dateShort(dateObj) {
-  return `${dateObj.getMonth() + 1}/${dateObj.getDate()}`
-}
+// export function dateShort(dateObj) {
+//   return `${dateObj.getMonth() + 1}/${dateObj.getDate()}`
+// }
 
-export function yesterdayDateId(dateObj) {
-  return dateId(subDays(dateObj, 1))
-}
+// export function yesterdayDateId(dateObj) {
+//   return dateId(subDays(dateObj, 1))
+// }
 
-export function tomorrowDateId(dateObj) {
-  return dateId(addDays(dateObj, 1))
-}
+// export function tomorrowDateId(dateObj) {
+//   return dateId(addDays(dateObj, 1))
+// }
 
 export function dateArray(dateId) {
   return dateId.split('-')

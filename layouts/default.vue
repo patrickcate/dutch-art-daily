@@ -1,8 +1,8 @@
 <script>
 import { mapState } from 'vuex'
-import TheHeader from '@components/the-header'
-import TheFooter from '@components/the-footer'
-import BackgroundStack from '@components/background-stack'
+import TheHeader from '@components/the-header.vue'
+import TheFooter from '@components/the-footer.vue'
+import BackgroundStack from '@components/background-stack.vue'
 
 export default {
   components: {
@@ -45,4 +45,32 @@ export default {
 
 <style lang="scss">
 @import '@theme';
+
+.l-page__content {
+  position: relative;
+  z-index: z-index(nudge);
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: 100%;
+}
+
+.l-page__header {
+  margin: $half-spacing $spacing 0 $spacing;
+}
+
+.l-page__footer {
+  position: relative;
+  z-index: z-index(step);
+  margin: 0 $spacing $spacing $spacing;
+}
+
+@include media('>max-width') {
+  .l-page__header,
+  .l-page__footer {
+    width: 100%;
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 </style>

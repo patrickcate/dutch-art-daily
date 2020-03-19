@@ -1,3 +1,4 @@
+_coverage/**
 _source
 .history
 .nuxt

@@ -88,3 +88,6 @@ _source
 
 # Service Workers
 sw.*
+
+# Code Coverage
+_coverage

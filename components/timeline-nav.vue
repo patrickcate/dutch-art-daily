@@ -1,8 +1,7 @@
 <script>
 import { mapState } from 'vuex'
-import { dateId, getISODate, getDateLabel } from '@utils/format-date'
-import TimelineNavItem from '@components/timeline-nav-item'
-import SwiperCarousel from '@components/swiper-carousel'
+import TimelineNavItem from '@components/timeline-nav-item.vue'
+import SwiperCarousel from '@components/swiper-carousel.vue'
 
 export default {
   name: 'TimelineNav',
@@ -25,7 +24,6 @@ export default {
       class="timeline-wrapper"
       name="timeline"
       :slide-number="paginationNumber"
-      :simulate-touch="true"
     >
       <timeline-nav-item
         v-for="slide in slides"
