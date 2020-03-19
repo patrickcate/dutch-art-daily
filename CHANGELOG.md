@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.3](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.2...v2.2.3) (2020-03-19)
+
+
+### Bug Fixes
+
+* prevent native browser horizontal scrolling ([57ee46b](https://github.com/patrickcate/dutch-art-daily/commit/57ee46b1be73067aedbcb9daec7f2e07a369a2a7))
+
 ### [2.2.2](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.1...v2.2.2) (2020-02-18)
 
 
