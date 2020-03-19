@@ -19,7 +19,7 @@ module.exports = {
     'prettier/prettier': ['error', { semi: false }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'vue/html-closing-bracket-spacing': [
       'error',
       {
@@ -52,4 +52,14 @@ module.exports = {
   globals: {
     $nuxt: true,
   },
+  overrides: [
+    {
+      files: ['**/*.spec.js'],
+      parserOptions: {
+        parser: 'babel-eslint',
+        sourceType: 'module',
+      },
+      env: { jest: true },
+    },
+  ],
 }

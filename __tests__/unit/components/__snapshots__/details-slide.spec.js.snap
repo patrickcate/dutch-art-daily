@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsSlide Component does not render without data 1`] = ``;
+
+exports[`DetailsSlide Component renders correctly 1`] = `
+<li>
+  <div class="details">
+    <div>
+      <h2 class="details__title">The Milkmaid</h2>
+      <h3 class="details__artist"><em>by</em> Johannes Vermeer</h3>
+    </div>
+    <details-list-stub id="01-01"></details-list-stub>
+  </div>
+</li>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artwork Page renders correctly 1`] = `
+<div>
+  <main class="l-page__main">
+    <swiper-carousel-stub slidenumber="1" name="carousel" keyboard="true" simulatetouch="true" class="l-page__carousel" style="height: 100px;"></swiper-carousel-stub>
+  </main>
+  <nav class="l-page__nav">
+    <timeline-nav-button-stub direction="prev"></timeline-nav-button-stub>
+    <timeline-nav-stub class="l-page__timeline"></timeline-nav-stub>
+    <timeline-nav-button-stub direction="next"></timeline-nav-button-stub>
+  </nav>
+  <art-details-stub class="l-page__details"></art-details-stub>
+</div>
+`;

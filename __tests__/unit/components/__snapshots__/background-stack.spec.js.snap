@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundStack Component does not render correctly 1`] = ``;
+
+exports[`BackgroundStack Component has no active background 1`] = `
+<div class="background-stack">
+  <background-stack-item-stub id="01-01"></background-stack-item-stub>
+</div>
+`;
+
+exports[`BackgroundStack Component renders correctly 1`] = `
+<div class="background-stack" style="background-color: rgb(101, 72, 49); background-image: url(/photos/01-01/01-01--lqi-d0wAmzwM620.jpg);">
+  <background-stack-item-stub id="01-01"></background-stack-item-stub>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheHeader Component renders correctly 1`] = `
+<header role="banner" class="header">
+  <the-logo-stub class="header__branding"></the-logo-stub>
+  <h1 class="header__date">
+    <art-date-stub></art-date-stub>
+  </h1>
+  <share-list-stub direction="horizontal" class="header__share" style="display: none;"></share-list-stub>
+  <share-dropdown-stub class="header__share" style="display: none;"></share-dropdown-stub>
+</header>
+`;
