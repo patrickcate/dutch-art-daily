@@ -1,8 +1,8 @@
 <script>
-import TheLogo from '@components/the-logo'
-import ArtDate from '@components/art-date'
-import ShareList from '@components/share-list'
-import ShareDropdown from '@components/share-dropdown'
+import TheLogo from '@components/the-logo.vue'
+import ArtDate from '@components/art-date.vue'
+import ShareList from '@components/share-list.vue'
+import ShareDropdown from '@components/share-dropdown.vue'
 import breakpoint from '@mixins/breakpoint'
 
 export default {

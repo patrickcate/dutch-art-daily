@@ -3,7 +3,6 @@ import { mapState } from 'vuex'
 import {
   A11y,
   Controller,
-  Keyboard,
   Lazy,
   Navigation,
   Swiper,
@@ -117,14 +116,14 @@ export default {
 
     const swiperInstance = new Swiper(this.$refs.swiperInstance, options)
 
-    this.$nextTick(function() {
+    this.$nextTick(() => {
       // DOM updated
       this.$root.swipers[this.name] = swiperInstance
 
       const swiperNames = Object.keys(this.$root.swipers)
 
       if (swiperNames.length === 3) {
-        swiperNames.forEach((name, index) => {
+        swiperNames.forEach(name => {
           switch (name) {
             case 'carousel':
               this.$root.swipers.carousel.controller.control = this.$root.swipers.timeline
@@ -154,7 +153,7 @@ export default {
     },
     updateHeight(slide) {
       if (this.name === 'carousel') {
-        this.$nextTick(function() {
+        this.$nextTick(() => {
           const imageHeight = slide.querySelector('img').scrollHeight
 
           if (imageHeight) {

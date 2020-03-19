@@ -2,12 +2,11 @@
 import { mapState, mapGetters } from 'vuex'
 import { generateRoutes } from '@utils/generate-routes'
 import { generateDateList } from '@utils/format-date'
-import SwiperCarousel from '@components/swiper-carousel'
-import ArtSlide from '@components/art-slide'
-import TimelineNav from '@components/timeline-nav'
-import NavButtonPrevious from '@components/nav-button-previous'
-import NavButtonNext from '@components/nav-button-next'
-import ArtDetails from '@components/art-details'
+import SwiperCarousel from '@components/swiper-carousel.vue'
+import ArtSlide from '@components/art-slide.vue'
+import TimelineNav from '@components/timeline-nav.vue'
+import TimelineNavButton from '@components/timeline-nav-button.vue'
+import ArtDetails from '@components/art-details.vue'
 
 export default {
   name: 'ArtworkPage',
@@ -15,9 +14,8 @@ export default {
     ArtSlide,
     SwiperCarousel,
     TimelineNav,
-    NavButtonPrevious,
-    NavButtonNext,
     ArtDetails,
+    TimelineNavButton,
   },
   head() {
     return {
@@ -123,15 +121,17 @@ export default {
       return this.artwork
         ? this.artwork
         : {
+            id: '',
             title: '',
             description: '',
+            hash: '',
           }
     },
     currentSlideHeight() {
       return `height:${this.currentHeight}px`
     },
   },
-  async fetch({ store, params, payload }) {
+  async fetch({ store, params }) {
     const slideDates = generateDateList(params.date)
 
     const slides = await Promise.all(
@@ -154,20 +154,22 @@ export default {
     store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
     store.dispatch('setCurrentPage', params.date)
   },
-  methods: {
-    detailsHaveChanged(height) {
-      this.currentDetailsHeight(height)
-    },
-    currentDetailsHeight(height) {
-      return height
-        ? {
-            height: `${height}px`,
-          }
-        : {
-            height: `${200}px`,
-          }
-    },
-  },
+  // methods: {
+  //   detailsHaveChanged(height) {
+  //     console.log(height)
+  //     this.currentDetailsHeight(height)
+  //   },
+  //   currentDetailsHeight(height) {
+  //     console.log(height)
+  //     return height
+  //       ? {
+  //           height: `${height}px`,
+  //         }
+  //       : {
+  //           height: `${200}px`,
+  //         }
+  //   },
+  // },
 }
 </script>
 
@@ -185,9 +187,9 @@ export default {
       </swiper-carousel>
     </main>
     <nav class="l-page__nav">
-      <nav-button-previous />
+      <timeline-nav-button direction="prev" />
       <timeline-nav class="l-page__timeline" />
-      <nav-button-next />
+      <timeline-nav-button direction="next" />
     </nav>
     <art-details class="l-page__details" />
   </div>
@@ -195,6 +197,10 @@ export default {
 
 <style lang="scss">
 @import '@theme';
+
+.l-page__main {
+  position: relative;
+}
 
 .l-page__carousel {
   transition: height $speed-medium $base-easing;
@@ -205,12 +211,36 @@ export default {
 }
 
 .l-page__nav {
+  z-index: z-index(fixed);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 $spacing;
+
   @include media('<md') {
     margin-top: -#{$half-spacing};
   }
+
+  @include media('>max-width') {
+    width: 100%;
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.l-page__timeline {
+  position: relative;
+  z-index: z-index(step);
+  max-width: 100%;
+  margin: 0;
 }
 
 .l-page__details {
+  margin: $half-spacing 0 $spacing 0;
   transition: height $speed-medium $base-easing;
+
+  @include media('>md') {
+    margin: $spacing 0;
+  }
 }
 </style>

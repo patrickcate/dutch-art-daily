@@ -1,6 +1,6 @@
 <script>
-import SvgIcon from '@components/svg-icon'
-import ShareList from '@components/share-list'
+import SvgIcon from '@components/svg-icon.vue'
+import ShareList from '@components/share-list.vue'
 import IconShare from '@icons/icon-share.svg'
 
 export default {
@@ -52,6 +52,7 @@ export default {
 
 <style lang="scss">
 @import '@theme';
+
 $size: 300px;
 
 .share-dropdown {

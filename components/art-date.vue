@@ -1,11 +1,6 @@
 <script>
 import { mapState } from 'vuex'
-import {
-  formatDate,
-  getDateOrdinal,
-  getISODate,
-  getDateLabel,
-} from '@utils/format-date'
+import { formatDate, getDateOrdinal, getDateLabel } from '@utils/format-date.js'
 
 export default {
   name: 'ArtDate',
@@ -31,8 +26,8 @@ export default {
   mounted() {
     // Loop through all the transition group elements when the component is
     // first mounted, and set their bounding box style properties so they will
-    // transition out from/to the correct positions.
-    this.$nextTick(function() {
+    // transition from/to the correct positions.
+    this.$nextTick(() => {
       if (this.$children[0]) {
         this.$children[0].$slots.default.forEach(item => {
           if (item.tag) {
@@ -83,6 +78,7 @@ export default {
 
 <style lang="scss">
 @import '@theme';
+
 $duration: 0.5s;
 $distance: 10px;
 

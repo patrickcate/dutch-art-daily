@@ -1,6 +1,7 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
-import DetailsList from '@components/details-list'
+import DetailsList from '@components/details-list.vue'
+
 export default {
   name: 'DetailsSlide',
   components: {

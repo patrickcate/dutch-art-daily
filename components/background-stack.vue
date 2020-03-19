@@ -1,12 +1,6 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
-import {
-  getDateObjFromId,
-  dateId,
-  yesterdayDateId,
-  tomorrowDateId,
-} from '@utils/format-date'
-import BackgroundStackItem from '@components/background-stack-item'
+import BackgroundStackItem from '@components/background-stack-item.vue'
 
 export default {
   name: 'BackgroundStack',

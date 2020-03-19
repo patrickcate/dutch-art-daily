@@ -1,7 +1,7 @@
 <script>
 import { mapState } from 'vuex'
-import DetailsSlide from '@components/details-slide'
-import SwiperCarousel from '@components/swiper-carousel'
+import DetailsSlide from '@components/details-slide.vue'
+import SwiperCarousel from '@components/swiper-carousel.vue'
 
 export default {
   name: 'ArtDetails',

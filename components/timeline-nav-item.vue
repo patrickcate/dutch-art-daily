@@ -1,12 +1,6 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
-import {
-  dateId,
-  dateShort,
-  getISODate,
-  getDateLabel,
-  dateArray,
-} from '@utils/format-date'
+import { getDateLabel, dateArray } from '@utils/format-date'
 import breakpoint from '@mixins/breakpoint'
 
 export default {
@@ -28,9 +22,6 @@ export default {
     },
     dateLabel() {
       return getDateLabel(this.id)
-    },
-    isoDate() {
-      return getISODate(this.id)
     },
   },
   methods: {
@@ -62,6 +53,7 @@ export default {
 
 <style lang="scss">
 @import '@theme';
+
 $segment-width: 4px;
 
 .line-segment {

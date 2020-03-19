@@ -42,6 +42,7 @@ export default {
   },
   methods: {
     imageHasLoaded() {
+      // TODO: Refactor to use mapMutations.
       this.$store.commit('SET_LOADED_SLIDES', this.id)
       this.updateImageHeight()
     },
@@ -50,6 +51,7 @@ export default {
         const slideHeight = this.$el.parentNode.scrollHeight
 
         if (slideHeight && slideHeight !== this.currentHeight) {
+          // TODO: Refactor to use mapMutations.
           this.$store.commit(
             'SET_CURRENT_HEIGHT',
             this.$el.parentNode.scrollHeight
