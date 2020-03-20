@@ -6,9 +6,8 @@ import { dateId } from '@utils/format-date.js'
  */
 
 export default function({ redirect }, inject) {
-  async function homepageRedirect() {
+  function homepageRedirect() {
     const today = dateId(new Date())
-
     redirect(`/${today}`)
   }
 

@@ -13,7 +13,7 @@ module.exports.generatePhotoData = function() {
   // Get an array of all files in the directory.
   const files = fs
     .readdirSync(photosSrcDirectory)
-    .filter(path => path.indexOf('.jpg') !== -1)
+    .filter(path => path.includes('.jpg'))
 
   const dataSrcDirectory = path.join(__dirname, '../_source/data/')
   const dataDestDirectory = path.join(__dirname, '../data/')

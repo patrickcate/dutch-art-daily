@@ -25,7 +25,7 @@ describe('BackgroundStackItem Component', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const wrapper = shallowMount(BackgroundStackItem, {
       propsData: {
         id: '01-01',
@@ -47,7 +47,7 @@ describe('BackgroundStackItem Component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('has no active background', async () => {
+  it('has no active background', () => {
     const wrapper = shallowMount(BackgroundStackItem, {
       propsData: {
         id: '01-01',

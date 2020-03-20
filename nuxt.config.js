@@ -1,6 +1,6 @@
 import { generateRoutes } from './utils/generate-routes'
-const imageminMozjpeg = require('imagemin-mozjpeg')
 const path = require('path')
+const imageminMozjpeg = require('imagemin-mozjpeg')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 // Set the PWA start url based on the environment.
@@ -63,7 +63,7 @@ module.exports = {
   sitemap: {
     hostname: 'https://dutchartdaily.com',
     defaults: {
-      changefreq: 'monthly',
+      changefreq: 'daily',
       priority: 1,
       lastmod: new Date(),
       lastmodrealtime: true,
