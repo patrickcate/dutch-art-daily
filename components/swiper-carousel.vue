@@ -48,10 +48,10 @@ export default {
       return `${this.name}__list`
     },
     slideHeight: {
-      get: function() {
+      get() {
         return this.$store.state.currentHeight
       },
-      set: function(height) {
+      set(height) {
         this.$store.commit('SET_CURRENT_HEIGHT', height)
       },
     },

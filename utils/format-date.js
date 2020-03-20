@@ -1,6 +1,7 @@
-import isToday from 'date-fns/is_today'
-import isYesterday from 'date-fns/is_yesterday'
-import subDays from 'date-fns/sub_days'
+import isToday from 'date-fns/isToday'
+import isYesterday from 'date-fns/isYesterday'
+import subDays from 'date-fns/subDays'
+import parseISO from 'date-fns/parseISO'
 
 /**
  * Returns the date ordinal string base on the numeric day of the month.
@@ -98,7 +99,7 @@ export function dateObject(dateId) {
 }
 
 export function getDateLabel(id) {
-  const isoDate = getISODate(id)
+  const isoDate = parseISO(getISODate(id))
 
   // Check if the date matches today's date.
   if (isToday(isoDate)) {

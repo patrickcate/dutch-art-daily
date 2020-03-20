@@ -17,6 +17,59 @@ export default {
     ArtDetails,
     TimelineNavButton,
   },
+  async fetch({ store, params }) {
+    const slideDates = generateDateList(params.date)
+
+    const slides = await Promise.all(
+      slideDates.map(async item => {
+        // Break the date parameters into an array so we can access the month
+        // and day separately.
+        const date = item.split('-')
+
+        // Use the function form of import to dynamically parse the .json content
+        // files.
+        const artwork = await import(
+          `../../data/${date[0]}/${date[0]}-${date[1]}.json`
+        )
+
+        return artwork.default
+      })
+    )
+
+    await store.dispatch('setSlideData', slides)
+    store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
+    store.dispatch('setCurrentPage', params.date)
+  },
+  computed: {
+    ...mapState({
+      currentDate: 'currentPage',
+      slides: 'slides',
+      currentHeight: 'currentHeight',
+    }),
+    ...mapGetters(['getArtworkById']),
+    touchIcon() {
+      return this.$icon ? this.$icon(192) : ''
+    },
+    routeDate() {
+      return this.$route.params.date
+    },
+    artwork() {
+      return this.getArtworkById(this.routeDate)
+    },
+    page() {
+      return this.artwork
+        ? this.artwork
+        : {
+            id: '',
+            title: '',
+            description: '',
+            hash: '',
+          }
+    },
+    currentSlideHeight() {
+      return `height:${this.currentHeight}px`
+    },
+  },
   head() {
     return {
       title: `${this.page.title} | Dutch Art Daily`,
@@ -101,75 +154,6 @@ export default {
 
     return allRoutes.includes(params.date)
   },
-  computed: {
-    ...mapState({
-      currentDate: 'currentPage',
-      slides: 'slides',
-      currentHeight: 'currentHeight',
-    }),
-    ...mapGetters(['getArtworkById']),
-    touchIcon() {
-      return this.$icon ? this.$icon(192) : ''
-    },
-    routeDate() {
-      return this.$route.params.date
-    },
-    artwork() {
-      return this.getArtworkById(this.routeDate)
-    },
-    page() {
-      return this.artwork
-        ? this.artwork
-        : {
-            id: '',
-            title: '',
-            description: '',
-            hash: '',
-          }
-    },
-    currentSlideHeight() {
-      return `height:${this.currentHeight}px`
-    },
-  },
-  async fetch({ store, params }) {
-    const slideDates = generateDateList(params.date)
-
-    const slides = await Promise.all(
-      slideDates.map(async item => {
-        // Break the date parameters into an array so we can access the month
-        // and day separately.
-        const date = item.split('-')
-
-        // Use the function form of import to dynamically parse the .json content
-        // files.
-        const artwork = await import(
-          `../../data/${date[0]}/${date[0]}-${date[1]}.json`
-        )
-
-        return artwork.default
-      })
-    )
-
-    await store.dispatch('setSlideData', slides)
-    store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
-    store.dispatch('setCurrentPage', params.date)
-  },
-  // methods: {
-  //   detailsHaveChanged(height) {
-  //     console.log(height)
-  //     this.currentDetailsHeight(height)
-  //   },
-  //   currentDetailsHeight(height) {
-  //     console.log(height)
-  //     return height
-  //       ? {
-  //           height: `${height}px`,
-  //         }
-  //       : {
-  //           height: `${200}px`,
-  //         }
-  //   },
-  // },
 }
 </script>
 

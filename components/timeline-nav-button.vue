@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      iconArrowRight: iconArrowRight,
+      iconArrowRight,
       iconArrowLeft: IconArrowLeft,
     }
   },

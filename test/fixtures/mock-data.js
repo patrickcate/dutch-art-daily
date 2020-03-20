@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const slide_12_26 = require('../../data/12/12-26.json')
 const slide_12_27 = require('../../data/12/12-27.json')
 const slide_12_28 = require('../../data/12/12-28.json')

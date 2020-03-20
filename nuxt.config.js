@@ -63,7 +63,7 @@ module.exports = {
   sitemap: {
     hostname: 'https://dutchartdaily.com',
     defaults: {
-      changefreq: 'monthly',
+      changefreq: 'daily',
       priority: 1,
       lastmod: new Date(),
       lastmodrealtime: true,
