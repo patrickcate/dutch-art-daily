@@ -25,14 +25,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
       - run: yarn --frozen-lockfile
-
-      - name: Build site
       - run: generate:modern
 
   test:
-    name: Running Unit Tests
+    name: Unit Tests
     runs-on: ubuntu-latest
 
     strategy:
@@ -46,10 +43,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
       - run: yarn --frozen-lockfile
-
-      - name: Run unit tests
       - run: yarn test
 
       - name: Upload coverage to Codecov
