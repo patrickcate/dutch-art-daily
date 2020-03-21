@@ -37,7 +37,7 @@ module.exports = {
     '^@fixtures/(.*)$': '<rootDir>/test/fixtures/$1',
   },
   snapshotSerializers: ['jest-serializer-vue'],
-  coverageReporters: ['html', 'text-summary'],
+  coverageReporters: ['json', 'lcov', 'clover', 'html', 'text-summary'],
   coverageDirectory: '<rootDir>/_coverage',
   collectCoverage: true,
   collectCoverageFrom: [
