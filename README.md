@@ -1,8 +1,8 @@
 # Dutch Art Daily
 
-> A new Dutch Golden Age artwork delivered every day!
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4c25ae-740d-4471-b62d-abc6740924ce/deploy-status)](https://app.netlify.com/sites/dutchartdaily/deploys) ![build](https://github.com/patrickcate/dutch-art-daily/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/patrickcate/dutch-art-daily/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickcate/dutch-art-daily) ![GitHub package.json version](https://img.shields.io/github/package-json/v/patrickcate/dutch-art-daily) ![GitHub](https://img.shields.io/github/license/patrickcate/dutch-art-daily)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4c25ae-740d-4471-b62d-abc6740924ce/deploy-status)](https://app.netlify.com/sites/dutchartdaily/deploys) ![Tests](https://github.com/patrickcate/dutch-art-daily/workflows/Tests/badge.svg) [![codecov](https://codecov.io/gh/patrickcate/dutch-art-daily/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickcate/dutch-art-daily)
+> A new Dutch Golden Age artwork delivered every day!
 
 ## Build Setup
 
@@ -11,17 +11,16 @@
 yarn install
 
 # serve with hot reload at localhost:3000
-yarn run dev
-
-# build for production and launch server
-yarn run build
-yarn start
-
-# run development server
+yarn dev
+# or
 yarn serve
 
+# build for production and launch server
+yarn build
+yarn start
+
 # generate static project
-yarn run generate
+yarn run generate:modern
 ```
 
 ## Generate Photos
@@ -29,7 +28,7 @@ yarn run generate
 The photos of artwork are generated in different sizes for use at different screen sizes. To generate the photos run:
 
 ```bash
-yarn generatePhotoData
+yarn generate:images
 ```
 
 Photos will be run through `imagemin` when generated.
