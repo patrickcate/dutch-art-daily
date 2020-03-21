@@ -87,10 +87,10 @@ describe('Date formatters', () => {
 
   it('convert id to ISO 8601 date string', () => {
     const currentYear = new Date().getFullYear()
-    const testDate = `${currentYear}-01-01T05:00:00.000Z`
+    const testDate = new RegExp(`${currentYear}-01-01T\\d\\d:00:00.000Z`)
     const isoDate = getISODate('01-01')
 
-    expect(isoDate).toBe(testDate)
+    expect(isoDate).toEqual(expect.stringMatching(testDate))
   })
 
   it('format id into local date', () => {

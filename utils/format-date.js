@@ -73,18 +73,6 @@ export function dateId(dateObj) {
   return `${month}-${day}`
 }
 
-// export function dateShort(dateObj) {
-//   return `${dateObj.getMonth() + 1}/${dateObj.getDate()}`
-// }
-
-// export function yesterdayDateId(dateObj) {
-//   return dateId(subDays(dateObj, 1))
-// }
-
-// export function tomorrowDateId(dateObj) {
-//   return dateId(addDays(dateObj, 1))
-// }
-
 export function dateArray(dateId) {
   return dateId.split('-')
 }
