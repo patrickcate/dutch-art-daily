@@ -2,7 +2,7 @@
 
 > A new Dutch Golden Age artwork delivered every day!
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4c25ae-740d-4471-b62d-abc6740924ce/deploy-status)](https://app.netlify.com/sites/dutchartdaily/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4c25ae-740d-4471-b62d-abc6740924ce/deploy-status)](https://app.netlify.com/sites/dutchartdaily/deploys) ![Tests](https://github.com/patrickcate/dutch-art-daily/workflows/Tests/badge.svg) [![codecov](https://codecov.io/gh/patrickcate/dutch-art-daily/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickcate/dutch-art-daily)
 
 ## Build Setup
 
