@@ -1,6 +1,5 @@
 <script>
 import { mapGetters } from 'vuex'
-import SvgIcon from '@components/svg-icon.vue'
 import IconDate from '@icons/icon-date.svg'
 import IconMedium from '@icons/icon-medium.svg'
 import IconSize from '@icons/icon-size.svg'
@@ -9,9 +8,6 @@ import IconLink from '@icons/icon-link.svg'
 
 export default {
   name: 'DetailsList',
-  components: {
-    SvgIcon,
-  },
   props: {
     id: {
       type: String,
@@ -42,7 +38,7 @@ export default {
 <template>
   <ul v-if="artwork" class="details-list">
     <li v-if="artDate" class="details-list__item">
-      <svg-icon
+      <base-icon
         :icon="iconDate"
         class="details-list__icon"
         role="presentation"
@@ -50,7 +46,7 @@ export default {
       <span><span class="u-sr-only">Date:</span> {{ artDate }}</span>
     </li>
     <li v-if="artwork.art_medium" class="details-list__item">
-      <svg-icon
+      <base-icon
         :icon="iconMedium"
         class="details-list__icon"
         role="presentation"
@@ -66,7 +62,7 @@ export default {
       v-if="artwork.art_height || artwork.art_width"
       class="details-list__item"
     >
-      <svg-icon
+      <base-icon
         :icon="iconSize"
         class="details-list__icon"
         role="presentation"
@@ -80,7 +76,7 @@ export default {
       </span>
     </li>
     <li v-if="artwork.art_location" class="details-list__item">
-      <svg-icon
+      <base-icon
         :icon="iconLocation"
         class="details-list__icon"
         role="presentation"
@@ -90,7 +86,7 @@ export default {
       </span>
     </li>
     <li v-if="artwork.cite_url" class="details-list__item">
-      <svg-icon
+      <base-icon
         :icon="iconLink"
         class="details-list__icon"
         role="presentation"

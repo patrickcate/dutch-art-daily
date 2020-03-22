@@ -5,6 +5,9 @@ import ArtDetails from '@components/art-details.vue'
 describe('ArtDetails Component', () => {
   it('should be a Vue instance', () => {
     const wrapper = shallowMount(ArtDetails, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -25,6 +28,9 @@ describe('ArtDetails Component', () => {
           detailsHeight: 100,
         }
       },
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -44,6 +50,9 @@ describe('ArtDetails Component', () => {
         return {
           detailsHeight: 100,
         }
+      },
+      stubs: {
+        'base-carousel': true,
       },
       mocks: {
         $store: {

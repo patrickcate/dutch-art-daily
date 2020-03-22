@@ -1,6 +1,5 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
-import SvgIcon from '@components/svg-icon.vue'
 import IconFacebook from '@icons/icon-facebook.svg'
 import IconTwitter from '@icons/icon-twitter.svg'
 import IconPinterest from '@icons/icon-pinterest.svg'
@@ -8,9 +7,6 @@ import IconGithub from '@icons/icon-github.svg'
 
 export default {
   name: 'ShareList',
-  components: {
-    SvgIcon,
-  },
   props: {
     direction: {
       type: String,
@@ -56,7 +52,7 @@ export default {
     <li class="share-list__item share-list__item--facebook">
       <a :href="facebook" class="share-list__item-link">
         <span class="u-sr-only">Share on Facebook</span>
-        <svg-icon
+        <base-icon
           :icon="iconFacebook"
           class="share-list__icon"
           role="presentation"
@@ -66,7 +62,7 @@ export default {
     <li class="share-list__item share-list__item--twitter">
       <a :href="twitter" class="share-list__item-link">
         <span class="u-sr-only">Share on Twitter</span>
-        <svg-icon
+        <base-icon
           :icon="iconTwitter"
           class="share-list__icon"
           role="presentation"
@@ -76,7 +72,7 @@ export default {
     <li class="share-list__item share-list__item--pinterest">
       <a :href="pinterest" class="share-list__item-link">
         <span class="u-sr-only">Share on Pinterest</span>
-        <svg-icon
+        <base-icon
           :icon="iconPinterest"
           class="share-list__icon"
           role="presentation"
@@ -86,7 +82,7 @@ export default {
     <li class="share-list__item share-list__item--github">
       <a :href="github" class="share-list__item-link">
         <span class="u-sr-only">Star on GitHub</span>
-        <svg-icon
+        <base-icon
           :icon="iconGithub"
           class="share-list__icon"
           role="presentation"

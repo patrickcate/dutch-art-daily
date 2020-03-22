@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseIcon Component renders correctly 1`] = `
+<svg viewBox="0 0 10 10" width="1em" height="1em" class="base-icon">
+  <use xlink:href="test.svg"></use>
+</svg>
+`;
+
+exports[`BaseIcon Component renders with custom width and height 1`] = `
+<svg viewBox="0 0 10 10" width="20px" height="20px" class="base-icon">
+  <use xlink:href="test.svg"></use>
+</svg>
+`;

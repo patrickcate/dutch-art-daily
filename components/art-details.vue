@@ -1,13 +1,11 @@
 <script>
 import { mapState } from 'vuex'
 import DetailsSlide from '@components/details-slide.vue'
-import SwiperCarousel from '@components/swiper-carousel.vue'
 
 export default {
   name: 'ArtDetails',
   components: {
     DetailsSlide,
-    SwiperCarousel,
   },
   data() {
     return {
@@ -33,12 +31,12 @@ export default {
 </script>
 
 <template>
-  <swiper-carousel name="details" :style="currentDetailsHeight">
+  <base-carousel name="details" :style="currentDetailsHeight">
     <details-slide
       v-for="slide in slides"
       :id="slide.id"
       :key="slide.id"
       @details-have-changed="updateDetailsHeight"
     />
-  </swiper-carousel>
+  </base-carousel>
 </template>

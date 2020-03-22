@@ -3,7 +3,7 @@
 exports[`Artwork Page renders correctly 1`] = `
 <div>
   <main class="l-page__main">
-    <swiper-carousel-stub slidenumber="1" name="carousel" keyboard="true" simulatetouch="true" class="l-page__carousel" style="height: 100px;"></swiper-carousel-stub>
+    <base-carousel-stub name="carousel" keyboard="true" simulate-touch="true" class="l-page__carousel" style="height: 100px;"></base-carousel-stub>
   </main>
   <nav class="l-page__nav">
     <timeline-nav-button-stub direction="prev"></timeline-nav-button-stub>

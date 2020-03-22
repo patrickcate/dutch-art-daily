@@ -1,14 +1,10 @@
 <script>
 import { mapState } from 'vuex'
-import SvgIcon from '@components/svg-icon.vue'
 import iconArrowRight from '@icons/icon-arrow-right.svg'
 import IconArrowLeft from '@icons/icon-arrow-left.svg'
 
 export default {
   name: 'TimelineNavButton',
-  components: {
-    SvgIcon,
-  },
   props: {
     direction: {
       type: String,
@@ -66,11 +62,11 @@ export default {
   >
     <template v-if="direction === 'prev'">
       <span class="u-sr-only">Go to previous slide</span>
-      <svg-icon :icon="iconArrowLeft" class="icon" role="presentation" />
+      <base-icon :icon="iconArrowLeft" class="icon" role="presentation" />
     </template>
     <template v-else>
       <span class="u-sr-only">Go to next slide</span>
-      <svg-icon :icon="iconArrowRight" class="icon" role="presentation" />
+      <base-icon :icon="iconArrowRight" class="icon" role="presentation" />
     </template>
   </button>
 </template>
@@ -100,7 +96,7 @@ export default {
     margin-top: $half-spacing;
   }
 
-  .svg-icon {
+  .base-icon {
     position: absolute;
     top: 50%;
     left: 50%;

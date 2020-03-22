@@ -1,5 +1,4 @@
 <script>
-import SvgIcon from '@components/svg-icon.vue'
 import ShareList from '@components/share-list.vue'
 import IconShare from '@icons/icon-share.svg'
 
@@ -7,7 +6,6 @@ export default {
   name: 'ShareDropdown',
   components: {
     ShareList,
-    SvgIcon,
   },
   data() {
     return {
@@ -38,7 +36,7 @@ export default {
       :aria-expanded="expanded"
       @click="toggleDropdown"
     >
-      <svg-icon :icon="iconShare" class="icon" role="presentation" />
+      <base-icon :icon="iconShare" class="icon" role="presentation" />
       <span class="u-sr-only">Share</span>
     </button>
     <share-list

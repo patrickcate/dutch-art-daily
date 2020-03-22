@@ -1,13 +1,11 @@
 <script>
 import { mapState } from 'vuex'
 import TimelineNavItem from '@components/timeline-nav-item.vue'
-import SwiperCarousel from '@components/swiper-carousel.vue'
 
 export default {
   name: 'TimelineNav',
   components: {
     TimelineNavItem,
-    SwiperCarousel,
   },
   computed: {
     ...mapState(['slides', 'paginationNumber']),
@@ -20,7 +18,7 @@ export default {
 
 <template>
   <div class="timeline-nav">
-    <swiper-carousel
+    <base-carousel
       class="timeline-wrapper"
       name="timeline"
       :slide-number="paginationNumber"
@@ -31,7 +29,7 @@ export default {
         :key="slide.id"
         class="timeline-nav__list-item"
       />
-    </swiper-carousel>
+    </base-carousel>
   </div>
 </template>
 
