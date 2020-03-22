@@ -103,7 +103,6 @@ module.exports = {
    */
   plugins: [
     { src: '@/plugins/current-page.js', mode: 'client' },
-    { src: '@/plugins/vue-screen.client.js', mode: 'client' },
     { src: '@/plugins/global-components.js' },
   ],
 
@@ -120,8 +119,19 @@ module.exports = {
     '@nuxtjs/sitemap',
     ['@nuxtjs/pwa'],
     'nuxt-babel',
+    'vue-screen/nuxt',
   ],
 
+  screen: {
+    min: '320px',
+    xxs: '360px',
+    xs: '400px',
+    sm: '600px',
+    md: '700px',
+    lg: '960px',
+    xl: '1280px',
+    breakpointsOrder: ['min', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl'],
+  },
   /**
    * Nuxt hooks.
    */
