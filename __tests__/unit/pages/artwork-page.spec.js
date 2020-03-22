@@ -1,7 +1,7 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import mockData from '@fixtures/mock-data.js'
-import ArtworkPage from '@pages/_date/index.vue'
+import ArtworkPage from '@pages/_date.vue'
 
 describe('Artwork Page', () => {
   it('should be a Vue instance', () => {

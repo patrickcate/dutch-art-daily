@@ -27,7 +27,7 @@ export default {
         // Use the function form of import to dynamically parse the .json content
         // files.
         const artwork = await import(
-          `../../data/${date[0]}/${date[0]}-${date[1]}.json`
+          `../data/${date[0]}/${date[0]}-${date[1]}.json`
         )
 
         return artwork.default
