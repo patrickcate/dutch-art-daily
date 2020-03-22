@@ -84,7 +84,7 @@ $size: 300px;
 
 .share-dropdown__button {
   position: relative;
-  z-index: z-index(step);
+  z-index: z-index(jump);
   padding: $quarter-spacing;
   margin-right: -#{$quarter-spacing};
   font-size: $font-size-lg;
@@ -106,7 +106,7 @@ $size: 300px;
 
 .share-dropdown--is-expanded {
   .share-dropdown__list {
-    z-index: z-index(popup);
+    z-index: z-index(step);
     opacity: 1;
     transform: translateY(0);
 
