@@ -18,6 +18,7 @@ describe('DetailsSlide Component', () => {
               return mockData.artwork
             },
           },
+          commit() {},
         },
       },
     })
@@ -34,12 +35,14 @@ describe('DetailsSlide Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
+            currentDetailsHeight: 400,
           },
           getters: {
             getArtworkById() {
               return mockData.artwork
             },
           },
+          commit() {},
         },
       },
     })
@@ -56,12 +59,14 @@ describe('DetailsSlide Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
+            currentDetailsHeight: 400,
           },
           getters: {
             getArtworkById() {
               return null
             },
           },
+          commit() {},
         },
       },
     })
@@ -69,32 +74,12 @@ describe('DetailsSlide Component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('emits scroll height on component mount', async () => {
-    const wrapper = shallowMount(DetailsSlide, {
-      propsData: {
-        id: '01-01',
-      },
-      mocks: {
-        $store: {
-          state: {
-            currentPage: '01-01',
-          },
-          getters: {
-            getArtworkById() {
-              return mockData.artwork
-            },
-          },
-        },
-      },
+  it('set scroll height on active id/details match', async () => {
+    let currentArtworkHeight = null
+    const setCurrentDetailsHeightMock = jest.fn(height => {
+      currentArtworkHeight = height
     })
 
-    await wrapper.vm.$nextTick()
-    const emitted = wrapper.emitted()
-
-    expect(emitted['details-have-changed']).toBeDefined()
-  })
-
-  it('emits scroll height on active id/details match', async () => {
     const wrapper = shallowMount(DetailsSlide, {
       propsData: {
         id: '12-12',
@@ -103,23 +88,28 @@ describe('DetailsSlide Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
+            currentDetailsHeight: 400,
           },
           getters: {
             getArtworkById() {
               return mockData.artwork
             },
           },
+          commit(mutation, payload) {
+            if (mutation === 'SET_CURRENT_DETAILS_HEIGHT') {
+              setCurrentDetailsHeightMock(100)
+            }
+          },
         },
       },
     })
 
-    const emitted = wrapper.emitted()
-
-    expect(emitted['details-have-changed']).toBeUndefined()
+    expect(wrapper.vm.$store.state.currentDetailsHeight).toBe(400)
 
     wrapper.setProps({ id: '01-01' })
     await wrapper.vm.$nextTick()
 
-    expect(emitted['details-have-changed']).toBeDefined()
+    expect(setCurrentDetailsHeightMock).toHaveBeenCalled()
+    expect(currentArtworkHeight).toBe(100)
   })
 })

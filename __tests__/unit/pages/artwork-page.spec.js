@@ -17,7 +17,7 @@ describe('Artwork Page', () => {
           state: {
             currentPage: '01-01',
             slides: [],
-            currentHeight: 100,
+            currentArtworkHeight: 100,
           },
           getters: {
             getArtworkById() {
@@ -50,7 +50,7 @@ describe('Artwork Page', () => {
           state: {
             currentPage: '01-01',
             slides: [],
-            currentHeight: 100,
+            currentArtworkHeight: 100,
           },
           getters: {
             getArtworkById() {
@@ -88,7 +88,7 @@ describe('Artwork Page', () => {
           state: {
             currentPage: '01-01',
             slides: [],
-            currentHeight: 100,
+            currentArtworkHeight: 100,
           },
           getters: {
             getArtworkById() {

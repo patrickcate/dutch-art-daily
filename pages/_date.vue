@@ -5,14 +5,14 @@ import { generateDateList } from '@utils/format-date'
 import ArtSlide from '@components/art-slide.vue'
 import TimelineNav from '@components/timeline-nav.vue'
 import TimelineNavButton from '@components/timeline-nav-button.vue'
-import ArtDetails from '@components/art-details.vue'
+import DetailsCarousel from '@components/details-carousel.vue'
 
 export default {
   name: 'ArtworkPage',
   components: {
     ArtSlide,
     TimelineNav,
-    ArtDetails,
+    DetailsCarousel,
     TimelineNavButton,
   },
   async fetch({ store, params }) {
@@ -24,8 +24,8 @@ export default {
         // and day separately.
         const date = item.split('-')
 
-        // Use the function form of import to dynamically parse the .json content
-        // files.
+        // Use the function form of import to dynamically parse the .json
+        // content files.
         const artwork = await import(
           `../data/${date[0]}/${date[0]}-${date[1]}.json`
         )
@@ -42,7 +42,7 @@ export default {
     ...mapState({
       currentDate: 'currentPage',
       slides: 'slides',
-      currentHeight: 'currentHeight',
+      currentArtworkHeight: 'currentArtworkHeight',
     }),
     ...mapGetters(['getArtworkById']),
     touchIcon() {
@@ -65,14 +65,15 @@ export default {
           }
     },
     currentSlideHeight() {
-      return `height:${this.currentHeight}px`
+      return `height:${this.currentArtworkHeight}px`
     },
   },
   head() {
     return {
       title: `${this.page.title} | Dutch Art Daily`,
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        // hid is used as unique identifier. Do not use `vmid` for it as it will
+        // not work
         {
           hid: 'og:title',
           name: 'og:title',
@@ -173,7 +174,7 @@ export default {
       <timeline-nav class="l-page__timeline" />
       <timeline-nav-button direction="next" />
     </nav>
-    <art-details class="l-page__details" />
+    <details-carousel class="l-page__details" />
   </div>
 </template>
 

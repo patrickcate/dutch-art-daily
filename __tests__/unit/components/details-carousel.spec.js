@@ -1,10 +1,10 @@
 import { shallowMount } from '@vue/test-utils'
 import mockData from '@fixtures/mock-data.js'
-import ArtDetails from '@components/art-details.vue'
+import DetailsCarousel from '@components/details-carousel.vue'
 
-describe('ArtDetails Component', () => {
+describe('DetailsCarousel Component', () => {
   it('should be a Vue instance', () => {
-    const wrapper = shallowMount(ArtDetails, {
+    const wrapper = shallowMount(DetailsCarousel, {
       stubs: {
         'base-carousel': true,
       },
@@ -22,12 +22,7 @@ describe('ArtDetails Component', () => {
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(ArtDetails, {
-      data() {
-        return {
-          detailsHeight: 100,
-        }
-      },
+    const wrapper = shallowMount(DetailsCarousel, {
       stubs: {
         'base-carousel': true,
       },
@@ -35,6 +30,7 @@ describe('ArtDetails Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
+            currentDetailsHeight: 100,
             slides: mockData.slides,
           },
         },
@@ -45,12 +41,7 @@ describe('ArtDetails Component', () => {
   })
 
   it('updates height from emitted event', async () => {
-    const wrapper = shallowMount(ArtDetails, {
-      data() {
-        return {
-          detailsHeight: 100,
-        }
-      },
+    const wrapper = shallowMount(DetailsCarousel, {
       stubs: {
         'base-carousel': true,
       },
@@ -58,13 +49,18 @@ describe('ArtDetails Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
+            currentDetailsHeight: 100,
             slides: mockData.slides,
           },
         },
       },
     })
 
-    wrapper.vm.updateDetailsHeight(200)
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.attributes('style')).toContain('height: 100px;')
+
+    wrapper.vm.$store.state.currentDetailsHeight = 200
     await wrapper.vm.$nextTick()
 
     expect(wrapper.attributes('style')).toContain('height: 200px;')

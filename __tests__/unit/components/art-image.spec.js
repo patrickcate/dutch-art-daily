@@ -12,7 +12,7 @@ describe('ArtImage Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
           getters: {
@@ -41,7 +41,7 @@ describe('ArtImage Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
           getters: {
@@ -67,7 +67,7 @@ describe('ArtImage Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
           getters: {
@@ -98,7 +98,7 @@ describe('ArtImage Component', () => {
 
   it('slide is tracked and height set after image loads', async () => {
     const loadedSlidesMock = []
-    let currentHeightMock = 500
+    let currentArtworkHeightMock = 500
 
     const wrapper = shallowMount(ArtImage, {
       propsData: {
@@ -108,7 +108,7 @@ describe('ArtImage Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
           getters: {
@@ -119,8 +119,8 @@ describe('ArtImage Component', () => {
           commit(mutation, payload) {
             if (mutation === 'SET_LOADED_SLIDES') {
               loadedSlidesMock.push(payload)
-            } else if (mutation === 'SET_CURRENT_HEIGHT') {
-              currentHeightMock = payload
+            } else if (mutation === 'SET_CURRENT_ARTWORK_HEIGHT') {
+              currentArtworkHeightMock = payload
             }
           },
         },
@@ -134,18 +134,18 @@ describe('ArtImage Component', () => {
     }
 
     expect(loadedSlidesMock.length).toBe(0)
-    expect(currentHeightMock).toBe(500)
+    expect(currentArtworkHeightMock).toBe(500)
 
     wrapper.find('img').trigger('load')
     await wrapper.vm.$nextTick()
 
     expect(loadedSlidesMock[0]).toBe('01-01')
-    expect(currentHeightMock).toBe(1000)
+    expect(currentArtworkHeightMock).toBe(1000)
   })
 
   it('only update height from active slide image', async () => {
     const loadedSlidesMock = []
-    let currentHeightMock = 0
+    let currentArtworkHeightMock = 0
 
     const wrapper = shallowMount(ArtImage, {
       propsData: {
@@ -155,7 +155,7 @@ describe('ArtImage Component', () => {
         $store: {
           state: {
             currentPage: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
           getters: {
@@ -166,8 +166,8 @@ describe('ArtImage Component', () => {
           commit(mutation, payload) {
             if (mutation === 'SET_LOADED_SLIDES') {
               loadedSlidesMock.push(payload)
-            } else if (mutation === 'SET_CURRENT_HEIGHT') {
-              currentHeightMock = payload
+            } else if (mutation === 'SET_CURRENT_ARTWORK_HEIGHT') {
+              currentArtworkHeightMock = payload
             }
           },
         },
@@ -195,11 +195,11 @@ describe('ArtImage Component', () => {
         scrollHeight: 1000,
       },
     }
-    wrapper.vm.$store.state.currentHeight = 1000
+    wrapper.vm.$store.state.currentArtworkHeight = 1000
 
     wrapper.find('img').trigger('load')
     await wrapper.vm.$nextTick()
 
-    expect(currentHeightMock).toBe(0)
+    expect(currentArtworkHeightMock).toBe(0)
   })
 })

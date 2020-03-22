@@ -1,5 +1,5 @@
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapState, mapGetters, mapMutations } from 'vuex'
 import DetailsList from '@components/details-list.vue'
 
 export default {
@@ -26,11 +26,14 @@ export default {
       handler() {
         this.$nextTick(() => {
           if (this.$refs.details && this.id === this.currentPage) {
-            this.$emit('details-have-changed', this.$refs.details.scrollHeight)
+            this.SET_CURRENT_DETAILS_HEIGHT(this.$refs.details.scrollHeight)
           }
         })
       },
     },
+  },
+  methods: {
+    ...mapMutations(['SET_CURRENT_DETAILS_HEIGHT']),
   },
 }
 </script>
