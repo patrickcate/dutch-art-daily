@@ -2,6 +2,6 @@
 
 exports[`TimelineNav Component renders correctly 1`] = `
 <div class="timeline-nav">
-  <swiper-carousel-stub slidenumber="3" name="timeline" class="timeline-wrapper"></swiper-carousel-stub>
+  <base-carousel-stub name="timeline" slide-number="3" class="timeline-wrapper"></base-carousel-stub>
 </div>
 `;

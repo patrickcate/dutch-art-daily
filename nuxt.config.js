@@ -104,6 +104,7 @@ module.exports = {
   plugins: [
     { src: '@/plugins/current-page.js', mode: 'client' },
     { src: '@/plugins/vue-screen.client.js', mode: 'client' },
+    { src: '@/plugins/global-components.js' },
   ],
 
   /**

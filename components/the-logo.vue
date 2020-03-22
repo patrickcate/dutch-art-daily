@@ -1,15 +1,11 @@
 <script>
 import { mapGetters } from 'vuex'
 import { dateId } from '@utils/format-date.js'
-import SvgIcon from '@components/svg-icon.vue'
 import AppLogo from '@assets/images/logos/logo.svg'
 import AppLogoCondensed from '@assets/images/logos/logo-sm.svg'
 
 export default {
   name: 'TheLogo',
-  components: {
-    SvgIcon,
-  },
   data() {
     return {
       AppLogo,
@@ -36,8 +32,8 @@ export default {
 <template>
   <div>
     <a href="/" rel="home" class="home" @click.prevent="today">
-      <svg-icon :icon="AppLogo" class="logo" aria-label="Home" />
-      <svg-icon :icon="AppLogoCondensed" class="logo-sm" aria-label="Home" />
+      <base-icon :icon="AppLogo" class="logo" aria-label="Home" />
+      <base-icon :icon="AppLogoCondensed" class="logo-sm" aria-label="Home" />
     </a>
   </div>
 </template>

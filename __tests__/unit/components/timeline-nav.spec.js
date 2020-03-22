@@ -4,6 +4,9 @@ import TimelineNav from '@components/timeline-nav.vue'
 describe('TimelineNav Component', () => {
   it('should be a Vue instance', () => {
     const wrapper = shallowMount(TimelineNav, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -20,6 +23,9 @@ describe('TimelineNav Component', () => {
 
   it('renders correctly', () => {
     const wrapper = shallowMount(TimelineNav, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -38,6 +44,9 @@ describe('TimelineNav Component', () => {
     const beforeMountMock = jest.fn()
 
     shallowMount(TimelineNav, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {

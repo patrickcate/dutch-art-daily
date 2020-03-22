@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArtDetails Component renders correctly 1`] = `
-<swiper-carousel-stub slidenumber="1" name="details" style="height: 100px;">
+<base-carousel-stub name="details" style="height: 100px;">
   <details-slide-stub id="12-26"></details-slide-stub>
   <details-slide-stub id="12-27"></details-slide-stub>
   <details-slide-stub id="12-28"></details-slide-stub>
@@ -9,5 +9,5 @@ exports[`ArtDetails Component renders correctly 1`] = `
   <details-slide-stub id="12-30"></details-slide-stub>
   <details-slide-stub id="12-31"></details-slide-stub>
   <details-slide-stub id="01-01"></details-slide-stub>
-</swiper-carousel-stub>
+</base-carousel-stub>
 `;

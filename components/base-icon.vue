@@ -1,9 +1,9 @@
 <script>
 export default {
-  name: 'SvgIcon',
+  name: 'BaseIcon',
   props: {
     icon: {
-      type: [Object, String],
+      type: Object,
       required: true,
     },
     width: {
@@ -19,7 +19,12 @@ export default {
 </script>
 
 <template>
-  <svg :viewBox="icon.viewBox" :width="width" :height="height" class="svg-icon">
+  <svg
+    :viewBox="icon.viewBox"
+    :width="width"
+    :height="height"
+    class="base-icon"
+  >
     <use :xlink:href="icon.url" />
   </svg>
 </template>
@@ -27,7 +32,7 @@ export default {
 <style lang="scss">
 @import '@theme';
 
-.svg-icon {
+.base-icon {
   fill: currentColor;
   transition: fill $speed-fastest $base-easing;
 }

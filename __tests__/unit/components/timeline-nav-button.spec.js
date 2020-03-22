@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import mockData from '@fixtures/mock-data.js'
-import SvgIconMock from '@fixtures/svg-icon-mock.vue'
+import BaseIconMock from '@fixtures/base-icon-mock.vue'
 import TimelineNavButton from '@components/timeline-nav-button.vue'
 
 describe('TimelineNavButton Component', () => {
@@ -10,7 +10,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'prev',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -31,7 +31,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'prev',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -52,7 +52,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'next',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -73,7 +73,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'prev',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -94,7 +94,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'next',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -120,7 +120,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'prev',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -160,7 +160,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'next',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -200,7 +200,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'prev',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -239,7 +239,7 @@ describe('TimelineNavButton Component', () => {
         direction: 'next',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {

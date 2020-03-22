@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import mockData from '@fixtures/mock-data.js'
 import ShareList from '@components/share-list.vue'
-import SvgIconMock from '@fixtures/svg-icon-mock.vue'
+import BaseIconMock from '@fixtures/base-icon-mock.vue'
 
 describe('ShareList Component', () => {
   it('is a Vue instance', () => {
@@ -10,7 +10,7 @@ describe('ShareList Component', () => {
         direction: 'horizontal',
       },
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -32,7 +32,7 @@ describe('ShareList Component', () => {
   it('renders correctly', () => {
     const wrapper = shallowMount(ShareList, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -54,7 +54,7 @@ describe('ShareList Component', () => {
   it('does not render correctly', () => {
     const wrapper = shallowMount(ShareList, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {

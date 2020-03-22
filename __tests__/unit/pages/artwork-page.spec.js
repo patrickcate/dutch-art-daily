@@ -9,6 +9,9 @@ describe('Artwork Page', () => {
     localVue.use(VueMeta, { keyName: 'head' })
 
     const wrapper = shallowMount(ArtworkPage, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -39,6 +42,9 @@ describe('Artwork Page', () => {
     localVue.use(VueMeta, { keyName: 'head' })
 
     const wrapper = shallowMount(ArtworkPage, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -74,6 +80,9 @@ describe('Artwork Page', () => {
     const commitMock = jest.fn()
 
     const wrapper = shallowMount(ArtworkPage, {
+      stubs: {
+        'base-carousel': true,
+      },
       mocks: {
         $store: {
           state: {
@@ -118,70 +127,4 @@ describe('Artwork Page', () => {
     expect(commitMock.mock.calls[0][0][0]).toBe('SET_CURRENT_SLIDE_INDEX')
     expect(dispatchMock.mock.calls[1][0][0]).toBe('setCurrentPage')
   })
-
-  // it('emitted `detailsHaveChanged` will update details slider height', async () => {
-  //   const currentDetailsHeightMock = jest.fn()
-
-  //   const wrapper = shallowMount(ArtworkPage, {
-  //     mocks: {
-  //       $store: {
-  //         state: {
-  //           currentPage: '01-01',
-  //           slides: [],
-  //           currentHeight: 100,
-  //         },
-  //         getters: {
-  //           getArtworkById() {
-  //             return mockData.artwork
-  //           },
-  //         },
-  //         commit(...args) {
-  //           commitMock(args)
-  //         },
-  //         dispatch(...args) {
-  //           dispatchMock(args)
-  //         },
-  //       },
-  //       $route: {
-  //         params: {
-  //           date: '01-01',
-  //         },
-  //       },
-  //     },
-  //     methods: {
-  //       $icon() {
-  //         return true
-  //       },
-  //       currentDetailsHeight(height) {
-  //         currentDetailsHeightMock(height)
-  //       },
-  //     },
-  //   })
-
-  //   await wrapper.vm.$nextTick()
-
-  //   // await wrapper.vm.$options.fetch({
-  //   //   store: {
-  //   //     commit(...args) {
-  //   //       commitMock(args)
-  //   //     },
-  //   //     dispatch(...args) {
-  //   //       dispatchMock(args)
-  //   //     },
-  //   //   },
-  //   //   params: {
-  //   //     date: '01-01',
-  //   //   },
-  //   // })
-
-  //   // expect(dispatchMock.mock.calls[0][0][0]).toBe('setSlideData')
-  //   // expect(commitMock.mock.calls[0][0][0]).toBe('SET_CURRENT_SLIDE_INDEX')
-  //   // expect(dispatchMock.mock.calls[1][0][0]).toBe('setCurrentPage')
-  //   // console.log()
-  //   // wrapper.find('.l-page__carousel').trigger('resize')
-
-  //   // wrapper.fetch()
-  //   // console.log(wrapper.html())
-  //   // expect(wrapper).toMatchSnapshot()
-  // })
 })

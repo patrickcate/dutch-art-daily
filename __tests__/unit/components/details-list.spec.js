@@ -1,13 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
 import mockData from '@fixtures/mock-data.js'
-import SvgIconMock from '@fixtures/svg-icon-mock.vue'
+import BaseIconMock from '@fixtures/base-icon-mock.vue'
 import DetailsList from '@components/details-list.vue'
 
 describe('DetailsList Component', () => {
   it('is a Vue instance', () => {
     const wrapper = shallowMount(DetailsList, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       propsData: {
         id: '01-01',
@@ -29,7 +29,7 @@ describe('DetailsList Component', () => {
   it('renders correctly', () => {
     const wrapper = shallowMount(DetailsList, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       propsData: {
         id: '01-01',
@@ -51,7 +51,7 @@ describe('DetailsList Component', () => {
   it('does not render correctly', () => {
     const wrapper = shallowMount(DetailsList, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       propsData: {
         id: '01-01',

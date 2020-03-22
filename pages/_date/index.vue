@@ -2,7 +2,6 @@
 import { mapState, mapGetters } from 'vuex'
 import { generateRoutes } from '@utils/generate-routes'
 import { generateDateList } from '@utils/format-date'
-import SwiperCarousel from '@components/swiper-carousel.vue'
 import ArtSlide from '@components/art-slide.vue'
 import TimelineNav from '@components/timeline-nav.vue'
 import TimelineNavButton from '@components/timeline-nav-button.vue'
@@ -12,7 +11,6 @@ export default {
   name: 'ArtworkPage',
   components: {
     ArtSlide,
-    SwiperCarousel,
     TimelineNav,
     ArtDetails,
     TimelineNavButton,
@@ -160,7 +158,7 @@ export default {
 <template>
   <div>
     <main class="l-page__main">
-      <swiper-carousel
+      <base-carousel
         name="carousel"
         :keyboard="true"
         :simulate-touch="true"
@@ -168,7 +166,7 @@ export default {
         :style="currentSlideHeight"
       >
         <art-slide v-for="slide in slides" :key="slide.id" :artwork="slide" />
-      </swiper-carousel>
+      </base-carousel>
     </main>
     <nav class="l-page__nav">
       <timeline-nav-button direction="prev" />

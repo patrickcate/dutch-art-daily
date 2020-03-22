@@ -1,13 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
 import * as formatDate from '@utils/format-date'
 import TheLogo from '@components/the-logo.vue'
-import SvgIconMock from '@fixtures/svg-icon-mock.vue'
+import BaseIconMock from '@fixtures/base-icon-mock.vue'
 
 describe('TheLogo Component', () => {
   it('is a Vue instance', () => {
     const wrapper = shallowMount(TheLogo, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
     })
 
@@ -17,7 +17,7 @@ describe('TheLogo Component', () => {
   it('renders correctly', () => {
     const wrapper = shallowMount(TheLogo, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
     })
 
@@ -29,7 +29,7 @@ describe('TheLogo Component', () => {
 
     const wrapper = shallowMount(TheLogo, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {
@@ -70,7 +70,7 @@ describe('TheLogo Component', () => {
 
     const wrapper = shallowMount(TheLogo, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
       mocks: {
         $store: {

@@ -1,11 +1,10 @@
 import { shallowMount, mount } from '@vue/test-utils'
 import mockData from '@fixtures/mock-data.js'
-import SwiperCarousel from '@components/swiper-carousel.vue'
-// import ArtSlide from '@components/art-slide.vue'
+import BaseCarousel from '@components/base-carousel.vue'
 
-describe('SwiperCarousel Component', () => {
+describe('BaseCarousel Component', () => {
   it('should be a Vue instance', () => {
-    const wrapper = shallowMount(SwiperCarousel, {
+    const wrapper = shallowMount(BaseCarousel, {
       propsData: {
         name: 'carousel',
       },
@@ -47,13 +46,10 @@ describe('SwiperCarousel Component', () => {
   })
 
   it('renders correctly', () => {
-    const wrapper = mount(SwiperCarousel, {
+    const wrapper = mount(BaseCarousel, {
       propsData: {
         name: 'carousel',
       },
-      // stub: {
-      //   'art-slide': ArtSlide,
-      // },
       mocks: {
         $store: {
           state: {
@@ -63,9 +59,6 @@ describe('SwiperCarousel Component', () => {
           },
         },
       },
-      // slots: {
-      //   default: ArtSlide,
-      // },
     })
 
     wrapper.vm.$root = {

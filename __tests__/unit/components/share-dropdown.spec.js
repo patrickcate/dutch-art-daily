@@ -1,12 +1,12 @@
 import { shallowMount } from '@vue/test-utils'
 import ShareDropdown from '@components/share-dropdown.vue'
-import SvgIconMock from '@fixtures/svg-icon-mock.vue'
+import BaseIconMock from '@fixtures/base-icon-mock.vue'
 
 describe('ShareDropdown Component', () => {
   it('should be a Vue instance', () => {
     const wrapper = shallowMount(ShareDropdown, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
     })
 
@@ -16,7 +16,7 @@ describe('ShareDropdown Component', () => {
   it('renders correctly', () => {
     const wrapper = shallowMount(ShareDropdown, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
     })
 
@@ -26,7 +26,7 @@ describe('ShareDropdown Component', () => {
   it('toggles open and closed', async () => {
     const wrapper = shallowMount(ShareDropdown, {
       stubs: {
-        'svg-icon': SvgIconMock,
+        'base-icon': BaseIconMock,
       },
     })
 

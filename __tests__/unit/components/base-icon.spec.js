@@ -1,9 +1,9 @@
 import { shallowMount } from '@vue/test-utils'
-import SvgIcon from '@components/svg-icon.vue'
+import BaseIcon from '@components/base-icon.vue'
 
-describe('SvgIcon Component', () => {
+describe('BaseIcon Component', () => {
   it('is a Vue instance', () => {
-    const wrapper = shallowMount(SvgIcon, {
+    const wrapper = shallowMount(BaseIcon, {
       propsData: {
         icon: {
           viewBox: '0 0 10 10',
@@ -15,7 +15,7 @@ describe('SvgIcon Component', () => {
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(SvgIcon, {
+    const wrapper = shallowMount(BaseIcon, {
       propsData: {
         icon: {
           viewBox: '0 0 10 10',
@@ -27,7 +27,7 @@ describe('SvgIcon Component', () => {
   })
 
   it('renders with custom width and height', () => {
-    const wrapper = shallowMount(SvgIcon, {
+    const wrapper = shallowMount(BaseIcon, {
       propsData: {
         icon: {
           viewBox: '0 0 10 10',

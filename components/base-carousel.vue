@@ -9,7 +9,7 @@ import {
 } from 'swiper/js/swiper.esm'
 
 export default {
-  name: 'SwiperCarousel',
+  name: 'BaseCarousel',
   props: {
     slideNumber: {
       type: Number,
