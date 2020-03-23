@@ -127,4 +127,46 @@ describe('Artwork Page', () => {
     expect(commitMock.mock.calls[0][0][0]).toBe('SET_CURRENT_SLIDE_INDEX')
     expect(dispatchMock.mock.calls[1][0][0]).toBe('setCurrentPage')
   })
+
+  it('should validate route params', () => {
+    const wrapper = shallowMount(ArtworkPage, {
+      stubs: {
+        'base-carousel': true,
+      },
+      mocks: {
+        $store: {
+          state: {
+            currentPage: '01-01',
+            slides: [],
+            currentArtworkHeight: 100,
+          },
+          getters: {
+            getArtworkById() {
+              return null
+            },
+          },
+        },
+        $route: {
+          params: {
+            date: '01-01',
+          },
+        },
+      },
+    })
+
+    const isValid = wrapper.vm.$options.validate({
+      params: {
+        date: '01-01',
+      },
+    })
+    expect(isValid).toBe(true)
+
+    const isNotValid = wrapper.vm.$options.validate({
+      params: {
+        date: '99-99',
+      },
+    })
+
+    expect(isNotValid).toBe(false)
+  })
 })
