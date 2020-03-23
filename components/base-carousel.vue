@@ -1,5 +1,5 @@
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations, mapActions } from 'vuex'
 import {
   A11y,
   Controller,
@@ -35,7 +35,7 @@ export default {
   },
   computed: {
     ...mapState({
-      slideIndex: 'currentSlideIndex',
+      currentSlideIndex: 'currentSlideIndex',
       slides: 'slides',
     }),
     initialSlide() {
@@ -46,14 +46,6 @@ export default {
     },
     wrapperClass() {
       return `${this.name}__list`
-    },
-    slideHeight: {
-      get() {
-        return this.$store.state.currentArtworkHeight
-      },
-      set(height) {
-        this.$store.commit('SET_CURRENT_ARTWORK_HEIGHT', height)
-      },
     },
   },
   mounted() {
@@ -145,6 +137,12 @@ export default {
     })
   },
   methods: {
+    ...mapMutations([
+      'SET_CURRENT_ARTWORK_HEIGHT',
+      'SET_CURRENT_DETAILS_HEIGHT',
+      'SET_CURRENT_SLIDE_INDEX',
+    ]),
+    ...mapActions(['setCurrentPage']),
     addSlideClass() {
       // Add the default swiper 'swiper-slide' CSS class to all slot slides.
       this.$children.forEach(slide => {
@@ -152,23 +150,28 @@ export default {
       })
     },
     updateHeight(slide) {
-      if (this.name === 'carousel') {
-        this.$nextTick(() => {
+      this.$nextTick(() => {
+        if (this.name === 'carousel') {
           const imageHeight = slide.querySelector('img').scrollHeight
 
           if (imageHeight) {
-            this.slideHeight = slide.children[0].scrollHeight
+            this.SET_CURRENT_ARTWORK_HEIGHT(slide.children[0].scrollHeight)
           }
-        })
-      }
+        }
+
+        if (this.name === 'details') {
+          const detailsHeight = slide.querySelector('.details')
+
+          if (detailsHeight) {
+            this.SET_CURRENT_DETAILS_HEIGHT(detailsHeight.scrollHeight)
+          }
+        }
+      })
     },
     updateCurrentSlide(index) {
-      if (this.$store.state.currentSlideIndex !== index) {
-        this.$store.commit('SET_CURRENT_SLIDE_INDEX', index)
-        this.$store.dispatch(
-          'setCurrentPage',
-          this.$store.state.slides[index].id
-        )
+      if (this.currentSlideIndex !== index) {
+        this.SET_CURRENT_SLIDE_INDEX(index)
+        this.setCurrentPage(this.$store.state.slides[index].id)
       }
     },
   },

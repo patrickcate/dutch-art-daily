@@ -38,7 +38,7 @@ export default {
     <div class="l-page__content">
       <the-header class="l-page__header" />
       <nuxt :key="routeDate" />
-      <the-footer v-once class="l-page__footer" />
+      <the-footer class="l-page__footer" />
     </div>
   </div>
 </template>
