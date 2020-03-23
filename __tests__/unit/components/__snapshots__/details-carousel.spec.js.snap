@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArtDetails Component renders correctly 1`] = `
+exports[`DetailsCarousel Component renders correctly 1`] = `
 <base-carousel-stub name="details" style="height: 100px;">
   <details-slide-stub id="12-26"></details-slide-stub>
   <details-slide-stub id="12-27"></details-slide-stub>

@@ -49,10 +49,10 @@ export default {
     },
     slideHeight: {
       get() {
-        return this.$store.state.currentHeight
+        return this.$store.state.currentArtworkHeight
       },
       set(height) {
-        this.$store.commit('SET_CURRENT_HEIGHT', height)
+        this.$store.commit('SET_CURRENT_ARTWORK_HEIGHT', height)
       },
     },
   },

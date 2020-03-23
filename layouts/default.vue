@@ -46,6 +46,10 @@ export default {
 <style lang="scss">
 @import '@theme';
 
+.l-page {
+  overflow: hidden;
+}
+
 .l-page__content {
   position: relative;
   z-index: z-index(nudge);

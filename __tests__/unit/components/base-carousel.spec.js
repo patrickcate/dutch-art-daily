@@ -15,7 +15,7 @@ describe('BaseCarousel Component', () => {
         $store: {
           state: {
             currentSlideIndex: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             slides: mockData.slides,
           },
         },
@@ -54,7 +54,7 @@ describe('BaseCarousel Component', () => {
         $store: {
           state: {
             currentSlideIndex: '01-01',
-            currentHeight: 100,
+            currentArtworkHeight: 100,
             slides: mockData.slides,
           },
         },

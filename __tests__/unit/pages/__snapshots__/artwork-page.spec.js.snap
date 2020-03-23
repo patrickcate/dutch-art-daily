@@ -10,6 +10,6 @@ exports[`Artwork Page renders correctly 1`] = `
     <timeline-nav-stub class="l-page__timeline"></timeline-nav-stub>
     <timeline-nav-button-stub direction="next"></timeline-nav-button-stub>
   </nav>
-  <art-details-stub class="l-page__details"></art-details-stub>
+  <details-carousel-stub class="l-page__details"></details-carousel-stub>
 </div>
 `;

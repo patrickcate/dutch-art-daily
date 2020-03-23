@@ -3,7 +3,8 @@ export const state = () => ({
   slides: [],
   loadedSlides: {},
   currentSlideIndex: 6,
-  currentHeight: 900,
+  currentArtworkHeight: 900,
+  currentDetailsHeight: 400,
   paginationNumber: 3,
   imageWidths: {
     xs3: 640,
@@ -45,8 +46,11 @@ export const mutations = {
   SET_CURRENT_SLIDE_INDEX(state, payload) {
     state.currentSlideIndex = payload
   },
-  SET_CURRENT_HEIGHT(state, payload) {
-    state.currentHeight = payload
+  SET_CURRENT_ARTWORK_HEIGHT(state, payload) {
+    state.currentArtworkHeight = payload
+  },
+  SET_CURRENT_DETAILS_HEIGHT(state, payload) {
+    state.currentDetailsHeight = payload
   },
   SET_PAGINATION_NUMBER(state, payload) {
     state.paginationNumber = payload

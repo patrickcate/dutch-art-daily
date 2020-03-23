@@ -10,7 +10,7 @@ export default {
     },
   },
   computed: {
-    ...mapState(['currentPage', 'currentHeight', 'imageWidths']),
+    ...mapState(['currentPage', 'currentArtworkHeight', 'imageWidths']),
     ...mapGetters(['getArtworkById']),
     artwork() {
       return this.getArtworkById(this.id)
@@ -50,10 +50,10 @@ export default {
       if (this.currentPage === this.id) {
         const slideHeight = this.$el.parentNode.scrollHeight
 
-        if (slideHeight && slideHeight !== this.currentHeight) {
+        if (slideHeight && slideHeight !== this.currentArtworkHeight) {
           // TODO: Refactor to use mapMutations.
           this.$store.commit(
-            'SET_CURRENT_HEIGHT',
+            'SET_CURRENT_ARTWORK_HEIGHT',
             this.$el.parentNode.scrollHeight
           )
         }
