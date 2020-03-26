@@ -23,10 +23,10 @@ export default {
     }
   },
   computed: {
-    ...mapState(['currentPage']),
+    ...mapState(['activeId']),
     ...mapGetters(['getArtworkById']),
     artwork() {
-      return this.getArtworkById(this.currentPage)
+      return this.getArtworkById(this.activeId)
     },
     shareDescription() {
       return encodeURI(`${this.artwork.title} by ${this.artwork.artist}`)
@@ -35,13 +35,13 @@ export default {
       return `https%3A//www.dutchartdaily.com/photos/${this.artwork.id}/${this.artwork.id}--xs3-${this.artwork.hash}.jpg`
     },
     facebook() {
-      return `https://www.facebook.com/sharer/sharer.php?u=https%3A//www.dutchartdaily.com/${this.currentPage}`
+      return `https://www.facebook.com/sharer/sharer.php?u=https%3A//www.dutchartdaily.com/${this.artwork.id}`
     },
     twitter() {
-      return `https://twitter.com/intent/tweet?url=https%3A//www.dutchartdaily.com/${this.currentPage}&text=${this.shareDescription}`
+      return `https://twitter.com/intent/tweet?url=https%3A//www.dutchartdaily.com/${this.artwork.id}&text=${this.shareDescription}`
     },
     pinterest() {
-      return `https://pinterest.com/pin/create/link/?url=https%3A//www.dutchartdaily.com/${this.currentPage}&media=${this.shareImage}&description=${this.shareDescription}`
+      return `https://pinterest.com/pin/create/link/?url=https%3A//www.dutchartdaily.com/${this.artwork.id}&media=${this.shareImage}&description=${this.shareDescription}`
     },
   },
 }

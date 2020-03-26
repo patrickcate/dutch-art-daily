@@ -11,14 +11,14 @@ describe('DetailsSlide Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getArtworkById() {
               return mockData.artwork
             },
           },
-          commit() {},
+          dispatch() {},
         },
       },
     })
@@ -34,7 +34,7 @@ describe('DetailsSlide Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentDetailsHeight: 400,
           },
           getters: {
@@ -42,7 +42,7 @@ describe('DetailsSlide Component', () => {
               return mockData.artwork
             },
           },
-          commit() {},
+          dispatch() {},
         },
       },
     })
@@ -58,7 +58,7 @@ describe('DetailsSlide Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentDetailsHeight: 400,
           },
           getters: {
@@ -66,7 +66,7 @@ describe('DetailsSlide Component', () => {
               return null
             },
           },
-          commit() {},
+          dispatch() {},
         },
       },
     })
@@ -76,7 +76,7 @@ describe('DetailsSlide Component', () => {
 
   it('set scroll height on active id/details match', async () => {
     let currentArtworkHeight = null
-    const setCurrentDetailsHeightMock = jest.fn(height => {
+    const updateCurrentDetailsHeightMock = jest.fn(height => {
       currentArtworkHeight = height
     })
 
@@ -87,7 +87,7 @@ describe('DetailsSlide Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentDetailsHeight: 400,
           },
           getters: {
@@ -95,9 +95,9 @@ describe('DetailsSlide Component', () => {
               return mockData.artwork
             },
           },
-          commit(mutation, payload) {
-            if (mutation === 'SET_CURRENT_DETAILS_HEIGHT') {
-              setCurrentDetailsHeightMock(100)
+          dispatch(action, payload) {
+            if (action === 'updateCurrentDetailsHeight') {
+              updateCurrentDetailsHeightMock(100)
             }
           },
         },
@@ -109,7 +109,7 @@ describe('DetailsSlide Component', () => {
     wrapper.setProps({ id: '01-01' })
     await wrapper.vm.$nextTick()
 
-    expect(setCurrentDetailsHeightMock).toHaveBeenCalled()
+    expect(updateCurrentDetailsHeightMock).toHaveBeenCalled()
     expect(currentArtworkHeight).toBe(100)
   })
 })

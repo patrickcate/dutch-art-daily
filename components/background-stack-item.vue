@@ -10,9 +10,7 @@ export default {
     },
   },
   computed: {
-    ...mapState({
-      activeId: 'currentPage',
-    }),
+    ...mapState(['activeId']),
     ...mapGetters(['getArtworkById']),
     artwork() {
       return this.getArtworkById(this.id)

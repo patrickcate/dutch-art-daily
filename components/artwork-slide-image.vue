@@ -1,16 +1,31 @@
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapState, mapGetters, mapActions } from 'vuex'
 
 export default {
-  name: 'ArtImage',
+  name: 'ArtworkSlideImage',
   props: {
     id: {
       type: String,
       required: true,
     },
   },
+  data() {
+    return {
+      imageWidths: {
+        xs3: 640,
+        xs2: 800,
+        xs: 960,
+        sm: 1120,
+        md: 1280,
+        lg: 1440,
+        xl: 1600,
+        xl2: 1760,
+        xl3: 1920,
+      },
+    }
+  },
   computed: {
-    ...mapState(['currentPage', 'currentArtworkHeight', 'imageWidths']),
+    ...mapState(['activeId', 'currentArtworkHeight']),
     ...mapGetters(['getArtworkById']),
     artwork() {
       return this.getArtworkById(this.id)
@@ -41,21 +56,17 @@ export default {
     },
   },
   methods: {
+    ...mapActions(['updateCurrentArtworkHeight', 'updateLoadedSlides']),
     imageHasLoaded() {
-      // TODO: Refactor to use mapMutations.
-      this.$store.commit('SET_LOADED_SLIDES', this.id)
+      this.updateLoadedSlides(this.id)
       this.updateImageHeight()
     },
     updateImageHeight() {
-      if (this.currentPage === this.id) {
+      if (this.activeId === this.id) {
         const slideHeight = this.$el.parentNode.scrollHeight
 
         if (slideHeight && slideHeight !== this.currentArtworkHeight) {
-          // TODO: Refactor to use mapMutations.
-          this.$store.commit(
-            'SET_CURRENT_ARTWORK_HEIGHT',
-            this.$el.parentNode.scrollHeight
-          )
+          this.updateCurrentArtworkHeight(this.$el.parentNode.scrollHeight)
         }
       }
     },
@@ -77,7 +88,7 @@ export default {
 
 <style lang="scss">
 @import '@theme';
-
+// TODO: Update component class.
 .art-image-frame {
   position: relative;
 }

@@ -8,7 +8,7 @@ describe('BackgroundStack Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             loadedSlides: [],
           },
         },
@@ -23,7 +23,7 @@ describe('BackgroundStack Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             loadedSlides: ['01-01'],
           },
           getters: {
@@ -43,7 +43,7 @@ describe('BackgroundStack Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             loadedSlides: [],
           },
         },
@@ -58,7 +58,7 @@ describe('BackgroundStack Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             loadedSlides: ['01-01'],
           },
           getters: {

@@ -15,7 +15,7 @@ describe('ShareList Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getArtworkById() {
@@ -37,7 +37,7 @@ describe('ShareList Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getArtworkById() {
@@ -59,7 +59,7 @@ describe('ShareList Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getArtworkById() {

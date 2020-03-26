@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtworkSlide Component renders correctly 1`] = `
+<li class="carousel__list-item">
+  <div class="carousel__slide carousel__slide--portrait">
+    <artwork-slide-image-stub id="01-01" class="carousel__slide-image artwork--portrait"></artwork-slide-image-stub>
+  </div>
+</li>
+`;

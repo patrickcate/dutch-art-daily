@@ -3,10 +3,10 @@ import { mapState } from 'vuex'
 import { formatDate, getDateOrdinal, getDateLabel } from '@utils/format-date.js'
 
 export default {
-  name: 'ArtDate',
+  name: 'TheDate',
   computed: {
     ...mapState({
-      currentDate: 'currentPage',
+      currentDate: 'activeId',
     }),
     dateLabel() {
       return this.currentDate && getDateLabel(this.currentDate)

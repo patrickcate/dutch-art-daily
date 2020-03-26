@@ -15,7 +15,7 @@ describe('Artwork Page', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             slides: [],
             currentArtworkHeight: 100,
           },
@@ -48,7 +48,7 @@ describe('Artwork Page', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             slides: [],
             currentArtworkHeight: 100,
           },
@@ -77,7 +77,6 @@ describe('Artwork Page', () => {
 
   it('fetch will load store with slide data set initial active slide', async () => {
     const dispatchMock = jest.fn()
-    const commitMock = jest.fn()
 
     const wrapper = shallowMount(ArtworkPage, {
       stubs: {
@@ -86,7 +85,7 @@ describe('Artwork Page', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             slides: [],
             currentArtworkHeight: 100,
           },
@@ -111,9 +110,6 @@ describe('Artwork Page', () => {
 
     await wrapper.vm.$options.fetch({
       store: {
-        commit(...args) {
-          commitMock(args)
-        },
         dispatch(...args) {
           dispatchMock(args)
         },
@@ -123,9 +119,9 @@ describe('Artwork Page', () => {
       },
     })
 
-    expect(dispatchMock.mock.calls[0][0][0]).toBe('setSlideData')
-    expect(commitMock.mock.calls[0][0][0]).toBe('SET_CURRENT_SLIDE_INDEX')
-    expect(dispatchMock.mock.calls[1][0][0]).toBe('setCurrentPage')
+    expect(dispatchMock.mock.calls[0][0][0]).toBe('updateSlideData')
+    expect(dispatchMock.mock.calls[1][0][0]).toBe('updateCurrentSlideIndex')
+    expect(dispatchMock.mock.calls[2][0][0]).toBe('updateCurrentPage')
   })
 
   it('should validate route params', () => {
@@ -136,7 +132,7 @@ describe('Artwork Page', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             slides: [],
             currentArtworkHeight: 100,
           },

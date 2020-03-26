@@ -11,7 +11,7 @@ describe('BackgroundStackItem Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getArtworkById() {
@@ -33,7 +33,7 @@ describe('BackgroundStackItem Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getArtworkById() {

@@ -2,7 +2,7 @@
 import { mapState, mapGetters } from 'vuex'
 import { generateRoutes } from '@utils/generate-routes'
 import { generateDateList } from '@utils/format-date'
-import ArtSlide from '@components/art-slide.vue'
+import ArtworkSlide from '@components/artwork-slide.vue'
 import TimelineNav from '@components/timeline-nav.vue'
 import TimelineNavButton from '@components/timeline-nav-button.vue'
 import DetailsCarousel from '@components/details-carousel.vue'
@@ -10,7 +10,7 @@ import DetailsCarousel from '@components/details-carousel.vue'
 export default {
   name: 'ArtworkPage',
   components: {
-    ArtSlide,
+    ArtworkSlide,
     TimelineNav,
     DetailsCarousel,
     TimelineNavButton,
@@ -34,13 +34,12 @@ export default {
       })
     )
 
-    await store.dispatch('setSlideData', slides)
-    store.commit('SET_CURRENT_SLIDE_INDEX', slides.length - 1)
-    store.dispatch('setCurrentPage', params.date)
+    await store.dispatch('updateSlideData', slides)
+    await store.dispatch('updateCurrentSlideIndex', slides.length - 1)
+    store.dispatch('updateCurrentPage', params.date)
   },
   computed: {
     ...mapState({
-      currentDate: 'currentPage',
       slides: 'slides',
       currentArtworkHeight: 'currentArtworkHeight',
     }),
@@ -166,7 +165,11 @@ export default {
         class="l-page__carousel"
         :style="currentSlideHeight"
       >
-        <art-slide v-for="slide in slides" :key="slide.id" :artwork="slide" />
+        <artwork-slide
+          v-for="slide in slides"
+          :key="slide.id"
+          :artwork="slide"
+        />
       </base-carousel>
     </main>
     <nav class="l-page__nav">

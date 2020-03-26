@@ -1,10 +1,10 @@
 <script>
-import ArtImage from '@components/art-image.vue'
+import ArtworkSlideImage from '@components/artwork-slide-image.vue'
 
 export default {
-  name: 'ArtSlide',
+  name: 'ArtworkSlide',
   components: {
-    ArtImage,
+    ArtworkSlideImage,
   },
   props: {
     artwork: {
@@ -21,7 +21,7 @@ export default {
       class="carousel__slide"
       :class="`carousel__slide--${artwork.orientation}`"
     >
-      <art-image
+      <artwork-slide-image
         :id="artwork.id"
         :class="`artwork--${artwork.orientation}`"
         class="carousel__slide-image"
@@ -31,6 +31,8 @@ export default {
 </template>
 
 <style lang="scss">
+// TODO: Update component class.
+
 @import '@theme';
 
 .carousel__list-item {

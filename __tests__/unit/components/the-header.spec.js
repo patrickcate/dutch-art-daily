@@ -24,7 +24,6 @@ describe('TheHeader Component', () => {
     })
 
     expect(wrapper.find({ name: 'ShareList' }).isVisible()).toBe(true)
-
     expect(wrapper.find({ name: 'ShareDropdown' }).isVisible()).toBe(false)
   })
 

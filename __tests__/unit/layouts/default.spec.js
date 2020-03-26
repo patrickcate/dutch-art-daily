@@ -10,7 +10,7 @@ describe('DefaultLayout Layout', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
         },
         $route: {
@@ -32,7 +32,7 @@ describe('DefaultLayout Layout', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
         },
         $route: {
@@ -65,7 +65,7 @@ describe('DefaultLayout Layout', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
         },
         $route: {
@@ -83,7 +83,7 @@ describe('DefaultLayout Layout', () => {
   it('sets active id to current route', () => {
     const mockStore = {
       state: {
-        currentPage: null,
+        activeId: null,
       },
       dispatch: jest.fn(),
     }
@@ -102,6 +102,9 @@ describe('DefaultLayout Layout', () => {
       },
     })
 
-    expect(mockStore.dispatch).toHaveBeenCalledWith('setCurrentPage', '01-01')
+    expect(mockStore.dispatch).toHaveBeenCalledWith(
+      'updateCurrentPage',
+      '01-01'
+    )
   })
 })

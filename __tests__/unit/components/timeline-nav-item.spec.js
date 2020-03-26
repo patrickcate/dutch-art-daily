@@ -52,7 +52,7 @@ describe('TimelineNavItem Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '12-12',
+            activeId: '12-12',
           },
           getters: {
             getSlideIndexById() {
@@ -89,7 +89,7 @@ describe('TimelineNavItem Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
           getters: {
             getSlideIndexById() {

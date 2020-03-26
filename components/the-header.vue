@@ -1,6 +1,6 @@
 <script>
 import TheLogo from '@components/the-logo.vue'
-import ArtDate from '@components/art-date.vue'
+import TheDate from '@components/the-date.vue'
 import ShareList from '@components/share-list.vue'
 import ShareDropdown from '@components/share-dropdown.vue'
 import breakpoint from '@mixins/breakpoint'
@@ -9,7 +9,7 @@ export default {
   name: 'TheHeader',
   components: {
     TheLogo,
-    ArtDate,
+    TheDate,
     ShareDropdown,
     ShareList,
   },
@@ -20,7 +20,7 @@ export default {
 <template>
   <header class="header" role="banner">
     <the-logo class="header__branding" />
-    <h1 class="header__date"><art-date /></h1>
+    <h1 class="header__date"><the-date /></h1>
     <share-list v-show="breakpoint && breakpoint.md" class="header__share" />
     <share-dropdown
       v-show="breakpoint && !breakpoint.md"

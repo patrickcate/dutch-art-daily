@@ -1,5 +1,5 @@
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import TimelineNavItem from '@components/timeline-nav-item.vue'
 
 export default {
@@ -10,8 +10,23 @@ export default {
   computed: {
     ...mapState(['slides', 'paginationNumber']),
   },
+  watch: {
+    paginationNumber: {
+      immediate: true,
+      handler() {
+        this.$nextTick(() => {
+          if (this.$root.swipers.timeline) {
+            this.$root.swipers.timeline.params.slidesPerView = this.paginationNumber
+          }
+        })
+      },
+    },
+  },
   beforeMount() {
-    this.$store.dispatch('updatePaginationNumber')
+    this.updatePaginationNumber()
+  },
+  methods: {
+    ...mapActions(['updatePaginationNumber']),
   },
 }
 </script>

@@ -8,10 +8,7 @@ export default {
     BackgroundStackItem,
   },
   computed: {
-    ...mapState({
-      activeId: 'currentPage',
-      loadedSlides: 'loadedSlides',
-    }),
+    ...mapState(['activeId', 'loadedSlides']),
     ...mapGetters(['getArtworkById']),
     activeArtwork() {
       return this.getArtworkById(this.activeId)

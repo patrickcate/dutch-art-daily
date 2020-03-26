@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
-import ArtSlide from '@components/art-slide.vue'
+import ArtworkSlide from '@components/artwork-slide.vue'
 
-describe('ArtSlide Component', () => {
+describe('ArtworkSlide Component', () => {
   let artworkData
 
   beforeEach(() => {
@@ -14,7 +14,7 @@ describe('ArtSlide Component', () => {
   })
 
   it('is a Vue instance', () => {
-    const wrapper = shallowMount(ArtSlide, {
+    const wrapper = shallowMount(ArtworkSlide, {
       propsData: {
         ...artworkData,
       },
@@ -23,7 +23,7 @@ describe('ArtSlide Component', () => {
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(ArtSlide, {
+    const wrapper = shallowMount(ArtworkSlide, {
       propsData: {
         ...artworkData,
       },

@@ -13,13 +13,6 @@
 }
 
 html {
-  // Don't allow elements to break out of browser boundaries.
-  overflow-x: hidden;
-
-  // Always show the vertical scroll bar so it doesn't cause body element
-  // shifts with different lengths of content.
-  overflow-y: scroll;
-
   // Set base typography.
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -30,8 +23,6 @@ html {
 }
 
 body {
-  // Don't allow elements to break out of browser boundaries.
-  overflow-x: hidden;
   font-size: $font-size-xs;
   color: $text-color;
   background-color: $black;

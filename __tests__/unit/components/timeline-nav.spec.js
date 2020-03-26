@@ -18,6 +18,12 @@ describe('TimelineNav Component', () => {
       },
     })
 
+    wrapper.vm.$root = {
+      swipers: {
+        timeline: null,
+      },
+    }
+
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
@@ -37,13 +43,23 @@ describe('TimelineNav Component', () => {
       },
     })
 
+    wrapper.vm.$root = {
+      swipers: {
+        timeline: {
+          params: {
+            slidesPerView: null,
+          },
+        },
+      },
+    }
+
     expect(wrapper).toMatchSnapshot()
   })
 
   it('beforeMount hook is called', () => {
     const beforeMountMock = jest.fn()
 
-    shallowMount(TimelineNav, {
+    const wrapper = shallowMount(TimelineNav, {
       stubs: {
         'base-carousel': true,
       },
@@ -59,6 +75,16 @@ describe('TimelineNav Component', () => {
         },
       },
     })
+
+    wrapper.vm.$root = {
+      swipers: {
+        timeline: {
+          params: {
+            slidesPerView: null,
+          },
+        },
+      },
+    }
 
     expect(beforeMountMock).toHaveBeenCalled()
   })

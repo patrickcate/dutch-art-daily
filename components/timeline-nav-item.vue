@@ -13,9 +13,7 @@ export default {
     },
   },
   computed: {
-    ...mapState({
-      activeId: 'currentPage',
-    }),
+    ...mapState(['activeId']),
     ...mapGetters(['getSlideIndexById']),
     date() {
       return dateArray(this.id)
@@ -55,6 +53,7 @@ export default {
 @import '@theme';
 
 $segment-width: 4px;
+// TODO: Update component class.
 
 .line-segment {
   z-index: z-index(nudge);

@@ -1,13 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
-import ArtDate from '@components/art-date.vue'
+import TheDate from '@components/the-date.vue'
 
-describe('ArtDate Component', () => {
+describe('TheDate Component', () => {
   it('should be a Vue instance', () => {
-    const wrapper = shallowMount(ArtDate, {
+    const wrapper = shallowMount(TheDate, {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
         },
       },
@@ -19,11 +19,11 @@ describe('ArtDate Component', () => {
   it('renders correctly', () => {
     process.client = true
 
-    const wrapper = shallowMount(ArtDate, {
+    const wrapper = shallowMount(TheDate, {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
         },
       },
@@ -35,11 +35,11 @@ describe('ArtDate Component', () => {
   it('does not call set setBoundingBox() if no child elements', () => {
     const setBoundingBoxMock = jest.fn()
 
-    const wrapper = shallowMount(ArtDate, {
+    const wrapper = shallowMount(TheDate, {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
           },
         },
         setBoundingBox() {

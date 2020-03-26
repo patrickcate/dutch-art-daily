@@ -1,6 +1,6 @@
 <script>
 import { mapState } from 'vuex'
-import iconArrowRight from '@icons/icon-arrow-right.svg'
+import IconArrowRight from '@icons/icon-arrow-right.svg'
 import IconArrowLeft from '@icons/icon-arrow-left.svg'
 
 export default {
@@ -16,8 +16,8 @@ export default {
   },
   data() {
     return {
-      iconArrowRight,
-      iconArrowLeft: IconArrowLeft,
+      IconArrowRight,
+      IconArrowLeft,
     }
   },
   computed: {
@@ -56,17 +56,25 @@ export default {
 <template>
   <button
     type="button"
-    class="nav-button"
+    class="timeline-nav-button"
     :disabled="disableButton"
     @click="toSlide()"
   >
     <template v-if="direction === 'prev'">
       <span class="u-sr-only">Go to previous slide</span>
-      <base-icon :icon="iconArrowLeft" class="icon" role="presentation" />
+      <base-icon
+        :icon="IconArrowLeft"
+        class="timeline-nav-button__icon"
+        role="presentation"
+      />
     </template>
     <template v-else>
       <span class="u-sr-only">Go to next slide</span>
-      <base-icon :icon="iconArrowRight" class="icon" role="presentation" />
+      <base-icon
+        :icon="IconArrowRight"
+        class="timeline-nav-button__icon"
+        role="presentation"
+      />
     </template>
   </button>
 </template>
@@ -74,7 +82,7 @@ export default {
 <style lang="scss">
 @import '@theme';
 
-.nav-button {
+.timeline-nav-button {
   position: relative;
   display: block;
   width: $spacing * 2;
@@ -96,13 +104,6 @@ export default {
     margin-top: $half-spacing;
   }
 
-  .base-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   &:hover {
     color: set-color(secondary);
   }
@@ -113,5 +114,12 @@ export default {
     cursor: default;
     opacity: 0.35;
   }
+}
+
+.timeline-nav-button__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

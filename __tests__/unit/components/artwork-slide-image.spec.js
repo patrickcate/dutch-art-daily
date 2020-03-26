@@ -1,17 +1,17 @@
 import { shallowMount } from '@vue/test-utils'
 import mockData from '@fixtures/mock-data.js'
-import ArtImage from '@components/art-image.vue'
+import ArtworkSlideImage from '@components/artwork-slide-image.vue'
 
-describe('ArtImage Component', () => {
+describe('ArtworkSlideImage Component', () => {
   it('should be a Vue instance', () => {
-    const wrapper = shallowMount(ArtImage, {
+    const wrapper = shallowMount(ArtworkSlideImage, {
       propsData: {
         id: '01-01',
       },
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
@@ -33,14 +33,14 @@ describe('ArtImage Component', () => {
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(ArtImage, {
+    const wrapper = shallowMount(ArtworkSlideImage, {
       propsData: {
         id: '01-01',
       },
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
@@ -59,14 +59,14 @@ describe('ArtImage Component', () => {
   it('image load event fires', async () => {
     const imageHasLoadedMock = jest.fn()
 
-    const wrapper = shallowMount(ArtImage, {
+    const wrapper = shallowMount(ArtworkSlideImage, {
       propsData: {
         id: '01-01',
       },
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
@@ -100,14 +100,14 @@ describe('ArtImage Component', () => {
     const loadedSlidesMock = []
     let currentArtworkHeightMock = 500
 
-    const wrapper = shallowMount(ArtImage, {
+    const wrapper = shallowMount(ArtworkSlideImage, {
       propsData: {
         id: '01-01',
       },
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
@@ -116,10 +116,13 @@ describe('ArtImage Component', () => {
               return mockData.artwork
             },
           },
-          commit(mutation, payload) {
-            if (mutation === 'SET_LOADED_SLIDES') {
+
+          dispatch(action, payload) {
+            if (action === 'updateLoadedSlides') {
               loadedSlidesMock.push(payload)
-            } else if (mutation === 'SET_CURRENT_ARTWORK_HEIGHT') {
+            }
+
+            if (action === 'updateCurrentArtworkHeight') {
               currentArtworkHeightMock = payload
             }
           },
@@ -147,14 +150,14 @@ describe('ArtImage Component', () => {
     const loadedSlidesMock = []
     let currentArtworkHeightMock = 0
 
-    const wrapper = shallowMount(ArtImage, {
+    const wrapper = shallowMount(ArtworkSlideImage, {
       propsData: {
         id: '12-12',
       },
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentArtworkHeight: 100,
             imageWidths: mockData.imageWidths,
           },
@@ -163,10 +166,12 @@ describe('ArtImage Component', () => {
               return mockData.artwork
             },
           },
-          commit(mutation, payload) {
-            if (mutation === 'SET_LOADED_SLIDES') {
+          dispatch(action, payload) {
+            if (action === 'updateLoadedSlides') {
               loadedSlidesMock.push(payload)
-            } else if (mutation === 'SET_CURRENT_ARTWORK_HEIGHT') {
+            }
+
+            if (action === 'updateCurrentArtworkHeight') {
               currentArtworkHeightMock = payload
             }
           },
@@ -188,7 +193,7 @@ describe('ArtImage Component', () => {
     wrapper.setProps({ id: '01-01' })
     await wrapper.vm.$nextTick()
 
-    expect(wrapper.props('id')).toBe(wrapper.vm.$store.state.currentPage)
+    expect(wrapper.props('id')).toBe(wrapper.vm.$store.state.activeId)
 
     wrapper.vm.$el = {
       parentNode: {

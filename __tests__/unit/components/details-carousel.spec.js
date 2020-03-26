@@ -11,7 +11,7 @@ describe('DetailsCarousel Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             slides: [],
           },
         },
@@ -29,7 +29,7 @@ describe('DetailsCarousel Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentDetailsHeight: 100,
             slides: mockData.slides,
           },
@@ -48,7 +48,7 @@ describe('DetailsCarousel Component', () => {
       mocks: {
         $store: {
           state: {
-            currentPage: '01-01',
+            activeId: '01-01',
             currentDetailsHeight: 100,
             slides: mockData.slides,
           },

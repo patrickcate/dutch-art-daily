@@ -1,22 +1,11 @@
 export const state = () => ({
-  currentPage: null,
+  activeId: null,
   slides: [],
   loadedSlides: {},
   currentSlideIndex: 6,
-  currentArtworkHeight: 900,
+  currentArtworkHeight: 800,
   currentDetailsHeight: 400,
   paginationNumber: 3,
-  imageWidths: {
-    xs3: 640,
-    xs2: 800,
-    xs: 960,
-    sm: 1120,
-    md: 1280,
-    lg: 1440,
-    xl: 1600,
-    xl2: 1760,
-    xl3: 1920,
-  },
 })
 
 export const getters = {
@@ -29,8 +18,8 @@ export const getters = {
 }
 
 export const mutations = {
-  SET_CURRENT_PAGE(state, payload) {
-    state.currentPage = payload
+  SET_ACTIVE_ID(state, payload) {
+    state.activeId = payload
   },
   SET_SLIDES(state, payload) {
     state.slides = payload
@@ -58,25 +47,43 @@ export const mutations = {
 }
 
 export const actions = {
-  setSlideData({ commit }, slides) {
+  updateCurrentSlideIndex({ commit }, slideIndex) {
+    if (state.currentSlideIndex !== slideIndex) {
+      commit('SET_CURRENT_SLIDE_INDEX', slideIndex)
+    }
+  },
+  updateSlideData({ commit }, slides) {
     commit('SET_SLIDES', slides)
   },
-  updatePaginationNumber({ commit }) {
-    const mql = window.matchMedia('(max-width: 600px)')
-
-    if (mql.matches) {
-      commit('SET_PAGINATION_NUMBER', 3)
-    } else {
-      commit('SET_PAGINATION_NUMBER', 5)
-    }
-  },
-  setCurrentPage({ state, commit }, id) {
-    if (state.currentPage !== id) {
-      commit('SET_CURRENT_PAGE', id)
-    }
-
+  updateLoadedSlides({ state, commit }, id) {
     if (!state.loadedSlides[id]) {
       commit('SET_LOADED_SLIDES', id)
     }
+  },
+  updateCurrentArtworkHeight({ state, commit }, artworkHeight) {
+    if (state.currentArtworkHeight !== artworkHeight) {
+      commit('SET_CURRENT_ARTWORK_HEIGHT', artworkHeight)
+    }
+  },
+  updateCurrentDetailsHeight({ state, commit }, detailsHeight) {
+    if (state.currentDetailsHeight !== detailsHeight) {
+      commit('SET_CURRENT_DETAILS_HEIGHT', detailsHeight)
+    }
+  },
+  updatePaginationNumber({ state, commit }) {
+    const mql = window.matchMedia('(max-width: 600px)')
+
+    if (mql.matches && state.paginationNumber !== 3) {
+      commit('SET_PAGINATION_NUMBER', 3)
+    } else if (!mql.matches && state.paginationNumber !== 5) {
+      commit('SET_PAGINATION_NUMBER', 5)
+    }
+  },
+  updateCurrentPage({ state, commit, dispatch }, id) {
+    if (state.activeId !== id) {
+      commit('SET_ACTIVE_ID', id)
+    }
+
+    dispatch('updateLoadedSlides', id)
   },
 }

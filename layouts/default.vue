@@ -1,5 +1,5 @@
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import TheHeader from '@components/the-header.vue'
 import TheFooter from '@components/the-footer.vue'
 import BackgroundStack from '@components/background-stack.vue'
@@ -12,7 +12,7 @@ export default {
   },
   computed: {
     ...mapState({
-      activeId: 'currentPage',
+      activeId: 'activeId',
     }),
     routeDate() {
       return this.$route.params.date
@@ -26,8 +26,11 @@ export default {
 
     // Set the inital page activeId to the current page.
     if (!this.activeId && this.routeDate) {
-      this.$store.dispatch('setCurrentPage', this.routeDate)
+      this.updateCurrentPage(this.routeDate)
     }
+  },
+  methods: {
+    ...mapActions(['updateCurrentPage']),
   },
 }
 </script>

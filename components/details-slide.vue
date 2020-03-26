@@ -1,5 +1,5 @@
 <script>
-import { mapState, mapGetters, mapMutations } from 'vuex'
+import { mapState, mapGetters, mapActions } from 'vuex'
 import DetailsList from '@components/details-list.vue'
 
 export default {
@@ -14,26 +14,26 @@ export default {
     },
   },
   computed: {
-    ...mapState(['currentPage']),
+    ...mapState(['activeId']),
     ...mapGetters(['getArtworkById']),
     artwork() {
       return this.getArtworkById(this.id)
     },
   },
   watch: {
-    currentPage: {
+    activeId: {
       immediate: true,
       handler() {
         this.$nextTick(() => {
-          if (this.$refs.details && this.id === this.currentPage) {
-            this.SET_CURRENT_DETAILS_HEIGHT(this.$refs.details.scrollHeight)
+          if (this.$refs.details && this.id === this.activeId) {
+            this.updateCurrentDetailsHeight(this.$refs.details.scrollHeight)
           }
         })
       },
     },
   },
   methods: {
-    ...mapMutations(['SET_CURRENT_DETAILS_HEIGHT']),
+    ...mapActions(['updateCurrentDetailsHeight']),
   },
 }
 </script>
@@ -51,6 +51,8 @@ export default {
 </template>
 
 <style lang="scss">
+// TODO: Update component class.
+
 @import '@theme';
 
 .details {

@@ -1,5 +1,5 @@
 <script>
-import { mapState, mapMutations, mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import {
   A11y,
   Controller,
@@ -37,6 +37,7 @@ export default {
     ...mapState({
       currentSlideIndex: 'currentSlideIndex',
       slides: 'slides',
+      paginationNumber: 'paginationNumber',
     }),
     initialSlide() {
       return this.slides.length - 1
@@ -88,17 +89,11 @@ export default {
           self.updateHeight(this.slides[this.activeIndex])
         },
         resize() {
+          // TODO: Add debounce.
           self.updateHeight(this.slides[this.activeIndex])
 
-          const mql = window.matchMedia('(max-width: 600px)')
-
-          if (mql.matches) {
-            self.$root.swipers.timeline.params.slidesPerView = 3
-          } else {
-            self.$root.swipers.timeline.params.slidesPerView = 7
-          }
-
           if (self.name === 'timeline') {
+            self.updatePaginationNumber()
             this.updateSize()
             this.updateSlides()
           }
@@ -109,40 +104,42 @@ export default {
     const swiperInstance = new Swiper(this.$refs.swiperInstance, options)
 
     this.$nextTick(() => {
-      // DOM updated
       this.$root.swipers[this.name] = swiperInstance
-
-      const swiperNames = Object.keys(this.$root.swipers)
+      this.setCarouselControllers(this.$root.swipers)
+    })
+  },
+  methods: {
+    ...mapActions([
+      'updateCurrentPage',
+      'updateCurrentSlideIndex',
+      'updatePaginationNumber',
+      'updateCurrentArtworkHeight',
+      'updateCurrentDetailsHeight',
+    ]),
+    setCarouselControllers(rootSwipers) {
+      const swiperNames = Object.keys(rootSwipers)
 
       if (swiperNames.length === 3) {
         swiperNames.forEach(name => {
           switch (name) {
             case 'carousel':
-              this.$root.swipers.carousel.controller.control = this.$root.swipers.timeline
+              rootSwipers.carousel.controller.control = rootSwipers.timeline
               break
 
             case 'timeline':
-              this.$root.swipers.timeline.controller.control = [
-                this.$root.swipers.carousel,
-                this.$root.swipers.details,
+              rootSwipers.timeline.controller.control = [
+                rootSwipers.carousel,
+                rootSwipers.details,
               ]
               break
 
             case 'details':
-              this.$root.swipers.details.controller.control = this.$root.swipers.timeline
+              rootSwipers.details.controller.control = rootSwipers.timeline
               break
           }
         })
       }
-    })
-  },
-  methods: {
-    ...mapMutations([
-      'SET_CURRENT_ARTWORK_HEIGHT',
-      'SET_CURRENT_DETAILS_HEIGHT',
-      'SET_CURRENT_SLIDE_INDEX',
-    ]),
-    ...mapActions(['setCurrentPage']),
+    },
     addSlideClass() {
       // Add the default swiper 'swiper-slide' CSS class to all slot slides.
       this.$children.forEach(slide => {
@@ -155,7 +152,7 @@ export default {
           const imageHeight = slide.querySelector('img').scrollHeight
 
           if (imageHeight) {
-            this.SET_CURRENT_ARTWORK_HEIGHT(slide.children[0].scrollHeight)
+            this.updateCurrentArtworkHeight(slide.children[0].scrollHeight)
           }
         }
 
@@ -163,15 +160,15 @@ export default {
           const detailsHeight = slide.querySelector('.details')
 
           if (detailsHeight) {
-            this.SET_CURRENT_DETAILS_HEIGHT(detailsHeight.scrollHeight)
+            this.updateCurrentDetailsHeight(detailsHeight.scrollHeight)
           }
         }
       })
     },
     updateCurrentSlide(index) {
       if (this.currentSlideIndex !== index) {
-        this.SET_CURRENT_SLIDE_INDEX(index)
-        this.setCurrentPage(this.$store.state.slides[index].id)
+        this.updateCurrentSlideIndex(index)
+        this.updateCurrentPage(this.slides[index].id)
       }
     },
   },
