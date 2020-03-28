@@ -5,7 +5,7 @@
 // process.env.MOCK_API_PORT = process.env.MOCK_API_PORT || _.random(9000, 9999)
 
 module.exports = {
-  // setupFiles: ['<rootDir>/tests/unit/setup'],
+  setupFiles: ['<rootDir>/test/unit/setup'],
   // globalSetup: '<rootDir>/tests/unit/global-setup',
   // globalTeardown: '<rootDir>/tests/unit/global-teardown',
   // setupFilesAfterEnv: ['<rootDir>/tests/unit/matchers'],
