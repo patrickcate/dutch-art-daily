@@ -1,19 +1,22 @@
-import { shallowMount } from '@vue/test-utils'
 import TheHeader from '@components/the-header.vue'
 
 describe('TheHeader Component', () => {
+  let wrapper
+
+  beforeEach(() => {
+    wrapper = createWrapper(TheHeader)
+  })
+
   it('is a Vue instance', () => {
-    const wrapper = shallowMount(TheHeader)
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(TheHeader)
     expect(wrapper).toMatchSnapshot()
   })
 
   it('shows share list on larger screen sizes', () => {
-    const wrapper = shallowMount(TheHeader, {
+    wrapper = createWrapper(TheHeader, {
       computed: {
         breakpoint() {
           return {
@@ -28,7 +31,7 @@ describe('TheHeader Component', () => {
   })
 
   it('shows share dropdown on smaller screen sizes', () => {
-    const wrapper = shallowMount(TheHeader, {
+    wrapper = createWrapper(TheHeader, {
       computed: {
         breakpoint() {
           return {

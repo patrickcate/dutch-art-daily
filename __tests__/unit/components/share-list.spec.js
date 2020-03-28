@@ -1,75 +1,42 @@
-import { shallowMount } from '@vue/test-utils'
-import mockData from '@fixtures/mock-data.js'
 import ShareList from '@components/share-list.vue'
-import BaseIconMock from '@fixtures/base-icon-mock.vue'
 
 describe('ShareList Component', () => {
-  it('is a Vue instance', () => {
-    const wrapper = shallowMount(ShareList, {
+  let wrapper
+  let options
+
+  beforeEach(() => {
+    options = {
       propsData: {
         direction: 'horizontal',
       },
-      stubs: {
-        'base-icon': BaseIconMock,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-          getters: {
-            getArtworkById() {
-              return mockData.artwork
-            },
-          },
-        },
-      },
-    })
+    }
 
+    wrapper = createWrapper(ShareList, options)
+  })
+
+  it('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(ShareList, {
-      stubs: {
-        'base-icon': BaseIconMock,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-          getters: {
-            getArtworkById() {
-              return mockData.artwork
-            },
-          },
-        },
-      },
-    })
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('does not render correctly', () => {
-    const wrapper = shallowMount(ShareList, {
-      stubs: {
-        'base-icon': BaseIconMock,
+    const wrapperComponent = createWrapper(
+      ShareList,
+      {
+        ...options,
       },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-          getters: {
-            getArtworkById() {
-              return null
-            },
+      {
+        getters: {
+          getArtworkById: () => () => {
+            return null
           },
         },
-      },
-    })
+      }
+    )
 
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapperComponent).toMatchSnapshot()
   })
 })

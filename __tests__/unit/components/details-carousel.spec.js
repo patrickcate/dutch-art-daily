@@ -31,7 +31,7 @@ describe('DetailsCarousel Component', () => {
           state: {
             activeId: '01-01',
             currentDetailsHeight: 100,
-            slides: mockData.slides,
+            slides: mockData.store.state.slides,
           },
         },
       },
@@ -50,7 +50,7 @@ describe('DetailsCarousel Component', () => {
           state: {
             activeId: '01-01',
             currentDetailsHeight: 100,
-            slides: mockData.slides,
+            slides: mockData.store.state.slides,
           },
         },
       },

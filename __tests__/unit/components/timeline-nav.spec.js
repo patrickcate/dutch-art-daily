@@ -1,91 +1,50 @@
-import { shallowMount } from '@vue/test-utils'
 import TimelineNav from '@components/timeline-nav.vue'
 
 describe('TimelineNav Component', () => {
-  it('should be a Vue instance', () => {
-    const wrapper = shallowMount(TimelineNav, {
-      stubs: {
-        'base-carousel': true,
+  let wrapper
+  let options
+
+  beforeEach(() => {
+    wrapper = createWrapper(TimelineNav, options, {
+      state: {
+        slides: [],
       },
-      mocks: {
-        $store: {
-          state: {
-            paginationNumber: 3,
-            slides: [],
-          },
-          dispatch() {},
-        },
+      actions: {
+        updatePaginationNumber() {},
       },
     })
 
-    wrapper.vm.$root = {
-      swipers: {
-        timeline: null,
+    wrapper.vm.$root.swipers.timeline = {
+      params: {
+        slidesPerView: null,
       },
     }
+  })
 
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(TimelineNav, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            paginationNumber: 3,
-            slides: [],
-          },
-          dispatch() {},
-        },
-      },
-    })
-
-    wrapper.vm.$root = {
-      swipers: {
-        timeline: {
-          params: {
-            slidesPerView: null,
-          },
-        },
-      },
-    }
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('beforeMount hook is called', () => {
     const beforeMountMock = jest.fn()
 
-    const wrapper = shallowMount(TimelineNav, {
-      stubs: {
-        'base-carousel': true,
+    wrapper = createWrapper(TimelineNav, options, {
+      state: {
+        slides: [],
       },
-      mocks: {
-        $store: {
-          state: {
-            paginationNumber: 3,
-            slides: [],
-          },
-          dispatch() {
-            beforeMountMock()
-          },
+      actions: {
+        updatePaginationNumber() {
+          beforeMountMock()
         },
       },
     })
 
-    wrapper.vm.$root = {
-      swipers: {
-        timeline: {
-          params: {
-            slidesPerView: null,
-          },
-        },
-      },
-    }
-
     expect(beforeMountMock).toHaveBeenCalled()
   })
+
+  // TODO: Test that pagination number changes based on screen size.
 })

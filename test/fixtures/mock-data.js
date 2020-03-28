@@ -25,6 +25,7 @@ export default {
   },
   stubs: {
     'base-icon': BaseIconMock,
+    'base-carousel': true,
   },
   store: {
     state: {

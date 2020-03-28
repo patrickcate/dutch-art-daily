@@ -16,7 +16,7 @@ describe('BaseCarousel Component', () => {
           state: {
             currentSlideIndex: '01-01',
             currentArtworkHeight: 100,
-            slides: mockData.slides,
+            slides: mockData.store.state.slides,
           },
         },
       },
@@ -55,7 +55,7 @@ describe('BaseCarousel Component', () => {
           state: {
             currentSlideIndex: '01-01',
             currentArtworkHeight: 100,
-            slides: mockData.slides,
+            slides: mockData.store.state.slides,
           },
         },
       },
@@ -83,56 +83,4 @@ describe('BaseCarousel Component', () => {
 
     expect(wrapper).toMatchSnapshot()
   })
-
-  // it('timeline switches pagination count depending on screen size', async () => {
-  //   Object.defineProperty(window, 'matchMedia', {
-  //     writable: true,
-  //     value: jest.fn().mockImplementation(query => ({
-  //       matches: false,
-  //       media: query,
-  //       onchange: null,
-  //       addListener: jest.fn(), // deprecated
-  //       removeListener: jest.fn(), // deprecated
-  //       addEventListener: jest.fn(),
-  //       removeEventListener: jest.fn(),
-  //       dispatchEvent: jest.fn(),
-  //     })),
-  //   })
-
-  //   const wrapper = mount(BaseCarousel, {
-  //     propsData: {
-  //       name: 'timeline',
-  //     },
-  //     mocks: {
-  //       $store: {
-  //         state: {
-  //           currentSlideIndex: '01-01',
-  //           currentArtworkHeight: 100,
-  //           slides: mockData.slides,
-  //           paginationNumber: 3,
-  //         },
-  //       },
-  //     },
-  //   })
-
-  //   wrapper.vm.$root = {
-  //     swipers: {
-  //       timeline: {
-  //         params: {
-  //           slidesPerView: null,
-  //         },
-  //       },
-  //     },
-  //   }
-
-  //   // window.matchMedia = () => {
-  //   //   return true
-  //   // }
-  //   await wrapper.vm.$nextTick()
-  //   window.dispatchEvent(new Event('resize'))
-  //   // console.log(window)
-  //   // wrapper.find('.swiper-container').call('resize')
-  //   // console.log(wrapper.find('.swiper-container'))
-  //   // expect(wrapper).toMatchSnapshot()
-  // })
 })
