@@ -1,82 +1,52 @@
-import { shallowMount, mount } from '@vue/test-utils'
-import mockData from '@fixtures/mock-data.js'
 import BaseCarousel from '@components/base-carousel.vue'
 
 describe('BaseCarousel Component', () => {
-  it('should be a Vue instance', () => {
-    const wrapper = shallowMount(BaseCarousel, {
+  let wrapper
+  let options
+
+  beforeEach(() => {
+    options = {
       propsData: {
         name: 'carousel',
       },
-      stub: {
-        'carousel-slide': '<li></li>',
-      },
-      mocks: {
-        $store: {
-          state: {
-            currentSlideIndex: '01-01',
-            currentArtworkHeight: 100,
-            slides: mockData.store.state.slides,
-          },
-        },
-      },
-    })
-
-    wrapper.vm.$root = {
-      swipers: {
-        carousel: {
-          controller: {
-            control: {},
-          },
-        },
-        timeline: {
-          controller: {
-            control: {},
-          },
-        },
-        details: {
-          controller: {
-            control: {},
-          },
-        },
-      },
     }
 
+    wrapper = createWrapper(BaseCarousel, options, {
+      state: {
+        currentArtworkHeight: 100,
+      },
+    })
+  })
+
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = mount(BaseCarousel, {
-      propsData: {
-        name: 'carousel',
-      },
-      mocks: {
-        $store: {
-          state: {
-            currentSlideIndex: '01-01',
-            currentArtworkHeight: 100,
-            slides: mockData.store.state.slides,
-          },
+    wrapper = createWrapper(
+      BaseCarousel,
+      { ...options },
+      {
+        state: {
+          currentArtworkHeight: 100,
         },
-      },
-    })
+      }
+    )
 
-    wrapper.vm.$root = {
-      swipers: {
-        carousel: {
-          controller: {
-            control: {},
-          },
+    wrapper.vm.$root.swipers = {
+      carousel: {
+        controller: {
+          control: {},
         },
-        timeline: {
-          controller: {
-            control: {},
-          },
+      },
+      timeline: {
+        controller: {
+          control: {},
         },
-        details: {
-          controller: {
-            control: {},
-          },
+      },
+      details: {
+        controller: {
+          control: {},
         },
       },
     }

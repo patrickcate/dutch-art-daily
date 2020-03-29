@@ -1,61 +1,40 @@
-import { shallowMount } from '@vue/test-utils'
-import mockData from '@fixtures/mock-data.js'
 import DetailsCarousel from '@components/details-carousel.vue'
 
 describe('DetailsCarousel Component', () => {
-  it('should be a Vue instance', () => {
-    const wrapper = shallowMount(DetailsCarousel, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            slides: [],
-          },
-        },
-      },
-    })
+  let wrapper
 
+  beforeEach(() => {
+    wrapper = createWrapper(
+      DetailsCarousel,
+      {},
+      {
+        state: {
+          currentDetailsHeight: null,
+        },
+      }
+    )
+  })
+
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
-  it('renders correctly', () => {
-    const wrapper = shallowMount(DetailsCarousel, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            currentDetailsHeight: 100,
-            slides: mockData.store.state.slides,
-          },
-        },
-      },
+  it('renders correctly', async () => {
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      currentDetailsHeight: 100,
     })
+
+    await wrapper.vm.$nextTick()
 
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('updates height from emitted event', async () => {
-    const wrapper = shallowMount(DetailsCarousel, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            currentDetailsHeight: 100,
-            slides: mockData.store.state.slides,
-          },
-        },
-      },
+  it('updates height from store state', async () => {
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      currentDetailsHeight: 100,
     })
-
     await wrapper.vm.$nextTick()
 
     expect(wrapper.attributes('style')).toContain('height: 100px;')

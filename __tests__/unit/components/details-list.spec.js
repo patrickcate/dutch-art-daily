@@ -23,7 +23,7 @@ describe('DetailsList Component', () => {
   })
 
   it('does not render correctly', () => {
-    const wrapperComponent = createWrapper(
+    const wrapper = createWrapper(
       DetailsList,
       {
         ...options,
@@ -37,6 +37,6 @@ describe('DetailsList Component', () => {
       }
     )
 
-    expect(wrapperComponent).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 })

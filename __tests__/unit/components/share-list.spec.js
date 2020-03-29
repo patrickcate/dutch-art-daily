@@ -23,7 +23,7 @@ describe('ShareList Component', () => {
   })
 
   it('does not render correctly', () => {
-    const wrapperComponent = createWrapper(
+    const wrapper = createWrapper(
       ShareList,
       {
         ...options,
@@ -37,6 +37,6 @@ describe('ShareList Component', () => {
       }
     )
 
-    expect(wrapperComponent).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 })

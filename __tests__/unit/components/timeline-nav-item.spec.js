@@ -62,9 +62,6 @@ describe('TimelineNavItem Component', () => {
         },
       },
       {
-        state: {
-          activeId: '12-27',
-        },
         getters: defaultGetters,
       }
     )
@@ -93,9 +90,6 @@ describe('TimelineNavItem Component', () => {
         },
       },
       {
-        state: {
-          activeId: '01-01',
-        },
         getters: defaultGetters,
       }
     )

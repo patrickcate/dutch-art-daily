@@ -1,105 +1,83 @@
-import { shallowMount } from '@vue/test-utils'
 import * as formatDate from '@utils/format-date'
 import TheLogo from '@components/the-logo.vue'
-import BaseIconMock from '@fixtures/base-icon-mock.vue'
 
 describe('TheLogo Component', () => {
-  it('is a Vue instance', () => {
-    const wrapper = shallowMount(TheLogo, {
-      stubs: {
-        'base-icon': BaseIconMock,
-      },
-    })
+  let wrapper
+  let options
 
+  beforeEach(() => {
+    wrapper = createWrapper(TheLogo, options)
+  })
+
+  it('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(TheLogo, {
-      stubs: {
-        'base-icon': BaseIconMock,
-      },
-    })
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('goes to first slide when clicked', async () => {
     const slideToMock = jest.fn()
 
-    const wrapper = shallowMount(TheLogo, {
-      stubs: {
-        'base-icon': BaseIconMock,
-      },
-      mocks: {
-        $store: {
-          getters: {
-            getSlideIndexById() {
-              return 1
-            },
-          },
-        },
-      },
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      currentSlideIndex: 0,
+      activeId: '12-26',
     })
 
-    wrapper.vm.$root = {
-      swipers: {
-        carousel: {
-          slideTo() {
-            slideToMock()
-          },
-        },
+    wrapper.vm.$root.swipers.carousel = {
+      slideTo(index) {
+        slideToMock(index)
       },
     }
 
     wrapper.find('a').trigger('click')
     await wrapper.vm.$nextTick()
 
-    expect(slideToMock).toHaveBeenCalled()
+    expect(slideToMock).toHaveBeenCalledWith(6)
   })
 
   it('redirect to page when clicked', async () => {
-    const currentRoute = []
-    const routerPushMock = jest.fn(route => {
-      currentRoute.push(route)
-    })
-
+    const routerPushMock = jest.fn()
     const dateIdMock = jest.fn()
-    dateIdMock.mockReturnValueOnce(null).mockReturnValueOnce('01-01')
+
+    dateIdMock.mockReturnValueOnce(null).mockReturnValueOnce('12-12')
+
+    // Override imported function.
     formatDate.dateId = dateIdMock
 
-    const wrapper = shallowMount(TheLogo, {
-      stubs: {
-        'base-icon': BaseIconMock,
-      },
-      mocks: {
-        $store: {
-          getters: {
-            getSlideIndexById() {
-              return -1
+    wrapper = createWrapper(
+      TheLogo,
+      {
+        mocks: {
+          $router: {
+            push(route) {
+              routerPushMock(route)
             },
           },
-        },
-        $router: {
-          push(route) {
-            routerPushMock(route)
+          dateId(date) {
+            dateIdMock(date)
           },
         },
-        dateId(date) {
-          dateIdMock(date)
-        },
       },
-    })
+      {
+        getters: {
+          getSlideIndexById: () => () => {
+            return -1
+          },
+        },
+      }
+    )
 
     wrapper.find('a').trigger('click')
     await wrapper.vm.$nextTick()
 
-    expect(routerPushMock).toHaveBeenCalled()
-    expect(currentRoute[0]).toBe('/')
+    expect(routerPushMock).toHaveBeenCalledWith('/')
 
     wrapper.find('a').trigger('click')
     await wrapper.vm.$nextTick()
 
-    expect(currentRoute[1]).toBe('/01-01')
+    expect(routerPushMock).toHaveBeenCalledWith('/12-12')
   })
 })
