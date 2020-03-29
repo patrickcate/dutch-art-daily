@@ -1,116 +1,70 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
-import VueMeta from 'vue-meta'
 import mockData from '@fixtures/mock-data.js'
 import ArtworkPage from '@pages/_date.vue'
 
 describe('Artwork Page', () => {
-  it('should be a Vue instance', () => {
-    const localVue = createLocalVue()
-    localVue.use(VueMeta, { keyName: 'head' })
+  let wrapper
+  let options
+  let state
 
-    const wrapper = shallowMount(ArtworkPage, {
-      stubs: {
-        'base-carousel': true,
-      },
+  beforeEach(() => {
+    options = {
       mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            slides: [],
-            currentArtworkHeight: 100,
-          },
-          getters: {
-            getArtworkById() {
-              return null
-            },
-          },
-        },
         $route: {
           params: {
             date: '01-01',
           },
         },
       },
-      localVue,
-    })
+    }
 
+    state = {
+      state: {
+        currentArtworkHeight: 100,
+        slides: [],
+      },
+      getters: {
+        getArtworkById: () => () => {
+          return null
+        },
+      },
+    }
+
+    wrapper = createWrapper(ArtworkPage, options, state)
+  })
+
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const localVue = createLocalVue()
-    localVue.use(VueMeta, { keyName: 'head' })
-
-    const wrapper = shallowMount(ArtworkPage, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            slides: [],
-            currentArtworkHeight: 100,
-          },
-          getters: {
-            getArtworkById() {
-              return mockData.artwork
-            },
-          },
-        },
-        $route: {
-          params: {
-            date: '01-01',
-          },
-        },
-      },
-      methods: {
-        $icon() {
-          return true
-        },
-      },
-      localVue,
-    })
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('fetch will load store with slide data set initial active slide', async () => {
     const dispatchMock = jest.fn()
 
-    const wrapper = shallowMount(ArtworkPage, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            slides: [],
-            currentArtworkHeight: 100,
-          },
-          getters: {
-            getArtworkById() {
-              return mockData.artwork
-            },
-          },
-        },
-        $route: {
-          params: {
-            date: '01-01',
+    const wrapper = createWrapper(
+      ArtworkPage,
+      {
+        ...options,
+        methods: {
+          $icon() {
+            return true
           },
         },
       },
-      methods: {
-        $icon() {
-          return true
+      {
+        getters: {
+          getArtworkById: () => () => {
+            return mockData.artwork
+          },
         },
-      },
-    })
+      }
+    )
 
     await wrapper.vm.$options.fetch({
       store: {
-        dispatch(...args) {
+        dispatch(args) {
           dispatchMock(args)
         },
       },
@@ -119,37 +73,12 @@ describe('Artwork Page', () => {
       },
     })
 
-    expect(dispatchMock.mock.calls[0][0][0]).toBe('updateSlideData')
-    expect(dispatchMock.mock.calls[1][0][0]).toBe('updateCurrentSlideIndex')
-    expect(dispatchMock.mock.calls[2][0][0]).toBe('updateCurrentPage')
+    expect(dispatchMock).toHaveBeenCalledWith('updateSlideData')
+    expect(dispatchMock).toHaveBeenCalledWith('updateCurrentSlideIndex')
+    expect(dispatchMock).toHaveBeenCalledWith('updateCurrentPage')
   })
 
   it('should validate route params', () => {
-    const wrapper = shallowMount(ArtworkPage, {
-      stubs: {
-        'base-carousel': true,
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            slides: [],
-            currentArtworkHeight: 100,
-          },
-          getters: {
-            getArtworkById() {
-              return null
-            },
-          },
-        },
-        $route: {
-          params: {
-            date: '01-01',
-          },
-        },
-      },
-    })
-
     const isValid = wrapper.vm.$options.validate({
       params: {
         date: '01-01',

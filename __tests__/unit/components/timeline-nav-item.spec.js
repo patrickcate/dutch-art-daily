@@ -1,32 +1,40 @@
-import { shallowMount } from '@vue/test-utils'
 import { dateId } from '@utils/format-date'
 import TimelineNavItem from '@components/timeline-nav-item.vue'
+import { getters as defaultGetters } from '~/store/index.js'
 
 describe('TimelineNavItem Component', () => {
-  it('should be a Vue instance', () => {
-    const wrapper = shallowMount(TimelineNavItem, {
+  let wrapper
+  let options
+
+  beforeEach(() => {
+    options = {
       propsData: {
         id: '01-01',
       },
-    })
+      computed: {
+        breakpoint() {
+          return {
+            md: true,
+          }
+        },
+      },
+    }
 
+    wrapper = createWrapper(TimelineNavItem, options)
+  })
+
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(TimelineNavItem, {
-      propsData: {
-        id: '01-01',
-      },
-    })
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('renders with date label', () => {
     const todaysDateId = dateId(new Date())
 
-    const wrapper = shallowMount(TimelineNavItem, {
+    wrapper = createWrapper(TimelineNavItem, {
       propsData: {
         id: todaysDateId,
       },
@@ -45,68 +53,50 @@ describe('TimelineNavItem Component', () => {
   it('goes to clicked slide', async () => {
     const slideToMock = jest.fn()
 
-    const wrapper = shallowMount(TimelineNavItem, {
-      propsData: {
-        id: '01-01',
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '12-12',
-          },
-          getters: {
-            getSlideIndexById() {
-              return 1
-            },
-          },
+    wrapper = createWrapper(
+      TimelineNavItem,
+      {
+        ...options,
+        propsData: {
+          id: '12-30',
         },
       },
-    })
+      {
+        getters: defaultGetters,
+      }
+    )
 
-    wrapper.vm.$root = {
-      swipers: {
-        carousel: {
-          slideTo() {
-            slideToMock()
-          },
-        },
+    wrapper.vm.$root.swipers.carousel = {
+      slideTo(index) {
+        slideToMock(index)
       },
     }
 
     wrapper.find('button').trigger('click')
     await wrapper.vm.$nextTick()
 
-    expect(slideToMock).toHaveBeenCalled()
+    expect(slideToMock).toHaveBeenCalledWith(4)
   })
 
   it('stays on current slide when clicked', async () => {
     const slideToMock = jest.fn()
 
-    const wrapper = shallowMount(TimelineNavItem, {
-      propsData: {
-        id: '01-01',
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-          getters: {
-            getSlideIndexById() {
-              return 1
-            },
-          },
+    wrapper = createWrapper(
+      TimelineNavItem,
+      {
+        ...options,
+        propsData: {
+          id: '01-01',
         },
       },
-    })
+      {
+        getters: defaultGetters,
+      }
+    )
 
-    wrapper.vm.$root = {
-      swipers: {
-        carousel: {
-          slideTo() {
-            slideToMock()
-          },
-        },
+    wrapper.vm.$root.swipers.carousel = {
+      slideTo(index) {
+        slideToMock(index)
       },
     }
 

@@ -1,110 +1,60 @@
-import { shallowMount } from '@vue/test-utils'
 import DefaultLayout from '@layouts/default.vue'
 
 describe('DefaultLayout Layout', () => {
-  it('should be a Vue instance', () => {
-    const wrapper = shallowMount(DefaultLayout, {
+  let wrapper
+  let options
+
+  beforeEach(() => {
+    options = {
       stubs: {
         nuxt: '<div></div>',
       },
       mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-        },
         $route: {
           params: {
             date: '01-01',
           },
         },
       },
-    })
+    }
 
+    wrapper = createWrapper(DefaultLayout, options)
+  })
+
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(DefaultLayout, {
-      stubs: {
-        nuxt: '<div></div>',
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-        },
-        $route: {
-          params: {
-            date: '01-01',
-          },
-        },
-      },
-    })
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('creates root swiper object if undefined', () => {
-    const RootComponent = {
-      data() {
-        return {
-          swipers: {
-            carousel: true,
-          },
-        }
-      },
-    }
-
-    const wrapper = shallowMount(DefaultLayout, {
-      parentComponent: RootComponent,
-      stubs: {
-        nuxt: '<div></div>',
-      },
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-          },
-        },
-        $route: {
-          params: {
-            date: '01-01',
-          },
-        },
-      },
-    })
-
     expect(wrapper.vm.$root.swipers).not.toBeUndefined()
     expect(wrapper.vm.$root).toHaveProperty('swipers')
   })
 
   it('sets active id to current route', () => {
-    const mockStore = {
-      state: {
-        activeId: null,
-      },
-      dispatch: jest.fn(),
-    }
+    const updateCurrentPageMock = jest.fn()
 
-    shallowMount(DefaultLayout, {
-      stubs: {
-        nuxt: '<div></div>',
+    wrapper = createWrapper(
+      DefaultLayout,
+      {
+        ...options,
+        parentComponent: null,
       },
-      mocks: {
-        $store: mockStore,
-        $route: {
-          params: {
-            date: '01-01',
+      {
+        state: {
+          activeId: null,
+        },
+        actions: {
+          updateCurrentPage(store, payload) {
+            updateCurrentPageMock(payload)
           },
         },
-      },
-    })
-
-    expect(mockStore.dispatch).toHaveBeenCalledWith(
-      'updateCurrentPage',
-      '01-01'
+      }
     )
+
+    expect(updateCurrentPageMock).toHaveBeenCalledWith('01-01')
   })
 })

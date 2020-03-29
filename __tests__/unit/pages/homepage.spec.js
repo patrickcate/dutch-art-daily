@@ -1,38 +1,33 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
-import VueMeta from 'vue-meta'
 import Homepage from '@pages/index.vue'
 
 describe('Homepage', () => {
-  it('should be a Vue instance', () => {
-    const localVue = createLocalVue()
-    localVue.use(VueMeta, { keyName: 'head' })
+  let wrapper
+  let options
 
-    const wrapper = shallowMount(Homepage, {
+  beforeEach(() => {
+    options = {
       mocks: {
         $homepageRedirect() {},
       },
-      localVue,
-    })
+    }
 
+    wrapper = createWrapper(Homepage, options)
+  })
+
+  it('should be a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('render an empty string', () => {
-    const localVue = createLocalVue()
-    localVue.use(VueMeta, { keyName: 'head' })
-
     process.server = true
 
-    const wrapper = shallowMount(Homepage, {
-      mocks: {
-        $homepageRedirect() {},
-      },
+    wrapper = createWrapper(Homepage, {
+      ...options,
       methods: {
         $icon() {
           return true
         },
       },
-      localVue,
     })
 
     expect(wrapper).toMatchSnapshot()

@@ -1,74 +1,61 @@
-import { shallowMount } from '@vue/test-utils'
-import mockData from '@fixtures/mock-data.js'
 import BackgroundStack from '@components/background-stack.vue'
 
 describe('BackgroundStack Component', () => {
-  it('is a Vue instance', () => {
-    const wrapper = shallowMount(BackgroundStack, {
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            loadedSlides: [],
+  let wrapper
+
+  beforeEach(() => {
+    wrapper = createWrapper(
+      BackgroundStack,
+      {},
+      {
+        state: {
+          loadedSlides: {
+            '01-01': '01-01',
           },
         },
-      },
-    })
+      }
+    )
+  })
 
+  it('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(BackgroundStack, {
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            loadedSlides: ['01-01'],
-          },
-          getters: {
-            getArtworkById() {
-              return mockData.artwork
-            },
-          },
-        },
-      },
-    })
-
     expect(wrapper).toMatchSnapshot()
   })
 
   it('does not render correctly', () => {
-    const wrapper = shallowMount(BackgroundStack, {
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            loadedSlides: [],
-          },
+    wrapper = createWrapper(
+      BackgroundStack,
+      {},
+      {
+        state: {
+          loadedSlides: {},
         },
-      },
-    })
+      }
+    )
 
     expect(wrapper).toMatchSnapshot()
   })
 
   it('has no active background', () => {
-    const wrapper = shallowMount(BackgroundStack, {
-      mocks: {
-        $store: {
-          state: {
-            activeId: '01-01',
-            loadedSlides: ['01-01'],
-          },
-          getters: {
-            getArtworkById() {
-              return null
-            },
+    wrapper = createWrapper(
+      BackgroundStack,
+      {},
+      {
+        state: {
+          loadedSlides: {
+            '01-01': '01-01',
           },
         },
-      },
-    })
+        getters: {
+          getArtworkById: () => () => {
+            return null
+          },
+        },
+      }
+    )
 
     expect(wrapper).toMatchSnapshot()
   })

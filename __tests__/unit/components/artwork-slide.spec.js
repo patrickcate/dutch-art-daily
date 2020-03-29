@@ -1,33 +1,25 @@
-import { shallowMount } from '@vue/test-utils'
+import mockData from '@fixtures/mock-data.js'
 import ArtworkSlide from '@components/artwork-slide.vue'
 
 describe('ArtworkSlide Component', () => {
-  let artworkData
+  let wrapper
+  let options
 
   beforeEach(() => {
-    artworkData = {
-      artwork: {
-        id: '01-01',
-        orientation: 'portrait',
+    options = {
+      propsData: {
+        artwork: mockData.artwork,
       },
     }
+
+    wrapper = createWrapper(ArtworkSlide, options)
   })
 
   it('is a Vue instance', () => {
-    const wrapper = shallowMount(ArtworkSlide, {
-      propsData: {
-        ...artworkData,
-      },
-    })
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
   it('renders correctly', () => {
-    const wrapper = shallowMount(ArtworkSlide, {
-      propsData: {
-        ...artworkData,
-      },
-    })
     expect(wrapper).toMatchSnapshot()
   })
 })
