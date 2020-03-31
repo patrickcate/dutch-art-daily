@@ -40,10 +40,10 @@ export default {
 
 <template>
   <li v-if="artwork">
-    <div ref="details" class="details">
+    <div ref="details" class="details-slide">
       <div>
-        <h2 class="details__title">{{ artwork.title }}</h2>
-        <h3 class="details__artist"><em>by</em> {{ artwork.artist }}</h3>
+        <h2 class="details-slide__title">{{ artwork.title }}</h2>
+        <h3 class="details-slide__artist"><em>by</em> {{ artwork.artist }}</h3>
       </div>
       <details-list :id="id" />
     </div>
@@ -51,11 +51,9 @@ export default {
 </template>
 
 <style lang="scss">
-// TODO: Update component class.
-
 @import '@theme';
 
-.details {
+.details-slide {
   display: grid;
   max-width: $max-width;
   padding: 0 $spacing;
@@ -76,7 +74,7 @@ export default {
   }
 }
 
-.details__title {
+.details-slide__title {
   margin-bottom: $quarter-spacing;
   font-family: $serif-font;
   font-size: $font-size-lg-alt;
@@ -88,7 +86,7 @@ export default {
   }
 }
 
-.details__artist {
+.details-slide__artist {
   margin-bottom: $spacing;
   font-family: $serif-font;
 }

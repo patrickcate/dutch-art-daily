@@ -2,6 +2,14 @@
 
 exports[`BaseCarousel Component renders correctly 1`] = `
 <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-  <ul class="swiper-wrapper carousel__list" style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"></ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+  <ul class="swiper-wrapper carousel__list" style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);">
+    <li class="swiper-slide"></li>
+    <li class="swiper-slide"></li>
+    <li class="swiper-slide"></li>
+    <li class="swiper-slide"></li>
+    <li class="swiper-slide"></li>
+    <li class="swiper-slide"></li>
+    <li class="swiper-slide"></li>
+  </ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 </div>
 `;

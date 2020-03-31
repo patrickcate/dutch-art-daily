@@ -58,7 +58,10 @@ export default {
     @enter="setBoundingBox"
     @after-enter="setBoundingBox"
   >
-    <span v-if="dateLabel" :key="dateLabel" class="artwork-date__item"
+    <span
+      v-if="dateLabel"
+      :key="dateLabel"
+      class="artwork-date__item artwork-date__label"
       >{{ dateLabel }}&nbsp;</span
     >
     <span v-if="todaysMonth" :key="todaysMonth" class="artwork-date__item"

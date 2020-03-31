@@ -74,13 +74,13 @@ export default {
 }
 </script>
 <template>
-  <div class="art-image-frame">
+  <div class="artwork-image-frame">
     <img
       :data-src="lazySrc"
       :data-srcset="srcSet"
       :data-sizes="srcSizes"
       :alt="altText"
-      class="art-image swiper-lazy"
+      class="artwork-image swiper-lazy"
       @load="imageHasLoaded"
     />
   </div>
@@ -89,11 +89,11 @@ export default {
 <style lang="scss">
 @import '@theme';
 // TODO: Update component class.
-.art-image-frame {
+.artwork-image-frame {
   position: relative;
 }
 
-.art-image {
+.artwork-image {
   display: block;
   max-height: 100vh;
   margin: 0 auto;

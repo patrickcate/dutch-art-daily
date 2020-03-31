@@ -46,5 +46,23 @@ describe('TimelineNav Component', () => {
     expect(beforeMountMock).toHaveBeenCalled()
   })
 
-  // TODO: Test that pagination number changes based on screen size.
+  it('visible timeline items update from store state', async () => {
+    expect(wrapper.vm.$root.swipers.timeline.params.slidesPerView).toBe(3)
+
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      paginationNumber: 5,
+    })
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.vm.$root.swipers.timeline.params.slidesPerView).toBe(5)
+
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      paginationNumber: 3,
+    })
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.vm.$root.swipers.timeline.params.slidesPerView).toBe(3)
+  })
 })

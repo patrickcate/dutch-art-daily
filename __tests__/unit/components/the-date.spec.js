@@ -1,3 +1,5 @@
+import subDays from 'date-fns/subDays'
+import { dateId } from '@utils/format-date.js'
 import TheDate from '@components/the-date.vue'
 
 describe('TheDate Component', () => {
@@ -35,6 +37,39 @@ describe('TheDate Component', () => {
     expect(setBoundingBoxMock).not.toHaveBeenCalled()
   })
 
-  // TODO: Test that changing date renders new date correctly
-  // TODO: Test style top/left are correctly added.
+  it('displays `Today` if matches todays date', async () => {
+    const today = dateId(new Date())
+
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      activeId: today,
+    })
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.find('.artwork-date__label').html()).toEqual(
+      expect.stringMatching('Today')
+    )
+  })
+
+  it('displays `Yeserday` if matches yesterdays date', async () => {
+    const yesterday = dateId(subDays(new Date(), 1))
+
+    wrapper.vm.$store.replaceState({
+      ...wrapper.vm.$store.state,
+      activeId: yesterday,
+    })
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.find('.artwork-date__label').html()).toEqual(
+      expect.stringMatching('Yesterday')
+    )
+  })
+
+  it('date-related html elements have top and left pixel dimensions set', async () => {
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.find('.artwork-date__item').html()).toEqual(
+      expect.stringMatching(/\b(\w*(style|left|top)\w*)\b/)
+    )
+  })
 })

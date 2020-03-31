@@ -85,8 +85,7 @@ export default {
           self.initialized = true
         },
         slideChange() {
-          self.updateCurrentSlide(this.activeIndex)
-          self.updateHeight(this.slides[this.activeIndex])
+          self.changeSlide(this.slides, this.activeIndex)
         },
         resize() {
           // TODO: Add debounce.
@@ -146,17 +145,27 @@ export default {
         slide.$el.classList.add('swiper-slide')
       })
     },
+    changeSlide(slides, activeIndex) {
+      this.updateCurrentSlide(activeIndex)
+      this.updateHeight(slides[activeIndex])
+    },
+    updateCurrentSlide(index) {
+      if (this.currentSlideIndex !== index && this.slides[index]) {
+        this.updateCurrentSlideIndex(index)
+        this.updateCurrentPage(this.slides[index].id)
+      }
+    },
     updateHeight(slide) {
       this.$nextTick(() => {
-        if (this.name === 'carousel') {
-          const imageHeight = slide.querySelector('img').scrollHeight
+        if (this.name === 'carousel' && slide) {
+          const imageHeight = slide.querySelector('img')
 
           if (imageHeight) {
             this.updateCurrentArtworkHeight(slide.children[0].scrollHeight)
           }
         }
 
-        if (this.name === 'details') {
+        if (this.name === 'details' && slide) {
           const detailsHeight = slide.querySelector('.details')
 
           if (detailsHeight) {
@@ -164,12 +173,6 @@ export default {
           }
         }
       })
-    },
-    updateCurrentSlide(index) {
-      if (this.currentSlideIndex !== index) {
-        this.updateCurrentSlideIndex(index)
-        this.updateCurrentPage(this.slides[index].id)
-      }
     },
   },
 }
