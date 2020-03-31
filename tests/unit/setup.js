@@ -9,6 +9,8 @@ import {
   actions as defaultActions,
 } from '~/store/index.js'
 
+// From Vue Enterprise Boilerplate.
+// @see https://github.com/chrisvfritz/vue-enterprise-boilerplate
 // Make console.error throw, so that Jest tests fail
 const error = console.error
 console.error = function(message) {
@@ -18,6 +20,8 @@ console.error = function(message) {
   throw message instanceof Error ? message : new Error(message)
 }
 
+// From Vue Enterprise Boilerplate.
+// @see https://github.com/chrisvfritz/vue-enterprise-boilerplate
 // Make console.warn throw, so that Jest tests fail
 const warn = console.warn
 console.warn = function(message) {
@@ -84,26 +88,20 @@ global.createWrapper = (
 
   let wrapper
 
-  if (mountType !== 'shallow') {
-    wrapper = mount(component, {
-      parentComponent: RootComponent,
-      store,
-      localVue,
-      stubs: {
-        ...mockData.stubs,
-      },
-      ...options,
-    })
-  } else {
-    wrapper = shallowMount(component, {
-      parentComponent: RootComponent,
-      store,
-      localVue,
-      stubs: {
-        ...mockData.stubs,
-      },
-      ...options,
-    })
+  const wrapperOptions = {
+    parentComponent: RootComponent,
+    store,
+    localVue,
+    stubs: {
+      ...mockData.stubs,
+    },
+    ...options,
+  }
+
+  if (mountType === 'mount') {
+    wrapper = mount(component, wrapperOptions)
+  } else if (mountType === 'shallow') {
+    wrapper = shallowMount(component, wrapperOptions)
   }
 
   return wrapper
