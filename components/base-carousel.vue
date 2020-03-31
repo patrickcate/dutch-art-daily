@@ -166,7 +166,7 @@ export default {
         }
 
         if (this.name === 'details' && slide) {
-          const detailsHeight = slide.querySelector('.details')
+          const detailsHeight = slide.querySelector('.js-details-slide')
 
           if (detailsHeight) {
             this.updateCurrentDetailsHeight(detailsHeight.scrollHeight)

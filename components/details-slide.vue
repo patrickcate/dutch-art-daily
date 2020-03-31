@@ -40,7 +40,7 @@ export default {
 
 <template>
   <li v-if="artwork">
-    <div ref="details" class="details-slide">
+    <div ref="details" class="js-details-slide details-slide">
       <div>
         <h2 class="details-slide__title">{{ artwork.title }}</h2>
         <h3 class="details-slide__artist"><em>by</em> {{ artwork.artist }}</h3>
