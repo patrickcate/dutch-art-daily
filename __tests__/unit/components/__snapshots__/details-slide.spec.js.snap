@@ -4,7 +4,7 @@ exports[`DetailsSlide Component does not render without data 1`] = ``;
 
 exports[`DetailsSlide Component renders correctly 1`] = `
 <li>
-  <div class="details-slide">
+  <div class="js-details-slide details-slide">
     <div>
       <h2 class="details-slide__title">The Milkmaid</h2>
       <h3 class="details-slide__artist"><em>by</em> Johannes Vermeer</h3>
