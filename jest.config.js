@@ -5,6 +5,7 @@
 // process.env.MOCK_API_PORT = process.env.MOCK_API_PORT || _.random(9000, 9999)
 
 module.exports = {
+  testMatch: ['<rootDir>/__tests__/**/*.spec.js'],
   setupFiles: ['<rootDir>/tests/unit/setup'],
   moduleFileExtensions: ['js', 'json', 'vue'],
   watchman: false,
@@ -46,6 +47,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/dist/**',
     '!**/__tests__/**',
+    '!**/tests/**',
     '!**/.nuxt/**',
     '!**/_coverage/**',
     '!<rootDir>/mixins/**/*.js',

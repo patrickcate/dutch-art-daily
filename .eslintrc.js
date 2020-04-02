@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    'cypress/globals': true,
   },
   parserOptions: {
     parser: 'babel-eslint',
@@ -14,7 +15,7 @@ module.exports = {
     'plugin:vue/recommended',
     'prettier/vue',
   ],
-  plugins: ['prettier', 'vue'],
+  plugins: ['cypress', 'prettier', 'vue'],
   // add your custom rules here
   rules: {
     'prettier/prettier': ['error', { semi: false }],

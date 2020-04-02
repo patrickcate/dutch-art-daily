@@ -44,7 +44,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: yarn --frozen-lockfile
-      - run: yarn test
+      - run: yarn test:unit
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1

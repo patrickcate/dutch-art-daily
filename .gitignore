@@ -91,3 +91,6 @@ sw.*
 
 # Code Coverage
 _coverage
+
+# Cypress Examples
+tests/e2e/examples

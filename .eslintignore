@@ -3,5 +3,6 @@ _source
 .nuxt
 /dist/**
 /node_modules/**
+/tests/e2e/examples/**
 /tests/unit/coverage/**
 sw.js
