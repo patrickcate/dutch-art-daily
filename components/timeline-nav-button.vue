@@ -30,6 +30,9 @@ export default {
         ? this.currentSlideIndex <= 0
         : this.currentSlideIndex >= this.maxSlideIndex
     },
+    directionClass() {
+      return `timeline-nav-button--${this.direction}`
+    },
   },
   methods: {
     toPrevSlide() {
@@ -57,6 +60,7 @@ export default {
   <button
     type="button"
     class="timeline-nav-button"
+    :class="directionClass"
     :disabled="disableButton"
     @click="toSlide()"
   >

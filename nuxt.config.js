@@ -8,6 +8,8 @@ let startUrl
 
 if (process.env.NODE_ENV === 'production') {
   startUrl = 'https://dutchartdaily.com'
+} else if (process.env.NODE_ENV === 'e2e') {
+  startUrl = 'http://localhost:8080'
 } else {
   startUrl = 'http://localhost:3000'
 }
