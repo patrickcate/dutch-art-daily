@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "dev:e2e": "cross-env NODE_ENV=e2e nuxt",
+    "dev:e2e": "wait-on http://localhost:3000 && cypress open",
     "build": "nuxt build",
     "start": "nuxt start",
     "serve": "yarn dev",
@@ -28,7 +28,8 @@
     "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,css,scss,vue,html,md}\"",
     "lint": "run-s lint:all:*",
     "test:unit": "cross-env NODE_ENV=test jest",
-    "test:e2e": "cross-env NODE_ENV=e2e cypress open",
+    "test:e2e": "cypress run",
+    "test": "run-s test:*",
     "gitcommit": "git-cz",
     "release": "standard-version"
   },
@@ -94,6 +95,7 @@
     "svgo": "^1.1.1",
     "svgo-loader": "^2.2.0",
     "vue-jest": "^4.0.0-beta.2",
+    "wait-on": "^4.0.1",
     "write-data": "^1.0.2"
   },
   "config": {

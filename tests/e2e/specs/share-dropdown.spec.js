@@ -3,7 +3,7 @@ describe('share dropdown', () => {
     cy.visit('/01-01')
   })
 
-  it('share dropdown displays on small screens', () => {
+  it('share dropdown displays on small screen widths', () => {
     cy.viewport('macbook-13')
     cy.get('.share-list--horizontal').should('be.visible')
     cy.get('.share-dropdown').should('not.be.visible')
