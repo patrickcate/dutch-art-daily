@@ -20,11 +20,12 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 
   return Object.assign({}, config, {
-    baseUrl: 'http://localhost:8080',
+    baseUrl: 'http://localhost:3000',
     fixturesFolder: 'tests/e2e/fixtures',
     integrationFolder: 'tests/e2e/specs',
     screenshotsFolder: 'tests/e2e/screenshots',
     videosFolder: 'tests/e2e/videos',
     supportFile: 'tests/e2e/support/index.js',
+    video: false,
   })
 }
