@@ -1,3 +1,5 @@
+import { generateRoutes } from '@utils/generate-routes'
+
 export const state = () => ({
   activeId: null,
   slides: [],
@@ -80,7 +82,9 @@ export const actions = {
     }
   },
   updateCurrentPage({ state, commit, dispatch }, id) {
-    if (state.activeId !== id) {
+    const allRoutes = generateRoutes()
+
+    if (state.activeId !== id && allRoutes.includes(id)) {
       commit('SET_ACTIVE_ID', id)
     }
 

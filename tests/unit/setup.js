@@ -1,6 +1,7 @@
 import Vuex from 'vuex'
 import VueMeta from 'vue-meta'
 import { shallowMount, mount, createLocalVue } from '@vue/test-utils'
+import BaseIconMock from '@fixtures/base-icon-mock.vue'
 import mockData from '@fixtures/mock-data.js'
 import {
   state as defaultState,
@@ -58,7 +59,7 @@ const createStore = ({
     },
   })
 
-const pageComponents = ['HomePage', 'ArtworkPage']
+const pageComponents = ['HomePage', 'ArtworkPage', 'ErrorPage']
 
 global.createWrapper = (
   component,
@@ -86,15 +87,20 @@ global.createWrapper = (
     },
   }
 
+  // Global stubs.
+  options.stubs = {
+    ...options.stubs,
+    'base-icon': BaseIconMock,
+    'base-carousel': true,
+    nuxt: true,
+  }
+
   let wrapper
 
   const wrapperOptions = {
     parentComponent: RootComponent,
     store,
     localVue,
-    stubs: {
-      ...mockData.stubs,
-    },
     ...options,
   }
 

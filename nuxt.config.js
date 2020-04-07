@@ -150,6 +150,7 @@ module.exports = {
    */
   generate: {
     routes: generateRoutes(),
+    fallback: true,
   },
 
   /**
