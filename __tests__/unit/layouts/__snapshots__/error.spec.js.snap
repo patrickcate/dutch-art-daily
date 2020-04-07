@@ -1,5 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Error does not render image if src path is not available 1`] = `
+<div class="error">
+  <h1 class="error__header">Oops, an error occurred</h1>
+  <h2 class="error__subheader">Maybe someone was sleeping on the job?</h2>
+  <!---->
+  <p class="error__message">
+    You'll have better luck
+    <a href="/" rel="home">going to the Homepage</a></p>
+</div>
+`;
+
 exports[`Error renders correctly 1`] = `
 <div class="error">
   <h1 class="error__header">Oops, an error occurred</h1>

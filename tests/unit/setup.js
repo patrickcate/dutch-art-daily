@@ -59,7 +59,7 @@ const createStore = ({
     },
   })
 
-const pageComponents = ['HomePage', 'ArtworkPage']
+const pageComponents = ['HomePage', 'ArtworkPage', 'ErrorPage']
 
 global.createWrapper = (
   component,

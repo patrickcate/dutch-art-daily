@@ -17,7 +17,9 @@ export default {
   },
   computed: {
     errorImage() {
-      return this.artwork ? `/photos/01-02/01-02--xs3-${artwork.hash}.jpg` : ''
+      return this.artwork
+        ? `/photos/01-02/01-02--xs3-${artwork.hash}.jpg`
+        : null
     },
   },
   head() {
@@ -36,7 +38,7 @@ export default {
     <h1 v-else class="error__header">Oops, an error occurred</h1>
     <h2 class="error__subheader">Maybe someone was sleeping on the job?</h2>
 
-    <div class="artwork-image-frame artwork--portrait">
+    <div v-if="errorImage" class="artwork-image-frame artwork--portrait">
       <img
         alt="Nicolaes Maes's painting: The Idle Servant"
         class="artwork-image error__image"
@@ -83,7 +85,7 @@ export default {
     max-width: em(320px);
   }
 
-  @include media('>lg') {
+  @include media('>md') {
     max-width: em(480px);
   }
 }

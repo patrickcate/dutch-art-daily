@@ -28,6 +28,15 @@ describe('Error', () => {
     wrapper.setProps({
       error: null,
     })
+
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('does not render image if src path is not available', async () => {
+    wrapper.setData({ artwork: null })
+
+    await wrapper.vm.$nextTick()
+
     expect(wrapper).toMatchSnapshot()
   })
 })
