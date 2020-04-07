@@ -5,7 +5,7 @@ exports[`DefaultLayout Layout renders correctly 1`] = `
   <background-stack-stub></background-stack-stub>
   <div class="l-page__content">
     <the-header-stub class="l-page__header"></the-header-stub>
-    <div></div>
+    <nuxt-stub></nuxt-stub>
     <the-footer-stub class="l-page__footer"></the-footer-stub>
   </div>
 </div>

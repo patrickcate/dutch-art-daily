@@ -1,12 +1,11 @@
 /* eslint-disable camelcase */
-import BaseIconMock from '@fixtures/base-icon-mock.vue'
-const slide_12_26 = require('../../data/12/12-26.json')
-const slide_12_27 = require('../../data/12/12-27.json')
-const slide_12_28 = require('../../data/12/12-28.json')
-const slide_12_29 = require('../../data/12/12-29.json')
-const slide_12_30 = require('../../data/12/12-30.json')
-const slide_12_31 = require('../../data/12/12-31.json')
-const slide_01_01 = require('../../data/01/01-01.json')
+import * as slide_12_26 from '~/data/12/12-26.json'
+import * as slide_12_27 from '~/data/12/12-27.json'
+import * as slide_12_28 from '~/data/12/12-28.json'
+import * as slide_12_29 from '~/data/12/12-29.json'
+import * as slide_12_30 from '~/data/12/12-30.json'
+import * as slide_12_31 from '~/data/12/12-31.json'
+import * as slide_01_01 from '~/data/01/01-01.json'
 
 export default {
   artwork: {
@@ -22,10 +21,6 @@ export default {
     xl: 1600,
     xl2: 1760,
     xl3: 1920,
-  },
-  stubs: {
-    'base-icon': BaseIconMock,
-    'base-carousel': true,
   },
   store: {
     state: {

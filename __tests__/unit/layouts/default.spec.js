@@ -6,9 +6,6 @@ describe('DefaultLayout Layout', () => {
 
   beforeEach(() => {
     options = {
-      stubs: {
-        nuxt: '<div></div>',
-      },
       mocks: {
         $route: {
           params: {

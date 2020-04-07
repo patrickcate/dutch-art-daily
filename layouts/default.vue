@@ -5,6 +5,7 @@ import TheFooter from '@components/the-footer.vue'
 import BackgroundStack from '@components/background-stack.vue'
 
 export default {
+  name: 'DefaultLayout',
   components: {
     TheHeader,
     TheFooter,

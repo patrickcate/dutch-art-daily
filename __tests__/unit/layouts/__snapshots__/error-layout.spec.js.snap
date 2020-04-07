@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorLayout renders correctly 1`] = `
+<div class="l-page l-page--error">
+  <div class="background-stack" style="background-color: rgb(66, 50, 33); background-image: url(/photos/01-02/01-02--lqi-8BAoia4yi0O.jpg);">
+    <div class="background-stack__item background-stack__item--today" style="background-color: rgb(66, 50, 33); background-image: url(/photos/01-02/01-02--lqi-8BAoia4yi0O.jpg);"></div>
+  </div>
+  <div class="l-page__content">
+    <div class="l-page__header">
+      <div><a href="/" rel="home" class="home"><svg width="131px" height="50px" class="base-icon" aria-label="Home">
+            <use></use>
+          </svg></a></div>
+    </div>
+    <nuxt-stub></nuxt-stub>
+    <the-footer-stub class="l-page__footer"></the-footer-stub>
+  </div>
+</div>
+`;

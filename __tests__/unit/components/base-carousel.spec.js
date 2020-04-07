@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import BaseCarousel from '@components/base-carousel.vue'
 
 describe('BaseCarousel Component', () => {
@@ -6,6 +7,10 @@ describe('BaseCarousel Component', () => {
   let state
 
   beforeEach(() => {
+    const SlideMock = Vue.component('slide-mock', {
+      template: '<li></li>',
+    })
+
     options = {
       propsData: {
         name: 'carousel',
@@ -22,7 +27,7 @@ describe('BaseCarousel Component', () => {
         ],
       },
       stubs: {
-        'slide-mock': '<li></li>',
+        'slide-mock': SlideMock,
       },
     }
 
