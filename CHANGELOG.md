@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.4...v2.3.0) (2020-04-08)
+
+
+### Features
+
+* add custom error page ([f44dcba](https://github.com/patrickcate/dutch-art-daily/commit/f44dcba986003312ba3063d2ad7d46b0b19d25d1))
+* update details carousel height on window resize event ([6359714](https://github.com/patrickcate/dutch-art-daily/commit/63597144212e0db591ab48452cad7b34b95b0640)), closes [#18](https://github.com/patrickcate/dutch-art-daily/issues/18)
+
+
+### Bug Fixes
+
+* fix createWrapper() not merging state together ([3758ed0](https://github.com/patrickcate/dutch-art-daily/commit/3758ed06a55e01af0fc36f4929852f195bab5324))
+* fix selector used for updating details slide height ([98042d2](https://github.com/patrickcate/dutch-art-daily/commit/98042d247c6d2c2bbb9e49bc36f52b498aeccc7a))
+
 ### [2.2.4](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.3...v2.2.4) (2020-03-20)
 
 ### [2.2.3](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.2...v2.2.3) (2020-03-19)
