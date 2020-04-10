@@ -2,7 +2,5 @@
 
 exports[`TheDate Component renders correctly 1`] = `
 <transition-group-stub tag="div" name="date" type="transition" class="artwork-date">
-  <!----> <span class="artwork-date__item">January&nbsp;</span> <span class="artwork-date__item artwork-date__char">1</span> <sup class="artwork-date__item artwork-date__ordinal">
-    st
-  </sup></transition-group-stub>
+  <!----> <span class="artwork-date__item">January&nbsp;</span> <span class="artwork-date__item artwork-date__char">1</span> <sup class="artwork-date__item artwork-date__ordinal">st</sup></transition-group-stub>
 `;

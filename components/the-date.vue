@@ -9,6 +9,11 @@ export default {
       currentDate: 'activeId',
     }),
     dateLabel() {
+      // When being staticlly generated, always include the 'Today,' date label.
+      if (process.static && process.server) {
+        return 'Today,'
+      }
+
       return this.currentDate && getDateLabel(this.currentDate)
         ? `${getDateLabel(this.currentDate)},`
         : ''
@@ -23,19 +28,19 @@ export default {
       return getDateOrdinal(Number.parseInt(this.todaysDay, 10))
     },
   },
-  mounted() {
+  async mounted() {
     // Loop through all the transition group elements when the component is
     // first mounted, and set their bounding box style properties so they will
     // transition from/to the correct positions.
-    this.$nextTick(() => {
-      if (this.$children[0]) {
-        this.$children[0].$slots.default.forEach(item => {
-          if (item.tag) {
-            this.setBoundingBox(item.elm)
-          }
-        })
-      }
-    })
+    await this.$nextTick()
+
+    if (this.$children[0]) {
+      this.$children[0].$slots.default.forEach(item => {
+        if (item.tag) {
+          this.setBoundingBox(item.elm)
+        }
+      })
+    }
   },
   methods: {
     setBoundingBox(el) {
@@ -50,7 +55,7 @@ export default {
 
 <template>
   <transition-group
-    v-if="currentDate"
+    v-if="currentDate && todaysMonth && todaysDay"
     name="date"
     tag="div"
     class="artwork-date"
@@ -64,7 +69,7 @@ export default {
       class="artwork-date__item artwork-date__label"
       >{{ dateLabel }}&nbsp;</span
     >
-    <span v-if="todaysMonth" :key="todaysMonth" class="artwork-date__item"
+    <span :key="todaysMonth" class="artwork-date__item"
       >{{ todaysMonth }}&nbsp;</span
     >
     <span
@@ -73,9 +78,9 @@ export default {
       class="artwork-date__item artwork-date__char"
       >{{ char }}</span
     >
-    <sup :key="dateOrdinal" class="artwork-date__item artwork-date__ordinal">
-      {{ dateOrdinal }}
-    </sup>
+    <sup :key="dateOrdinal" class="artwork-date__item artwork-date__ordinal">{{
+      dateOrdinal
+    }}</sup>
   </transition-group>
 </template>
 

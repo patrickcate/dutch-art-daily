@@ -72,4 +72,15 @@ describe('TheDate Component', () => {
       expect.stringMatching(/\b(\w*(style|left|top)\w*)\b/)
     )
   })
+
+  it('always render `Today` date label when statically generated', () => {
+    process.static = true
+    process.server = true
+
+    wrapper = createWrapper(TheDate, options)
+
+    expect(wrapper.find('.artwork-date__label').html()).toEqual(
+      expect.stringMatching('Today')
+    )
+  })
 })
