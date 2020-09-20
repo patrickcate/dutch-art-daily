@@ -23,11 +23,6 @@ describe('Homepage', () => {
 
     wrapper = createWrapper(Homepage, {
       ...options,
-      methods: {
-        $icon() {
-          return true
-        },
-      },
     })
 
     expect(wrapper).toMatchSnapshot()

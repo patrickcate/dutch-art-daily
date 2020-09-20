@@ -47,11 +47,6 @@ describe('Artwork Page', () => {
       ArtworkPage,
       {
         ...options,
-        methods: {
-          $icon() {
-            return true
-          },
-        },
       },
       {
         getters: {

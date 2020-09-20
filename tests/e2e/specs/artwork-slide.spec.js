@@ -41,12 +41,9 @@ describe('artwork slide', () => {
 
     // Simulate swiper right gesture.
     cy.get('.l-page__carousel')
-      .trigger('mousedown', {
-        which: 1,
-      })
-      .trigger('mousemove', 'right')
-      .wait(0)
-      .trigger('mouseup')
+      .trigger('pointerdown', { which: 1 })
+      .trigger('pointermove', 'right')
+      .trigger('pointerup', { force: true })
 
     cy.get('.timeline-nav__list-item.swiper-slide-active').should(
       'contain',
@@ -57,12 +54,9 @@ describe('artwork slide', () => {
 
     // Simulate swiper left gesture.
     cy.get('.l-page__carousel')
-      .trigger('mousedown', {
-        which: 1,
-      })
-      .trigger('mousemove', 'left')
-      .wait(0)
-      .trigger('mouseup')
+      .trigger('pointerdown', { which: 1 })
+      .trigger('pointermove', 'left')
+      .trigger('pointerup', { force: true })
 
     cy.get('.timeline-nav__list-item.swiper-slide-active').should(
       'contain',

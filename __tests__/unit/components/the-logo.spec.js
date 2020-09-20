@@ -1,3 +1,5 @@
+/* eslint-disable no-import-assign */
+
 import * as formatDate from '@utils/format-date'
 import TheLogo from '@components/the-logo.vue'
 
