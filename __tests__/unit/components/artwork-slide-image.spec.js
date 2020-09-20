@@ -23,7 +23,7 @@ describe('ArtworkSlideImage Component', () => {
   })
 
   it('should be a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('renders correctly', () => {

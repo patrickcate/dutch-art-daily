@@ -15,7 +15,7 @@ describe('Homepage', () => {
   })
 
   it('should be a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('render an empty string', () => {
