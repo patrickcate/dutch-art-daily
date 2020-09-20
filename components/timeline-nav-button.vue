@@ -98,7 +98,9 @@ export default {
   color: $white;
   cursor: pointer;
   background-color: transparent;
-  transition: color $speed-fast ease, opacity $speed-fast ease;
+  border-radius: 50%;
+  transition: color $speed-fast ease, opacity $speed-fast ease,
+    background-color $speed-faster ease;
 
   @include media('>xs') {
     font-size: $font-size-xxxl;
@@ -110,6 +112,10 @@ export default {
 
   &:hover {
     color: set-color(secondary);
+  }
+
+  &:active {
+    background-color: rgba(set-color(secondary), 0.25);
   }
 
   &[disabled] {
