@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: yarn --frozen-lockfile
-      - run: yarn generate:modern
+      - run: yarn generate
 
   unit-tests:
     name: Unit Tests
@@ -73,5 +73,5 @@ jobs:
         uses: cypress-io/github-action@v1
         with:
           wait-on: 'http://localhost:3000'
-          build: yarn build
+          build: yarn generate
           start: yarn start
