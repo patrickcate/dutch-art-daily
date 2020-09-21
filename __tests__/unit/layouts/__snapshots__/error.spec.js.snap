@@ -7,7 +7,8 @@ exports[`Error does not render image if src path is not available 1`] = `
   <!---->
   <p class="error__message">
     You'll have better luck
-    <a href="/" rel="home">going to the Homepage</a></p>
+    <a href="/" rel="home">going to the Homepage</a>
+  </p>
 </div>
 `;
 
@@ -18,7 +19,8 @@ exports[`Error renders correctly 1`] = `
   <div class="artwork-image-frame artwork--portrait"><img alt="Nicolaes Maes's painting: The Idle Servant" src="/photos/01-02/01-02--xs3-8BAoia4yi0O.jpg" class="artwork-image error__image"></div>
   <p class="error__message">
     You'll have better luck
-    <a href="/" rel="home">going to the Homepage</a></p>
+    <a href="/" rel="home">going to the Homepage</a>
+  </p>
 </div>
 `;
 
@@ -29,6 +31,7 @@ exports[`Error renders generic message 1`] = `
   <div class="artwork-image-frame artwork--portrait"><img alt="Nicolaes Maes's painting: The Idle Servant" src="/photos/01-02/01-02--xs3-8BAoia4yi0O.jpg" class="artwork-image error__image"></div>
   <p class="error__message">
     You'll have better luck
-    <a href="/" rel="home">going to the Homepage</a></p>
+    <a href="/" rel="home">going to the Homepage</a>
+  </p>
 </div>
 `;

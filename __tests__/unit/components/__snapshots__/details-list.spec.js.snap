@@ -15,7 +15,8 @@ exports[`DetailsList Component renders correctly 1`] = `
       <use></use>
     </svg> <span><span class="u-sr-only">Size:</span> 45.5
     <abbr title="centimeters">cm</abbr> <span aria-hidden="true">×</span> <span class="u-sr-only">by</span> 41
-    <abbr title="centimeters">cm</abbr></span></li>
+    <abbr title="centimeters">cm</abbr></span>
+  </li>
   <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation">
       <use></use>
     </svg> <span><span class="u-sr-only">Location:</span> Rijksmuseum, Amsterdam
@@ -25,6 +26,7 @@ exports[`DetailsList Component renders correctly 1`] = `
     </svg> <span><span class="u-sr-only">Source:</span> Wikipedia:
     <a href="http://en.wikipedia.org/w/index.php?title=The_Milkmaid_(Vermeer)&amp;oldid=594234689" target="_blank" rel="noopener noreferrer external">
       The Milkmaid
-    </a></span></li>
+    </a></span>
+  </li>
 </ul>
 `;

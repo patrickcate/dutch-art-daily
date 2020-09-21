@@ -8,7 +8,7 @@ describe('TheHeader Component', () => {
   })
 
   it('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('renders correctly', () => {
@@ -26,8 +26,10 @@ describe('TheHeader Component', () => {
       },
     })
 
-    expect(wrapper.find({ name: 'ShareList' }).isVisible()).toBe(true)
-    expect(wrapper.find({ name: 'ShareDropdown' }).isVisible()).toBe(false)
+    expect(wrapper.findComponent({ name: 'ShareList' }).isVisible()).toBe(true)
+    expect(wrapper.findComponent({ name: 'ShareDropdown' }).isVisible()).toBe(
+      false
+    )
   })
 
   it('shows share dropdown on smaller screen sizes', () => {
@@ -41,7 +43,9 @@ describe('TheHeader Component', () => {
       },
     })
 
-    expect(wrapper.find({ name: 'ShareList' }).isVisible()).toBe(false)
-    expect(wrapper.find({ name: 'ShareDropdown' }).isVisible()).toBe(true)
+    expect(wrapper.findComponent({ name: 'ShareList' }).isVisible()).toBe(false)
+    expect(wrapper.findComponent({ name: 'ShareDropdown' }).isVisible()).toBe(
+      true
+    )
   })
 })

@@ -60,7 +60,7 @@ export default {
       speed: 500,
       centeredSlides: true,
       slidesPerView: self.slideNumber,
-      roundLengths: false,
+      roundLengths: true,
       keyboard: {
         enabled: self.keyboard,
         onlyInViewport: true,

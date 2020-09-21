@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.1](https://github.com/patrickcate/dutch-art-daily/compare/v2.4.0...v2.4.1) (2020-09-21)
+
+
+### Bug Fixes
+
+* update github actions e2e script ([232c6f6](https://github.com/patrickcate/dutch-art-daily/commit/232c6f674e7c1770178e9fdaf69837c0b48a55a4))
+
+## [2.4.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.3.0...v2.4.0) (2020-09-20)
+
+
+### Features
+
+* add active styling to timeline button ([b2ce7f9](https://github.com/patrickcate/dutch-art-daily/commit/b2ce7f9d4f39b6432d060c48ac94eefc40be471e))
+* always add 'today' date label in static mode ([32377f2](https://github.com/patrickcate/dutch-art-daily/commit/32377f2de55dc6177f0ca379b73931aa3810519b))
+* switch to new Nuxt static generation mode ([17c5842](https://github.com/patrickcate/dutch-art-daily/commit/17c584249573eaf008f489d4d01b5466e8aabc46))
+
 ## [2.3.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.2.4...v2.3.0) (2020-04-08)
 
 

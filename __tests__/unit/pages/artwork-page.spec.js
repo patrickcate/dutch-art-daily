@@ -33,7 +33,7 @@ describe('Artwork Page', () => {
   })
 
   it('should be a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('renders correctly', () => {
@@ -47,11 +47,6 @@ describe('Artwork Page', () => {
       ArtworkPage,
       {
         ...options,
-        methods: {
-          $icon() {
-            return true
-          },
-        },
       },
       {
         getters: {

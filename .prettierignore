@@ -6,3 +6,4 @@ _source
 /node_modules/**
 /tests/unit/coverage/**
 CHANGELOG.md
+.nvmrc

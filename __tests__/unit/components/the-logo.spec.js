@@ -1,3 +1,5 @@
+/* eslint-disable no-import-assign */
+
 import * as formatDate from '@utils/format-date'
 import TheLogo from '@components/the-logo.vue'
 
@@ -10,7 +12,7 @@ describe('TheLogo Component', () => {
   })
 
   it('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('renders correctly', () => {

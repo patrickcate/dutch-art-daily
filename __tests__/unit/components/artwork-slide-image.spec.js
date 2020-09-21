@@ -23,29 +23,11 @@ describe('ArtworkSlideImage Component', () => {
   })
 
   it('should be a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot()
-  })
-
-  it('image load event fires', async () => {
-    const imageHasLoadedMock = jest.fn()
-
-    wrapper = createWrapper(ArtworkSlideImage, {
-      ...options,
-      methods: {
-        imageHasLoaded() {
-          imageHasLoadedMock()
-        },
-      },
-    })
-
-    wrapper.find('img').trigger('load')
-    await wrapper.vm.$nextTick()
-
-    expect(imageHasLoadedMock).toHaveBeenCalled()
   })
 
   it('slide is tracked and height set after image loads', async () => {

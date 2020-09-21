@@ -72,6 +72,12 @@ $segment-width: 4px;
       transform: scaleY(0.5);
     }
   }
+
+  &:active {
+    .line-segment__point {
+      background-color: rgba(set-color(secondary), 0.35);
+    }
+  }
 }
 
 .line-segment__label {
@@ -83,7 +89,7 @@ $segment-width: 4px;
   height: $half-spacing + $eighth-spacing;
   border: $segment-width solid $white;
   border-radius: $spacing * 5;
-  transition: border-color $speed-slow ease;
+  transition: border-color $speed-slow ease, background-color $speed-faster ease;
 }
 
 .line-segment__accent {

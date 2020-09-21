@@ -15,7 +15,7 @@ describe('Homepage', () => {
   })
 
   it('should be a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   it('render an empty string', () => {
@@ -23,11 +23,6 @@ describe('Homepage', () => {
 
     wrapper = createWrapper(Homepage, {
       ...options,
-      methods: {
-        $icon() {
-          return true
-        },
-      },
     })
 
     expect(wrapper).toMatchSnapshot()
