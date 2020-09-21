@@ -20,7 +20,7 @@ yarn build
 yarn start
 
 # generate static project
-yarn run generate:modern
+yarn run generate
 ```
 
 ## Generate Photos
@@ -42,3 +42,17 @@ yarn gitcommit
 ```
 
 and follow to CLI prompts.
+
+## Run Tests
+
+### Unit Tests
+
+```bash
+yarn test:unit
+```
+
+### E2E Tests
+
+```bash
+yarn test:e2e
+```
