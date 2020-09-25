@@ -26,12 +26,12 @@ module.exports = {
     title: 'Dutch Art Daily',
     meta: [
       { hid: 'charset', charset: 'utf-8' },
-      {
-        hid: 'viewport',
-        name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
-      },
+      // {
+      //   hid: 'viewport',
+      //   name: 'viewport',
+      //   content:
+      //     'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+      // },
       {
         hid: 'mobile-web-app-capable',
         name: 'mobile-web-app-capable',
@@ -75,9 +75,8 @@ module.exports = {
    * (https://pwa.nuxtjs.org)
    */
   pwa: {
-    meta: false,
     icon: {
-      iconSrc: './assets/images/logos/touch-icon.png',
+      source: './assets/images/logos/touch-icon.png',
     },
     manifest: {
       name: 'Dutch Art Daily',
