@@ -53,6 +53,26 @@ yarn test:unit
 
 ### E2E Tests
 
+#### Development (interactive) mode
+
+```bash
+yarn dev
+```
+
+and wait for dev server to start
+
+```bash
+yarn dev:e2e
+```
+
+#### Production (headless) mode
+
+```bash
+yarn build && yarn start
+```
+
+and wait build and dev server to start
+
 ```bash
 yarn test:e2e
 ```
