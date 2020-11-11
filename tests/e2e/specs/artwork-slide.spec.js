@@ -24,14 +24,15 @@ describe('artwork slide', () => {
     const currentHeight = cy.$$('.l-page__carousel')[0].style.height
 
     cy.viewport('macbook-15')
-    cy.wait(1).then(() => {
+
+    cy.wait(1000).then(() => {
       const newHeight = cy.$$('.l-page__carousel')[0].style.height
 
       expect(newHeight).to.not.eq(currentHeight)
     })
   })
 
-  it.only('swipe left gesture changes active slide', () => {
+  it('swipe left gesture changes active slide', () => {
     cy.get('.timeline-nav__list-item.swiper-slide-active').should(
       'contain',
       '01/01'
