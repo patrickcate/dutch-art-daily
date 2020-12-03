@@ -3,15 +3,6 @@ const path = require('path')
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
-// Set the PWA start url based on the environment.
-let startUrl
-
-if (process.env.NODE_ENV === 'production') {
-  startUrl = 'https://dutchartdaily.com'
-} else {
-  startUrl = 'http://localhost:3000'
-}
-
 module.exports = {
   target: 'static',
   debug: process.dev !== true,
@@ -81,7 +72,6 @@ module.exports = {
     manifest: {
       name: 'Dutch Art Daily',
       short_name: 'DutchArtDaily',
-      start_url: startUrl,
       theme_color: '#1a3f68',
       background_color: '#ffffff',
       orientation: 'portrait-primary',
