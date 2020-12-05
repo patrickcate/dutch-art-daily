@@ -5,31 +5,43 @@ describe('artwork slide', () => {
   })
 
   it('carousel height updates when active artwork height changes', () => {
-    let currentHeight = cy.$$('.l-page__carousel')[0].style.height
+    const carouselSelector = '.l-page__carousel'
 
-    for (let step = 0; step < 6; step++) {
-      cy.get('.timeline-nav-button--prev').click()
+    cy.get(carouselSelector)
+      .should('be.visible')
+      .then(() => {
+        let currentHeight = cy.$$(carouselSelector)[0].style.height
 
-      cy.wait(1).then(() => {
-        const newHeight = cy.$$('.l-page__carousel')[0].style.height
+        for (let step = 0; step < 6; step++) {
+          cy.get('.timeline-nav-button--prev').click()
 
-        expect(newHeight).to.not.eq(currentHeight)
+          cy.wait(1000).then(() => {
+            const newHeight = cy.$$(carouselSelector)[0].style.height
 
-        currentHeight = cy.$$('.l-page__carousel')[0].style.height
+            expect(newHeight).to.not.eq(currentHeight)
+
+            currentHeight = cy.$$(carouselSelector)[0].style.height
+          })
+        }
       })
-    }
   })
 
   it('carousel height is updated when screen is resized', () => {
-    const currentHeight = cy.$$('.l-page__carousel')[0].style.height
+    const carouselSelector = '.l-page__carousel'
 
-    cy.viewport('macbook-15')
+    cy.get(carouselSelector)
+      .should('be.visible')
+      .then(() => {
+        const currentHeight = cy.$$(carouselSelector)[0].style.height
 
-    cy.wait(1000).then(() => {
-      const newHeight = cy.$$('.l-page__carousel')[0].style.height
+        cy.viewport('macbook-15')
 
-      expect(newHeight).to.not.eq(currentHeight)
-    })
+        cy.wait(1000).then(() => {
+          const newHeight = cy.$$(carouselSelector)[0].style.height
+
+          expect(newHeight).to.not.eq(currentHeight)
+        })
+      })
   })
 
   it('swipe left gesture changes active slide', () => {
@@ -42,6 +54,7 @@ describe('artwork slide', () => {
 
     // Simulate swiper right gesture.
     cy.get('.l-page__carousel')
+      .should('be.visible')
       .trigger('pointerdown', { which: 1 })
       .trigger('pointermove', 'right')
       .trigger('pointerup', { force: true })
@@ -55,6 +68,7 @@ describe('artwork slide', () => {
 
     // Simulate swiper left gesture.
     cy.get('.l-page__carousel')
+      .should('be.visible')
       .trigger('pointerdown', { which: 1 })
       .trigger('pointermove', 'left')
       .trigger('pointerup', { force: true })

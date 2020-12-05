@@ -4,28 +4,36 @@ describe('details slide', () => {
   })
 
   it('details slide should be 2 columns at wider screen sizes', () => {
-    let titleLeft = cy.$$(
+    const detailsTitleSelector =
       '.l-page__details .swiper-slide-active .details-slide__title'
-    )[0].offsetLeft
-
-    let listLeft = cy.$$(
+    const detailsListSelector =
       '.l-page__details .swiper-slide-active .details-list'
-    )[0].offsetLeft
+    let titleLeft
+    let listLeft
 
-    expect(titleLeft).not.to.eq(listLeft)
+    cy.get(detailsTitleSelector)
+      // .as('detailsTitle')
+      .should('be.visible')
+      .get(detailsListSelector)
+      .should('be.visible')
+      .then(() => {
+        titleLeft = cy.$$(detailsTitleSelector)[0].offsetLeft
+        listLeft = cy.$$(detailsListSelector)[0].offsetLeft
+
+        expect(titleLeft).not.to.eq(listLeft)
+      })
 
     cy.viewport('iphone-6')
     cy.visit('/01-01')
 
-    cy.wait(1).then(() => {
-      titleLeft = cy.$$(
-        '.l-page__details .swiper-slide-active .details-slide__title'
-      )[0].offsetLeft
-
-      listLeft = cy.$$('.l-page__details .swiper-slide-active .details-list')[0]
-        .offsetLeft
-
-      expect(titleLeft).to.eq(listLeft)
-    })
+    cy.get(detailsTitleSelector)
+      .should('be.visible')
+      .get(detailsListSelector)
+      .should('be.visible')
+      .then(() => {
+        titleLeft = cy.$$(detailsTitleSelector)[0].offsetLeft
+        listLeft = cy.$$(detailsListSelector)[0].offsetLeft
+        expect(titleLeft).to.eq(listLeft)
+      })
   })
 })
