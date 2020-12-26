@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.4.3...v2.5.0) (2020-12-26)
+
+
+### Features
+
+* update nuxt to 2.14.9 and remove custom PWA startUrl property ([39b1b1a](https://github.com/patrickcate/dutch-art-daily/commit/39b1b1a861ab3767dfd0efa02a2c0a605513f4b3))
+
 ### [2.4.3](https://github.com/patrickcate/dutch-art-daily/compare/v2.4.2...v2.4.3) (2020-11-11)
 
 ### [2.4.2](https://github.com/patrickcate/dutch-art-daily/compare/v2.4.1...v2.4.2) (2020-09-25)
