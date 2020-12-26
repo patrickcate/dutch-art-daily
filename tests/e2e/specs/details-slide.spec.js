@@ -12,7 +12,6 @@ describe('details slide', () => {
     let listLeft
 
     cy.get(detailsTitleSelector)
-      // .as('detailsTitle')
       .should('be.visible')
       .get(detailsListSelector)
       .should('be.visible')
