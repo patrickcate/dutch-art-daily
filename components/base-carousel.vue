@@ -43,7 +43,9 @@ export default {
       return this.slides.length - 1
     },
     initClass() {
-      return this.initialized ? 'swiper--initialized' : null
+      return this.initialized
+        ? ['swiper--initialized', `${this.name}--initialized`]
+        : null
     },
     wrapperClass() {
       return `${this.name}__list`

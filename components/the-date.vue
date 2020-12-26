@@ -9,7 +9,7 @@ export default {
       currentDate: 'activeId',
     }),
     dateLabel() {
-      // When being staticlly generated, always include the 'Today,' date label.
+      // When being statically generated, always include the 'Today,' date label.
       if (process.static && process.server) {
         return 'Today,'
       }

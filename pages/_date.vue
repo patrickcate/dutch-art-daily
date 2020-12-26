@@ -189,7 +189,11 @@ export default {
 }
 
 .l-page__carousel {
-  transition: height $speed-medium $base-easing;
+  height: calc(100vh - 280px);
+
+  &.carousel--initialized {
+    transition: height $speed-medium $base-easing;
+  }
 
   @include media('<md') {
     margin-top: -#{$half-spacing + $quarter-spacing};
