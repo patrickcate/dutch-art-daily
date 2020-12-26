@@ -1,3 +1,4 @@
+import { subDays } from 'date-fns'
 import { dateId } from '../../../utils/format-date.js'
 
 describe('the logo', () => {
@@ -8,8 +9,11 @@ describe('the logo', () => {
   })
 
   it('clicking on the logo redirects to todays page if not on it already', () => {
-    cy.visit('/01-01')
-    cy.get('a.home').click()
+    // Make sure we aren't on a day within the current 7-day range.
+    const pastDateId = dateId(subDays(new Date(), 30))
+    cy.visit(`/${pastDateId}`)
+      .get('a.home')
+      .click()
 
     cy.url().should('include', `/${todaysId}`)
   })
