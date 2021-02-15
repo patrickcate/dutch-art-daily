@@ -6702,9 +6702,9 @@ follow-redirects@^1.10.0:
   integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
 font-face-generator@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/font-face-generator/-/font-face-generator-1.1.1.tgz#c9cfe430296ec2bd3226ec23738741b115a6f3f4"
-  integrity sha512-jV4miQVbEBETP0FTVOD6XXJtCRZtwXi4tP2VxbOpbH3MNw03fojIbGE/SxnsRQS8WKDIpYmbKjsracoLLC4PuQ==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/font-face-generator/-/font-face-generator-1.1.2.tgz#aa89a239613e3dcbb018962551fe0200260be756"
+  integrity sha512-i6Gvcy69Qrs5rQoaMw+WcS56BiQNy5ZEcS1aVzLwKQkxQl8FSNsAXe4V+NhtARdQi6yhtGkJzfvJNMdlXN3pwg==
 
 for-in@^1.0.2:
   version "1.0.2"
