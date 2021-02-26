@@ -15036,9 +15036,9 @@ vue-hot-reload-api@^2.3.0:
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
 vue-jest@^4.0.0-beta.2:
-  version "4.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/vue-jest/-/vue-jest-4.0.0-rc.1.tgz#a465bd9ece57ad6c796104b0f5b4be5ea83055f8"
-  integrity sha512-gelt1tEYdWjb2kQVn+2NNUP0Slv6qYCdoYxScAMhJ+FEG8ACF17VczpIGioJ+NVedsTic/xgfyrjIVYnsxV6Qg==
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/vue-jest/-/vue-jest-4.0.0.tgz#bd4862b90ef2d772b1206db5640da7fc6eb94086"
+  integrity sha512-h3/2gZ1AcIybcpFwIPn2PCogXFkR9NzjNS4GCJbZK9wVA4u1yDRwG5jChKoN5VeR0+NiUKe/9czAN0s2LJvh2w==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"
     "@vue/component-compiler-utils" "^3.1.0"
