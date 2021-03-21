@@ -87,10 +87,12 @@ describe('TimelineNavButton Component', () => {
       currentSlideIndex: 0,
     })
 
-    wrapper.trigger('click')
+    expect(wrapper.vm.$store.state.currentSlideIndex).toBe(0)
 
-    expect(slideToMock).toHaveBeenCalledWith(1)
-    expect(wrapper.vm.$store.state.currentSlideIndex).toBe(1)
+    wrapper.trigger('click').then(() => {
+      expect(slideToMock).toHaveBeenCalledWith(1)
+      expect(wrapper.vm.$store.state.currentSlideIndex).toBe(1)
+    })
   })
 
   it('click on previous button when at beginning does nothing', () => {

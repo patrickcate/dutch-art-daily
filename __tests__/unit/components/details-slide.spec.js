@@ -34,7 +34,7 @@ describe('DetailsSlide Component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('set scroll height on active id/details match', async () => {
+  it('set scroll height on active id/details match', () => {
     const updateCurrentDetailsHeightMock = jest.fn(height => {
       wrapper.vm.$store.commit('SET_CURRENT_DETAILS_HEIGHT', height)
     })
@@ -60,9 +60,10 @@ describe('DetailsSlide Component', () => {
     wrapper.setProps({
       id: '01-01',
     })
-    await wrapper.vm.$nextTick()
 
-    expect(updateCurrentDetailsHeightMock).toHaveBeenCalledWith(100)
-    expect(wrapper.vm.$store.state.currentDetailsHeight).toBe(100)
+    wrapper.vm.$nextTick(() => {
+      expect(updateCurrentDetailsHeightMock).toHaveBeenCalledWith(100)
+      expect(wrapper.vm.$store.state.currentDetailsHeight).toBe(100)
+    })
   })
 })
