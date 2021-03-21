@@ -60,6 +60,7 @@ describe('TimelineNavButton Component', () => {
     wrapper.setProps({
       direction: 'next',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,
@@ -81,6 +82,7 @@ describe('TimelineNavButton Component', () => {
     wrapper.setProps({
       direction: 'next',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,
@@ -112,6 +114,7 @@ describe('TimelineNavButton Component', () => {
     wrapper.setProps({
       direction: 'next',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,

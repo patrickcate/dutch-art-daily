@@ -93,10 +93,9 @@ describe('BaseCarousel Component', () => {
       }
     )
 
-    await wrapper.vm.$nextTick()
-
     // Trigger slide change.
     wrapper.vm.$el.swiper.slidePrev()
+    await wrapper.vm.$nextTick()
 
     expect(updateCurrentSlideIndexMock).toHaveBeenCalled()
     expect(updateCurrentPageMock).toHaveBeenCalled()

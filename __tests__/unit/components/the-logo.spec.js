@@ -35,8 +35,7 @@ describe('TheLogo Component', () => {
       },
     }
 
-    wrapper.find('a').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('a').trigger('click')
 
     expect(slideToMock).toHaveBeenCalledWith(6)
   })
@@ -73,13 +72,11 @@ describe('TheLogo Component', () => {
       }
     )
 
-    wrapper.find('a').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('a').trigger('click')
 
     expect(routerPushMock).toHaveBeenCalledWith('/')
 
-    wrapper.find('a').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('a').trigger('click')
 
     expect(routerPushMock).toHaveBeenCalledWith('/12-12')
   })

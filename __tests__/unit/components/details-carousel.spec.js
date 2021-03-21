@@ -24,7 +24,6 @@ describe('DetailsCarousel Component', () => {
       ...wrapper.vm.$store.state,
       currentDetailsHeight: 100,
     })
-
     await wrapper.vm.$nextTick()
 
     expect(wrapper).toMatchSnapshot()

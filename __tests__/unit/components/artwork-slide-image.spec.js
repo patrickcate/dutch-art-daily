@@ -52,8 +52,7 @@ describe('ArtworkSlideImage Component', () => {
     expect(Object.keys(wrapper.vm.$store.state.loadedSlides).length).toBe(0)
     expect(wrapper.vm.$store.state.currentArtworkHeight).toBe(400)
 
-    wrapper.find('img').trigger('load')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('img').trigger('load')
 
     expect(Object.keys(wrapper.vm.$store.state.loadedSlides)[0]).toBe('01-01')
     expect(wrapper.vm.$store.state.currentArtworkHeight).toBe(1000)
@@ -80,14 +79,16 @@ describe('ArtworkSlideImage Component', () => {
       }
     )
 
-    wrapper.find('img').trigger('load')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('img').trigger('load')
 
     // Active id and image prod id don't match.
     expect(wrapper.props('id')).toBe('12-12')
     expect(wrapper.vm.$store.state.activeId).toBe('01-01')
 
     wrapper.setProps({ id: '01-01' })
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.props('id')).toBe('01-01')
 
     wrapper.vm.$el = {
       parentNode: {
@@ -95,10 +96,9 @@ describe('ArtworkSlideImage Component', () => {
       },
     }
 
-    wrapper.find('img').trigger('load')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('img').trigger('load')
 
-    expect(wrapper.vm.$el.parentNode).toBeNull()
+    expect(wrapper.vm.$el.parentNode.scrollHeight).toBe(0)
   })
 
   it('only generates available image sizes', () => {
