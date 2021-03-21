@@ -15,6 +15,11 @@ export default {
     DetailsCarousel,
     TimelineNavButton,
   },
+  validate({ params }) {
+    const allRoutes = generateRoutes()
+
+    return allRoutes.includes(params.date)
+  },
   async fetch({ store, params }) {
     const slideDates = generateDateList(params.date)
 
@@ -37,35 +42,6 @@ export default {
     await store.dispatch('updateSlideData', slides)
     await store.dispatch('updateCurrentSlideIndex', slides.length - 1)
     store.dispatch('updateCurrentPage', params.date)
-  },
-  computed: {
-    ...mapState({
-      slides: 'slides',
-      currentArtworkHeight: 'currentArtworkHeight',
-    }),
-    ...mapGetters(['getArtworkById']),
-    touchIcon() {
-      return this.$icon ? this.$icon(192) : ''
-    },
-    routeDate() {
-      return this.$route.params.date
-    },
-    artwork() {
-      return this.getArtworkById(this.routeDate)
-    },
-    page() {
-      return this.artwork
-        ? this.artwork
-        : {
-            id: '',
-            title: '',
-            description: '',
-            hash: '',
-          }
-    },
-    currentSlideHeight() {
-      return `height:${this.currentArtworkHeight}px`
-    },
   },
   head() {
     return {
@@ -147,10 +123,34 @@ export default {
       link: [{ rel: 'apple-touch-icon', href: this.touchIcon }],
     }
   },
-  validate({ params }) {
-    const allRoutes = generateRoutes()
-
-    return allRoutes.includes(params.date)
+  computed: {
+    ...mapState({
+      slides: 'slides',
+      currentArtworkHeight: 'currentArtworkHeight',
+    }),
+    ...mapGetters(['getArtworkById']),
+    touchIcon() {
+      return this.$icon ? this.$icon(192) : ''
+    },
+    routeDate() {
+      return this.$route.params.date
+    },
+    artwork() {
+      return this.getArtworkById(this.routeDate)
+    },
+    page() {
+      return this.artwork
+        ? this.artwork
+        : {
+            id: '',
+            title: '',
+            description: '',
+            hash: '',
+          }
+    },
+    currentSlideHeight() {
+      return `height:${this.currentArtworkHeight}px`
+    },
   },
 }
 </script>

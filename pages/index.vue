@@ -1,16 +1,6 @@
 <script>
 export default {
   name: 'HomePage',
-  computed: {
-    touchIcon() {
-      return this.$icon ? this.$icon(192) : ''
-    },
-  },
-  beforeCreate() {
-    if (!process.server) {
-      this.$homepageRedirect()
-    }
-  },
   head() {
     return {
       title: 'Dutch Art Daily',
@@ -59,6 +49,16 @@ export default {
         },
       ],
       link: [{ rel: 'apple-touch-icon', href: this.touchIcon }],
+    }
+  },
+  computed: {
+    touchIcon() {
+      return this.$icon ? this.$icon(192) : ''
+    },
+  },
+  beforeCreate() {
+    if (!process.server) {
+      this.$homepageRedirect()
     }
   },
   render() {

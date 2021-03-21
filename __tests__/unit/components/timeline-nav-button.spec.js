@@ -60,6 +60,7 @@ describe('TimelineNavButton Component', () => {
     wrapper.setProps({
       direction: 'next',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,
@@ -70,49 +71,56 @@ describe('TimelineNavButton Component', () => {
     expect(wrapper.attributes('disabled')).toBe('disabled')
   })
 
-  it('click on previous button goes to previous slide', () => {
-    wrapper.trigger('click')
+  it('click on previous button goes to previous slide', async () => {
+    await wrapper.trigger('click')
 
     expect(slideToMock).toHaveBeenCalledWith(2)
     expect(wrapper.vm.$store.state.currentSlideIndex).toBe(2)
   })
 
-  it('click on next button goes to next slide', () => {
+  it('click on next button goes to next slide', async () => {
     wrapper.setProps({
       direction: 'next',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,
       currentSlideIndex: 0,
     })
+    await wrapper.vm.$nextTick()
 
-    wrapper.trigger('click')
+    expect(wrapper.vm.$store.state.currentSlideIndex).toBe(0)
+
+    await wrapper.trigger('click')
 
     expect(slideToMock).toHaveBeenCalledWith(1)
     expect(wrapper.vm.$store.state.currentSlideIndex).toBe(1)
   })
 
-  it('click on previous button when at beginning does nothing', () => {
+  it('click on previous button when at beginning does nothing', async () => {
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,
       currentSlideIndex: 0,
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.toPrevSlide()
 
     expect(slideToMock).not.toHaveBeenCalled()
   })
 
-  it('click on next button when at end does nothing', () => {
+  it('click on next button when at end does nothing', async () => {
     wrapper.setProps({
       direction: 'next',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$store.replaceState({
       ...wrapper.vm.$store.state,
       currentSlideIndex: 6,
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.toNextSlide()
 

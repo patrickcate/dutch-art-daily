@@ -1,4 +1,4 @@
-module.exports = async function(filePath, photoData) {
+module.exports = async function (filePath, photoData) {
   const path = require('path')
   const Jimp = require('jimp')
 

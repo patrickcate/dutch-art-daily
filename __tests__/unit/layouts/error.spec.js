@@ -24,17 +24,17 @@ describe('Error', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('renders generic message', () => {
+  it('renders generic message', async () => {
     wrapper.setProps({
       error: null,
     })
+    await wrapper.vm.$nextTick()
 
     expect(wrapper).toMatchSnapshot()
   })
 
   it('does not render image if src path is not available', async () => {
     wrapper.setData({ artwork: null })
-
     await wrapper.vm.$nextTick()
 
     expect(wrapper).toMatchSnapshot()

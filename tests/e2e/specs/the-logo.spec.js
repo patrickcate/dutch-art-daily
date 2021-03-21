@@ -11,9 +11,7 @@ describe('the logo', () => {
   it('clicking on the logo redirects to todays page if not on it already', () => {
     // Make sure we aren't on a day within the current 7-day range.
     const pastDateId = dateId(subDays(new Date(), 30))
-    cy.visit(`/${pastDateId}`)
-      .get('a.home')
-      .click()
+    cy.visit(`/${pastDateId}`).get('a.home').click()
 
     cy.url().should('include', `/${todaysId}`)
   })
@@ -21,19 +19,13 @@ describe('the logo', () => {
   it('clicking on the logo moves to todays slide if already on todays page', () => {
     cy.visit(`/${todaysId}`)
 
-    cy.get('h1')
-      .contains('Today')
-      .should('have.length', 1)
+    cy.get('h1').contains('Today').should('have.length', 1)
 
     cy.get('.timeline-nav-button--prev').click()
-    cy.get('h1')
-      .contains('Yesterday')
-      .should('have.length', 1)
+    cy.get('h1').contains('Yesterday').should('have.length', 1)
 
     cy.get('a.home').click()
-    cy.get('h1')
-      .contains('Today')
-      .should('have.length', 1)
+    cy.get('h1').contains('Today').should('have.length', 1)
   })
 
   it('shows the condensed version of logo at small screen widths', () => {

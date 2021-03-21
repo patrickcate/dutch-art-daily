@@ -15,17 +15,17 @@ export default {
       artwork,
     }
   },
+  head() {
+    return {
+      title: 'Page not found | Dutch Art Daily',
+    }
+  },
   computed: {
     errorImage() {
       return this.artwork
         ? `/photos/01-02/01-02--xs3-${artwork.hash}.jpg`
         : null
     },
-  },
-  head() {
-    return {
-      title: 'Page not found | Dutch Art Daily',
-    }
   },
 }
 </script>

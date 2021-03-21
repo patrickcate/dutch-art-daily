@@ -72,8 +72,7 @@ describe('TimelineNavItem Component', () => {
       },
     }
 
-    wrapper.find('button').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('button').trigger('click')
 
     expect(slideToMock).toHaveBeenCalledWith(4)
   })
@@ -100,8 +99,7 @@ describe('TimelineNavItem Component', () => {
       },
     }
 
-    wrapper.find('button').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('button').trigger('click')
 
     expect(slideToMock).not.toHaveBeenCalled()
   })

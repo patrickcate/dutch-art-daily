@@ -19,8 +19,7 @@ describe('ShareDropdown Component', () => {
     expect(wrapper.classes()).not.toContain('share-dropdown--is-expanded')
     expect(wrapper.find('button').attributes('aria-expanded')).toBeUndefined()
 
-    wrapper.find('button').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('button').trigger('click')
 
     expect(wrapper.classes()).toContain('share-dropdown--is-expanded')
     expect(wrapper.find('button').attributes('aria-expanded')).toBe('true')

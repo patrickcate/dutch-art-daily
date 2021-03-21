@@ -27,6 +27,7 @@ describe('TheLogo Component', () => {
       currentSlideIndex: 0,
       activeId: '12-26',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$root.swipers.carousel = {
       slideTo(index) {
@@ -34,8 +35,7 @@ describe('TheLogo Component', () => {
       },
     }
 
-    wrapper.find('a').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('a').trigger('click')
 
     expect(slideToMock).toHaveBeenCalledWith(6)
   })
@@ -72,13 +72,11 @@ describe('TheLogo Component', () => {
       }
     )
 
-    wrapper.find('a').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('a').trigger('click')
 
     expect(routerPushMock).toHaveBeenCalledWith('/')
 
-    wrapper.find('a').trigger('click')
-    await wrapper.vm.$nextTick()
+    await wrapper.find('a').trigger('click')
 
     expect(routerPushMock).toHaveBeenCalledWith('/12-12')
   })
