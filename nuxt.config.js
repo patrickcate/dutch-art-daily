@@ -89,6 +89,8 @@ module.exports = {
     { src: '@/plugins/global-components.js' },
   ],
 
+  buildModules: ['@nuxtjs/pwa'],
+
   /**
    * Nuxt.js modules
    */
@@ -100,7 +102,6 @@ module.exports = {
       },
     ],
     '@nuxtjs/sitemap',
-    ['@nuxtjs/pwa'],
     'nuxt-babel',
     'vue-screen/nuxt',
   ],

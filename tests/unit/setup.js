@@ -14,7 +14,7 @@ import {
 // @see https://github.com/chrisvfritz/vue-enterprise-boilerplate
 // Make console.error throw, so that Jest tests fail
 const error = console.error
-console.error = function(message) {
+console.error = function (message) {
   error.apply(console, arguments)
   // NOTE: You can whitelist some `console.error` messages here
   //       by returning if the `message` value is acceptable.
@@ -25,7 +25,7 @@ console.error = function(message) {
 // @see https://github.com/chrisvfritz/vue-enterprise-boilerplate
 // Make console.warn throw, so that Jest tests fail
 const warn = console.warn
-console.warn = function(message) {
+console.warn = function (message) {
   warn.apply(console, arguments)
   // NOTE: You can whitelist some `console.warn` messages here
   //       by returning if the `message` value is acceptable.

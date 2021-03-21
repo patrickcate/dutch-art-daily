@@ -7,7 +7,7 @@ describe('BaseCarousel Component', () => {
   let state
 
   beforeEach(() => {
-    const SlideMock = Vue.component('slide-mock', {
+    const SlideMock = Vue.component('SlideMock', {
       template: '<li></li>',
     })
 

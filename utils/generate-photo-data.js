@@ -1,4 +1,4 @@
-module.exports.generatePhotoData = function() {
+module.exports.generatePhotoData = function () {
   const fs = require('fs')
   const path = require('path')
   const Jimp = require('jimp')

@@ -67,9 +67,7 @@ describe('timeline nav', () => {
       '01/01'
     )
 
-    cy.get('.timeline-nav__list-item .line-segment:visible')
-      .first()
-      .click()
+    cy.get('.timeline-nav__list-item .line-segment:visible').first().click()
 
     cy.get('.timeline-nav__list-item.swiper-slide-active').should(
       'contain',

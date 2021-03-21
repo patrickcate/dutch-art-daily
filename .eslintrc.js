@@ -11,9 +11,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     '@nuxtjs',
-    'plugin:prettier/recommended',
     'plugin:vue/recommended',
-    'prettier/vue',
+    'plugin:prettier/recommended',
   ],
   plugins: ['cypress', 'prettier', 'vue'],
   // add your custom rules here
