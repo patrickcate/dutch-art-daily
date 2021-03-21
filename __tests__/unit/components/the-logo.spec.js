@@ -27,6 +27,7 @@ describe('TheLogo Component', () => {
       currentSlideIndex: 0,
       activeId: '12-26',
     })
+    await wrapper.vm.$nextTick()
 
     wrapper.vm.$root.swipers.carousel = {
       slideTo(index) {
