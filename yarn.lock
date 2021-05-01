@@ -2504,9 +2504,9 @@
     prettier "^1.18.2"
 
 "@vue/test-utils@^1.1.1":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.1.4.tgz#a9acb32ea1fa4535b2e1ce5ca100bceb4fade2db"
-  integrity sha512-9BeL8IqGvJKy553lq/07rhYURQkpS/k+j19rJ/4eDpGJk7z872M0YrBWFhjS14yMKlvYVYOCfWnVIXyrAx0xNw==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.2.0.tgz#3bc8c17ed549157275f0aec6b95da40887f7297f"
+  integrity sha512-poBTLqeJYNq1TXVhtVfnY8vELUVOFdJY8KZZoUuaAkIqPTWsxonU1M8nMWpZT+xEMrM+49+YcuEqtMHVD9Q9gw==
   dependencies:
     dom-event-types "^1.0.0"
     lodash "^4.17.15"
@@ -13849,9 +13849,9 @@ stylelint-config-prettier@^8.0.1:
   integrity sha512-TN1l93iVTXpF9NJstlvP7nOu9zY2k+mN0NSFQ/VEGz15ZIP9ohdDZTtCWHs5LjctAhSAzaILULGbgiM0ItId3A==
 
 stylelint-config-recess-order@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-recess-order/-/stylelint-config-recess-order-2.3.0.tgz#ee33adc4faf3a09ed8e3a53f682e1682e1884ff8"
-  integrity sha512-z1d1m///to9ikecxP0uM2ljAmogHL1A+A4MUXtYrJvZRFPfPeODebimmJacx4cRL/oltEo3I6HqtreyRrn4lBg==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recess-order/-/stylelint-config-recess-order-2.4.0.tgz#7336da98d9e11cfd17388f4c15fada615b49c301"
+  integrity sha512-+X+cb7WgmfCt5yoG+Ewg+fpn79hosjj7ESQ7ODTtwaZQGzQT+jD6AWLAhULMqDb9v2GVDTO5fu1rY/BR9EaZJA==
   dependencies:
     stylelint-order "4.1.x"
 
