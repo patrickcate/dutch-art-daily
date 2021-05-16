@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseCarousel Component renders correctly 1`] = `
+<div
+  class="swiper-container swiper-container-initialized swiper-container-horizontal"
+>
+  
+  
+  <ul
+    aria-live="polite"
+    class="swiper-wrapper carousel__list"
+    id="randomly-generated-id"
+    style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+  >
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+    
+    <li
+      class="swiper-slide"
+    />
+    
+  
+  </ul>
+  <span
+    aria-atomic="true"
+    aria-live="assertive"
+    class="swiper-notification"
+  />
+  
+
+</div>
+`;
