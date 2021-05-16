@@ -1,12 +1,6 @@
 <script>
 import { mapState, mapActions } from 'vuex'
-import {
-  A11y,
-  Controller,
-  Lazy,
-  Navigation,
-  Swiper,
-} from 'swiper/js/swiper.esm'
+import { A11y, Controller, Lazy, Navigation, Swiper } from 'swiper'
 
 export default {
   name: 'BaseCarousel',

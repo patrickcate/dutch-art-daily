@@ -37,7 +37,7 @@
     "@nuxtjs/pwa": "^3.2.2",
     "date-fns": "^2.11.0",
     "nuxt": "^2.14.7",
-    "swiper": "^5.2.1",
+    "swiper": "^6.6.1",
     "vue-screen": "^1.5.2"
   },
   "devDependencies": {

@@ -44,30 +44,6 @@ describe('BaseCarousel Component', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
 
-  it('renders correctly', () => {
-    wrapper = createWrapper(BaseCarousel, { ...options })
-
-    wrapper.vm.$root.swipers = {
-      carousel: {
-        controller: {
-          control: {},
-        },
-      },
-      timeline: {
-        controller: {
-          control: {},
-        },
-      },
-      details: {
-        controller: {
-          control: {},
-        },
-      },
-    }
-
-    expect(wrapper).toMatchSnapshot()
-  })
-
   it('all child elements have required `swiper-slide` class', () => {
     expect(wrapper.html()).toEqual(expect.stringMatching('swiper-slide'))
   })
