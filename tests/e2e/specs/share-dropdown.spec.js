@@ -13,9 +13,9 @@ describe('share dropdown', () => {
     cy.get('.share-dropdown').should('be.visible')
   })
 
-  it('share dropdown toggles on click', () => {
+  it.only('share dropdown toggles on click', () => {
     cy.viewport('iphone-6+')
-    cy.get('.share-dropdown__button')
+    cy.get('.share-dropdown__list')
       .find('.share-list__icon')
       .should('not.be.visible')
     cy.get('.share-dropdown__button').should('be.visible')
@@ -33,7 +33,7 @@ describe('share dropdown', () => {
     cy.get('.share-dropdown__button').click()
 
     cy.get('.share-dropdown__button').should('not.have.attr', 'aria-expanded')
-    cy.get('.share-dropdown__button')
+    cy.get('.share-dropdown__list')
       .find('.share-list__icon')
       .should('not.be.visible')
   })

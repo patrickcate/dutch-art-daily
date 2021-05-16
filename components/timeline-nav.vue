@@ -16,7 +16,8 @@ export default {
       handler() {
         this.$nextTick(() => {
           if (this.$root.swipers.timeline) {
-            this.$root.swipers.timeline.params.slidesPerView = this.paginationNumber
+            this.$root.swipers.timeline.params.slidesPerView =
+              this.paginationNumber
           }
         })
       },
