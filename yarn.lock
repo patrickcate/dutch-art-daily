@@ -14812,9 +14812,9 @@ vue-router@^3.5.1:
   integrity sha512-RRQNLT8Mzr8z7eL4p7BtKvRaTSGdCbTy2+Mm5HTJvLGYSSeG9gDzNasJPP/yOYKLy+/cLG/ftrqq5fvkFwBJEw==
 
 vue-screen@^1.5.2:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/vue-screen/-/vue-screen-1.5.4.tgz#ee9d321d9a94a46bf81043185c8a8256d14dfa8f"
-  integrity sha512-uPyiOs/thipwR+/fz9c6tQ1oI7V25YG+od/kF2Yl8UTtCl13EPZhEloD+dMgQ7znXOCmRe+u+IQdmbVobBa0lg==
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/vue-screen/-/vue-screen-1.5.5.tgz#a234b8bf4f6937a425df3e679d35c5f0c455fe1c"
+  integrity sha512-aaD5wXiQ5gqUMvQ/Iunzp+55nw1MK5bpSSnCkQZRLgxiHBta5PlX/D3emfDmPr95Jn+hhUkdWU5WdQ/VYRDbzA==
 
 vue-server-renderer@^2.6.12:
   version "2.6.12"
