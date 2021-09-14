@@ -6617,9 +6617,9 @@ follow-redirects@^1.10.0:
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
 
 font-face-generator@^1.1.1:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/font-face-generator/-/font-face-generator-1.1.3.tgz#aea8dcaf5a676e1bf37fa221f24f1385d0c6301d"
-  integrity sha512-OCfxPsYq5Uf/zeXEGeNqCABfo6cozKfM7qC9Fu5VihxrdqmDVAFEauuyB4lDq8aS98tarJra/Cc/swGwS1VqQA==
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/font-face-generator/-/font-face-generator-1.1.4.tgz#f8293283d74d3f48895d1efaf493404ee098e325"
+  integrity sha512-xpNVQ24jQJS3xGSgvqJaZWLtW+/cVBtVapojhkVgghkiAK5ZNf9LKhqnNE/FZTH6o6ia3HwsVs1CfJLLoVvEkQ==
 
 for-each@^0.3.3:
   version "0.3.3"
