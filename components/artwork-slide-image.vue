@@ -76,6 +76,9 @@ export default {
 <template>
   <div class="artwork-image-frame">
     <img
+      :style="{
+        aspectRatio: `${artwork.width}/${artwork.height}`,
+      }"
       :data-src="lazySrc"
       :data-srcset="srcSet"
       :data-sizes="srcSizes"

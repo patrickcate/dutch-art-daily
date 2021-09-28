@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TheLogo Component renders correctly 1`] = `
-<div><a href="/" rel="home" class="home"><svg width="1em" height="1em" class="base-icon logo" aria-label="Home">
+<div><a href="/" rel="home" class="home"><svg width="1em" height="1em" class="base-icon logo" role="presentation">
       <use></use>
-    </svg> <svg width="1em" height="1em" class="base-icon logo-sm" aria-label="Home">
+    </svg> <svg width="1em" height="1em" class="base-icon logo-sm" role="presentation">
       <use></use>
-    </svg></a></div>
+    </svg> <span class="u-sr-only">Home</span></a></div>
 `;
