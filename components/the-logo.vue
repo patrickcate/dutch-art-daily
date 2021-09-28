@@ -32,8 +32,9 @@ export default {
 <template>
   <div>
     <a href="/" rel="home" class="home" @click.prevent="today">
-      <base-icon :icon="AppLogo" class="logo" aria-label="Home" />
-      <base-icon :icon="AppLogoCondensed" class="logo-sm" aria-label="Home" />
+      <base-icon :icon="AppLogo" class="logo" role="presentation" />
+      <base-icon :icon="AppLogoCondensed" class="logo-sm" role="presentation" />
+      <span class="u-sr-only">Home</span>
     </a>
   </div>
 </template>

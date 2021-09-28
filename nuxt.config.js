@@ -89,12 +89,8 @@ module.exports = {
     { src: '@/plugins/global-components.js' },
   ],
 
-  buildModules: ['@nuxtjs/pwa'],
-
-  /**
-   * Nuxt.js modules
-   */
-  modules: [
+  buildModules: [
+    'nuxt-babel',
     [
       'nuxt-imagemin',
       {
@@ -102,9 +98,13 @@ module.exports = {
       },
     ],
     '@nuxtjs/sitemap',
-    'nuxt-babel',
-    'vue-screen/nuxt',
+    '@nuxtjs/pwa',
   ],
+
+  /**
+   * Nuxt.js modules
+   */
+  modules: ['vue-screen/nuxt'],
 
   screen: {
     min: '320px',
