@@ -69,20 +69,38 @@ describe('timeline nav', () => {
 
     cy.get('.timeline-nav__list-item .line-segment:visible').first().click()
 
-    cy.get('.timeline-nav__list-item.swiper-slide-active').should(
-      'contain',
-      '12/30'
-    )
+    const currentDate = new Date()
+    const currentMonth = currentDate.getMonth()
+    const currentDay = currentDate.getDate()
+
+    if (currentMonth === 11 && currentDay === 31) {
+      cy.get('.timeline-nav__list-item.swiper-slide-active').should(
+        'contain',
+        'Yesterday'
+      )
+    } else {
+      cy.get('.timeline-nav__list-item.swiper-slide-active').should(
+        'contain',
+        '12/30'
+      )
+    }
 
     cy.get('.timeline-nav__list-item.swiper-slide-active')
       .next()
       .find('.line-segment')
       .click()
 
-    cy.get('.timeline-nav__list-item.swiper-slide-active').should(
-      'contain',
-      '12/31'
-    )
+    if (currentMonth === 11 && currentDay === 31) {
+      cy.get('.timeline-nav__list-item.swiper-slide-active').should(
+        'contain',
+        'Today'
+      )
+    } else {
+      cy.get('.timeline-nav__list-item.swiper-slide-active').should(
+        'contain',
+        '12/31'
+      )
+    }
   })
 
   it('can use the nav buttons to cycle slides', () => {
