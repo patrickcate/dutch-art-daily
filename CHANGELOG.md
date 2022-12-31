@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/patrickcate/dutch-art-daily/compare/v2.5.1...v2.6.0) (2022-12-31)
+
+
+### Features
+
+* add aspect ratio to images and sr only text to logo ([0e7541a](https://github.com/patrickcate/dutch-art-daily/commit/0e7541a36c853d78adcf5d7eaefa120e1fc3d953))
+* update presentation only icons to not be focusable ([abbfe07](https://github.com/patrickcate/dutch-art-daily/commit/abbfe071016a2bef9aa449cfb0f3d43b6d7cc3ef))
+
 ### [2.5.1](https://github.com/patrickcate/dutch-art-daily/compare/v2.5.0...v2.5.1) (2021-05-16)
 
 
