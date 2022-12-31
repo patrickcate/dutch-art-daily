@@ -36,7 +36,13 @@ export default {
       :aria-expanded="expanded"
       @click="toggleDropdown"
     >
-      <base-icon :icon="iconShare" class="icon" role="presentation" />
+      <base-icon
+        :icon="iconShare"
+        class="icon"
+        role="presentation"
+        focusable="false"
+        aria-hidden="true"
+      />
       <span class="u-sr-only">Share</span>
     </button>
     <share-list

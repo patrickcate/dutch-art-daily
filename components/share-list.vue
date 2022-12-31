@@ -56,6 +56,8 @@ export default {
           :icon="iconFacebook"
           class="share-list__icon"
           role="presentation"
+          focusable="false"
+          aria-hidden="true"
         />
       </a>
     </li>
@@ -66,6 +68,8 @@ export default {
           :icon="iconTwitter"
           class="share-list__icon"
           role="presentation"
+          focusable="false"
+          aria-hidden="true"
         />
       </a>
     </li>
@@ -76,6 +80,8 @@ export default {
           :icon="iconPinterest"
           class="share-list__icon"
           role="presentation"
+          focusable="false"
+          aria-hidden="true"
         />
       </a>
     </li>
@@ -86,6 +92,8 @@ export default {
           :icon="iconGithub"
           class="share-list__icon"
           role="presentation"
+          focusable="false"
+          aria-hidden="true"
         />
       </a>
     </li>

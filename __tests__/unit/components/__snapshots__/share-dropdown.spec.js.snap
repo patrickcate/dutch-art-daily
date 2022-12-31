@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShareDropdown Component renders correctly 1`] = `
-<div class="share-dropdown"><button id="js-share-dropdown__button" type="button" aria-haspopup="true" class="share-dropdown__button"><svg width="1em" height="1em" class="base-icon icon" role="presentation">
+<div class="share-dropdown"><button id="js-share-dropdown__button" type="button" aria-haspopup="true" class="share-dropdown__button"><svg width="1em" height="1em" class="base-icon icon" role="presentation" focusable="false" aria-hidden="true">
       <use></use>
     </svg> <span class="u-sr-only">Share</span></button>
   <share-list-stub direction="vertical" aria-hidden="true" aria-labelledby="js-share-dropdown__button" class="share-dropdown__list"></share-list-stub>

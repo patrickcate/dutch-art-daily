@@ -4,7 +4,7 @@ exports[`TheFooter Component renders correctly 1`] = `
 <footer role="contentinfo" class="l-footer"><small class="l-footer__copyright">All artwork on this site is public domain and freely distributable. All
     uncited code and content is distributed under the MIT license. Feel free
     to
-    <a href="https://github.com/patrickcate/dutch-art-daily" rel="noopener noreferrer external" target="_blank">
+    <a href="https://github.com/patrickcate/dutch-art-daily" rel="noopener noreferrer external">
       view the code</a>.
   </small></footer>
 `;

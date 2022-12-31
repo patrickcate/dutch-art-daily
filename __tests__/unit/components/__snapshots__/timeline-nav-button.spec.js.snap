@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TimelineNavButton Component renders next button correctly 1`] = `
-<button type="button" class="timeline-nav-button timeline-nav-button--next"><span class="u-sr-only">Go to next slide</span> <svg width="1em" height="1em" class="base-icon timeline-nav-button__icon" role="presentation">
+<button type="button" class="timeline-nav-button timeline-nav-button--next"><span class="u-sr-only">Go to next slide</span> <svg width="1em" height="1em" class="base-icon timeline-nav-button__icon" role="presentation" focusable="false" aria-hidden="true">
     <use></use>
   </svg></button>
 `;
 
 exports[`TimelineNavButton Component renders previous button correctly 1`] = `
-<button type="button" class="timeline-nav-button timeline-nav-button--prev"><span class="u-sr-only">Go to previous slide</span> <svg width="1em" height="1em" class="base-icon timeline-nav-button__icon" role="presentation">
+<button type="button" class="timeline-nav-button timeline-nav-button--prev"><span class="u-sr-only">Go to previous slide</span> <svg width="1em" height="1em" class="base-icon timeline-nav-button__icon" role="presentation" focusable="false" aria-hidden="true">
     <use></use>
   </svg></button>
 `;

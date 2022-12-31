@@ -42,6 +42,8 @@ export default {
         :icon="iconDate"
         class="details-list__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
       <span><span class="u-sr-only">Date:</span> {{ artDate }}</span>
     </li>
@@ -50,6 +52,8 @@ export default {
         :icon="iconMedium"
         class="details-list__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
       <span
         ><span class="u-sr-only">Medium:</span> {{ artwork.art_medium
@@ -66,6 +70,8 @@ export default {
         :icon="iconSize"
         class="details-list__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
       <span>
         <span class="u-sr-only">Size:</span> {{ artwork.art_height }}
@@ -80,6 +86,8 @@ export default {
         :icon="iconLocation"
         class="details-list__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
       <span>
         <span class="u-sr-only">Location:</span> {{ artwork.art_location }}
@@ -90,14 +98,12 @@ export default {
         :icon="iconLink"
         class="details-list__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
       <span>
         <span class="u-sr-only">Source:</span> {{ artwork.cite_author }}:
-        <a
-          :href="artwork.cite_url"
-          target="_blank"
-          rel="noopener noreferrer external"
-        >
+        <a :href="artwork.cite_url" rel="noopener noreferrer external">
           {{ artwork.title }}
         </a>
       </span>

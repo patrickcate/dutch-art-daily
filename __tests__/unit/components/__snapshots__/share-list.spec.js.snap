@@ -4,16 +4,16 @@ exports[`ShareList Component does not render correctly 1`] = ``;
 
 exports[`ShareList Component renders correctly 1`] = `
 <ul class="share-list share-list--horizontal">
-  <li class="share-list__item share-list__item--facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.dutchartdaily.com/01-01" class="share-list__item-link"><span class="u-sr-only">Share on Facebook</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation">
+  <li class="share-list__item share-list__item--facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.dutchartdaily.com/01-01" class="share-list__item-link"><span class="u-sr-only">Share on Facebook</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation" focusable="false" aria-hidden="true">
         <use></use>
       </svg></a></li>
-  <li class="share-list__item share-list__item--twitter"><a href="https://twitter.com/intent/tweet?url=https%3A//www.dutchartdaily.com/01-01&amp;text=The%20Milkmaid%20by%20Johannes%20Vermeer" class="share-list__item-link"><span class="u-sr-only">Share on Twitter</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation">
+  <li class="share-list__item share-list__item--twitter"><a href="https://twitter.com/intent/tweet?url=https%3A//www.dutchartdaily.com/01-01&amp;text=The%20Milkmaid%20by%20Johannes%20Vermeer" class="share-list__item-link"><span class="u-sr-only">Share on Twitter</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation" focusable="false" aria-hidden="true">
         <use></use>
       </svg></a></li>
-  <li class="share-list__item share-list__item--pinterest"><a href="https://pinterest.com/pin/create/link/?url=https%3A//www.dutchartdaily.com/01-01&amp;media=https%3A//www.dutchartdaily.com/photos/01-01/01-01--xs3-d0wAmzwM620.jpg&amp;description=The%20Milkmaid%20by%20Johannes%20Vermeer" class="share-list__item-link"><span class="u-sr-only">Share on Pinterest</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation">
+  <li class="share-list__item share-list__item--pinterest"><a href="https://pinterest.com/pin/create/link/?url=https%3A//www.dutchartdaily.com/01-01&amp;media=https%3A//www.dutchartdaily.com/photos/01-01/01-01--xs3-d0wAmzwM620.jpg&amp;description=The%20Milkmaid%20by%20Johannes%20Vermeer" class="share-list__item-link"><span class="u-sr-only">Share on Pinterest</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation" focusable="false" aria-hidden="true">
         <use></use>
       </svg></a></li>
-  <li class="share-list__item share-list__item--github"><a href="https://github.com/patrickcate/dutch-art-daily" class="share-list__item-link"><span class="u-sr-only">Star on GitHub</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation">
+  <li class="share-list__item share-list__item--github"><a href="https://github.com/patrickcate/dutch-art-daily" class="share-list__item-link"><span class="u-sr-only">Star on GitHub</span> <svg width="1em" height="1em" class="base-icon share-list__icon" role="presentation" focusable="false" aria-hidden="true">
         <use></use>
       </svg></a></li>
 </ul>

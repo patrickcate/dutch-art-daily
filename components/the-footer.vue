@@ -13,7 +13,6 @@ export default {
       <a
         href="https://github.com/patrickcate/dutch-art-daily"
         rel="noopener noreferrer external"
-        target="_blank"
       >
         view the code</a
       >.

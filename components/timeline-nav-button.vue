@@ -70,6 +70,8 @@ export default {
         :icon="IconArrowLeft"
         class="timeline-nav-button__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
     </template>
     <template v-else>
@@ -78,6 +80,8 @@ export default {
         :icon="IconArrowRight"
         class="timeline-nav-button__icon"
         role="presentation"
+        focusable="false"
+        aria-hidden="true"
       />
     </template>
   </button>

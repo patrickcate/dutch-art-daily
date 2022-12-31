@@ -4,27 +4,27 @@ exports[`DetailsList Component does not render correctly 1`] = ``;
 
 exports[`DetailsList Component renders correctly 1`] = `
 <ul class="details-list">
-  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation">
+  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation" focusable="false" aria-hidden="true">
       <use></use>
     </svg> <span><span class="u-sr-only">Date:</span> c. 1657–1658</span></li>
-  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation">
+  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation" focusable="false" aria-hidden="true">
       <use></use>
     </svg> <span><span class="u-sr-only">Medium:</span> Oil<span>
         on Canvas</span></span></li>
-  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation">
+  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation" focusable="false" aria-hidden="true">
       <use></use>
     </svg> <span><span class="u-sr-only">Size:</span> 45.5
     <abbr title="centimeters">cm</abbr> <span aria-hidden="true">×</span> <span class="u-sr-only">by</span> 41
     <abbr title="centimeters">cm</abbr></span>
   </li>
-  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation">
+  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation" focusable="false" aria-hidden="true">
       <use></use>
     </svg> <span><span class="u-sr-only">Location:</span> Rijksmuseum, Amsterdam
     </span></li>
-  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation">
+  <li class="details-list__item"><svg width="1em" height="1em" class="base-icon details-list__icon" role="presentation" focusable="false" aria-hidden="true">
       <use></use>
     </svg> <span><span class="u-sr-only">Source:</span> Wikipedia:
-    <a href="http://en.wikipedia.org/w/index.php?title=The_Milkmaid_(Vermeer)&amp;oldid=594234689" target="_blank" rel="noopener noreferrer external">
+    <a href="http://en.wikipedia.org/w/index.php?title=The_Milkmaid_(Vermeer)&amp;oldid=594234689" rel="noopener noreferrer external">
       The Milkmaid
     </a></span>
   </li>
