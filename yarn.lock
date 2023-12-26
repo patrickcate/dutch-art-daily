@@ -14100,9 +14100,9 @@ sass-graph@2.2.5:
     yargs "^13.3.2"
 
 sass-loader@^10.0.0:
-  version "10.4.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.4.1.tgz#bea4e173ddf512c9d7f53e9ec686186146807cbf"
-  integrity sha512-aX/iJZTTpNUNx/OSYzo2KsjIUQHqvWsAhhUijFjAPdZTEhstjZI9zTNvkTTwsx+uNUJqUwOw5gacxQMx4hJxGQ==
+  version "10.5.1"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.5.1.tgz#4cfb9cd17e09afc7d8787fdb57d665254c3aadcb"
+  integrity sha512-P8BGIW6OxYLJWaWG8DROibc98Uw/B90oHPYOjPQ5/tF572OTTwkhxSxpaQzD5lYam36zQd0cxjh24b4rcdNIZQ==
   dependencies:
     klona "^2.0.4"
     loader-utils "^2.0.0"
