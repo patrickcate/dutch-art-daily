@@ -35,16 +35,16 @@ export default {
 <template>
   <li class="timeline-nav__list-item">
     <button type="button" class="line-segment" @click="toSlide()">
-      <div class="line-segment__accent"></div>
-      <div class="line-segment__point"></div>
-      <div class="line-segment__label">
+      <span class="line-segment__accent"></span>
+      <span class="line-segment__point"></span>
+      <span class="line-segment__label">
         <span class="u-sr-only">Go to </span>
         <span v-if="dateLabel && breakpoint.md" class="line-segment__prefix">{{
           dateLabel
         }}</span>
         <span v-else>{{ date[0] }}/{{ date[1] }}</span>
         <span class="u-sr-only"> slide</span>
-      </div>
+      </span>
     </button>
   </li>
 </template>

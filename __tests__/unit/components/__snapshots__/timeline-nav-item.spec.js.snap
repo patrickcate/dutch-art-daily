@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimelineNavItem Component renders correctly 1`] = `
-<li class="timeline-nav__list-item"><button type="button" class="line-segment">
-    <div class="line-segment__accent"></div>
-    <div class="line-segment__point"></div>
-    <div class="line-segment__label"><span class="u-sr-only">Go to </span> <span>01/01</span> <span class="u-sr-only"> slide</span></div>
-  </button></li>
-`;
+exports[`TimelineNavItem Component renders correctly 1`] = `<li class="timeline-nav__list-item"><button type="button" class="line-segment"><span class="line-segment__accent"></span> <span class="line-segment__point"></span> <span class="line-segment__label"><span class="u-sr-only">Go to </span> <span>01/01</span> <span class="u-sr-only"> slide</span></span></button></li>`;
 
-exports[`TimelineNavItem Component renders with date label 1`] = `
-<li class="timeline-nav__list-item"><button type="button" class="line-segment">
-    <div class="line-segment__accent"></div>
-    <div class="line-segment__point"></div>
-    <div class="line-segment__label"><span class="u-sr-only">Go to </span> <span class="line-segment__prefix">Today</span> <span class="u-sr-only"> slide</span></div>
-  </button></li>
-`;
+exports[`TimelineNavItem Component renders with date label 1`] = `<li class="timeline-nav__list-item"><button type="button" class="line-segment"><span class="line-segment__accent"></span> <span class="line-segment__point"></span> <span class="line-segment__label"><span class="u-sr-only">Go to </span> <span class="line-segment__prefix">Today</span> <span class="u-sr-only"> slide</span></span></button></li>`;
