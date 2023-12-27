@@ -181,11 +181,13 @@ module.exports = {
       },
     },
     postcss: {
-      // Add plugin names as key and arguments as value
-      // Install them before as dependencies with npm or yarn
-      plugins: {
-        // Disable a plugin by passing false as value
-        'postcss-easing-gradients': {},
+      postcssOptions: {
+        // Add plugin names as key and arguments as value
+        // Install them before as dependencies with npm or yarn
+        plugins: {
+          // Disable a plugin by passing false as value
+          'postcss-easing-gradients': {},
+        },
       },
     },
     transpile: ['dom7', 'ssr-window', 'swiper', 'vue-screen'],
