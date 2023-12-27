@@ -1,4 +1,4 @@
-import Vuex from 'vuex'
+import Vuex, { Store } from 'vuex'
 import VueMeta from 'vue-meta'
 import { shallowMount, mount, createLocalVue } from '@vue/test-utils'
 import BaseIconMock from '@fixtures/base-icon-mock.vue'
@@ -38,7 +38,7 @@ const createStore = ({
   mutations = {},
   actions = {},
 }) =>
-  new Vuex.Store({
+  new Store({
     state: {
       ...defaultState(),
       ...mockData.store.state,
